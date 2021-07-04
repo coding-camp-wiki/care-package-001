@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><% TITLE %></title>
+    <% CSS %>
+    <% JAVASCRIPT %>
+  </head>
+  <body>
+
+
+  <script src="//pull.cappuccicons.com/cpf.js"></script>
+
+  <div id="topbar">
+    <div class="topicon"></div>
+    <!-- |avatar| -->
+    <div class="topname">welcome back, <a href="?showuser=<!-- |id| -->"><!-- |name| --></a></div>
+    <div class="switch"><% SUBACCOUNTS %></div>
+    <div class="toplinks">
+      <div id="myLinks">
+        <a href="?act=UserCP&CODE=00">user settings</a>
+        <a href="?act=Msg&CODE=01">messages</a>
+        <a href="?act=UserCP&CODE=alerts">alerts</a>
+        <a href="/admin.php">admin cp</a>
+        <a href="">log in</a>
+        <a href="?act=Login&CODE=03">log out</a>
+        <a href="">register</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="cp cp-menu"></i>
+      </a>
+    </div>
+  </div>
+
+  <div id="sidebar">
+    <div id="nav">
+      <% NAVIGATION %>
+    </div>
+    <a href="#top" title="scroll to top"><div class="scrolltop"><i class="cp cp-chevron-up"></i></div></a>
+  </div>
+
+  <div id="header">
+    <div class="headerin">
+      <div class="text">
+        CUTTING EDGE
+        <div class="text2">CUTTING EDGE</div>
+      </div>
+      <div class="info">
+        <div class="links">
+          <a href="/">guidebook</a>
+          <a href="/">directory</a>
+          <a href="/">claims</a>
+          <a href="/">discord</a>
+        </div>
+        <div class="site-desc">a genretype roleplay</div>
+      </div>
+    </div>
+  </div>
+
+<div id="wrapper">
+
+  <% BOARD HEADER %>
+  <% BOARD %>
+  <% COPYRIGHT %>
+  <script>$('#logo a img[src="style_images/1/spacer.gif"]').replaceWith('<!-- |board_name| -->');</script>
+
+</div>
+
+
+
+  </body>
+</html>
