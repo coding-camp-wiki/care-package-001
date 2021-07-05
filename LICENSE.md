@@ -1,6 +1,18 @@
-Where a separate license is provided within a directory (as is the case, for example, with the included font Mont by Fontfabric Type Foundry), that license supercedes and replaces this one, and applies to all contents in the same and any nested directories.
+# Licenses
 
----
+Where a separate license is provided within a directory (as is the case, for example, with the included font Mont by Fontfabric Type Foundry), that license supercedes and fully replaces the ["Remaining"](#remaining) license below, and applies to all contents in the same and any nested directories.
+
+## Mont by Fontfabric Type Foundry
+
+Mont by Fontfabric Type Foundry is included herein. A copy of the source may be downloaded from [dafont.com](https://www.dafont.com/mont.font). This content is licensed under the [FontFabric (tm) Free Font End User License Agreement (FFF EULA) ver. 2.0 June 2015](/dist/assets/fonts/mont/FFF EULA ver. 2.0 June 2015.pdf).
+
+## Remix Icon
+
+Remix Icon is included herein. A copy of the source may be downloaded from [Remix Icon](https://remixicon.com/). This content is licensed under [Apache License Version 2.0](/dist/assets/svg/remix-icon/LICENSE).
+
+## Remaining
+
+Minus the above listed exceptions, all remaining content is licensed as follows:
 
 MIT License
 
