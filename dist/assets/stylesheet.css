@@ -1,6 +1,13 @@
 @font-face {
-    font-family: "Mont Heavy";
-    src: url("https://files.jcink.net/uploads/summertests/fonts/Mont_HeavyDEMO.otf");
+    font-family: "Mont Heavy Demo";
+    font-weight: 400 700;
+    src: url("https://coding-camp-canteen.github.io/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff2")
+            format("woff2"),
+        url("https://coding-camp-canteen.github.io/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff")
+            format("woff");
+    unicode-range: U+0033-0034, U+0036, U+0038-0046, U+0048-0059, U+0061,
+        U+0063-0064, U+0065-0091, U+0093, U+0097-0123, U+0125, U+0128, U+0153,
+        U+0156, U+0162-0163, U+0165, U+0167, U+0169, U+0174, U+0182, U+0247;
 }
 
 body {
@@ -17,8 +24,8 @@ body {
     background-attachment: fixed;
 
     /*FONTS*/
-    --sans: "Work Sans", sans-serif; /*keep*/
-    --display: "Mont Heavy", sans-serif;
+    --sans: "Work Sans", sans-serif;
+    --display: "Mont Heavy Demo", "Work Sans", sans-serif;
     --body-font: var(--body-font-size) / 180% var(--sans);
     --body-font-size: 0.8125rem;
 
