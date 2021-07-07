@@ -20,7 +20,7 @@ Minus the above listed exceptions, all remaining content is licensed as follows:
 
 MIT License
 
--   Modified work copyright (c) 2021 Coding Camp and other contributors.
+-   Modified and additional original work copyright (c) 2021 Coding Camp and other contributors.
 -   Original board stats copyright (c) 2021 Lissita (https://codepen.io/Lissita/pen/poeqVev).
 -   Original category headers and forum, redirect, and topic rows copyright (c) 2021 Ray (https://codepen.io/yorkupine/pen/YzZgWgG).
 -   Original header and navigation copyright (c) 2021 Leeann (https://codepen.io/leeannflorez/pen/xxqmQNO).
