@@ -143,7 +143,7 @@ body {
 }
 
 /*** WRAPPERS ***/
-#wrapper {
+.wrapper {
     width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
     margin: 50px auto;
     background-color: var(--clear);

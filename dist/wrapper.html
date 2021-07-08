@@ -70,16 +70,12 @@
             </div>
         </div>
 
-        <div id="wrapper">
-            <% BOARD HEADER %> <% BOARD %> <% COPYRIGHT %>
-            <script>
-                $('#logo a img[src="style_images/1/spacer.gif"]').replaceWith(
-                    "<!-- |board_name| -->"
-                );
-            </script>
-        </div>
+        <div class="wrapper"><% BOARD HEADER %></div>
 
-        <footer>
+        <main class="wrapper"><% BOARD %></main>
+
+        <footer class="wrapper">
+            <div><% COPYRIGHT %></div>
             <div><% SKIN_SELECTOR %></div>
         </footer>
     </body>
