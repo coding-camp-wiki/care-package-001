@@ -2,6 +2,10 @@
 
 Where a separate license is provided within a directory (as is the case, for example, with the included font Mont by Fontfabric Type Foundry), that license supercedes and fully replaces the ["Remaining"](#remaining) license below, and applies to all contents in the same and any nested directories.
 
+## Work Sans Google Font
+
+Works Sans is used, but not included herein. A copy of the source may be downloaded from [Google Fonts](https://fonts.google.com/specimen/Work+Sans). This content is licensed under the [SIL Open Font License Version 1.1](https://github.com/google/fonts/blob/main/ofl/worksans/OFL.txt).
+
 ## Mont by Fontfabric Type Foundry
 
 Mont by Fontfabric Type Foundry is included herein. A copy of the source may be downloaded from [dafont.com](https://www.dafont.com/mont.font). This content is licensed under the [FontFabric (tm) Free Font End User License Agreement (FFF EULA) ver. 2.0 June 2015](/dist/assets/fonts/mont/FFF EULA ver. 2.0 June 2015.pdf).
@@ -16,7 +20,8 @@ Minus the above listed exceptions, all remaining content is licensed as follows:
 
 MIT License
 
--   Modified work copyright (c) 2021 Coding Camp and other contributors.
+-   Modified and additional original work copyright (c) 2021 Coding Camp and other contributors.
+-   Original base copyright (c) 2021 Summer (https://codepen.io/summercodes/pen/poeVvrG).
 -   Original board stats copyright (c) 2021 Lissita (https://codepen.io/Lissita/pen/poeqVev).
 -   Original category headers and forum, redirect, and topic rows copyright (c) 2021 Ray (https://codepen.io/yorkupine/pen/YzZgWgG).
 -   Original header and navigation copyright (c) 2021 Leeann (https://codepen.io/leeannflorez/pen/xxqmQNO).
