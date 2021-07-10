@@ -40,8 +40,12 @@
                     class="icon"
                     onclick="myFunction()"
                 >
-                    <svg class="lego-icon" role="button">
-                        <title>Menu</title>
+                    <svg
+                        aria-labelledby="toplinks-menu-title"
+                        class="lego-icon"
+                        role="button"
+                    >
+                        <title id="toplinks-menu-title">Menu</title>
                         <use
                             href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
                         ></use>
@@ -53,7 +57,17 @@
         <div id="sidebar">
             <div id="nav"><% NAVIGATION %></div>
             <a href="#top" title="scroll to top"
-                ><div class="scrolltop"><i class="cp cp-chevron-up"></i></div
+                ><div class="scrolltop">
+                    <svg
+                        aria-labelledby="to-top-title"
+                        class="lego-icon"
+                        role="img"
+                    >
+                        <title id="to-top-title">To Top</title>
+                        <use
+                            href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-arrow-up-s-line"
+                        ></use>
+                    </svg></div
             ></a>
         </div>
 
