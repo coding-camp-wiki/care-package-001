@@ -894,14 +894,14 @@ body {
     padding: 0px 10px;
 }
 
-.stats-wrap .online div {
+.stats-wrap .online .list {
     display: block;
     text-transform: uppercase;
     margin: 25px;
     font-size: 12px;
 }
 
-.stats-wrap .online div a {
+.stats-wrap .online .list a {
     margin-right: 10px;
 }
 
@@ -939,7 +939,7 @@ body {
     border: 2px solid var(--black-hex);
 }
 
-.stats-wrap .topics div {
+.stats-wrap .topics .list {
     display: block;
     height: 200px;
     text-transform: uppercase;
@@ -948,7 +948,7 @@ body {
     overflow: auto;
 }
 
-.stats-wrap .topics div .thread {
+.stats-wrap .topics .list .thread {
     display: block;
     margin: 20px;
     border-bottom: 1px solid var(--black-hex);
