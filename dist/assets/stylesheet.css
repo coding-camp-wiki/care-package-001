@@ -242,6 +242,11 @@ body {
     top: 0;
     justify-items: center;
 }
+
+#sidebar > br {
+    display: none;
+}
+
 #sidebar #nav {
     writing-mode: vertical-lr;
     transform: scale(-1);
