@@ -12,6 +12,7 @@ Notes for later:
 
 -   RemixIcon needs to be uploaded to ACP file manager because of same-origin policy enforcment on `use` elements.
 -   Which also means that any place icons are `use`d, the URLs will need to be updated.
+-   `AVATAR.html` should be updated with actual default avatar.
 
 ## How to Report a Bug
 
