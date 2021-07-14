@@ -321,6 +321,7 @@ LEGOS
         var(--purple-hex) 15%
     );
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-stroke: 2px white;
     z-index: 10 !important;
     grid-row: 1;
