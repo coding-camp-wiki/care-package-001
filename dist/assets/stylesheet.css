@@ -51,8 +51,8 @@
 }
 
 body {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font: var(--body-font);
     letter-spacing: 1px;
     color: var(--black-hex);
@@ -439,7 +439,7 @@ LEGOS
     display: inline-block;
     left: 5%;
     max-width: 95%;
-    padding: 0vw 1vw;
+    padding: 0 1vw;
     z-index: 2;
 }
 
@@ -456,7 +456,7 @@ LEGOS
 }
 
 .forum-row {
-    padding: 0vw 2vw 2vw;
+    padding: 0 2vw 2vw;
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -568,7 +568,7 @@ LEGOS
     background-color: rgb(var(--white));
     padding: 5px;
     border: 1px solid rgb(var(--black));
-    margin: 20px 5px 0px;
+    margin: 20px 5px 0;
     min-width: 40%;
     text-align: center;
 }
@@ -583,7 +583,7 @@ LEGOS
     text-decoration: none;
     display: inline-block;
     line-height: 80%;
-    padding: 0px 5px;
+    padding: 0 5px;
     background-color: rgba(var(--white), 0.7);
 }
 
@@ -667,7 +667,7 @@ LEGOS
     border: 2px solid rgb(var(--black));
     position: absolute;
     left: 10px;
-    top: 0px;
+    top: 0;
 }
 .topic-last-post {
     grid-area: topic-last-post;
@@ -743,7 +743,7 @@ LEGOS
     top: -100px;
     display: block;
     font: 50px var(--display);
-    padding: 30px 0px 15px 0px;
+    padding: 30px 0 15px 0;
     text-align: center;
 }
 
@@ -848,7 +848,7 @@ LEGOS
 .stats-link {
     padding: 25px;
     position: relative;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -860,14 +860,14 @@ LEGOS
 .stats-link .fr {
     width: 100%;
     height: 50px;
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
 }
 
 .stats-wrap .container {
     padding: 25px;
     position: relative;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -879,7 +879,7 @@ LEGOS
 .stats-wrap .container .fr {
     width: 100%;
     height: 300px;
-    margin: 0px auto;
+    margin: 0 auto;
     display: block;
     border: solid 2px var(--black-hex);
 }
@@ -913,7 +913,7 @@ LEGOS
     left: 25px;
     font-size: 8px;
     text-transform: uppercase;
-    padding: 0px 10px;
+    padding: 0 10px;
 }
 
 .stats-wrap .online .list {
@@ -965,7 +965,7 @@ LEGOS
     display: block;
     height: 200px;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 0;
     font-size: 10px;
     overflow: auto;
 }
@@ -975,7 +975,7 @@ LEGOS
 .pr-wrap {
     display: block;
     width: 100%;
-    margin: 75px 0px;
+    margin: 75px 0;
 }
 
 .pr-wrap .pr-box {
@@ -1007,7 +1007,7 @@ LEGOS
 }
 
 .pr-wrap .pr-box .box-bord .box-name span {
-    padding: 10px 8px 0px 10px;
+    padding: 10px 8px 0 10px;
     background: linear-gradient(
         to right,
         rgba(var(--green), 0.45),
@@ -1027,7 +1027,7 @@ LEGOS
 .pr-wrap .pr-box .box-bord .box-line {
     display: block;
     width: calc(100% + 150px + 30px + 4px);
-    margin: 75px 0px 75px -92px;
+    margin: 75px 0 75px -92px;
     height: 2px;
     background: var(--black-hex);
 }
@@ -1043,10 +1043,10 @@ LEGOS
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: -90px auto 75px 0px;
+    margin: -90px auto 75px 0;
     width: max-content;
     height: 30px;
-    padding: 0px 0px 0px 15px;
+    padding: 0 0 0 15px;
     position: relative;
     z-index: 999;
     font: 400 8px var(--sans);
@@ -1083,7 +1083,7 @@ LEGOS
 .pr-wrap .pr-box .box-mini .mini-stick .mini-info {
     display: block;
     width: calc(254px - 60px);
-    margin: 30px 30px 0px 30px;
+    margin: 30px 30px 0 30px;
     font: 300 8.25px var(--sans);
     line-height: 250%;
     text-transform: uppercase;
@@ -1248,7 +1248,7 @@ LEGOS
     width: 300px;
     right: 350px;
     z-index: -2;
-    top: 0px;
+    top: 0;
 }
 
 .main-pic {
@@ -1344,7 +1344,7 @@ LEGOS
     margin: 0 5px;
     border: 2px solid var(--black-hex);
     color: var(--black-hex);
-    padding: 0px 5px;
+    padding: 0 5px;
     transition: 0.3s;
     -webkit-transition: 0.3s;
     background: linear-gradient(
@@ -1394,7 +1394,7 @@ LEGOS
     border-radius: 100%;
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 10px;
 }
 
@@ -1436,7 +1436,7 @@ LEGOS
     padding: 20px 10px;
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
-    right: 0px;
+    right: 0;
     font-size: 20px;
     top: calc(50% - 45px);
     transition: 0.3s;
@@ -1447,7 +1447,7 @@ LEGOS
 }
 
 .tab-back {
-    left: 0px;
+    left: 0;
     right: auto;
 }
 
@@ -1496,7 +1496,7 @@ LEGOS
     grid-template-columns: 1fr 1fr 1fr;
     position: absolute;
     top: 30px;
-    left: 0px;
+    left: 0;
     height: calc(100% - 30px);
     width: 100%;
     opacity: 0;
@@ -1536,7 +1536,7 @@ LEGOS
     z-index: 1;
     opacity: 0;
     top: 30px;
-    left: 0px;
+    left: 0;
     height: calc(100% - 30px);
     transition: 0.6s;
     -webkit-transition: 0.6s;
@@ -1563,7 +1563,7 @@ LEGOS
     grid-template-columns: 1fr 1fr 1fr 1fr;
     position: absolute;
     top: 30px;
-    left: 0px;
+    left: 0;
     height: calc(100% - 30px);
     width: 100%;
     opacity: 0;
@@ -1632,7 +1632,7 @@ LEGOS
     border: 2px solid var(--black-hex);
     background: var(--white-hex);
     line-height: 100%;
-    top: 0px;
+    top: 0;
     left: 30px;
     opacity: 0;
     font-weight: 600;
@@ -1665,7 +1665,7 @@ LEGOS
         rgba(var(--white), 0) 100%
     );
     text-transform: uppercase;
-    letter-spacing: 0px;
+    letter-spacing: 0;
 }
 
 .cp-memsearch .forminput {
@@ -1842,7 +1842,7 @@ LEGOS
     position: absolute;
     z-index: 2;
     bottom: 0;
-    left: 0px;
+    left: 0;
     text-transform: uppercase;
     font: 0.9rem/0.9rem var(--body-font);
     display: block;
