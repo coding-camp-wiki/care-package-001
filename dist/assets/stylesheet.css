@@ -56,11 +56,10 @@ body {
     font: var(--body-font);
     letter-spacing: 1px;
     color: var(--black-hex);
-    background: var(--background-texture), var(--purple-radial-gradient),
-        var(--green-radial-gradient2), var(--purple-radial-gradient3),
-        var(--pink-radial-gradient), var(--purple-radial-gradient2),
-        var(--green-radial-gradient), var(--green-radial-gradient3),
-        var(--pink-base);
+    background: var(--purple-radial-gradient), var(--green-radial-gradient2),
+        var(--purple-radial-gradient3), var(--pink-radial-gradient),
+        var(--purple-radial-gradient2), var(--green-radial-gradient),
+        var(--green-radial-gradient3), var(--pink-base);
     background-attachment: fixed;
 
     /*FONTS*/
@@ -129,7 +128,6 @@ body {
     /*GRADIENTS - place your gradient variables below*/
 
     /*IMAGES - place your image variables below*/
-    --background-texture: url("https://img.nickpic.host/56Mk0X.png");
 
     /*OTHER - place your other variables below*/
     --spacing: 10vw; /*leave this as is*/
@@ -467,11 +465,10 @@ LEGOS
 
 .forum-wrapper {
     width: 100%;
-    background: var(--background-texture), var(--purple-radial-gradient),
-        var(--green-radial-gradient2), var(--purple-radial-gradient3),
-        var(--pink-radial-gradient), var(--purple-radial-gradient2),
-        var(--green-radial-gradient), var(--green-radial-gradient3),
-        var(--pink-base);
+    background: var(--purple-radial-gradient), var(--green-radial-gradient2),
+        var(--purple-radial-gradient3), var(--pink-radial-gradient),
+        var(--purple-radial-gradient2), var(--green-radial-gradient),
+        var(--green-radial-gradient3), var(--pink-base);
     position: relative;
 
     border-left: 2px solid rgb(var(--black));
@@ -504,11 +501,10 @@ LEGOS
 .forum-avatar {
     border-radius: 100%;
     display: inline-block;
-    background: var(--background-texture), var(--purple-radial-gradient),
-        var(--green-radial-gradient2), var(--purple-radial-gradient3),
-        var(--pink-radial-gradient), var(--purple-radial-gradient2),
-        var(--green-radial-gradient), var(--green-radial-gradient3),
-        var(--pink-base);
+    background: var(--purple-radial-gradient), var(--green-radial-gradient2),
+        var(--purple-radial-gradient3), var(--pink-radial-gradient),
+        var(--purple-radial-gradient2), var(--green-radial-gradient),
+        var(--green-radial-gradient3), var(--pink-base);
     width: calc(100px + 2vw);
     height: calc(100px + 2vw);
     position: relative;
