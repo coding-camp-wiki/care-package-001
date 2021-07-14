@@ -1,3 +1,8 @@
+<script
+    src="https://coding-camp-canteen.github.io/jcink-utility-scripts/dist/move-recent-topics/move-recent-topics.js"
+    defer
+></script>
+
 <div class="stats">
     <div class="stats-title">
         <span>BOARD STATS</span>
@@ -25,11 +30,7 @@
                     <div class="welcome">
                         <span>Welcome<br /><!-- |newest_member| --></span>
 
-                        <div class="new-gif">
-                            <img
-                                src="https://media.discordapp.net/attachments/826160786778488873/855129703543603200/image0.gif"
-                            />
-                        </div>
+                        <div aria-hidden="true" class="new-gif"><{AVATAR}></div>
                     </div>
                 </div>
             </div>
@@ -40,7 +41,7 @@
                 <div class="online">
                     <div class="now">Online Now</div>
                     <br />
-                    <div>
+                    <div class="list">
                         <!-- |online_list| -->
                     </div>
                     <div class="total">
@@ -60,7 +61,7 @@
                 <div class="online">
                     <div class="today">Online Today</div>
                     <br />
-                    <div>
+                    <div class="list">
                         <!-- |online_today_list| -->
                     </div>
                     <div class="total">
@@ -74,25 +75,7 @@
                 <div class="topics">
                     <div class="recent">Recent Topics</div>
                     <br />
-                    <div>
-                        <thread
-                            ><b>a new thread</b> by
-                            <a>Aleksander Danvers</a></thread
-                        >
-                        <thread
-                            ><b>a new thread</b> by <a>LEONOR LYONS</a></thread
-                        >
-                        <thread
-                            ><b>a new thread</b> by <a>Maria Ejiofor</a></thread
-                        >
-                        <thread
-                            ><b>a new thread</b> by<a>damien travers</a></thread
-                        >
-                        <thread
-                            ><b>a new thread</b> by
-                            <a>Charles Prentiss</a></thread
-                        >
-                    </div>
+                    <div class="list" id="js-recent-topics-parent"></div>
                 </div>
             </div>
         </div>
