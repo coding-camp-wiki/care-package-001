@@ -2,13 +2,17 @@
 
 Where a separate license is provided within a directory (as is the case, for example, with the included font Mont by Fontfabric Type Foundry), that license supercedes and fully replaces the ["Remaining"](#remaining) license below, and applies to all contents in the same and any nested directories.
 
+## Jcink Utility Scripts
+
+Jcink Utility Scripts by Coding Camp are used, but not included herein. A copy of the soruce may be downloaded from [GitHub](https://github.com/coding-camp-canteen/jcink-utility-scripts). This content is licensed under the [MIT License](https://github.com/coding-camp-canteen/jcink-utility-scripts/LICENSE).
+
 ## Work Sans Google Font
 
 Works Sans is used, but not included herein. A copy of the source may be downloaded from [Google Fonts](https://fonts.google.com/specimen/Work+Sans). This content is licensed under the [SIL Open Font License Version 1.1](https://github.com/google/fonts/blob/main/ofl/worksans/OFL.txt).
 
 ## Mont by Fontfabric Type Foundry
 
-Mont by Fontfabric Type Foundry is included herein. A copy of the source may be downloaded from [dafont.com](https://www.dafont.com/mont.font). This content is licensed under the [FontFabric (tm) Free Font End User License Agreement (FFF EULA) ver. 2.0 June 2015](/dist/assets/fonts/mont/FFF EULA ver. 2.0 June 2015.pdf).
+Mont by Fontfabric Type Foundry is included herein. A copy of the source may be downloaded from [dafont.com](https://www.dafont.com/mont.font). This content is licensed under the [FontFabric (tm) Free Font End User License Agreement (FFF EULA) ver. 2.0 June 2015](</dist/assets/fonts/mont/FFF EULA ver. 2.0 June 2015.pdf>).
 
 ## Remix Icon
 
