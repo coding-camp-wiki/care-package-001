@@ -678,7 +678,6 @@ LEGOS
     color: rgb(var(--black));
     text-decoration: none;
     border: 1px solid rgb(var(--black));
-    text-align: center;
     margin: 2px;
     background-color: rgb(var(--white));
     min-width: 50%;
@@ -1507,7 +1506,6 @@ LEGOS
 
 .main-tab-1 div {
     margin: 20px;
-    text-align: left;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 300;
