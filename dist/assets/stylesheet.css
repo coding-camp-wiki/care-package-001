@@ -142,6 +142,33 @@ body {
     box-sizing: border-box;
 }
 
+/*
+-----
+JCINK SPECIFIC
+-----
+*/
+
+#recent-topics .maintitle {
+    display: none;
+}
+
+#recent-topics .recent-topics-date {
+    display: none;
+}
+
+#recent-topics .recent-topics-info {
+    border-bottom: 1px solid var(--black-hex);
+    display: block;
+    margin: 20px;
+    width: initial;
+}
+
+/*
+-----
+LEGOS
+-----
+*/
+
 /*** WRAPPERS ***/
 .wrapper {
     width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
@@ -149,7 +176,6 @@ body {
     background-color: var(--clear);
 }
 
-/* ----- LEGOS */
 .lego-icon {
     block-size: 1.25rem;
     inline-size: 1.25rem;
@@ -946,12 +972,6 @@ body {
     margin: 0px;
     font-size: 10px;
     overflow: auto;
-}
-
-.stats-wrap .topics .list .thread {
-    display: block;
-    margin: 20px;
-    border-bottom: 1px solid var(--black-hex);
 }
 
 /*** JULIET POST ROW ***/
