@@ -1,56 +1,28 @@
 <div class="cp-memlist">
-    <div class="cp-memsearch">
+    <form action="index.php" class="cp-memsearch" method="post">
+        <input name="act" type="hidden" value="Members" />
+
         <b>Search:</b>
         <div>
             <select class="forminput search" name="name_box">
                 <option value="begins">Name begins with</option>
                 <option value="contains" selected="selected">
                     Name contains
-                </option></select
-            ><input
-                class="forminput search memberlist-namesearch"
-                type="text"
-                name="name"
-                value=""
-            /><br />
+                </option>
+            </select>
+            <!-- |search_input| -->
         </div>
         <b>Show:</b>
         <div>
-            <select name="filter" class="forminput">
-                <option value="ALL" selected="">All Members</option>
-                <option value="9">Agate</option>
-                <option value="11">Amber</option>
-                <option value="15">Cordierite</option>
-                <option value="12">Emerald</option>
-                <option value="10">Morganite</option>
-                <option value="16">Spar</option>
-                <option value="17">Spare</option>
-                <option value="13">Spectrolite</option>
-                <option value="14">Topaz</option>
-                <option value="1">Validating</option>
-            </select>
-            <select name="sort_key" class="forminput">
-                <option value="name">Member Name</option>
-                <option value="posts" selected="">Total Posts</option>
-                <option value="last_post">Last Post</option>
-                <option value="joined">Join Date</option>
-            </select>
-            <select name="sort_order" class="forminput">
-                <option value="desc" selected="">Descending Order</option>
-                <option value="asc">Ascending Order</option>
-            </select>
-            <select name="max_results" class="forminput">
-                <option value="10">10</option>
-                <option value="20">20</option>
-                <option value="30">30</option>
-                <option value="40">40</option>
-                <option value="50">50</option>
-                <option value="100">100</option>
-                <option value="1000" selected="">Max.</option>
-            </select>
+            <!-- |group_dropdown| -->
+            <!-- |sortby_dropdown| -->
+            <!-- |order_dropdown| -->
+            <!-- |max_dropdown| -->
         </div>
         <input type="submit" value="Go!" class="forminput submit" />
-    </div>
+    </form>
+
+    <!-- |pages| -->
 
     <div class="cp-memgrid"><% MEMBERLIST_ROWS %></div>
 </div>
