@@ -1657,7 +1657,7 @@ LEGOS
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    height: 70vh;
+    height: 80vh;
 }
 
 .cp-memsearch {
@@ -1719,7 +1719,6 @@ LEGOS
     grid-gap: 0.625rem;
     grid-template-columns: repeat(3, 32%);
     overflow: auto;
-    height: 80vh;
 }
 
 .cp-memgrid .cp-memitem {
