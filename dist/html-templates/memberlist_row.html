@@ -1,18 +1,27 @@
 <a href=""
     ><div class="cp-memitem group<!-- |g_id| -->">
-        <img src="<!-- |avatar_url| -->" class="ml-main" />
+        <img aria-hidden="true" class="ml-main" src="<!-- |avatar_url| -->" />
+        <img
+            aria-hidden="true"
+            class="ml-main --fallback"
+            src="<{AVATAR_URL}>"
+        />
+
         <div class="membord"><span></span></div>
+
         <div class="cp-memname"><!-- |member_name| --></div>
+
         <div class="cp-mphovco">
-            <dub style="margin-top: 10%"><!-- |posts| --></dub><dig>posts</dig>
+            <dub style="margin-top: 10%"><!-- |posts| --></dub> <dig>posts</dig>
             <dub
                 ><!-- |field_1| -->
                 (<!-- |field_1| -->)</dub
-            ><dig><!-- |field_1| --></dig>
-
-            <suf><!-- |last_activity| --></suf><sig>last log-in</sig>
-            <suf><!-- |last_post| --></suf><sig>last post</sig>
-
+            >
+            <dig><!-- |field_1| --></dig>
+            <suf><!-- |last_activity| --></suf>
+            <sig>last log-in</sig>
+            <suf><!-- |last_post| --></suf>
+            <sig>last post</sig>
             <div class="cp-mlicon">
                 <img src="<!-- |field_1| -->" />
             </div>

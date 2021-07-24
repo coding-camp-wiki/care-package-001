@@ -1741,6 +1741,14 @@ LEGOS
     -o-transition: var(--transi-quick);
 }
 
+.cp-memitem img[src=""] {
+    display: none;
+}
+
+.cp-memitem img:not([src=""]) + img.--fallback {
+    display: none;
+}
+
 .cp-memitem:hover img.ml-main {
     filter: blur(5px);
     -webkit-filter: blur(5px);
