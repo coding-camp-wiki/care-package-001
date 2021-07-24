@@ -131,6 +131,13 @@ body {
 
     /*OTHER - place your other variables below*/
     --spacing: 10vw; /*leave this as is*/
+
+    /* ----- for member list */
+    --transi-quick: 0.3s all ease-in-out;
+    --transi-med: 0.6s all ease-in-out;
+    --transi-one-del: 0.3s;
+    --transi-two-del: 0.6s;
+    --transi-three-del: 0.9s;
 }
 
 /* do not change this */
