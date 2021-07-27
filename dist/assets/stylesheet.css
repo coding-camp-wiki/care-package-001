@@ -1740,11 +1740,12 @@ LEGOS
     -o-transition: var(--transi-quick);
 }
 
-.cp-memitem img[src=""] {
+.cp-memitem img[src=""],
+.cp-memitem img[src^="<!--"] {
     display: none;
 }
 
-.cp-memitem img:not([src=""]) + img.--fallback {
+.cp-memitem img:not([src=""]):not([src^="<!--"]) + img.--fallback {
     display: none;
 }
 
