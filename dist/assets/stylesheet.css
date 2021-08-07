@@ -1878,7 +1878,7 @@ LEGOS
     -ms-transition-delay: var(--transi-two-del);
 }
 
-.lastname {
+.cp-memitem .cp-memname .js-wrapped-word {
     width: 100%;
     display: block;
     font: 1rem/1.2rem var(--display);
