@@ -131,6 +131,13 @@ body {
 
     /*OTHER - place your other variables below*/
     --spacing: 10vw; /*leave this as is*/
+
+    /* ----- for member list */
+    --transi-quick: 0.3s all ease-in-out;
+    --transi-med: 0.6s all ease-in-out;
+    --transi-one-del: 0.3s;
+    --transi-two-del: 0.6s;
+    --transi-three-del: 0.9s;
 }
 
 /* do not change this */
@@ -1650,7 +1657,7 @@ LEGOS
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    height: 70vh;
+    height: 80vh;
 }
 
 .cp-memsearch {
@@ -1712,7 +1719,6 @@ LEGOS
     grid-gap: 0.625rem;
     grid-template-columns: repeat(3, 32%);
     overflow: auto;
-    height: 80vh;
 }
 
 .cp-memgrid .cp-memitem {
@@ -1732,6 +1738,15 @@ LEGOS
     -webkit-transition: var(--transi-quick);
     -moz-transition: var(--transi-quick);
     -o-transition: var(--transi-quick);
+}
+
+.cp-memitem img[src=""],
+.cp-memitem img[src^="<!--"] {
+    display: none;
+}
+
+.cp-memitem img:not([src=""]):not([src^="<!--"]) + img.--fallback {
+    display: none;
 }
 
 .cp-memitem:hover img.ml-main {
@@ -1863,7 +1878,7 @@ LEGOS
     -ms-transition-delay: var(--transi-two-del);
 }
 
-.lastname {
+.cp-memitem .cp-memname .js-wrapped-word {
     width: 100%;
     display: block;
     font: 1rem/1.2rem var(--display);
