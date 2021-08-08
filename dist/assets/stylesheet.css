@@ -1069,6 +1069,10 @@ LEGOS
     margin-right: 15px;
 }
 
+.pr-wrap .pr-box .box-bord .box-edits span:empty {
+    display: none;
+}
+
 .pr-wrap .pr-box .box-mini {
     display: block;
     position: absolute;
