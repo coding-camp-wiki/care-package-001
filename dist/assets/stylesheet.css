@@ -988,7 +988,7 @@ LEGOS
 .pr-wrap .pr-box {
     display: block;
     padding: 15px;
-    background: var(--black-hex);
+    background: rgb(var(--white));
     box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
     font: 300 12.5px var(--sans);
     line-height: 200%;
@@ -1006,14 +1006,14 @@ LEGOS
 
 .pr-wrap .pr-box .box-bord .box-name {
     display: block;
-    color: var(--black-hex);
+    color: rgb(var(--black));
     font: 400 55px var(--display);
     line-height: 90%;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
-.pr-wrap .pr-box .box-bord .box-name span {
+.pr-wrap .pr-box .box-bord .box-name .span1 {
     padding: 10px 8px 0 10px;
     background: linear-gradient(
         to right,
@@ -1022,7 +1022,7 @@ LEGOS
     );
 }
 
-.pr-wrap .pr-box .box-bord .box-name span2 {
+.pr-wrap .pr-box .box-bord .box-name .span2 {
     display: block;
     margin-top: 15px;
     width: max-content;
@@ -1060,13 +1060,17 @@ LEGOS
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 90%;
-    background: rgba(var(--white), 1);
+    background: rgb(var(--white));
     border: var(--black-hex) solid 2px;
 }
 
 .pr-wrap .pr-box .box-bord .box-edits span {
     display: inline-block;
     margin-right: 15px;
+}
+
+.pr-wrap .pr-box .box-bord .box-edits span:empty {
+    display: none;
 }
 
 .pr-wrap .pr-box .box-mini {
@@ -1100,7 +1104,7 @@ LEGOS
 
 .pr-wrap .pr-box .box-mini .mini-stick .mini-info span {
     padding: 4px 3px 4px 3px;
-    background: rgba(var(--black), 1);
+    background: rgb(var(--black));
     color: rgba(var(--white), 1);
 }
 
@@ -1110,6 +1114,12 @@ LEGOS
     height: 400px;
     border: var(--black-hex) solid 2px;
     box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+}
+
+.pr-wrap .pr-box .box-mini .img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*** ABI'S MINI PROFILE ***/
