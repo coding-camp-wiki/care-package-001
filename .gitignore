@@ -1,2 +1,4 @@
+.DS_Store
+
 # compiled full theme files
 dist/*.xml
