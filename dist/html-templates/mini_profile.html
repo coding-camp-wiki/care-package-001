@@ -1,6 +1,6 @@
 <div
     class="mpbody"
-    style="background-image: url('<!-- |avatar_url| -->')"
+    style="background-image: url('<!-- |avatar_url| -->'), url(<{AVATAR_URL}>)"
 ></div>
 <div class="mphover">
     <div class="mphoverbg"></div>
@@ -15,7 +15,10 @@
 
             <div
                 class="iconimg"
-                style="background-image: url('<!-- |field_#| -->')"
+                style="
+                    background-image: url('<!-- |field_#| -->'),
+                        url(<{AVATAR_URL}>);
+                "
             ></div>
 
             <div class="infospan">
