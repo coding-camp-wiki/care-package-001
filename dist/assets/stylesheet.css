@@ -990,9 +990,6 @@ LEGOS
     padding: 15px;
     background: rgb(var(--white));
     box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
-    font: 300 12.5px var(--sans);
-    line-height: 200%;
-    letter-spacing: 0.75px;
     position: relative;
     width: 100%;
 }
