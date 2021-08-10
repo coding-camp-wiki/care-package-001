@@ -32,12 +32,25 @@
             <div class="toplinks">
                 <div id="myLinks">
                     <a href="?act=UserCP&CODE=00">user settings</a>
-                    <a href="?act=Msg&CODE=01">messages</a>
-                    <a href="?act=UserCP&CODE=alerts">alerts</a>
-                    <a href="/admin.php">admin cp</a>
-                    <a href="">log in</a>
+                    <a href="?act=Msg&CODE=01"
+                        >messages<span class="new-messages-<!-- |new_msg| -->">
+                            (<!-- |new_msg| -->
+                            new)</span
+                        ></a
+                    >
+                    <a href="?act=UserCP&CODE=alerts"
+                        >alerts<span class="new-alerts-<!-- |new_alerts| -->">
+                            (<!-- |new_alerts| -->
+                            new)</span
+                        ></a
+                    >
+                    <a href="/admin.php">admin CP</a>
+                    <a href="?act=modcp">mod CP</a>
+                    <a href="?act=Login&CODE=00">log in</a>
                     <a href="?act=Login&CODE=03">log out</a>
-                    <a href="">register</a>
+                    <a href="?act=Reg&CODE=00">register</a>
+                    <a href="?act=Search&f=">search</a>
+                    <a href="?act=Search&CODE=getnew">new posts</a>
                 </div>
                 <a
                     href="javascript:void(0);"
