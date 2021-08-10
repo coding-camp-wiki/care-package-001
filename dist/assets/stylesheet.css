@@ -153,6 +153,10 @@ JCINK SPECIFIC
 -----
 */
 
+#logostrip {
+    display: none;
+}
+
 #recent-topics .maintitle {
     display: none;
 }
@@ -201,6 +205,7 @@ LEGOS
     padding-left: 1.5rem;
     padding-top: 1rem;
 }
+
 #topbar img {
     height: 80px;
     width: 80px;
@@ -209,6 +214,7 @@ LEGOS
     grid-row: 1;
     grid-column: 1;
 }
+
 #topbar .topicon {
     height: 80px;
     width: 80px;
@@ -219,27 +225,39 @@ LEGOS
     grid-column: 1;
     left: 13%;
 }
+
 #topbar .topname {
     color: rgba(var(--black, 0.4));
 }
+
 #topbar .topname a {
     color: var(--black-hex);
     font-family: var(--display);
     font-size: 1.3rem;
 }
+
 #topbar .switch {
     justify-self: end;
     margin-right: 5rem;
 }
+
 #topbar .toplinks #myLinks {
     display: none;
     background: var(--black-hex);
-    width: 80%;
+    width: 200px;
+    max-width: 80%;
     right: 0;
     position: absolute;
     top: 51px;
 }
-#topbar .toplinks a {
+
+#topbar .toplinks:hover #myLinks,
+#topbar .toplinks:focus-within #myLinks {
+    display: initial;
+}
+
+#topbar .toplinks a,
+#topbar .toplinks .icon {
     color: var(--white-hex);
     fill: var(--white-hex);
     padding: 14px 16px;
@@ -247,14 +265,17 @@ LEGOS
     font-size: 17px;
     display: block;
 }
-#topbar .toplinks a.icon {
+
+#topbar .toplinks .icon {
     background: var(--black-hex);
     display: block;
     position: absolute;
     right: 0;
     top: 0;
 }
-#topbar .toplinks a:hover {
+
+#topbar .toplinks a:hover,
+#topbar .toplinks .icon:hover {
     background-color: var(--white-hex);
     color: var(--black-hex);
     fill: var(--black-hex);
@@ -313,11 +334,13 @@ LEGOS
     outline-offset: -1rem;
     text-align: center;
 }
+
 #header .headerin {
     display: grid;
     align-items: center;
     height: 11rem;
 }
+
 #header .headerin .text {
     position: relative;
     font-size: 4rem;
@@ -334,6 +357,7 @@ LEGOS
     grid-row: 1;
     grid-column: 1;
 }
+
 #header .headerin .text::before {
     position: absolute;
     right: -30px;
@@ -348,6 +372,7 @@ LEGOS
     z-index: -1;
     opacity: 0.2;
 }
+
 #header .headerin .text::after {
     position: absolute;
     right: -40px;
@@ -362,6 +387,7 @@ LEGOS
     z-index: -1;
     opacity: 0.2;
 }
+
 #header .headerin .text .text2 {
     position: absolute;
     color: var(--black-hex);
@@ -370,6 +396,7 @@ LEGOS
     width: 100%;
     z-index: 1;
 }
+
 #header .info {
     border: 2px solid var(--black-hex);
     width: 90%;
@@ -381,12 +408,14 @@ LEGOS
     grid-template-rows: 1fr 1fr;
     z-index: 1;
 }
+
 #header .info .links {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     width: 100%;
 }
+
 #header .info .links a {
     text-decoration: none;
     color: var(--black-hex);
@@ -395,6 +424,7 @@ LEGOS
     text-align: center;
     z-index: 10;
 }
+
 #header .info .links a::after {
     content: "";
     position: absolute;
@@ -407,6 +437,7 @@ LEGOS
     background: var(--purple-radial-gradient);
     z-index: -1;
 }
+
 #header .info .links a:hover {
     transform: scale(1.03);
     cursor: pointer;
@@ -415,6 +446,7 @@ LEGOS
         1px 1px 0 var(--pink-hex), 0 1px 0 var(--pink-hex),
         -1px 1px 0 var(--pink-hex), -1px 0 0 var(--pink-hex);
 }
+
 #header .info .site-desc {
     align-self: end;
 }
