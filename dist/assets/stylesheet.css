@@ -159,11 +159,21 @@ ELEMENTS
 
 nav.primary-navigation {
     background: var(--black-hex);
+}
+
+nav.primary-navigation:not(.--js-enabled) {
+    padding: 1em;
+}
+
+nav.primary-navigation.--js-enabled {
     inset-block-start: var(--top-bar-block-size);
+    max-block-size: calc(100vh - var(--top-bar-block-size));
     inset-inline-end: 0;
     max-inline-size: 80%;
-    position: fixed;
     inline-size: 200px;
+    overflow: auto;
+    padding: 0;
+    position: fixed;
     z-index: 999;
 }
 
@@ -191,6 +201,12 @@ nav.primary-navigation li:hover {
 nav.primary-navigation ul {
     margin: 0;
     padding: 0;
+}
+
+nav.primary-navigation:not(.--js-enabled) ul {
+    border: 2px solid var(--white-hex);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 }
 
 ul[role="list"] {
