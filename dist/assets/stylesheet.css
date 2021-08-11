@@ -50,6 +50,10 @@
         U+0156, U+0162-0163, U+0165, U+0167, U+0169, U+0174, U+0182, U+0247;
 }
 
+:root {
+    --top-bar-block-size: 50px;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -149,6 +153,57 @@ body {
 
 /*
 -----
+ELEMENTS
+-----
+*/
+
+nav.primary-navigation {
+    background: var(--black-hex);
+    inset-block-start: var(--top-bar-block-size);
+    inset-inline-end: 0;
+    max-inline-size: 80%;
+    position: fixed;
+    inline-size: 200px;
+    z-index: 999;
+}
+
+nav.primary-navigation a {
+    color: var(--white-hex);
+    text-decoration: none;
+}
+
+nav.primary-navigation li:focus a,
+nav.primary-navigation li:hover a {
+    color: var(--black-hex);
+}
+
+nav.primary-navigation li {
+    font-size: 17px;
+    padding-block: 14px;
+    padding-inline: 16px;
+}
+
+nav.primary-navigation li:focus,
+nav.primary-navigation li:hover {
+    background: var(--white-hex);
+}
+
+nav.primary-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul[role="list"] {
+    /*
+    role="list" is required in the html for
+    accessibility when removing list styles,
+    see https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+    */
+    list-style: none;
+}
+
+/*
+-----
 JCINK SPECIFIC
 -----
 */
@@ -195,7 +250,7 @@ LEGOS
 #topbar {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: var(--top-bar-block-size);
     background: var(--white-hex);
     z-index: 10001;
     top: 0;
@@ -2059,4 +2114,20 @@ LEGOS
     font: 1.1rem/1.1rem var(--display);
     color: var(--black-hex);
     text-transform: uppercase;
+}
+
+/*
+-----
+UTILITIES
+-----
+*/
+
+.utility-visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }

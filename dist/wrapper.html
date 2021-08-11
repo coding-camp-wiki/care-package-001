@@ -89,7 +89,7 @@
             ></a>
         </div>
 
-        <div id="header">
+        <header id="header">
             <div class="headerin">
                 <div class="text">
                     CUTTING EDGE
@@ -105,9 +105,53 @@
                     <div class="site-desc">a genretype roleplay</div>
                 </div>
             </div>
-        </div>
+        </header>
 
-        <div class="wrapper"><% BOARD HEADER %></div>
+        <div class="wrapper">
+            <nav
+                aria-labelledby="primary-navigation-title"
+                class="primary-navigation"
+            >
+                <h2
+                    class="utility-visually-hidden"
+                    id="primary-navigation-title"
+                >
+                    Primary Navigation
+                </h2>
+                <ul role="list">
+                    <li><a href="?act=UserCP&CODE=00">user settings</a></li>
+                    <li>
+                        <a href="?act=Msg&CODE=01"
+                            >messages<span
+                                class="new-messages-<!-- |new_msg| -->"
+                            >
+                                (<!-- |new_msg| -->
+                                new)</span
+                            ></a
+                        >
+                    </li>
+                    <li>
+                        <a href="?act=UserCP&CODE=alerts"
+                            >alerts<span
+                                class="new-alerts-<!-- |new_alerts| -->"
+                            >
+                                (<!-- |new_alerts| -->
+                                new)</span
+                            ></a
+                        >
+                    </li>
+                    <li><a href="/admin.php">admin controls</a></li>
+                    <li><a href="?act=modcp">mod controls</a></li>
+                    <li><a href="?act=Login&CODE=00">log in</a></li>
+                    <li><a href="?act=Login&CODE=03">log out</a></li>
+                    <li><a href="?act=Reg&CODE=00">register</a></li>
+                    <li><a href="?act=Search&f=">search</a></li>
+                    <li><a href="?act=Search&CODE=getnew">new posts</a></li>
+                </ul>
+            </nav>
+
+            <% BOARD HEADER %>
+        </div>
 
         <main class="wrapper"><% BOARD %></main>
 
