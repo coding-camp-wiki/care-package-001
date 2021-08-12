@@ -157,7 +157,8 @@ ELEMENTS
 -----
 */
 
-nav.primary-navigation:not(.--js-enhanced) {
+nav.primary-navigation.--no-js {
+    background: var(--black-hex);
     padding: 1em;
 }
 
@@ -188,7 +189,7 @@ nav.primary-navigation a:hover {
     color: var(--black-hex);
 }
 
-nav.primary-navigation button {
+nav.primary-navigation.--js-enhanced button {
     background: var(--black-hex);
     block-size: var(--top-bar-block-size);
     border: none;
@@ -198,12 +199,12 @@ nav.primary-navigation button {
     margin-inline-start: auto;
 }
 
-nav.primary-navigation button:hover {
+nav.primary-navigation.--js-enhanced button:hover {
     background: var(--white-hex);
     fill: var(--black-hex);
 }
 
-nav.primary-navigation button:focus {
+nav.primary-navigation.--js-enhanced button:focus {
     background: var(--pink-hex);
     fill: var(--black-hex);
     outline: 2px solid;
@@ -216,10 +217,14 @@ nav.primary-navigation ul {
     padding: 0;
 }
 
-nav.primary-navigation:not(.--js-enhanced) ul {
+nav.primary-navigation.--no-js ul {
     border: 2px solid var(--white-hex);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+}
+
+nav.primary-navigation button[aria-expanded="false"] + ul {
+    display: none;
 }
 
 nav.primary-navigation [data-count-new="0"] {
