@@ -18,6 +18,20 @@
             rel="stylesheet"
         />
 
+        <script>
+            // collapsible menu
+            (function () {
+                document.addEventListener("DOMContentLoaded", function () {
+                    const nav = document.querySelector(
+                        "nav.primary-navigation"
+                    );
+
+                    nav.classList.add("--js-enhanced");
+                    nav.querySelector("button").hidden = false;
+                });
+            })();
+        </script>
+
         <% CSS %>
     </head>
     <body>
@@ -29,46 +43,6 @@
                 <a href="?showuser=<!-- |id| -->"><!-- |name| --></a>
             </div>
             <div class="switch"><% SUBACCOUNTS %></div>
-            <div class="toplinks">
-                <div id="myLinks">
-                    <a href="?act=UserCP&CODE=00">user settings</a>
-                    <a href="?act=Msg&CODE=01"
-                        >messages<span class="new-messages-<!-- |new_msg| -->">
-                            (<!-- |new_msg| -->
-                            new)</span
-                        ></a
-                    >
-                    <a href="?act=UserCP&CODE=alerts"
-                        >alerts<span class="new-alerts-<!-- |new_alerts| -->">
-                            (<!-- |new_alerts| -->
-                            new)</span
-                        ></a
-                    >
-                    <a href="/admin.php">admin controls</a>
-                    <a href="?act=modcp">mod controls</a>
-                    <a href="?act=Login&CODE=00">log in</a>
-                    <a href="?act=Login&CODE=03">log out</a>
-                    <a href="?act=Reg&CODE=00">register</a>
-                    <a href="?act=Search&f=">search</a>
-                    <a href="?act=Search&CODE=getnew">new posts</a>
-                </div>
-                <a
-                    href="javascript:void(0);"
-                    class="icon"
-                    onclick="myFunction()"
-                >
-                    <svg
-                        aria-labelledby="toplinks-menu-title"
-                        class="lego-icon"
-                        role="button"
-                    >
-                        <title id="toplinks-menu-title">Menu</title>
-                        <use
-                            href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
-                        ></use>
-                    </svg>
-                </a>
-            </div>
         </div>
 
         <div id="sidebar">
@@ -118,6 +92,20 @@
                 >
                     Primary Navigation
                 </h2>
+
+                <button hidden>
+                    <svg
+                        aria-labelledby="primary-menu-title"
+                        class="lego-icon"
+                        role="button"
+                    >
+                        <title id="primary-menu-title">Menu</title>
+                        <use
+                            href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
+                        ></use>
+                    </svg>
+                </button>
+
                 <ul role="list">
                     <li><a href="?act=UserCP&CODE=00">user settings</a></li>
                     <li>

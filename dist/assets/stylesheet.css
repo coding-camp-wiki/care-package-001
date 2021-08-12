@@ -157,18 +157,14 @@ ELEMENTS
 -----
 */
 
-nav.primary-navigation {
-    background: var(--black-hex);
-}
-
-nav.primary-navigation:not(.--js-enabled) {
+nav.primary-navigation:not(.--js-enhanced) {
     padding: 1em;
 }
 
-nav.primary-navigation.--js-enabled {
-    inset-block-start: var(--top-bar-block-size);
-    max-block-size: calc(100vh - var(--top-bar-block-size));
+nav.primary-navigation.--js-enhanced {
+    inset-block-start: 0;
     inset-inline-end: 0;
+    max-block-size: calc(100vh - var(--top-bar-block-size));
     max-inline-size: 80%;
     inline-size: 200px;
     overflow: auto;
@@ -179,31 +175,48 @@ nav.primary-navigation.--js-enabled {
 
 nav.primary-navigation a {
     color: var(--white-hex);
-    text-decoration: none;
-}
-
-nav.primary-navigation li:focus a,
-nav.primary-navigation li:hover a {
-    color: var(--black-hex);
-}
-
-nav.primary-navigation li {
+    display: block;
     font-size: 17px;
     padding-block: 14px;
     padding-inline: 16px;
+    text-decoration: none;
 }
 
-nav.primary-navigation li:focus,
-nav.primary-navigation li:hover {
+nav.primary-navigation a:focus,
+nav.primary-navigation a:hover {
     background: var(--white-hex);
+    color: var(--black-hex);
+}
+
+nav.primary-navigation button {
+    background: var(--black-hex);
+    block-size: var(--top-bar-block-size);
+    border: none;
+    display: block;
+    fill: var(--white-hex);
+    inline-size: var(--top-bar-block-size);
+    margin-inline-start: auto;
+}
+
+nav.primary-navigation button:hover {
+    background: var(--white-hex);
+    fill: var(--black-hex);
+}
+
+nav.primary-navigation button:focus {
+    background: var(--pink-hex);
+    fill: var(--black-hex);
+    outline: 2px solid;
+    outline-offset: -0.5em;
 }
 
 nav.primary-navigation ul {
+    background: var(--black-hex);
     margin: 0;
     padding: 0;
 }
 
-nav.primary-navigation:not(.--js-enabled) ul {
+nav.primary-navigation:not(.--js-enhanced) ul {
     border: 2px solid var(--white-hex);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
@@ -268,7 +281,7 @@ LEGOS
     width: 100%;
     height: var(--top-bar-block-size);
     background: var(--white-hex);
-    z-index: 10001;
+    z-index: 900;
     top: 0;
     display: grid;
     grid-template-columns: 100px 1fr 0.5fr;
