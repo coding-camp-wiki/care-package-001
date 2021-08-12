@@ -222,6 +222,10 @@ nav.primary-navigation:not(.--js-enhanced) ul {
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 }
 
+nav.primary-navigation [data-count-new="0"] {
+    display: none;
+}
+
 ul[role="list"] {
     /*
     role="list" is required in the html for
