@@ -50,6 +50,10 @@
         U+0156, U+0162-0163, U+0165, U+0167, U+0169, U+0174, U+0182, U+0247;
 }
 
+:root {
+    --top-bar-block-size: 50px;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -149,9 +153,102 @@ body {
 
 /*
 -----
+ELEMENTS
+-----
+*/
+
+nav.primary-navigation.--no-js {
+    background: var(--black-hex);
+    padding: 1em;
+}
+
+nav.primary-navigation.--js-enhanced {
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    max-block-size: calc(100vh - var(--top-bar-block-size));
+    max-inline-size: 80%;
+    inline-size: 200px;
+    overflow: auto;
+    padding: 0;
+    position: fixed;
+    z-index: 999;
+}
+
+nav.primary-navigation a {
+    color: var(--white-hex);
+    display: block;
+    font-size: 17px;
+    padding-block: 14px;
+    padding-inline: 16px;
+    text-decoration: none;
+}
+
+nav.primary-navigation a:focus,
+nav.primary-navigation a:hover {
+    background: var(--white-hex);
+    color: var(--black-hex);
+}
+
+nav.primary-navigation.--js-enhanced button {
+    background: var(--black-hex);
+    block-size: var(--top-bar-block-size);
+    border: none;
+    display: block;
+    fill: var(--white-hex);
+    inline-size: var(--top-bar-block-size);
+    margin-inline-start: auto;
+}
+
+nav.primary-navigation.--js-enhanced button:hover {
+    background: var(--white-hex);
+    fill: var(--black-hex);
+}
+
+nav.primary-navigation.--js-enhanced button:focus {
+    background: var(--pink-hex);
+    fill: var(--black-hex);
+    outline: 2px solid;
+    outline-offset: -0.5em;
+}
+
+nav.primary-navigation ul {
+    background: var(--black-hex);
+    margin: 0;
+    padding: 0;
+}
+
+nav.primary-navigation.--no-js ul {
+    border: 2px solid var(--white-hex);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+}
+
+nav.primary-navigation button[aria-expanded="false"] + ul {
+    display: none;
+}
+
+nav.primary-navigation [data-count-new="0"] {
+    display: none;
+}
+
+ul[role="list"] {
+    /*
+    role="list" is required in the html for
+    accessibility when removing list styles,
+    see https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+    */
+    list-style: none;
+}
+
+/*
+-----
 JCINK SPECIFIC
 -----
 */
+
+#logostrip {
+    display: none;
+}
 
 #recent-topics .maintitle {
     display: none;
@@ -191,9 +288,9 @@ LEGOS
 #topbar {
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: var(--top-bar-block-size);
     background: var(--white-hex);
-    z-index: 10001;
+    z-index: 900;
     top: 0;
     display: grid;
     grid-template-columns: 100px 1fr 0.5fr;
@@ -201,6 +298,7 @@ LEGOS
     padding-left: 1.5rem;
     padding-top: 1rem;
 }
+
 #topbar img {
     height: 80px;
     width: 80px;
@@ -209,6 +307,7 @@ LEGOS
     grid-row: 1;
     grid-column: 1;
 }
+
 #topbar .topicon {
     height: 80px;
     width: 80px;
@@ -219,27 +318,39 @@ LEGOS
     grid-column: 1;
     left: 13%;
 }
+
 #topbar .topname {
     color: rgba(var(--black, 0.4));
 }
+
 #topbar .topname a {
     color: var(--black-hex);
     font-family: var(--display);
     font-size: 1.3rem;
 }
+
 #topbar .switch {
     justify-self: end;
     margin-right: 5rem;
 }
+
 #topbar .toplinks #myLinks {
     display: none;
     background: var(--black-hex);
-    width: 80%;
+    width: 200px;
+    max-width: 80%;
     right: 0;
     position: absolute;
     top: 51px;
 }
-#topbar .toplinks a {
+
+#topbar .toplinks:hover #myLinks,
+#topbar .toplinks:focus-within #myLinks {
+    display: initial;
+}
+
+#topbar .toplinks a,
+#topbar .toplinks .icon {
     color: var(--white-hex);
     fill: var(--white-hex);
     padding: 14px 16px;
@@ -247,14 +358,17 @@ LEGOS
     font-size: 17px;
     display: block;
 }
-#topbar .toplinks a.icon {
+
+#topbar .toplinks .icon {
     background: var(--black-hex);
     display: block;
     position: absolute;
     right: 0;
     top: 0;
 }
-#topbar .toplinks a:hover {
+
+#topbar .toplinks a:hover,
+#topbar .toplinks .icon:hover {
     background-color: var(--white-hex);
     color: var(--black-hex);
     fill: var(--black-hex);
@@ -313,11 +427,13 @@ LEGOS
     outline-offset: -1rem;
     text-align: center;
 }
+
 #header .headerin {
     display: grid;
     align-items: center;
     height: 11rem;
 }
+
 #header .headerin .text {
     position: relative;
     font-size: 4rem;
@@ -334,6 +450,7 @@ LEGOS
     grid-row: 1;
     grid-column: 1;
 }
+
 #header .headerin .text::before {
     position: absolute;
     right: -30px;
@@ -348,6 +465,7 @@ LEGOS
     z-index: -1;
     opacity: 0.2;
 }
+
 #header .headerin .text::after {
     position: absolute;
     right: -40px;
@@ -362,6 +480,7 @@ LEGOS
     z-index: -1;
     opacity: 0.2;
 }
+
 #header .headerin .text .text2 {
     position: absolute;
     color: var(--black-hex);
@@ -370,6 +489,7 @@ LEGOS
     width: 100%;
     z-index: 1;
 }
+
 #header .info {
     border: 2px solid var(--black-hex);
     width: 90%;
@@ -381,12 +501,14 @@ LEGOS
     grid-template-rows: 1fr 1fr;
     z-index: 1;
 }
+
 #header .info .links {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
     width: 100%;
 }
+
 #header .info .links a {
     text-decoration: none;
     color: var(--black-hex);
@@ -395,6 +517,7 @@ LEGOS
     text-align: center;
     z-index: 10;
 }
+
 #header .info .links a::after {
     content: "";
     position: absolute;
@@ -407,6 +530,7 @@ LEGOS
     background: var(--purple-radial-gradient);
     z-index: -1;
 }
+
 #header .info .links a:hover {
     transform: scale(1.03);
     cursor: pointer;
@@ -415,6 +539,7 @@ LEGOS
         1px 1px 0 var(--pink-hex), 0 1px 0 var(--pink-hex),
         -1px 1px 0 var(--pink-hex), -1px 0 0 var(--pink-hex);
 }
+
 #header .info .site-desc {
     align-self: end;
 }
@@ -2027,4 +2152,20 @@ LEGOS
     font: 1.1rem/1.1rem var(--display);
     color: var(--black-hex);
     text-transform: uppercase;
+}
+
+/*
+-----
+UTILITIES
+-----
+*/
+
+.utility-visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
