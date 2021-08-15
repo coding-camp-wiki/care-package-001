@@ -51,6 +51,7 @@
 }
 
 :root {
+    --sidebar-inline-size: 50px;
     --top-bar-block-size: 50px;
 }
 
@@ -276,6 +277,7 @@ LEGOS
     width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
     margin: 50px auto;
     background-color: var(--clear);
+    padding-inline-start: var(--sidebar-inline-size);
 }
 
 .lego-icon {
