@@ -4,7 +4,7 @@ Where a separate license is provided within a directory (as is the case, for exa
 
 ## Jcink Utility Scripts
 
-Jcink Utility Scripts by Coding Camp are used, but not included herein. A copy of the source may be downloaded from [GitHub](https://github.com/coding-camp-wiki/jcink-utility-scripts). This content is licensed under the [MIT License](https://github.com/coding-camp-wiki/jcink-utility-scripts/LICENSE).
+Jcink Utility Scripts by Coding Camp are used, but not included herein. A copy of the source may be downloaded from [GitHub](https://github.com/coding-camp-wiki/utility-scripts). This content is licensed under the [MIT License](https://github.com/coding-camp-wiki/utility-scripts/LICENSE).
 
 ## Work Sans Google Font
 
