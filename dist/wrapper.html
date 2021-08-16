@@ -26,6 +26,10 @@
                     const button = nav.querySelector("button");
                     const menu = nav.querySelector("ul");
 
+                    const topbar = document.getElementById("topbar");
+
+                    topbar.appendChild(nav);
+
                     // apply enhancement compatible styles
                     nav.classList.replace("--no-js", "--js-enhanced");
                     button.hidden = false;
@@ -93,23 +97,16 @@
 
         <div class="wrapper">
             <nav
-                aria-labelledby="primary-navigation-title"
+                aria-labelledby="title-nav-primary"
                 class="--nav-primary --no-js"
             >
-                <h2
-                    class="utility-visually-hidden"
-                    id="primary-navigation-title"
-                >
-                    Primary Navigation
+                <h2 class="utility-visually-hidden" id="title-nav-primary">
+                    Controls
                 </h2>
 
                 <button hidden>
-                    <svg
-                        aria-labelledby="primary-menu-title"
-                        class="lego-icon"
-                        role="button"
-                    >
-                        <title id="primary-menu-title">Menu</title>
+                    <span class="utility-visually-hidden">Toggle Controls</span>
+                    <svg aria-hidden="true" class="lego-icon" role="button">
                         <use
                             href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
                         ></use>
