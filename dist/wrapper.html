@@ -22,9 +22,7 @@
             // collapsible menu
             (function () {
                 document.addEventListener("DOMContentLoaded", function () {
-                    const nav = document.querySelector(
-                        "nav.primary-navigation"
-                    );
+                    const nav = document.querySelector("nav.--nav-primary");
                     const button = nav.querySelector("button");
                     const menu = nav.querySelector("ul");
 
@@ -96,7 +94,7 @@
         <div class="wrapper">
             <nav
                 aria-labelledby="primary-navigation-title"
-                class="primary-navigation --no-js"
+                class="--nav-primary --no-js"
             >
                 <h2
                     class="utility-visually-hidden"

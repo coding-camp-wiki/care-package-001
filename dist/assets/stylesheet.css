@@ -158,12 +158,12 @@ ELEMENTS
 -----
 */
 
-nav.primary-navigation.--no-js {
+nav.--nav-primary.--no-js {
     background: var(--black-hex);
     padding: 1em;
 }
 
-nav.primary-navigation.--js-enhanced {
+nav.--nav-primary.--js-enhanced {
     inset-block-start: 0;
     inset-inline-end: 0;
     max-block-size: calc(100vh - var(--top-bar-block-size));
@@ -175,7 +175,7 @@ nav.primary-navigation.--js-enhanced {
     z-index: 999;
 }
 
-nav.primary-navigation a {
+nav.--nav-primary a {
     color: var(--white-hex);
     display: block;
     font-size: 17px;
@@ -184,13 +184,13 @@ nav.primary-navigation a {
     text-decoration: none;
 }
 
-nav.primary-navigation a:focus,
-nav.primary-navigation a:hover {
+nav.--nav-primary a:focus,
+nav.--nav-primary a:hover {
     background: var(--white-hex);
     color: var(--black-hex);
 }
 
-nav.primary-navigation.--js-enhanced button {
+nav.--nav-primary.--js-enhanced button {
     background: var(--black-hex);
     block-size: var(--top-bar-block-size);
     border: none;
@@ -200,35 +200,35 @@ nav.primary-navigation.--js-enhanced button {
     margin-inline-start: auto;
 }
 
-nav.primary-navigation.--js-enhanced button:hover {
+nav.--nav-primary.--js-enhanced button:hover {
     background: var(--white-hex);
     fill: var(--black-hex);
 }
 
-nav.primary-navigation.--js-enhanced button:focus {
+nav.--nav-primary.--js-enhanced button:focus {
     background: var(--pink-hex);
     fill: var(--black-hex);
     outline: 2px solid;
     outline-offset: -0.5em;
 }
 
-nav.primary-navigation ul {
+nav.--nav-primary ul {
     background: var(--black-hex);
     margin: 0;
     padding: 0;
 }
 
-nav.primary-navigation.--no-js ul {
+nav.--nav-primary.--no-js ul {
     border: 2px solid var(--white-hex);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 }
 
-nav.primary-navigation button[aria-expanded="false"] + ul {
+nav.--nav-primary button[aria-expanded="false"] + ul {
     display: none;
 }
 
-nav.primary-navigation [data-count-new="0"] {
+nav.--nav-primary [data-count-new="0"] {
     display: none;
 }
 
