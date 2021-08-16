@@ -51,6 +51,7 @@
 }
 
 :root {
+    --sidebar-inline-size: 50px;
     --top-bar-block-size: 50px;
 }
 
@@ -276,6 +277,7 @@ LEGOS
     width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
     margin: 50px auto;
     background-color: var(--clear);
+    padding-inline-start: var(--sidebar-inline-size);
 }
 
 .lego-icon {
@@ -375,17 +377,16 @@ LEGOS
 }
 
 #sidebar {
-    height: 100vh;
-    width: 50px;
-    position: fixed;
     background: var(--white-hex);
     display: grid;
+    grid-gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 40px;
-    grid-gap: 1rem;
-    left: 0;
-    top: 0;
-    justify-items: center;
+    inset-block-start: 0;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    position: fixed;
+    width: var(--sidebar-inline-size);
 }
 
 #sidebar > br {
@@ -393,22 +394,24 @@ LEGOS
 }
 
 #sidebar #navstrip {
-    writing-mode: vertical-lr;
-    transform: scale(-1);
-    text-transform: uppercase;
     font-size: 0.7rem;
+    justify-self: center;
+    text-transform: uppercase;
+    transform: scale(-1);
+    writing-mode: vertical-lr;
 }
 
 #sidebar .scrolltop {
-    font-size: 0.6rem;
+    align-items: center;
     background: var(--pink-hex);
-    padding: 0.3rem 1.24rem;
+    display: flex;
+    justify-content: center;
 }
 
+#sidebar .scrolltop:focus,
 #sidebar .scrolltop:hover {
-    transform: scale(1.1);
-    cursor: pointer;
     background: var(--purple-hex);
+    transform: scale(1.1);
 }
 
 #header {
