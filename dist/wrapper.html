@@ -20,32 +20,29 @@
 
         <script>
             // collapsible menu
-            (function () {
-                document.addEventListener("DOMContentLoaded", function () {
-                    const nav = document.querySelector("nav.--nav-primary");
-                    const button = nav.querySelector("button");
-                    const menu = nav.querySelector("ul");
+            document.addEventListener("DOMContentLoaded", function () {
+                const nav = document.querySelector("nav.--nav-primary");
+                const button = nav.querySelector("button");
+                const menu = nav.querySelector("ul");
 
-                    const topbar = document.getElementById("topbar");
+                const topbar = document.getElementById("topbar");
 
-                    topbar.appendChild(nav);
+                topbar.appendChild(nav);
 
-                    // apply enhancement compatible styles
-                    nav.classList.replace("--no-js", "--js-enhanced");
-                    button.hidden = false;
+                // apply enhancement compatible styles
+                nav.classList.replace("--no-js", "--js-enhanced");
+                button.hidden = false;
 
-                    // hide menu by default
-                    button.setAttribute("aria-expanded", false);
+                // hide menu by default
+                button.setAttribute("aria-expanded", false);
 
-                    // add show/hide functionality
-                    button.addEventListener("click", function () {
-                        let isExpanded =
-                            this.getAttribute("aria-expanded") === "true" ||
-                            false;
-                        this.setAttribute("aria-expanded", !isExpanded);
-                    });
+                // add show/hide functionality
+                button.addEventListener("click", function () {
+                    let isExpanded =
+                        this.getAttribute("aria-expanded") === "true" || false;
+                    this.setAttribute("aria-expanded", !isExpanded);
                 });
-            })();
+            });
         </script>
 
         <% CSS %>
