@@ -20,30 +20,29 @@
 
         <script>
             // collapsible menu
-            (function () {
-                document.addEventListener("DOMContentLoaded", function () {
-                    const nav = document.querySelector(
-                        "nav.primary-navigation"
-                    );
-                    const button = nav.querySelector("button");
-                    const menu = nav.querySelector("ul");
+            document.addEventListener("DOMContentLoaded", function () {
+                const nav = document.querySelector("nav.--nav-primary");
+                const button = nav.querySelector("button");
+                const menu = nav.querySelector("ul");
 
-                    // apply enhancement compatible styles
-                    nav.classList.replace("--no-js", "--js-enhanced");
-                    button.hidden = false;
+                const topbar = document.getElementById("topbar");
 
-                    // hide menu by default
-                    button.setAttribute("aria-expanded", false);
+                topbar.appendChild(nav);
 
-                    // add show/hide functionality
-                    button.addEventListener("click", function () {
-                        let isExpanded =
-                            this.getAttribute("aria-expanded") === "true" ||
-                            false;
-                        this.setAttribute("aria-expanded", !isExpanded);
-                    });
+                // apply enhancement compatible styles
+                nav.classList.replace("--no-js", "--js-enhanced");
+                button.hidden = false;
+
+                // hide menu by default
+                button.setAttribute("aria-expanded", false);
+
+                // add show/hide functionality
+                button.addEventListener("click", function () {
+                    let isExpanded =
+                        this.getAttribute("aria-expanded") === "true" || false;
+                    this.setAttribute("aria-expanded", !isExpanded);
                 });
-            })();
+            });
         </script>
 
         <% CSS %>
@@ -95,23 +94,16 @@
 
         <div class="wrapper">
             <nav
-                aria-labelledby="primary-navigation-title"
-                class="primary-navigation --no-js"
+                aria-labelledby="title-nav-primary"
+                class="--nav-primary --no-js"
             >
-                <h2
-                    class="utility-visually-hidden"
-                    id="primary-navigation-title"
-                >
-                    Primary Navigation
+                <h2 class="utility-visually-hidden" id="title-nav-primary">
+                    Controls
                 </h2>
 
                 <button hidden>
-                    <svg
-                        aria-labelledby="primary-menu-title"
-                        class="lego-icon"
-                        role="button"
-                    >
-                        <title id="primary-menu-title">Menu</title>
+                    <span class="utility-visually-hidden">Toggle Controls</span>
+                    <svg aria-hidden="true" class="lego-icon" role="button">
                         <use
                             href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
                         ></use>
