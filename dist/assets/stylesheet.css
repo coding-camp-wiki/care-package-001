@@ -52,7 +52,7 @@
 
 :root {
     --sidebar-inline-size: 50px;
-    --top-bar-block-size: 50px;
+    --topbar-block-size: 50px;
 }
 
 body {
@@ -163,18 +163,6 @@ nav.--nav-primary.--no-js {
     padding: 1em;
 }
 
-nav.--nav-primary.--js-enhanced {
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    max-block-size: calc(100vh - var(--top-bar-block-size));
-    max-inline-size: 80%;
-    inline-size: 200px;
-    overflow: auto;
-    padding: 0;
-    position: fixed;
-    z-index: 999;
-}
-
 nav.--nav-primary a {
     color: var(--white-hex);
     display: block;
@@ -192,12 +180,16 @@ nav.--nav-primary a:hover {
 
 nav.--nav-primary.--js-enhanced button {
     background: var(--black-hex);
-    block-size: var(--top-bar-block-size);
+    block-size: var(--topbar-block-size);
     border: none;
     display: block;
     fill: var(--white-hex);
-    inline-size: var(--top-bar-block-size);
+    inline-size: var(--topbar-block-size);
+    inset-block-start: 0;
+    inset-inline-end: 0;
     margin-inline-start: auto;
+    position: fixed;
+    z-index: 999;
 }
 
 nav.--nav-primary.--js-enhanced button:hover {
@@ -222,6 +214,17 @@ nav.--nav-primary.--no-js ul {
     border: 2px solid var(--white-hex);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+}
+
+nav.--nav-primary.--js-enhanced ul {
+    inset-block-start: var(--topbar-block-size);
+    inset-inline-end: 0;
+    max-block-size: calc(100vh - var(--topbar-block-size));
+    max-inline-size: 80%;
+    inline-size: 200px;
+    overflow: auto;
+    position: fixed;
+    z-index: 999;
 }
 
 nav.--nav-primary button[aria-expanded="false"] + ul {
@@ -290,7 +293,7 @@ LEGOS
 #topbar {
     position: fixed;
     width: 100%;
-    height: var(--top-bar-block-size);
+    height: var(--topbar-block-size);
     background: var(--white-hex);
     z-index: 900;
     top: 0;
