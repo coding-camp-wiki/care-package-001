@@ -2162,6 +2162,529 @@ LEGOS
 
 /*
 -----
+LEEANN'S SITE PACK
+-----
+*/
+
+body {
+    --blue: 66, 135, 245;
+    --blue-hex: #6c92f9;
+
+    --group-gradient-lr: linear-gradient(
+        to right,
+        var(--blue-hex),
+        var(--green-hex)
+    );
+
+    --group: var(--blue-hex);
+
+    --group-gradient-fade: linear-gradient(
+        to right,
+        rgba(var(--blue), 0.5),
+        rgba(var(--green), 0.5)
+    );
+
+    --group-gradient-rl: linear-gradient(
+        to left,
+        var(--blue-hex),
+        var(--green-hex)
+    );
+
+    --group-rgb: 66, 135, 245;
+}
+
+.cc-gen {
+    display: flex;
+    flex-flow: row nowrap;
+    border: var(--black-hex) solid 2px;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cc-gen .title {
+    writing-mode: vertical-lr;
+    transform: scale(-1);
+    text-align: center;
+    border: var(--black-hex) solid 2px;
+    background: rgba(var(--white), 1);
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-left: -3rem;
+    margin-right: 1.5rem;
+}
+
+.cc-gen.color {
+    background: var(--group-gradient-fade);
+    color: var(--black-hex);
+}
+
+.cc-gen.color .title {
+    background: var(--group);
+    color: var(--white-hex);
+}
+
+.cc-gen2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border: var(--black-hex) solid 2px;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cc-gen2 .title {
+    border-bottom: var(--black-hex) solid 2px;
+    width: 115%;
+    text-align: center;
+    padding: 0.5rem 0 1rem;
+    color: var(--black-hex);
+    font: 400 1.4rem var(--display);
+    line-height: 90%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cc-gen2 .text {
+    padding-top: 1rem;
+}
+
+.cc-gen2.color {
+    background: var(--group-gradient-fade);
+    color: var(--black-hex);
+}
+
+.cc-shipper {
+    height: 450px;
+    margin: 0 auto;
+    width: 70%;
+    outline: 2px solid var(--black-hex);
+    outline-offset: 7px;
+    margin-bottom: 2rem;
+}
+
+.cc-shipper .shipper-in {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.cc-shipper .shipper-in::-webkit-scrollbar {
+    width: 5px;
+}
+
+.cc-shipper .shipper-in::-webkit-scrollbar-track {
+    background: var(--clear);
+}
+
+.cc-shipper .shipper-in::-webkit-scrollbar-thumb {
+    background: var(--group);
+}
+
+.cc-shipper .shipper-in section {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.cc-shipper .shipper-in section h2 {
+    background: var(--white-hex);
+    z-index: 5;
+    margin-top: 0;
+    margin-bottom: -1.5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid var(--black-hex);
+    font-weight: 300;
+}
+
+.cc-shipper .shipper-in section .text {
+    border: 1px solid var(--black-hex);
+    padding: 2rem 1rem 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.cc-shipper .shipper-in section .text::-webkit-scrollbar {
+    width: 5px;
+}
+
+.cc-shipper .shipper-in section .text::-webkit-scrollbar-track {
+    background: var(--clear);
+}
+
+.cc-shipper .shipper-in section .text::-webkit-scrollbar-thumb {
+    background: var(--group);
+}
+
+.cc-shipper #pic {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.cc-shipper #pic img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: grayscale(1);
+}
+
+.cc-shipper #pic span {
+    background: var(--white-hex);
+    position: absolute;
+    z-index: 2;
+    left: 3%;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    border: 1px solid var(--black-hex);
+}
+
+.cc-shipper.color .shipper-in section h2 {
+    background: var(--group-gradient-lr);
+}
+
+.cc-shipper.color .shipper-in section .text {
+    background: rgba(var(--group-rgb), 0.2);
+}
+
+.cc-shipper.color #pic span {
+    background: var(--group-gradient-lr);
+}
+
+.cc-ship-rep {
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid var(--black-hex);
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+.cc-ship-rep .ship-top {
+    margin-top: -3rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.cc-ship-rep .ship-top span {
+    font: 400 1.2rem var(--display);
+    text-transform: uppercase;
+    background: var(--white-hex);
+    border: 2px solid var(--black-hex);
+    padding: 0.5rem;
+}
+
+.cc-ship-rep .ship-top x {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: var(--white-hex);
+    border: 2px solid var(--black-hex);
+    font-weight: 700;
+}
+
+.cc-ship-rep .text {
+    padding-top: 1rem;
+}
+
+.cc-ship-rep.color {
+    background: rgba(var(--group-rgb), 0.2);
+}
+
+.cc-ship-rep.color .ship-top span {
+    background: var(--group-gradient-lr);
+}
+
+.cc-ship-rep.color .ship-top span:first-of-type {
+    background: var(--group-gradient-rl);
+}
+
+.cc-ship-rep.color .ship-top x {
+    background: var(--group);
+}
+
+.cc-fc {
+    margin: 2rem auto;
+    border: 2px solid var(--black-hex);
+    width: 90%;
+}
+
+.cc-fc .title {
+    background: var(--group-gradient-lr);
+    padding: 1rem;
+    font: 400 2.5rem var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.cc-fc .rules {
+    padding: 1.5rem;
+}
+
+.cc-fc .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.cc-fc .text col-1,
+.cc-fc .text col-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.cc-fc .text col-1 a,
+.cc-fc .text col-2 a {
+    border: 2px solid var(--black-hex);
+    color: var(--black-hex);
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    position: relative;
+    height: 1.6rem;
+}
+.cc-fc .text col-1 a x,
+.cc-fc .text col-2 a x {
+    transition: all 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.cc-fc .text col-1 a y,
+.cc-fc .text col-2 a y {
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.cc-fc .text col-1 a:hover x,
+.cc-fc .text col-2 a:hover x {
+    opacity: 0;
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.cc-fc .text col-1 a:hover y,
+.cc-fc .text col-2 a:hover y {
+    opacity: 1;
+    background: var(--black-hex);
+    color: var(--white-hex);
+    transition: all 0.5s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.cc-fc textarea.code {
+    grid-column: 1 / span 2;
+    margin: 1rem;
+    width: 50%;
+    justify-self: center;
+}
+
+.cc-md {
+    margin: 2rem auto;
+    border: 2px solid var(--black-hex);
+    width: 90%;
+}
+
+.cc-md .title {
+    background: var(--group-gradient-lr);
+    padding: 1rem;
+    font: 400 2.5rem var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.cc-md .rules {
+    padding: 1.5rem;
+}
+
+.cc-md .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.cc-md .text col-1,
+.cc-md .text col-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.cc-md .text col-1 a,
+.cc-md .text col-2 a {
+    border: 2px solid var(--black-hex);
+    color: var(--black-hex);
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    position: relative;
+    height: 1.6rem;
+}
+
+.cc-md .text col-1 a:hover,
+.cc-md .text col-2 a:hover {
+    background: var(--black-hex);
+    color: var(--white-hex);
+}
+
+.cc-md textarea.code {
+    grid-column: 1 / span 2;
+    margin: 1rem;
+    width: 50%;
+    justify-self: center;
+}
+
+.cc-md-rep {
+    margin: 2rem auto;
+    border: 2px solid var(--black-hex);
+    width: 90%;
+}
+
+.cc-md-rep .top {
+    background: var(--group-gradient-lr);
+    padding: 1rem;
+    font: 400 2.5rem var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.cc-md-rep .bar {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    background: rgba(var(--group-rgb), 0.2);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.cc-md-rep .blurb {
+    padding: 1.5rem;
+}
+
+.cc-md-rep .body {
+    padding: 1.5rem 3rem;
+    gap: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.cc-md-rep .body char {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0rem 2rem;
+}
+.cc-md-rep .body char:nth-of-type(even) {
+    grid-template-columns: 1fr 90px;
+}
+
+.cc-md-rep .body char:nth-of-type(even) char-img {
+    grid-column: 2;
+}
+
+.cc-md-rep .body char char-img,
+.cc-md-rep .body char char-name,
+.cc-md-rep .body char char-info {
+    display: block;
+}
+
+.cc-md-rep .body char char-img {
+    position: relative;
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.cc-md-rep .body char char-img img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cc-md-rep .body char char-img::before {
+    position: absolute;
+    content: "";
+    border: 2px solid var(--black-hex);
+    height: 80px;
+    width: 80px;
+    top: 5px;
+    left: 8px;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.cc-md-rep .body char char-name {
+    align-self: end;
+    text-align: center;
+}
+
+.cc-md-rep .body char char-name a {
+    font: 400 1.5rem var(--display);
+    color: var(--black-hex);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cc-md-rep .body char char-info {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    background: var(--group-gradient-fade);
+    align-self: start;
+    justify-content: space-around;
+    text-transform: uppercase;
+    padding: 0.1rem;
+    font-size: 0.65rem;
+    color: var(--black-hex);
+}
+
+/*
+-----
 UTILITIES
 -----
 */
