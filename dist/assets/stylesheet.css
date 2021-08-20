@@ -2421,7 +2421,6 @@ LEEANN'S SITE PACK
 
 .box-post .cc-fc .title {
     background: var(--group-gradient-lr);
-    padding: 1rem;
     font: 400 2.5rem var(--display);
     text-transform: uppercase;
     border-bottom: 2px solid var(--black-hex);
@@ -2517,7 +2516,6 @@ LEEANN'S SITE PACK
 
 .box-post .cc-md .title {
     background: var(--group-gradient-lr);
-    padding: 1rem;
     font: 400 2.5rem var(--display);
     text-transform: uppercase;
     border-bottom: 2px solid var(--black-hex);
@@ -2579,7 +2577,6 @@ LEEANN'S SITE PACK
 
 .box-post .cc-md-rep .top {
     background: var(--group-gradient-lr);
-    padding: 1rem;
     font: 400 2.5rem var(--display);
     text-transform: uppercase;
     border-bottom: 2px solid var(--black-hex);
@@ -2612,7 +2609,7 @@ LEEANN'S SITE PACK
     display: grid;
     grid-template-columns: 90px 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 0rem 2rem;
+    grid-gap: 0 2rem;
 }
 
 .box-post .cc-md-rep .body char:nth-of-type(even) {
