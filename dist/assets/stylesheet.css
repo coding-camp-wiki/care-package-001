@@ -87,6 +87,8 @@ body {
     --green-hex: #bee1e6;
     --purple: 205, 218, 253;
     --purple-hex: #cddafd;
+    --blue: 66, 135, 245;
+    --blue-hex: #6c92f9;
 
     /*BACKGROUND GRADIENTS - do not change*/
     --pink-base: linear-gradient(
@@ -131,6 +133,27 @@ body {
     );
 
     /*GRADIENTS - place your gradient variables below*/
+    --group-gradient-lr: linear-gradient(
+        to right,
+        var(--blue-hex),
+        var(--green-hex)
+    );
+
+    --group: var(--blue-hex);
+
+    --group-gradient-fade: linear-gradient(
+        to right,
+        rgba(var(--blue), 0.5),
+        rgba(var(--green), 0.5)
+    );
+
+    --group-gradient-rl: linear-gradient(
+        to left,
+        var(--blue-hex),
+        var(--green-hex)
+    );
+
+    --group-rgb: 66, 135, 245;
 
     /*IMAGES - place your image variables below*/
 
@@ -2166,34 +2189,7 @@ LEEANN'S SITE PACK
 -----
 */
 
-body {
-    --blue: 66, 135, 245;
-    --blue-hex: #6c92f9;
-
-    --group-gradient-lr: linear-gradient(
-        to right,
-        var(--blue-hex),
-        var(--green-hex)
-    );
-
-    --group: var(--blue-hex);
-
-    --group-gradient-fade: linear-gradient(
-        to right,
-        rgba(var(--blue), 0.5),
-        rgba(var(--green), 0.5)
-    );
-
-    --group-gradient-rl: linear-gradient(
-        to left,
-        var(--blue-hex),
-        var(--green-hex)
-    );
-
-    --group-rgb: 66, 135, 245;
-}
-
-.cc-gen {
+.box-post .cc-gen {
     display: flex;
     flex-flow: row nowrap;
     border: var(--black-hex) solid 2px;
@@ -2202,7 +2198,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.cc-gen .title {
+.box-post .cc-gen .title {
     writing-mode: vertical-lr;
     transform: scale(-1);
     text-align: center;
@@ -2214,17 +2210,17 @@ body {
     margin-right: 1.5rem;
 }
 
-.cc-gen.color {
+.box-post .cc-gen.color {
     background: var(--group-gradient-fade);
     color: var(--black-hex);
 }
 
-.cc-gen.color .title {
+.box-post .cc-gen.color .title {
     background: var(--group);
     color: var(--white-hex);
 }
 
-.cc-gen2 {
+.box-post .cc-gen2 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -2234,7 +2230,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.cc-gen2 .title {
+.box-post .cc-gen2 .title {
     border-bottom: var(--black-hex) solid 2px;
     width: 115%;
     text-align: center;
@@ -2246,16 +2242,16 @@ body {
     letter-spacing: 1px;
 }
 
-.cc-gen2 .text {
+.box-post .cc-gen2 .text {
     padding-top: 1rem;
 }
 
-.cc-gen2.color {
+.box-post .cc-gen2.color {
     background: var(--group-gradient-fade);
     color: var(--black-hex);
 }
 
-.cc-shipper {
+.box-post .cc-shipper {
     height: 450px;
     margin: 0 auto;
     width: 70%;
@@ -2264,24 +2260,24 @@ body {
     margin-bottom: 2rem;
 }
 
-.cc-shipper .shipper-in {
+.box-post .cc-shipper .shipper-in {
     height: 100%;
     overflow-y: auto;
 }
 
-.cc-shipper .shipper-in::-webkit-scrollbar {
+.box-post .cc-shipper .shipper-in::-webkit-scrollbar {
     width: 5px;
 }
 
-.cc-shipper .shipper-in::-webkit-scrollbar-track {
+.box-post .cc-shipper .shipper-in::-webkit-scrollbar-track {
     background: var(--clear);
 }
 
-.cc-shipper .shipper-in::-webkit-scrollbar-thumb {
+.box-post .cc-shipper .shipper-in::-webkit-scrollbar-thumb {
     background: var(--group);
 }
 
-.cc-shipper .shipper-in section {
+.box-post .cc-shipper .shipper-in section {
     padding: 1rem;
     display: flex;
     flex-flow: column nowrap;
@@ -2289,7 +2285,7 @@ body {
     align-items: center;
 }
 
-.cc-shipper .shipper-in section h2 {
+.box-post .cc-shipper .shipper-in section h2 {
     background: var(--white-hex);
     z-index: 5;
     margin-top: 0;
@@ -2300,32 +2296,32 @@ body {
     font-weight: 300;
 }
 
-.cc-shipper .shipper-in section .text {
+.box-post .cc-shipper .shipper-in section .text {
     border: 1px solid var(--black-hex);
     padding: 2rem 1rem 1rem;
     max-height: 200px;
     overflow-y: auto;
 }
 
-.cc-shipper .shipper-in section .text::-webkit-scrollbar {
+.box-post .cc-shipper .shipper-in section .text::-webkit-scrollbar {
     width: 5px;
 }
 
-.cc-shipper .shipper-in section .text::-webkit-scrollbar-track {
+.box-post .cc-shipper .shipper-in section .text::-webkit-scrollbar-track {
     background: var(--clear);
 }
 
-.cc-shipper .shipper-in section .text::-webkit-scrollbar-thumb {
+.box-post .cc-shipper .shipper-in section .text::-webkit-scrollbar-thumb {
     background: var(--group);
 }
 
-.cc-shipper #pic {
+.box-post .cc-shipper #pic {
     width: 100%;
     height: 450px;
     position: relative;
 }
 
-.cc-shipper #pic img {
+.box-post .cc-shipper #pic img {
     width: 100%;
     height: 95%;
     object-fit: cover;
@@ -2337,7 +2333,7 @@ body {
     filter: grayscale(1);
 }
 
-.cc-shipper #pic span {
+.box-post .cc-shipper #pic span {
     background: var(--white-hex);
     position: absolute;
     z-index: 2;
@@ -2351,19 +2347,19 @@ body {
     border: 1px solid var(--black-hex);
 }
 
-.cc-shipper.color .shipper-in section h2 {
+.box-post .cc-shipper.color .shipper-in section h2 {
     background: var(--group-gradient-lr);
 }
 
-.cc-shipper.color .shipper-in section .text {
+.box-post .cc-shipper.color .shipper-in section .text {
     background: rgba(var(--group-rgb), 0.2);
 }
 
-.cc-shipper.color #pic span {
+.box-post .cc-shipper.color #pic span {
     background: var(--group-gradient-lr);
 }
 
-.cc-ship-rep {
+.box-post .cc-ship-rep {
     width: 75%;
     margin: 0 auto;
     border: 2px solid var(--black-hex);
@@ -2371,7 +2367,7 @@ body {
     margin-top: 3rem;
 }
 
-.cc-ship-rep .ship-top {
+.box-post .cc-ship-rep .ship-top {
     margin-top: -3rem;
     padding: 0.5rem;
     font-size: 1.4rem;
@@ -2381,7 +2377,7 @@ body {
     justify-content: space-evenly;
 }
 
-.cc-ship-rep .ship-top span {
+.box-post .cc-ship-rep .ship-top span {
     font: 400 1.2rem var(--display);
     text-transform: uppercase;
     background: var(--white-hex);
@@ -2389,7 +2385,7 @@ body {
     padding: 0.5rem;
 }
 
-.cc-ship-rep .ship-top x {
+.box-post .cc-ship-rep .ship-top x {
     display: block;
     padding: 0.5rem 1rem;
     background: var(--white-hex);
@@ -2397,33 +2393,33 @@ body {
     font-weight: 700;
 }
 
-.cc-ship-rep .text {
+.box-post .cc-ship-rep .text {
     padding-top: 1rem;
 }
 
-.cc-ship-rep.color {
+.box-post .cc-ship-rep.color {
     background: rgba(var(--group-rgb), 0.2);
 }
 
-.cc-ship-rep.color .ship-top span {
+.box-post .cc-ship-rep.color .ship-top span {
     background: var(--group-gradient-lr);
 }
 
-.cc-ship-rep.color .ship-top span:first-of-type {
+.box-post .cc-ship-rep.color .ship-top span:first-of-type {
     background: var(--group-gradient-rl);
 }
 
-.cc-ship-rep.color .ship-top x {
+.box-post .cc-ship-rep.color .ship-top x {
     background: var(--group);
 }
 
-.cc-fc {
+.box-post .cc-fc {
     margin: 2rem auto;
     border: 2px solid var(--black-hex);
     width: 90%;
 }
 
-.cc-fc .title {
+.box-post .cc-fc .title {
     background: var(--group-gradient-lr);
     padding: 1rem;
     font: 400 2.5rem var(--display);
@@ -2433,18 +2429,18 @@ body {
     text-align: center;
 }
 
-.cc-fc .rules {
+.box-post .cc-fc .rules {
     padding: 1.5rem;
 }
 
-.cc-fc .text {
+.box-post .cc-fc .text {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
 }
 
-.cc-fc .text col-1,
-.cc-fc .text col-2 {
+.box-post .cc-fc .text col-1,
+.box-post .cc-fc .text col-2 {
     display: flex;
     flex-flow: column nowrap;
     padding: 1rem;
@@ -2453,103 +2449,8 @@ body {
     gap: 1rem;
 }
 
-.cc-fc .text col-1 a,
-.cc-fc .text col-2 a {
-    border: 2px solid var(--black-hex);
-    color: var(--black-hex);
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 80%;
-    text-align: center;
-    font-size: 0.8rem;
-    position: relative;
-    height: 1.6rem;
-}
-.cc-fc .text col-1 a x,
-.cc-fc .text col-2 a x {
-    transition: all 0.5s ease;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: 100%;
-}
-
-.cc-fc .text col-1 a y,
-.cc-fc .text col-2 a y {
-    opacity: 0;
-    transition: all 0.5s ease;
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: center;
-    width: 100%;
-}
-
-.cc-fc .text col-1 a:hover x,
-.cc-fc .text col-2 a:hover x {
-    opacity: 0;
-    transition: all 0.5s ease;
-    text-align: center;
-    width: 100%;
-}
-
-.cc-fc .text col-1 a:hover y,
-.cc-fc .text col-2 a:hover y {
-    opacity: 1;
-    background: var(--black-hex);
-    color: var(--white-hex);
-    transition: all 0.5s ease;
-    width: 100%;
-    text-align: center;
-}
-
-.cc-fc textarea.code {
-    grid-column: 1 / span 2;
-    margin: 1rem;
-    width: 50%;
-    justify-self: center;
-}
-
-.cc-md {
-    margin: 2rem auto;
-    border: 2px solid var(--black-hex);
-    width: 90%;
-}
-
-.cc-md .title {
-    background: var(--group-gradient-lr);
-    padding: 1rem;
-    font: 400 2.5rem var(--display);
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--black-hex);
-    padding: 0.5rem;
-    text-align: center;
-}
-
-.cc-md .rules {
-    padding: 1.5rem;
-}
-
-.cc-md .text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
-}
-
-.cc-md .text col-1,
-.cc-md .text col-2 {
-    display: flex;
-    flex-flow: column nowrap;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-}
-
-.cc-md .text col-1 a,
-.cc-md .text col-2 a {
+.box-post .cc-fc .text col-1 a,
+.box-post .cc-fc .text col-2 a {
     border: 2px solid var(--black-hex);
     color: var(--black-hex);
     text-transform: uppercase;
@@ -2561,26 +2462,60 @@ body {
     height: 1.6rem;
 }
 
-.cc-md .text col-1 a:hover,
-.cc-md .text col-2 a:hover {
-    background: var(--black-hex);
-    color: var(--white-hex);
+.box-post .cc-fc .text col-1 a x,
+.box-post .cc-fc .text col-2 a x {
+    transition: all 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
 }
 
-.cc-md textarea.code {
+.box-post .cc-fc .text col-1 a y,
+.box-post .cc-fc .text col-2 a y {
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.box-post .cc-fc .text col-1 a:hover x,
+.box-post .cc-fc .text col-2 a:hover x {
+    opacity: 0;
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.box-post .cc-fc .text col-1 a:hover y,
+.box-post .cc-fc .text col-2 a:hover y {
+    opacity: 1;
+    background: var(--black-hex);
+    color: var(--white-hex);
+    transition: all 0.5s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.box-post .cc-fc textarea.code {
     grid-column: 1 / span 2;
     margin: 1rem;
     width: 50%;
     justify-self: center;
 }
 
-.cc-md-rep {
+.box-post .cc-md {
     margin: 2rem auto;
     border: 2px solid var(--black-hex);
     width: 90%;
 }
 
-.cc-md-rep .top {
+.box-post .cc-md .title {
     background: var(--group-gradient-lr);
     padding: 1rem;
     font: 400 2.5rem var(--display);
@@ -2590,7 +2525,69 @@ body {
     text-align: center;
 }
 
-.cc-md-rep .bar {
+.box-post .cc-md .rules {
+    padding: 1.5rem;
+}
+
+.box-post .cc-md .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.box-post .cc-md .text col-1,
+.box-post .cc-md .text col-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.box-post .cc-md .text col-1 a,
+.box-post .cc-md .text col-2 a {
+    border: 2px solid var(--black-hex);
+    color: var(--black-hex);
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    position: relative;
+    height: 1.6rem;
+}
+
+.box-post .cc-md .text col-1 a:hover,
+.box-post .cc-md .text col-2 a:hover {
+    background: var(--black-hex);
+    color: var(--white-hex);
+}
+
+.box-post .cc-md textarea.code {
+    grid-column: 1 / span 2;
+    margin: 1rem;
+    width: 50%;
+    justify-self: center;
+}
+
+.box-post .cc-md-rep {
+    margin: 2rem auto;
+    border: 2px solid var(--black-hex);
+    width: 90%;
+}
+
+.box-post .cc-md-rep .top {
+    background: var(--group-gradient-lr);
+    padding: 1rem;
+    font: 400 2.5rem var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.box-post .cc-md-rep .bar {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -2600,52 +2597,53 @@ body {
     font-size: 0.7rem;
 }
 
-.cc-md-rep .blurb {
+.box-post .cc-md-rep .blurb {
     padding: 1.5rem;
 }
 
-.cc-md-rep .body {
+.box-post .cc-md-rep .body {
     padding: 1.5rem 3rem;
     gap: 1rem;
     display: flex;
     flex-flow: column nowrap;
 }
 
-.cc-md-rep .body char {
+.box-post .cc-md-rep .body char {
     display: grid;
     grid-template-columns: 90px 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0rem 2rem;
 }
-.cc-md-rep .body char:nth-of-type(even) {
+
+.box-post .cc-md-rep .body char:nth-of-type(even) {
     grid-template-columns: 1fr 90px;
 }
 
-.cc-md-rep .body char:nth-of-type(even) char-img {
+.box-post .cc-md-rep .body char:nth-of-type(even) char-img {
     grid-column: 2;
 }
 
-.cc-md-rep .body char char-img,
-.cc-md-rep .body char char-name,
-.cc-md-rep .body char char-info {
+.box-post .cc-md-rep .body char char-img,
+.box-post .cc-md-rep .body char char-name,
+.box-post .cc-md-rep .body char char-info {
     display: block;
 }
 
-.cc-md-rep .body char char-img {
+.box-post .cc-md-rep .body char char-img {
     position: relative;
     z-index: 1;
     grid-column: 1;
     grid-row: 1 / span 2;
 }
 
-.cc-md-rep .body char char-img img {
+.box-post .cc-md-rep .body char char-img img {
     height: 80px;
     width: 80px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.cc-md-rep .body char char-img::before {
+.box-post .cc-md-rep .body char char-img::before {
     position: absolute;
     content: "";
     border: 2px solid var(--black-hex);
@@ -2657,12 +2655,12 @@ body {
     z-index: 5;
 }
 
-.cc-md-rep .body char char-name {
+.box-post .cc-md-rep .body char char-name {
     align-self: end;
     text-align: center;
 }
 
-.cc-md-rep .body char char-name a {
+.box-post .cc-md-rep .body char char-name a {
     font: 400 1.5rem var(--display);
     color: var(--black-hex);
     text-decoration: none;
@@ -2670,7 +2668,7 @@ body {
     letter-spacing: 1px;
 }
 
-.cc-md-rep .body char char-info {
+.box-post .cc-md-rep .body char char-info {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
