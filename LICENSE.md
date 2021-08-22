@@ -33,6 +33,10 @@ MIT License
 -   Original main profile copyright (c) 2021 Monty (https://codepen.io/MontyMouse/pen/mdWvOEg).
 -   Original mini-profile copyright (c) 2021 Abi (https://codepen.io/hedgefruit/pen/poeqgBN).
 -   Original post row copyright (c) 2021 Juliet (https://codepen.io/sea-witch/pen/KKWrYwP).
+-   Original site templates pack copyright (c) 2021 Leeann (https://codepen.io/leeannflorez/pen/jOmymbL).
+-   Original roleplay templates packs copyright (c) 2021 Ally (https://codepen.io/allycodes/pen/bGWGrzp) and Jaslene (https://codepen.io/jaslenejose/pen/mdmdGXo).
+-   Original development templates packs copyright (c) 2021 Izzy (https://codepen.io/isabroch/pen/gOWOxZY) and Rose💫 (https://codepen.io/perfumeregret/pen/KKmKZdp).
+-   Original webpages copyright (c) 2021 Abi (https://codepen.io/hedgefruit/pen/jOmbGrP).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
