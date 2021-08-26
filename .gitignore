@@ -1,4 +1,4 @@
 .DS_Store
 
 # compiled full theme files
-build/*.xml
+jcink-builds/*.xml

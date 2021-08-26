@@ -87,6 +87,8 @@ body {
     --green-hex: #bee1e6;
     --purple: 205, 218, 253;
     --purple-hex: #cddafd;
+    --blue: 66, 135, 245;
+    --blue-hex: #6c92f9;
 
     /*BACKGROUND GRADIENTS - do not change*/
     --pink-base: linear-gradient(
@@ -131,6 +133,26 @@ body {
     );
 
     /*GRADIENTS - place your gradient variables below*/
+    --group-rgb: 66, 135, 245;
+    --group: var(--blue-hex);
+
+    --group-gradient-fade: linear-gradient(
+        to right,
+        rgba(var(--blue), 0.5),
+        rgba(var(--green), 0.5)
+    );
+
+    --group-gradient-lr: linear-gradient(
+        to right,
+        var(--blue-hex),
+        var(--green-hex)
+    );
+
+    --group-gradient-rl: linear-gradient(
+        to left,
+        var(--blue-hex),
+        var(--green-hex)
+    );
 
     /*IMAGES - place your image variables below*/
 
@@ -2158,6 +2180,501 @@ LEGOS
     font: 1.1rem/1.1rem var(--display);
     color: var(--black-hex);
     text-transform: uppercase;
+}
+
+/*
+-----
+LEEANN'S SITE PACK
+-----
+*/
+
+.box-post .cc-gen {
+    display: flex;
+    flex-flow: row nowrap;
+    border: var(--black-hex) solid 2px;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.box-post .cc-gen .title {
+    writing-mode: vertical-lr;
+    transform: scale(-1);
+    text-align: center;
+    border: var(--black-hex) solid 2px;
+    background: rgba(var(--white), 1);
+    padding: 0.5rem;
+    font-weight: bold;
+    margin-left: -3rem;
+    margin-right: 1.5rem;
+}
+
+.box-post .cc-gen.color {
+    background: var(--group-gradient-fade);
+    color: var(--black-hex);
+}
+
+.box-post .cc-gen.color .title {
+    background: var(--group);
+    color: var(--white-hex);
+}
+
+.box-post .cc-gen2 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    border: var(--black-hex) solid 2px;
+    align-items: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.box-post .cc-gen2 .title {
+    border-bottom: var(--black-hex) solid 2px;
+    width: 115%;
+    text-align: center;
+    padding: 0.5rem 0 1rem;
+    color: var(--black-hex);
+    font: 400 1.4rem var(--display);
+    line-height: 90%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.box-post .cc-gen2 .text {
+    padding-top: 1rem;
+}
+
+.box-post .cc-gen2.color {
+    background: var(--group-gradient-fade);
+    color: var(--black-hex);
+}
+
+.box-post .cc-shipper {
+    height: 450px;
+    margin: 0 auto;
+    width: 70%;
+    outline: 2px solid var(--black-hex);
+    outline-offset: 7px;
+    margin-bottom: 2rem;
+}
+
+.box-post .cc-shipper .shipper-in {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.box-post .cc-shipper .shipper-in::-webkit-scrollbar {
+    width: 5px;
+}
+
+.box-post .cc-shipper .shipper-in::-webkit-scrollbar-track {
+    background: var(--clear);
+}
+
+.box-post .cc-shipper .shipper-in::-webkit-scrollbar-thumb {
+    background: var(--group);
+}
+
+.box-post .cc-shipper .shipper-in section {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-post .cc-shipper .shipper-in section h2 {
+    background: var(--white-hex);
+    z-index: 5;
+    margin-top: 0;
+    margin-bottom: -1.5rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: 1px solid var(--black-hex);
+    font-weight: 300;
+}
+
+.box-post .cc-shipper .shipper-in section .text {
+    border: 1px solid var(--black-hex);
+    padding: 2rem 1rem 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.box-post .cc-shipper .shipper-in section .text::-webkit-scrollbar {
+    width: 5px;
+}
+
+.box-post .cc-shipper .shipper-in section .text::-webkit-scrollbar-track {
+    background: var(--clear);
+}
+
+.box-post .cc-shipper .shipper-in section .text::-webkit-scrollbar-thumb {
+    background: var(--group);
+}
+
+.box-post .cc-shipper #pic {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.box-post .cc-shipper #pic img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    filter: grayscale(1);
+}
+
+.box-post .cc-shipper #pic span {
+    background: var(--white-hex);
+    position: absolute;
+    z-index: 2;
+    left: 3%;
+    bottom: 0;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    border: 1px solid var(--black-hex);
+}
+
+.box-post .cc-shipper.color .shipper-in section h2 {
+    background: var(--group-gradient-lr);
+}
+
+.box-post .cc-shipper.color .shipper-in section .text {
+    background: rgba(var(--group-rgb), 0.2);
+}
+
+.box-post .cc-shipper.color #pic span {
+    background: var(--group-gradient-lr);
+}
+
+.box-post .cc-ship-rep {
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid var(--black-hex);
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+.box-post .cc-ship-rep .ship-top {
+    margin-top: -3rem;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.box-post .cc-ship-rep .ship-top span {
+    font: 400 1.2rem var(--display);
+    text-transform: uppercase;
+    background: var(--white-hex);
+    border: 2px solid var(--black-hex);
+    padding: 0.5rem;
+}
+
+.box-post .cc-ship-rep .ship-top x {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: var(--white-hex);
+    border: 2px solid var(--black-hex);
+    font-weight: 700;
+}
+
+.box-post .cc-ship-rep .text {
+    padding-top: 1rem;
+}
+
+.box-post .cc-ship-rep.color {
+    background: rgba(var(--group-rgb), 0.2);
+}
+
+.box-post .cc-ship-rep.color .ship-top span {
+    background: var(--group-gradient-lr);
+}
+
+.box-post .cc-ship-rep.color .ship-top span:first-of-type {
+    background: var(--group-gradient-rl);
+}
+
+.box-post .cc-ship-rep.color .ship-top x {
+    background: var(--group);
+}
+
+.box-post .cc-fc {
+    margin: 2rem auto;
+    border: 2px solid var(--black-hex);
+    width: 90%;
+}
+
+.box-post .cc-fc .title {
+    background: var(--group-gradient-lr);
+    font: 400 2.5rem var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.box-post .cc-fc .rules {
+    padding: 1.5rem;
+}
+
+.box-post .cc-fc .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.box-post .cc-fc .text col-1,
+.box-post .cc-fc .text col-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.box-post .cc-fc .text col-1 a,
+.box-post .cc-fc .text col-2 a {
+    border: 2px solid var(--black-hex);
+    color: var(--black-hex);
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    position: relative;
+    height: 1.6rem;
+}
+
+.box-post .cc-fc .text col-1 a x,
+.box-post .cc-fc .text col-2 a x {
+    transition: all 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.box-post .cc-fc .text col-1 a y,
+.box-post .cc-fc .text col-2 a y {
+    opacity: 0;
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.box-post .cc-fc .text col-1 a:hover x,
+.box-post .cc-fc .text col-2 a:hover x {
+    opacity: 0;
+    transition: all 0.5s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.box-post .cc-fc .text col-1 a:hover y,
+.box-post .cc-fc .text col-2 a:hover y {
+    opacity: 1;
+    background: var(--black-hex);
+    color: var(--white-hex);
+    transition: all 0.5s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.box-post .cc-fc textarea.code {
+    grid-column: 1 / span 2;
+    margin: 1rem;
+    width: 50%;
+    justify-self: center;
+}
+
+.box-post .cc-md {
+    margin: 2rem auto;
+    border: 2px solid var(--black-hex);
+    width: 90%;
+}
+
+.box-post .cc-md .title {
+    background: var(--group-gradient-lr);
+    font: 400 2.5rem var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.box-post .cc-md .rules {
+    padding: 1.5rem;
+}
+
+.box-post .cc-md .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.box-post .cc-md .text col-1,
+.box-post .cc-md .text col-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.box-post .cc-md .text col-1 a,
+.box-post .cc-md .text col-2 a {
+    border: 2px solid var(--black-hex);
+    color: var(--black-hex);
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    position: relative;
+    height: 1.6rem;
+}
+
+.box-post .cc-md .text col-1 a:hover,
+.box-post .cc-md .text col-2 a:hover {
+    background: var(--black-hex);
+    color: var(--white-hex);
+}
+
+.box-post .cc-md textarea.code {
+    grid-column: 1 / span 2;
+    margin: 1rem;
+    width: 50%;
+    justify-self: center;
+}
+
+.box-post .cc-md-rep {
+    margin: 2rem auto;
+    border: 2px solid var(--black-hex);
+    width: 90%;
+}
+
+.box-post .cc-md-rep .top {
+    background: var(--group-gradient-lr);
+    font: 400 2.5rem var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.box-post .cc-md-rep .bar {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    background: rgba(var(--group-rgb), 0.2);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.box-post .cc-md-rep .blurb {
+    padding: 1.5rem;
+}
+
+.box-post .cc-md-rep .body {
+    padding: 1.5rem 3rem;
+    gap: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.box-post .cc-md-rep .body char {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0 2rem;
+}
+
+.box-post .cc-md-rep .body char:nth-of-type(even) {
+    grid-template-columns: 1fr 90px;
+}
+
+.box-post .cc-md-rep .body char:nth-of-type(even) char-img {
+    grid-column: 2;
+}
+
+.box-post .cc-md-rep .body char char-img,
+.box-post .cc-md-rep .body char char-name,
+.box-post .cc-md-rep .body char char-info {
+    display: block;
+}
+
+.box-post .cc-md-rep .body char char-img {
+    position: relative;
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.box-post .cc-md-rep .body char char-img img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.box-post .cc-md-rep .body char char-img::before {
+    position: absolute;
+    content: "";
+    border: 2px solid var(--black-hex);
+    height: 80px;
+    width: 80px;
+    top: 5px;
+    left: 8px;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.box-post .cc-md-rep .body char char-name {
+    align-self: end;
+    text-align: center;
+}
+
+.box-post .cc-md-rep .body char char-name a {
+    font: 400 1.5rem var(--display);
+    color: var(--black-hex);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.box-post .cc-md-rep .body char char-info {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    background: var(--group-gradient-fade);
+    align-self: start;
+    justify-content: space-around;
+    text-transform: uppercase;
+    padding: 0.1rem;
+    font-size: 0.65rem;
+    color: var(--black-hex);
 }
 
 /*
