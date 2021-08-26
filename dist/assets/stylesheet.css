@@ -133,12 +133,7 @@ body {
     );
 
     /*GRADIENTS - place your gradient variables below*/
-    --group-gradient-lr: linear-gradient(
-        to right,
-        var(--blue-hex),
-        var(--green-hex)
-    );
-
+    --group-rgb: 66, 135, 245;
     --group: var(--blue-hex);
 
     --group-gradient-fade: linear-gradient(
@@ -147,13 +142,17 @@ body {
         rgba(var(--green), 0.5)
     );
 
+    --group-gradient-lr: linear-gradient(
+        to right,
+        var(--blue-hex),
+        var(--green-hex)
+    );
+
     --group-gradient-rl: linear-gradient(
         to left,
         var(--blue-hex),
         var(--green-hex)
     );
-
-    --group-rgb: 66, 135, 245;
 
     /*IMAGES - place your image variables below*/
 
