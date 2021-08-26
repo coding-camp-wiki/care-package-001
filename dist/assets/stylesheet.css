@@ -2679,6 +2679,706 @@ LEEANN'S SITE PACK
 
 /*
 -----
+ALLY'S RP PACK
+-----
+*/
+
+.pr-wrap h1 {
+    font: 700 2.2em/100% var(--display);
+    color: var(--blue-hex);
+    text-shadow: 0 0 5px rgba(var(--white), 0.55);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pr-wrap h2 {
+    font: 700 1.2em/100% var(--display);
+    background: var(--group-gradient-mid);
+    text-shadow: 0 0 5px rgba(var(--white), 0.55);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px;
+    display: block;
+    margin: 10px 0;
+    width: max-content;
+}
+
+.pr-wrap h3 {
+    font: 900 0.9em/100% var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    background: var(--group-gradient-dark);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.post-1 b,
+.post-2 b,
+.post-3 b,
+.post-4 b {
+    color: var(--black-hex);
+    background: var(--group-gradient-mid);
+    padding: 2px 3px;
+    font-size: 1.078em;
+}
+
+.post-1 i,
+.post-2 i,
+.post-3 i,
+.post-4 i,
+.post-1 a,
+.post-2 a,
+.post-3 a,
+.post-4 a {
+    color: var(--blue-hex);
+    font-size: 1.078em;
+}
+
+.post-1 u,
+.post-2 u,
+.post-3 u,
+.post-4 u {
+    color: var(--blue-hex);
+    font-size: 1.078em;
+    text-decoration: 2px underline var(--black-hex);
+}
+
+.post-1 {
+    margin: 10px auto;
+    position: relative;
+    width: calc(100% - 130px);
+    height: auto;
+    background: var(--group-gradient-light);
+    border: var(--black-hex) solid 2px;
+}
+
+.post-1-top {
+    background: var(--white-hex);
+    z-index: 9;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid var(--black-hex);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--black-hex);
+}
+
+.post-1-top span,
+.post-1-top i {
+    font-size: 1.6em;
+    margin-right: 13px;
+}
+
+.post-1-post {
+    padding: 50px;
+}
+
+.post-2 {
+    position: relative;
+    margin: 10px auto;
+    width: calc(100% - 177px);
+    height: auto;
+    padding: 80px;
+    background: var(--group-gradient-light);
+    border: var(--black-hex) solid 2px;
+    z-index: 3;
+}
+
+.post-2-post {
+    position: relative;
+}
+
+.post-2-tag {
+    position: relative;
+    left: -51px;
+    display: block;
+    width: calc(100% + 163px);
+    margin: 80px 0px -10px -30px;
+    height: 2px;
+    background: var(--black-hex);
+}
+
+.post-2-tag tag {
+    height: 30px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 9;
+    font: 400 10px var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: var(--white-hex);
+    border: 2px solid var(--black-hex);
+    top: -13px;
+    left: 35px;
+}
+
+.post-3 {
+    position: relative;
+    margin: 10px auto;
+    width: calc(100% - 200px);
+    height: auto;
+    background: var(--group-gradient-light);
+    border: var(--black-hex) solid 2px;
+}
+
+.post-3-top {
+    background: var(--white-hex);
+    z-index: 9;
+    height: 80px;
+    width: 100%;
+}
+
+.post-3-post {
+    padding: 0 60px 60px;
+}
+
+.post-3-icon {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+.post-3-icon img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.post-3-icon:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 2px solid var(--black-hex);
+}
+
+.post-3-tag {
+    position: relative;
+    left: -32px;
+    display: block;
+    width: calc(100% + 123px);
+    margin: 60px 0px -10px -30px;
+    height: 2px;
+    background: var(--black-hex);
+}
+
+.post-3-tag tag {
+    height: 30px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 9;
+    font: 400 10px var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: var(--white-hex);
+    border: 2px solid var(--black-hex);
+    top: -13px;
+    left: 35px;
+}
+
+.post-4 {
+    position: relative;
+    margin: 10px auto;
+    width: calc(100% - 200px);
+    background: var(--group-gradient-light);
+    border: var(--black-hex) solid 2px;
+}
+
+.post-4-title {
+    font-family: var(--display);
+    transform: scale(-1);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    font-size: 2em;
+    position: absolute;
+    left: -2.3rem;
+    top: 0;
+}
+
+.post-4-post {
+    position: relative;
+    padding-right: 7px;
+    padding: 70px;
+}
+
+.post-4-tag {
+    position: relative;
+    left: -41px;
+    display: block;
+    width: calc(100% + 143px);
+    margin: 60px 0px -10px -30px;
+    height: 2px;
+    background: var(--black-hex);
+}
+
+.post-4-tag tag {
+    height: 30px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 9;
+    font: 400 10px var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: var(--white-hex);
+    border: 2px solid var(--black-hex);
+    top: -13px;
+    left: 35px;
+}
+
+.comms-1 {
+    width: 45%;
+    margin: 100px auto;
+    background: var(--group-gradient-light);
+    border: var(--black-hex) solid 2px;
+}
+
+.comms-top {
+    background: var(--white-hex);
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.comms-icon {
+    position: relative;
+    z-index: 99;
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.comms-icon img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.comms-icon:after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 2px solid var(--black-hex);
+}
+
+.comms-info {
+    font: 0.832em/1.8 var(--sans);
+    text-transform: lowercase;
+    text-align: right;
+}
+
+.comms-info span {
+    font: 900 1.701em/1 var(--display);
+    text-transform: uppercase;
+    letter-spacing: 0.078rem;
+    background: var(--group-gradient-dark);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.comms-bot {
+    padding: 15px;
+    height: 21rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-bottom: 15px solid transparent;
+}
+
+/* feel free to get rid of this! i just hate the look of a scrollbar on most comms templates is all */
+.comms-bot::-webkit-scrollbar {
+    width: 0em;
+}
+
+.comms-bot p {
+    background: var(--group-gradient-dark);
+    padding: 0.75rem 0.85rem;
+    display: block;
+    float: right;
+    clear: both;
+    border-radius: 15px 15px 0 15px;
+    margin-bottom: -3px;
+    color: var(--white-hex);
+    box-shadow: 1px 1px 5px rgba(var(--black), 0.47);
+    font: 0.985em/1.23 var(--sans);
+}
+
+.comms-bot action {
+    display: block;
+    clear: both;
+    position: relative;
+    margin-top: 10px;
+}
+
+.comms-bot b,
+.ftinder-about b {
+    color: var(--black-hex);
+    background: var(--white-hex);
+    padding: 1px 2px;
+    font-size: 0.978em;
+}
+
+.comms-bot i,
+.comms-bot a,
+.ftinder-about i,
+.ftinder-about a {
+    color: var(--blue-hex);
+    font-size: 1.078em;
+}
+
+.comms-bot u,
+.ftinder-about u {
+    color: var(--blue-hex);
+    font-size: 1.078em;
+    text-decoration: 2px underline var(--black-hex);
+}
+
+.ftinder {
+    margin: 100px auto;
+    min-width: 300px;
+    max-width: 420px;
+    width: 100%;
+    height: 350px;
+    background-image: var(--group-gradient-light);
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+    box-shadow: 0 0 10px rgba(var(--black), 0.25);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ftinder-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: relative;
+    margin-right: 15px;
+}
+
+.ftinder-image:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 2px solid var(--black-hex);
+}
+
+.ftinder-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.ftinder-right {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.ftinder-top {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 38px 10px;
+    border-bottom: 2px solid var(--black-hex);
+}
+
+.ftinder-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ftinder-info name {
+    width: 100%;
+    display: block;
+    text-align: right;
+    font: 1.883em var(--display);
+    background-image: var(--group-gradient-dark);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    text-shadow: 0 0 1px rgba(var(--black), 0.25);
+}
+
+.ftinder-info extras {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font: 0.8em var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: right;
+}
+
+.ftinder-info i {
+    font-size: 1em;
+    margin: 0 5px;
+}
+
+.ftinder-about {
+    width: 100%;
+    height: 150px;
+    overflow: auto;
+    font: 1em/1.4 var(--sans);
+    padding: 0 35px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.ftinder-swipes {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid var(--black-hex);
+    padding: 10px 38px 25px;
+}
+
+.ftinder-swipes b {
+    width: 45px;
+    height: 45px;
+    background: var(--group-gradient-mid);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(var(--black), 0.35);
+}
+
+.ftinder-swipes i {
+    font-size: 2em;
+    color: var(--white-hex);
+}
+
+/* feel free to take this out, i just didn't like how it looked with a scrollbar */
+.ftinder-about::-webkit-scrollbar {
+    width: 0em;
+}
+
+.ftinder-swipe {
+    margin: 100px auto;
+    min-width: 200px;
+    max-width: 350px;
+    width: 100%;
+    height: 250px;
+    background-image: var(--group-gradient-light);
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+    box-shadow: 0 0 10px rgba(var(--black), 0.25);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ftinder-swipe-top {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 38px 20px;
+    border-bottom: 2px solid var(--black-hex);
+}
+
+.ftinder-swipe-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: relative;
+    margin-right: 15px;
+}
+
+.ftinder-swipe-image:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 2px solid var(--black-hex);
+}
+
+.ftinder-swipe-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.ftinder-swipe-top name {
+    width: 100%;
+    display: block;
+    text-align: right;
+    font: 1.883em var(--display);
+    text-transform: lowercase;
+    background: var(--group-gradient-dark);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    text-shadow: 0 0 1px rgba(var(--black), 0.25);
+}
+
+.ftinder-swipe-bot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+
+.ftinder-swipe-bot swipes {
+    font: 1.883em var(--display);
+    background: var(--group-gradient-dark);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px rgba(var(--black), 0.25);
+}
+
+.ftinder-swipe-bot a {
+    width: 45px;
+    height: 45px;
+    background: var(--group-gradient-mid);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(var(--black), 0.35);
+}
+
+.ftinder-swipe-bot i {
+    font-size: 2em;
+    color: var(--white-hex);
+}
+
+.ftinder-match {
+    margin: 100px auto;
+    min-width: 200px;
+    max-width: 350px;
+    width: 100%;
+    height: 250px;
+    background-image: var(--group-gradient-light);
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+    box-shadow: 0 0 10px rgba(var(--black), 0.25);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.ftinder-match-top {
+    width: 100%;
+    height: 120px;
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 38px 20px;
+    border-bottom: 2px solid var(--black-hex);
+}
+
+.ftinder-match-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    position: relative;
+    margin-right: 15px;
+}
+
+.ftinder-match-image:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 2px solid var(--black-hex);
+}
+
+.ftinder-match-image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+.ftinder-match-bot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+}
+
+.ftinder-match-bot swipes {
+    font: 1.883em var(--display);
+    background: var(--group-gradient-dark);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px rgba(var(--black), 0.25);
+}
+
+.ftinder-match-bot a {
+    width: 45px;
+    height: 45px;
+    background: var(--group-gradient-mid);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(var(--black), 0.35);
+}
+
+.ftinder-match-bot i {
+    font-size: 2em;
+    color: var(--white-hex);
+}
+
+/*
+-----
 UTILITIES
 -----
 */
