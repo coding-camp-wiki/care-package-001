@@ -133,6 +133,7 @@ body {
     );
 
     /*GRADIENTS - place your gradient variables below*/
+    /* from Leeann's Site Pack */
     --group-rgb: 66, 135, 245;
     --group: var(--blue-hex);
 
@@ -152,6 +153,23 @@ body {
         to left,
         var(--blue-hex),
         var(--green-hex)
+    );
+
+    /* From Ally's RP Pack */
+    --group-gradient-dark: linear-gradient(
+        45deg,
+        rgba(var(--blue), 1) 0%,
+        rgba(var(--green), 1) 100%
+    );
+    --group-gradient-mid: linear-gradient(
+        45deg,
+        rgba(var(--blue), 0.57) 0%,
+        rgba(var(--green), 0.57) 100%
+    );
+    --group-gradient-light: linear-gradient(
+        235deg,
+        rgba(var(--blue), 0.28) 0%,
+        rgba(var(--green), 0.28) 100%
     );
 
     /*IMAGES - place your image variables below*/
