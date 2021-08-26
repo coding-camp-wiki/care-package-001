@@ -2785,7 +2785,8 @@ ALLY'S RP PACK
 }
 
 .post-1-top span,
-.post-1-top i {
+.post-1-top .__icon {
+    fill: var(--blue-hex);
     font-size: 1.6em;
     margin-right: 13px;
 }
