@@ -2711,6 +2711,7 @@ ALLY'S RP PACK
     background: var(--group-gradient-dark);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 .post-1 b,
@@ -2795,7 +2796,7 @@ ALLY'S RP PACK
     left: -51px;
     display: block;
     width: calc(100% + 163px);
-    margin: 80px 0px -10px -30px;
+    margin: 80px 0 -10px -30px;
     height: 2px;
     background: var(--black-hex);
 }
@@ -2864,7 +2865,7 @@ ALLY'S RP PACK
     left: -32px;
     display: block;
     width: calc(100% + 123px);
-    margin: 60px 0px -10px -30px;
+    margin: 60px 0 -10px -30px;
     height: 2px;
     background: var(--black-hex);
 }
@@ -2914,7 +2915,7 @@ ALLY'S RP PACK
     left: -41px;
     display: block;
     width: calc(100% + 143px);
-    margin: 60px 0px -10px -30px;
+    margin: 60px 0 -10px -30px;
     height: 2px;
     background: var(--black-hex);
 }
@@ -2990,6 +2991,7 @@ ALLY'S RP PACK
     background: var(--group-gradient-dark);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     display: flex;
     justify-content: flex-end;
     text-align: right;
@@ -3005,7 +3007,7 @@ ALLY'S RP PACK
 
 /* feel free to get rid of this! i just hate the look of a scrollbar on most comms templates is all */
 .comms-bot::-webkit-scrollbar {
-    width: 0em;
+    width: 0;
 }
 
 .comms-bot p {
@@ -3187,7 +3189,7 @@ ALLY'S RP PACK
 
 /* feel free to take this out, i just didn't like how it looked with a scrollbar */
 .ftinder-about::-webkit-scrollbar {
-    width: 0em;
+    width: 0;
 }
 
 .ftinder-swipe {
