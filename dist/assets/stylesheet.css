@@ -3169,7 +3169,9 @@ ALLY'S RP PACK
 
 .ftinder-info .lego-icon {
     --dimension: 1em;
+}
 
+.ftinder-info .__icon {
     margin: 0 5px;
 }
 
@@ -3193,7 +3195,7 @@ ALLY'S RP PACK
     padding: 10px 38px 25px;
 }
 
-.ftinder-swipes b {
+.ftinder-swipes .__option {
     width: 45px;
     height: 45px;
     background: var(--group-gradient-mid);
@@ -3202,11 +3204,11 @@ ALLY'S RP PACK
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
+    fill: var(--white-hex);
 }
 
-.ftinder-swipes i {
-    font-size: 2em;
-    color: var(--white-hex);
+.ftinder-swipes .lego-icon {
+    --dimension: 2em;
 }
 
 /* feel free to take this out, i just didn't like how it looked with a scrollbar */
