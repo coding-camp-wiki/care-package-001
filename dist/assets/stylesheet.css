@@ -3312,9 +3312,10 @@ ALLY'S RP PACK
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
 }
 
-.ftinder-swipe-bot i {
-    font-size: 2em;
-    color: var(--white-hex);
+.ftinder-swipe-bot .lego-icon {
+    --dimension: 2em;
+
+    fill: var(--white-hex);
 }
 
 .ftinder-match {
@@ -3398,9 +3399,10 @@ ALLY'S RP PACK
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
 }
 
-.ftinder-match-bot i {
-    font-size: 2em;
-    color: var(--white-hex);
+.ftinder-match-bot .lego-icon {
+    --dimension: 2em;
+
+    fill: var(--white-hex);
 }
 
 /*
