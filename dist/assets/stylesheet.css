@@ -2703,37 +2703,6 @@ ALLY'S RP PACK
 -----
 */
 
-.pr-wrap h1 {
-    font: 700 2.2em/100% var(--display);
-    color: var(--blue-hex);
-    text-shadow: 0 0 5px rgba(var(--white), 0.55);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.pr-wrap h2 {
-    font: 700 1.2em/100% var(--display);
-    background: var(--group-gradient-mid);
-    text-shadow: 0 0 5px rgba(var(--white), 0.55);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 5px;
-    display: block;
-    margin: 10px 0;
-    width: max-content;
-}
-
-.pr-wrap h3 {
-    font: 900 0.9em/100% var(--sans);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-align: center;
-    background: var(--group-gradient-dark);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
 .post-1 b,
 .post-2 b,
 .post-3 b,
@@ -3411,25 +3380,6 @@ JASLENE'S RP PACK
 -----
 */
 
-h1 {
-    display: inline;
-    font: 2rem/1.8 var(--display);
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--black-hex);
-}
-
-h2 {
-    font: 1.3rem/1.8 var(--display);
-    text-transform: lowercase;
-    color: var(--group);
-}
-
-h3 {
-    font: 1rem var(--display);
-    text-transform: uppercase;
-    letter-spacing: 2.25px;
-}
-
 jaspost {
     position: relative;
     display: block;
@@ -3622,4 +3572,60 @@ UTILITIES
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+
+/*
+-----
+BLOCKS
+-----
+*/
+
+.block-heading-1a {
+    font: 700 2.2em/100% var(--display);
+    color: var(--blue-hex);
+    text-shadow: 0 0 5px rgba(var(--white), 0.55);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.block-heading-1b {
+    display: inline;
+    font: 2rem/1.8 var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+}
+
+.block-heading-2a {
+    font: 700 1.2em/100% var(--display);
+    background: var(--group-gradient-mid);
+    text-shadow: 0 0 5px rgba(var(--white), 0.55);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px;
+    display: block;
+    margin: 10px 0;
+    width: max-content;
+}
+
+.block-heading-2b {
+    font: 1.3rem/1.8 var(--display);
+    text-transform: lowercase;
+    color: var(--group);
+}
+
+.block-heading-3a {
+    font: 900 0.9em/100% var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    background: var(--group-gradient-dark);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.block-heading-3b {
+    font: 1rem var(--display);
+    text-transform: uppercase;
+    letter-spacing: 2.25px;
 }
