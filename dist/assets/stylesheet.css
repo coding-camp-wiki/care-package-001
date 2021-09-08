@@ -3407,6 +3407,209 @@ ALLY'S RP PACK
 
 /*
 -----
+JASLENE'S RP PACK
+-----
+*/
+
+h1 {
+    display: inline;
+    font: 2rem/1.8 var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+}
+
+h2 {
+    font: 1.3rem/1.8 var(--display);
+    text-transform: lowercase;
+    color: var(--group);
+}
+
+h3 {
+    font: 1rem var(--display);
+    text-transform: uppercase;
+    letter-spacing: 2.25px;
+}
+
+jaspost {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    padding: 30px;
+    background: var(--jasgradient-l);
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+}
+
+jaspost b,
+.jasthreadbody b {
+    color: var(--black-hex);
+    background: var(--group-gradient-lr);
+}
+
+jaspost i,
+.jasthreadbody i {
+    color: var(--blue-hex);
+}
+
+jascomm {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    height: 550px;
+    background: var(--jasgradient-l);
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+}
+
+jascomm jascommtop {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--black-hex);
+    padding: 30px;
+    height: 120px;
+}
+
+jascomm jascommtop jascommimg {
+    position: relative;
+    display: block;
+    margin-right: 15px !important;
+}
+
+jascomm jascommtop img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+jascomm jascommtop jascommimg::after {
+    border: 2px solid var(--black-hex);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 2;
+}
+
+jascomm jascommtop connected {
+    display: flex;
+    flex-flow: column;
+    font: 300 0.6rem var(--sans);
+    text-transform: uppercase;
+}
+
+jascomm jascommtop contact {
+    display: block;
+    font: 800 1.5rem var(--display);
+    text-transform: lowercase;
+    text-align: left;
+}
+
+jascomm .msgs {
+    display: block;
+    margin: 10px 30px;
+    height: 390px;
+    overflow: auto;
+}
+
+jascomm .msgs p {
+    float: left;
+    clear: both;
+    background: var(--jasgradient);
+    padding: 7px;
+    border-radius: 10px 10px 10px 0;
+    margin-bottom: 0px;
+}
+
+jascomm .msgs .actions {
+    clear: both;
+}
+
+jascomm .msgs .actions b {
+    color: var(--black-hex);
+    background: var(--group-gradient-lr);
+}
+
+jascomm .msgs .actions i {
+    color: var(--blue-hex);
+}
+
+jasthread {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    width: 55%;
+    background: var(--jasgradient-l);
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+}
+
+jasthread .top {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: rgba(var(--blue), 0.3);
+    border-bottom: 2px solid var(--black-hex);
+}
+
+jasthread .top jasthreadimg {
+    position: absolute;
+    display: block;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+jasthread .top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+jasthread .top jasthreadimg::after {
+    border: 2px solid var(--black-hex);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    z-index: 2;
+}
+
+jasthread .top tag {
+    position: absolute;
+    display: block;
+    right: 30px;
+    margin-top: 85px;
+    background: var(--white-hex);
+    padding: 7px;
+    border: 2px solid var(--black-hex);
+    font: 400 8px var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+jasthread .jasthreadbody {
+    position: relative;
+    display: block;
+    margin: 40px 40px 40px;
+    padding: 10px 10px 30px;
+}
+
+/*
+-----
 UTILITIES
 -----
 */
