@@ -198,12 +198,12 @@ ELEMENTS
 -----
 */
 
-nav.--nav-primary.--no-js {
+nav.element-nav-primary[data-js-enhanced="false"] {
     background: var(--black-hex);
     padding: 1em;
 }
 
-nav.--nav-primary a {
+nav.element-nav-primary a {
     color: var(--white-hex);
     display: block;
     font-size: 17px;
@@ -212,13 +212,13 @@ nav.--nav-primary a {
     text-decoration: none;
 }
 
-nav.--nav-primary a:focus,
-nav.--nav-primary a:hover {
+nav.element-nav-primary a:focus,
+nav.element-nav-primary a:hover {
     background: var(--white-hex);
     color: var(--black-hex);
 }
 
-nav.--nav-primary.--js-enhanced button {
+nav.element-nav-primary[data-js-enhanced="true"] button {
     background: var(--black-hex);
     block-size: var(--topbar-block-size);
     border: none;
@@ -232,31 +232,31 @@ nav.--nav-primary.--js-enhanced button {
     z-index: 999;
 }
 
-nav.--nav-primary.--js-enhanced button:hover {
+nav.element-nav-primary[data-js-enhanced="true"] button:hover {
     background: var(--white-hex);
     fill: var(--black-hex);
 }
 
-nav.--nav-primary.--js-enhanced button:focus {
+nav.element-nav-primary[data-js-enhanced="true"] button:focus {
     background: var(--pink-hex);
     fill: var(--black-hex);
     outline: 2px solid;
     outline-offset: -0.5em;
 }
 
-nav.--nav-primary ul {
+nav.element-nav-primary ul {
     background: var(--black-hex);
     margin: 0;
     padding: 0;
 }
 
-nav.--nav-primary.--no-js ul {
+nav.element-nav-primary[data-js-enhanced="false"] ul {
     border: 2px solid var(--white-hex);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 }
 
-nav.--nav-primary.--js-enhanced ul {
+nav.element-nav-primary[data-js-enhanced="true"] ul {
     inset-block-start: var(--topbar-block-size);
     inset-inline-end: 0;
     max-block-size: calc(100vh - var(--topbar-block-size));
@@ -267,11 +267,11 @@ nav.--nav-primary.--js-enhanced ul {
     z-index: 999;
 }
 
-nav.--nav-primary button[aria-expanded="false"] + ul {
+nav.element-nav-primary button[aria-expanded="false"] + ul {
     display: none;
 }
 
-nav.--nav-primary [data-count-new="0"] {
+nav.element-nav-primary [data-count-new="0"] {
     display: none;
 }
 
@@ -307,27 +307,6 @@ JCINK SPECIFIC
     display: block;
     margin: 20px;
     width: initial;
-}
-
-/*
------
-LEGOS
------
-*/
-
-/*** WRAPPERS ***/
-.wrapper {
-    width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
-    margin: 50px auto;
-    background-color: var(--clear);
-    padding-inline-start: var(--sidebar-inline-size);
-}
-
-.lego-icon {
-    --dimension: 1.25rem;
-
-    block-size: var(--dimension);
-    inline-size: var(--dimension);
 }
 
 /*** LEEANN'S HEADER & NAVIGATION ***/
@@ -3136,7 +3115,7 @@ ALLY'S RP PACK
     text-align: right;
 }
 
-.ftinder-info .lego-icon {
+.ftinder-info .block-icon {
     --dimension: 1em;
 }
 
@@ -3176,7 +3155,7 @@ ALLY'S RP PACK
     fill: var(--white-hex);
 }
 
-.ftinder-swipes .lego-icon {
+.ftinder-swipes .block-icon {
     --dimension: 2em;
 }
 
@@ -3281,7 +3260,7 @@ ALLY'S RP PACK
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
 }
 
-.ftinder-swipe-bot .lego-icon {
+.ftinder-swipe-bot .block-icon {
     --dimension: 2em;
 
     fill: var(--white-hex);
@@ -3368,7 +3347,7 @@ ALLY'S RP PACK
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
 }
 
-.ftinder-match-bot .lego-icon {
+.ftinder-match-bot .block-icon {
     --dimension: 2em;
 
     fill: var(--white-hex);
@@ -3574,6 +3553,13 @@ UTILITIES
     width: 1px;
 }
 
+.utility-wrapper {
+    width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
+    margin: 50px auto;
+    background-color: var(--clear);
+    padding-inline-start: var(--sidebar-inline-size);
+}
+
 /*
 -----
 BLOCKS
@@ -3628,4 +3614,11 @@ BLOCKS
     font: 1rem var(--display);
     text-transform: uppercase;
     letter-spacing: 2.25px;
+}
+
+.block-icon {
+    --dimension: 1.25rem;
+
+    block-size: var(--dimension);
+    inline-size: var(--dimension);
 }
