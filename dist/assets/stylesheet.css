@@ -155,21 +155,36 @@ body {
         var(--green-hex)
     );
 
-    /* From Ally's RP Pack */
+    /* from Ally's RP Pack */
     --group-gradient-dark: linear-gradient(
         45deg,
         rgba(var(--blue), 1) 0%,
         rgba(var(--green), 1) 100%
     );
+
     --group-gradient-mid: linear-gradient(
         45deg,
         rgba(var(--blue), 0.57) 0%,
         rgba(var(--green), 0.57) 100%
     );
+
     --group-gradient-light: linear-gradient(
         235deg,
         rgba(var(--blue), 0.28) 0%,
         rgba(var(--green), 0.28) 100%
+    );
+
+    /* from Jaslene's RP Pack */
+    --jasgradient: linear-gradient(
+        150deg,
+        rgba(var(--blue), 1) 0%,
+        rgba(var(--green), 1) 100%
+    );
+
+    --jasgradient-l: linear-gradient(
+        150deg,
+        rgba(var(--blue), 0.3) 0%,
+        rgba(var(--green), 0.3) 100%
     );
 
     /*IMAGES - place your image variables below*/
