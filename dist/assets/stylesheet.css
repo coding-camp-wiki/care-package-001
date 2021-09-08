@@ -3494,7 +3494,7 @@ jascomm jascommtop jascommimg::after {
     border-radius: 100%;
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 10px;
     z-index: 2;
 }
@@ -3526,7 +3526,7 @@ jascomm .msgs p {
     background: var(--jasgradient);
     padding: 7px;
     border-radius: 10px 10px 10px 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 jascomm .msgs .actions {
@@ -3583,7 +3583,7 @@ jasthread .top jasthreadimg::after {
     border-radius: 100%;
     content: "";
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 10px;
     z-index: 2;
 }
