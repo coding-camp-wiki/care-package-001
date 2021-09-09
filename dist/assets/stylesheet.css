@@ -155,21 +155,36 @@ body {
         var(--green-hex)
     );
 
-    /* From Ally's RP Pack */
+    /* from Ally's RP Pack */
     --group-gradient-dark: linear-gradient(
         45deg,
         rgba(var(--blue), 1) 0%,
         rgba(var(--green), 1) 100%
     );
+
     --group-gradient-mid: linear-gradient(
         45deg,
         rgba(var(--blue), 0.57) 0%,
         rgba(var(--green), 0.57) 100%
     );
+
     --group-gradient-light: linear-gradient(
         235deg,
         rgba(var(--blue), 0.28) 0%,
         rgba(var(--green), 0.28) 100%
+    );
+
+    /* from Jaslene's RP Pack */
+    --jasgradient: linear-gradient(
+        150deg,
+        rgba(var(--blue), 1) 0%,
+        rgba(var(--green), 1) 100%
+    );
+
+    --jasgradient-l: linear-gradient(
+        150deg,
+        rgba(var(--blue), 0.3) 0%,
+        rgba(var(--green), 0.3) 100%
     );
 
     /*IMAGES - place your image variables below*/
@@ -198,12 +213,12 @@ ELEMENTS
 -----
 */
 
-nav.--nav-primary.--no-js {
+nav.element-nav-primary[data-js-enhanced="false"] {
     background: var(--black-hex);
     padding: 1em;
 }
 
-nav.--nav-primary a {
+nav.element-nav-primary a {
     color: var(--white-hex);
     display: block;
     font-size: 17px;
@@ -212,13 +227,13 @@ nav.--nav-primary a {
     text-decoration: none;
 }
 
-nav.--nav-primary a:focus,
-nav.--nav-primary a:hover {
+nav.element-nav-primary a:focus,
+nav.element-nav-primary a:hover {
     background: var(--white-hex);
     color: var(--black-hex);
 }
 
-nav.--nav-primary.--js-enhanced button {
+nav.element-nav-primary[data-js-enhanced="true"] button {
     background: var(--black-hex);
     block-size: var(--topbar-block-size);
     border: none;
@@ -232,31 +247,31 @@ nav.--nav-primary.--js-enhanced button {
     z-index: 999;
 }
 
-nav.--nav-primary.--js-enhanced button:hover {
+nav.element-nav-primary[data-js-enhanced="true"] button:hover {
     background: var(--white-hex);
     fill: var(--black-hex);
 }
 
-nav.--nav-primary.--js-enhanced button:focus {
+nav.element-nav-primary[data-js-enhanced="true"] button:focus {
     background: var(--pink-hex);
     fill: var(--black-hex);
     outline: 2px solid;
     outline-offset: -0.5em;
 }
 
-nav.--nav-primary ul {
+nav.element-nav-primary ul {
     background: var(--black-hex);
     margin: 0;
     padding: 0;
 }
 
-nav.--nav-primary.--no-js ul {
+nav.element-nav-primary[data-js-enhanced="false"] ul {
     border: 2px solid var(--white-hex);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 }
 
-nav.--nav-primary.--js-enhanced ul {
+nav.element-nav-primary[data-js-enhanced="true"] ul {
     inset-block-start: var(--topbar-block-size);
     inset-inline-end: 0;
     max-block-size: calc(100vh - var(--topbar-block-size));
@@ -267,11 +282,11 @@ nav.--nav-primary.--js-enhanced ul {
     z-index: 999;
 }
 
-nav.--nav-primary button[aria-expanded="false"] + ul {
+nav.element-nav-primary button[aria-expanded="false"] + ul {
     display: none;
 }
 
-nav.--nav-primary [data-count-new="0"] {
+nav.element-nav-primary [data-count-new="0"] {
     display: none;
 }
 
@@ -307,27 +322,6 @@ JCINK SPECIFIC
     display: block;
     margin: 20px;
     width: initial;
-}
-
-/*
------
-LEGOS
------
-*/
-
-/*** WRAPPERS ***/
-.wrapper {
-    width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
-    margin: 50px auto;
-    background-color: var(--clear);
-    padding-inline-start: var(--sidebar-inline-size);
-}
-
-.lego-icon {
-    --dimension: 1.25rem;
-
-    block-size: var(--dimension);
-    inline-size: var(--dimension);
 }
 
 /*** LEEANN'S HEADER & NAVIGATION ***/
@@ -2703,37 +2697,6 @@ ALLY'S RP PACK
 -----
 */
 
-.pr-wrap h1 {
-    font: 700 2.2em/100% var(--display);
-    color: var(--blue-hex);
-    text-shadow: 0 0 5px rgba(var(--white), 0.55);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.pr-wrap h2 {
-    font: 700 1.2em/100% var(--display);
-    background: var(--group-gradient-mid);
-    text-shadow: 0 0 5px rgba(var(--white), 0.55);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 5px;
-    display: block;
-    margin: 10px 0;
-    width: max-content;
-}
-
-.pr-wrap h3 {
-    font: 900 0.9em/100% var(--sans);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-align: center;
-    background: var(--group-gradient-dark);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
 .post-1 b,
 .post-2 b,
 .post-3 b,
@@ -3167,7 +3130,7 @@ ALLY'S RP PACK
     text-align: right;
 }
 
-.ftinder-info .lego-icon {
+.ftinder-info .block-icon {
     --dimension: 1em;
 }
 
@@ -3207,7 +3170,7 @@ ALLY'S RP PACK
     fill: var(--white-hex);
 }
 
-.ftinder-swipes .lego-icon {
+.ftinder-swipes .block-icon {
     --dimension: 2em;
 }
 
@@ -3312,7 +3275,7 @@ ALLY'S RP PACK
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
 }
 
-.ftinder-swipe-bot .lego-icon {
+.ftinder-swipe-bot .block-icon {
     --dimension: 2em;
 
     fill: var(--white-hex);
@@ -3399,10 +3362,194 @@ ALLY'S RP PACK
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
 }
 
-.ftinder-match-bot .lego-icon {
+.ftinder-match-bot .block-icon {
     --dimension: 2em;
 
     fill: var(--white-hex);
+}
+
+/*
+-----
+JASLENE'S RP PACK
+-----
+*/
+
+jaspost {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    padding: 30px;
+    background: var(--jasgradient-l);
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+}
+
+jaspost b,
+.jasthreadbody b {
+    color: var(--black-hex);
+    background: var(--group-gradient-lr);
+}
+
+jaspost i,
+.jasthreadbody i {
+    color: var(--blue-hex);
+}
+
+jascomm {
+    position: relative;
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+    height: 550px;
+    background: var(--jasgradient-l);
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+}
+
+jascomm jascommtop {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--black-hex);
+    padding: 30px;
+    height: 120px;
+}
+
+jascomm jascommtop jascommimg {
+    position: relative;
+    display: block;
+    margin-right: 15px !important;
+}
+
+jascomm jascommtop img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+jascomm jascommtop jascommimg::after {
+    border: 2px solid var(--black-hex);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 2;
+}
+
+jascomm jascommtop connected {
+    display: flex;
+    flex-flow: column;
+    font: 300 0.6rem var(--sans);
+    text-transform: uppercase;
+}
+
+jascomm jascommtop contact {
+    display: block;
+    font: 800 1.5rem var(--display);
+    text-transform: lowercase;
+    text-align: left;
+}
+
+jascomm .msgs {
+    display: block;
+    margin: 10px 30px;
+    height: 390px;
+    overflow: auto;
+}
+
+jascomm .msgs p {
+    float: left;
+    clear: both;
+    background: var(--jasgradient);
+    padding: 7px;
+    border-radius: 10px 10px 10px 0;
+    margin-bottom: 0;
+}
+
+jascomm .msgs .actions {
+    clear: both;
+}
+
+jascomm .msgs .actions b {
+    color: var(--black-hex);
+    background: var(--group-gradient-lr);
+}
+
+jascomm .msgs .actions i {
+    color: var(--blue-hex);
+}
+
+jasthread {
+    position: relative;
+    display: block;
+    margin: 30px auto;
+    width: 55%;
+    background: var(--jasgradient-l);
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+}
+
+jasthread .top {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    background: rgba(var(--blue), 0.3);
+    border-bottom: 2px solid var(--black-hex);
+}
+
+jasthread .top jasthreadimg {
+    position: absolute;
+    display: block;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+jasthread .top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+jasthread .top jasthreadimg::after {
+    border: 2px solid var(--black-hex);
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 2;
+}
+
+jasthread .top tag {
+    position: absolute;
+    display: block;
+    right: 30px;
+    margin-top: 85px;
+    background: var(--white-hex);
+    padding: 7px;
+    border: 2px solid var(--black-hex);
+    font: 400 8px var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+jasthread .jasthreadbody {
+    position: relative;
+    display: block;
+    margin: 40px 40px 40px;
+    padding: 10px 10px 30px;
 }
 
 /*
@@ -3419,4 +3566,74 @@ UTILITIES
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+
+.utility-wrapper {
+    width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
+    margin: 50px auto;
+    background-color: var(--clear);
+    padding-inline-start: var(--sidebar-inline-size);
+}
+
+/*
+-----
+BLOCKS
+-----
+*/
+
+.block-heading-1a {
+    font: 700 2.2em/100% var(--display);
+    color: var(--blue-hex);
+    text-shadow: 0 0 5px rgba(var(--white), 0.55);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.block-heading-1b {
+    display: inline;
+    font: 2rem/1.8 var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+}
+
+.block-heading-2a {
+    font: 700 1.2em/100% var(--display);
+    background: var(--group-gradient-mid);
+    text-shadow: 0 0 5px rgba(var(--white), 0.55);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px;
+    display: block;
+    margin: 10px 0;
+    width: max-content;
+}
+
+.block-heading-2b {
+    font: 1.3rem/1.8 var(--display);
+    text-transform: lowercase;
+    color: var(--group);
+}
+
+.block-heading-3a {
+    font: 900 0.9em/100% var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    background: var(--group-gradient-dark);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.block-heading-3b {
+    font: 1rem var(--display);
+    text-transform: uppercase;
+    letter-spacing: 2.25px;
+}
+
+.block-icon {
+    --dimension: 1.25rem;
+
+    block-size: var(--dimension);
+    inline-size: var(--dimension);
 }

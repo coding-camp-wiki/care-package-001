@@ -21,7 +21,7 @@
         <script>
             // collapsible menu
             document.addEventListener("DOMContentLoaded", function () {
-                const nav = document.querySelector("nav.--nav-primary");
+                const nav = document.querySelector("nav.element-nav-primary");
                 const button = nav.querySelector("button");
                 const menu = nav.querySelector("ul");
 
@@ -30,7 +30,7 @@
                 topbar.appendChild(nav);
 
                 // apply enhancement compatible styles
-                nav.classList.replace("--no-js", "--js-enhanced");
+                nav.dataset.jsEnhanced = true;
                 button.hidden = false;
 
                 // hide menu by default
@@ -64,7 +64,7 @@
             <a class="scrolltop" href="#top"
                 ><svg
                     aria-labelledby="to-top-title"
-                    class="lego-icon"
+                    class="block-icon"
                     role="img"
                 >
                     <title id="to-top-title">To Top</title>
@@ -92,10 +92,11 @@
             </div>
         </header>
 
-        <div class="wrapper">
+        <div class="utility-wrapper">
             <nav
                 aria-labelledby="title-nav-primary"
-                class="--nav-primary --no-js"
+                class="element-nav-primary"
+                data-js-enhanced="false"
             >
                 <h2 class="utility-visually-hidden" id="title-nav-primary">
                     Controls
@@ -103,7 +104,7 @@
 
                 <button hidden>
                     <span class="utility-visually-hidden">Toggle Controls</span>
-                    <svg aria-hidden="true" class="lego-icon" role="button">
+                    <svg aria-hidden="true" class="block-icon" role="button">
                         <use
                             href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
                         ></use>
@@ -141,9 +142,9 @@
             <% BOARD HEADER %>
         </div>
 
-        <main class="wrapper"><% BOARD %></main>
+        <main class="utility-wrapper"><% BOARD %></main>
 
-        <footer class="wrapper">
+        <footer class="utility-wrapper">
             <div><% COPYRIGHT %></div>
             <div><% SKIN_SELECTOR %></div>
         </footer>
