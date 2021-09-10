@@ -214,7 +214,6 @@ ELEMENTS
 */
 
 img {
-    display: block;
     max-inline-size: 100%;
 }
 
@@ -2040,15 +2039,7 @@ JCINK SPECIFIC
 .cp-memitem:hover .cp-memname {
     opacity: 0;
     transition: var(--transi-quick);
-    -webkit-transition: var(--transi-quick);
-    -o-transition: var(--transi-quick);
-    -ms-transition: var(--transi-quick);
-    -moz-transition: var(--transi-quick);
     transition-delay: var(--transi-two-del);
-    -webkit-transition-delay: var(--transi-two-del);
-    -o-transition-delay: var(--transi-two-del);
-    -moz-transition-delay: var(--transi-two-del);
-    -ms-transition-delay: var(--transi-two-del);
 }
 
 .cp-memitem .cp-memname .js-wrapped-word {
@@ -2088,24 +2079,12 @@ JCINK SPECIFIC
     outline-offset: -0.875rem;
     opacity: 0;
     transition: var(--transi-quick);
-    -webkit-transition: var(--transi-quick);
-    -o-transition: var(--transi-quick);
-    -ms-transition: var(--transi-quick);
-    -moz-transition: var(--transi-quick);
 }
 
 .cp-memitem:hover .cp-mphovco {
     opacity: 1;
     transition: var(--transi-quick);
-    -webkit-transition: var(--transi-quick);
-    -o-transition: var(--transi-quick);
-    -ms-transition: var(--transi-quick);
-    -moz-transition: var(--transi-quick);
     transition-delay: var(--transi-two-del);
-    -webkit-transition-delay: var(--transi-two-del);
-    -o-transition-delay: var(--transi-two-del);
-    -moz-transition-delay: var(--transi-two-del);
-    -ms-transition-delay: var(--transi-two-del);
 }
 
 .cp-mphovco dub,
