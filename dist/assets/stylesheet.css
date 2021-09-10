@@ -213,6 +213,11 @@ ELEMENTS
 -----
 */
 
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+
 nav.element-nav-primary[data-js-enhanced="false"] {
     background: var(--black-hex);
     padding: 1em;
