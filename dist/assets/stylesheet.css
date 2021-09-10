@@ -836,7 +836,7 @@ JCINK SPECIFIC
     z-index: 2;
 }
 
-.topic-last-post-av:after {
+.topic-last-post-av::after {
     display: block;
     content: " ";
     z-index: 2;
@@ -1357,7 +1357,7 @@ JCINK SPECIFIC
     margin-left: 85px;
 }
 
-.mphovermain .whitetop .iconimg:after {
+.mphovermain .whitetop .iconimg::after {
     content: "";
     position: absolute;
     left: 10px;
@@ -2839,7 +2839,7 @@ ALLY'S RP PACK
     border-radius: 100%;
 }
 
-.post-3-icon:after {
+.post-3-icon::after {
     content: "";
     position: absolute;
     left: 10px;
@@ -2957,7 +2957,7 @@ ALLY'S RP PACK
     border-radius: 100%;
 }
 
-.comms-icon:after {
+.comms-icon::after {
     content: "";
     position: absolute;
     left: 15px;
@@ -3064,7 +3064,7 @@ ALLY'S RP PACK
     margin-right: 15px;
 }
 
-.ftinder-image:after {
+.ftinder-image::after {
     content: "";
     position: absolute;
     left: 10px;
@@ -3218,7 +3218,7 @@ ALLY'S RP PACK
     margin-right: 15px;
 }
 
-.ftinder-swipe-image:after {
+.ftinder-swipe-image::after {
     content: "";
     position: absolute;
     left: 10px;
@@ -3320,7 +3320,7 @@ ALLY'S RP PACK
     margin-right: 15px;
 }
 
-.ftinder-match-image:after {
+.ftinder-match-image::after {
     content: "";
     position: absolute;
     left: 10px;
@@ -3574,8 +3574,8 @@ IZZY'S DEV PACK
     position: relative;
 }
 
-.dev-gallery:after,
-.dev-gallery:before {
+.dev-gallery::after,
+.dev-gallery::before {
     z-index: 1;
     content: "";
     display: block;
@@ -3587,14 +3587,14 @@ IZZY'S DEV PACK
     bottom: 0;
 }
 
-.dev-gallery:after {
+.dev-gallery::after {
     top: var(--border-inset);
     bottom: var(--border-inset);
     border-top: var(--border);
     border-bottom: var(--border);
 }
 
-.dev-gallery:before {
+.dev-gallery::before {
     left: var(--border-inset);
     right: var(--border-inset);
     border-left: var(--border);
@@ -3653,8 +3653,8 @@ IZZY'S DEV PACK
     background: var(--background-texture);
 }
 
-.dev-quote:before,
-.dev-quote:after {
+.dev-quote::before,
+.dev-quote::after {
     display: block;
     content: "";
     position: absolute;
@@ -3665,14 +3665,14 @@ IZZY'S DEV PACK
     pointer-events: none;
 }
 
-.dev-quote:before {
+.dev-quote::before {
     left: 1em;
     right: 1em;
     border-left: 2px solid var(--black-hex);
     border-right: 2px solid var(--black-hex);
 }
 
-.dev-quote:after {
+.dev-quote::after {
     top: 1em;
     bottom: 1em;
     border-top: 2px solid var(--black-hex);
@@ -3690,7 +3690,7 @@ IZZY'S DEV PACK
     color: var(--color);
 }
 
-.dev-quote .dq-cite:before {
+.dev-quote .dq-cite::before {
     display: inline-block;
     content: "";
     border-top: 1px solid var(--color);
@@ -3736,7 +3736,7 @@ IZZY'S DEV PACK
     color: var(--black-hex);
 }
 
-.dev-tracker .category-title:after {
+.dev-tracker .category-title::after {
     content: "";
     display: block;
     position: absolute;
@@ -3760,7 +3760,7 @@ IZZY'S DEV PACK
     border-right: 2px solid var(--color);
 }
 
-.dev-tracker .thread:after {
+.dev-tracker .thread::after {
     display: block;
     content: "";
     position: absolute;
