@@ -217,83 +217,6 @@ img {
     max-inline-size: 100%;
 }
 
-nav.element-nav-primary[data-js-enhanced="false"] {
-    background: var(--black-hex);
-    padding: 1em;
-}
-
-nav.element-nav-primary a {
-    color: var(--white-hex);
-    display: block;
-    font-size: 17px;
-    padding-block: 14px;
-    padding-inline: 16px;
-    text-decoration: none;
-}
-
-nav.element-nav-primary a:focus,
-nav.element-nav-primary a:hover {
-    background: var(--white-hex);
-    color: var(--black-hex);
-}
-
-nav.element-nav-primary[data-js-enhanced="true"] button {
-    background: var(--black-hex);
-    block-size: var(--topbar-block-size);
-    border: none;
-    display: block;
-    fill: var(--white-hex);
-    inline-size: var(--topbar-block-size);
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    margin-inline-start: auto;
-    position: fixed;
-    z-index: 999;
-}
-
-nav.element-nav-primary[data-js-enhanced="true"] button:hover {
-    background: var(--white-hex);
-    fill: var(--black-hex);
-}
-
-nav.element-nav-primary[data-js-enhanced="true"] button:focus {
-    background: var(--pink-hex);
-    fill: var(--black-hex);
-    outline: 2px solid;
-    outline-offset: -0.5em;
-}
-
-nav.element-nav-primary ul {
-    background: var(--black-hex);
-    margin: 0;
-    padding: 0;
-}
-
-nav.element-nav-primary[data-js-enhanced="false"] ul {
-    border: 2px solid var(--white-hex);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
-}
-
-nav.element-nav-primary[data-js-enhanced="true"] ul {
-    inset-block-start: var(--topbar-block-size);
-    inset-inline-end: 0;
-    max-block-size: calc(100vh - var(--topbar-block-size));
-    max-inline-size: 80%;
-    inline-size: 200px;
-    overflow: auto;
-    position: fixed;
-    z-index: 999;
-}
-
-nav.element-nav-primary button[aria-expanded="false"] + ul {
-    display: none;
-}
-
-nav.element-nav-primary [data-count-new="0"] {
-    display: none;
-}
-
 ul[role="list"] {
     /*
     role="list" is required in the html for
@@ -3838,4 +3761,81 @@ BLOCKS
 
     block-size: var(--dimension);
     inline-size: var(--dimension);
+}
+
+nav#block-nav-primary[data-js-enhanced="false"] {
+    background: var(--black-hex);
+    padding: 1em;
+}
+
+nav#block-nav-primary a {
+    color: var(--white-hex);
+    display: block;
+    font-size: 17px;
+    padding-block: 14px;
+    padding-inline: 16px;
+    text-decoration: none;
+}
+
+nav#block-nav-primary a:focus,
+nav#block-nav-primary a:hover {
+    background: var(--white-hex);
+    color: var(--black-hex);
+}
+
+nav#block-nav-primary[data-js-enhanced="true"] button {
+    background: var(--black-hex);
+    block-size: var(--topbar-block-size);
+    border: none;
+    display: block;
+    fill: var(--white-hex);
+    inline-size: var(--topbar-block-size);
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    margin-inline-start: auto;
+    position: fixed;
+    z-index: 999;
+}
+
+nav#block-nav-primary[data-js-enhanced="true"] button:hover {
+    background: var(--white-hex);
+    fill: var(--black-hex);
+}
+
+nav#block-nav-primary[data-js-enhanced="true"] button:focus {
+    background: var(--pink-hex);
+    fill: var(--black-hex);
+    outline: 2px solid;
+    outline-offset: -0.5em;
+}
+
+nav#block-nav-primary ul {
+    background: var(--black-hex);
+    margin: 0;
+    padding: 0;
+}
+
+nav#block-nav-primary[data-js-enhanced="false"] ul {
+    border: 2px solid var(--white-hex);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+}
+
+nav#block-nav-primary[data-js-enhanced="true"] ul {
+    inset-block-start: var(--topbar-block-size);
+    inset-inline-end: 0;
+    max-block-size: calc(100vh - var(--topbar-block-size));
+    max-inline-size: 80%;
+    inline-size: 200px;
+    overflow: auto;
+    position: fixed;
+    z-index: 999;
+}
+
+nav#block-nav-primary button[aria-expanded="false"] + ul {
+    display: none;
+}
+
+nav#block-nav-primary [data-count-new="0"] {
+    display: none;
 }
