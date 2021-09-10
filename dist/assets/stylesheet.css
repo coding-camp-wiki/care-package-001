@@ -3683,7 +3683,7 @@ ROSE'S DEV PACK
 -----
 */
 
-/*ROSE DEV BASE CODE*/
+/* ----- BASE */
 rosedev {
     box-sizing: border-box !important;
     display: block;
@@ -3780,7 +3780,7 @@ rosedev.white .dev2 {
     margin: 20px 0 0 0;
 }
 
-/*ROSE DEV IMAGES CODE*/
+/* ----- IMAGES */
 rosedev img {
     max-width: 100%;
     height: auto !important;
@@ -3799,7 +3799,7 @@ rosedev .three img {
     width: calc(33% - 3px);
 }
 
-/*ROSE DEV QUOTE CODE*/
+/* ----- QUOTE */
 rosedev .quote {
     display: block;
     color: var(--black-hex);
@@ -3912,7 +3912,7 @@ rosedev .quote author {
     letter-spacing: 1.5px;
 }
 
-/*ROSE DEV DRABBLE/TRACKER CODE*/
+/* ----- DRABBLE/TRACKER */
 rosedev.black .drabble {
     color: var(--white-hex);
 }
