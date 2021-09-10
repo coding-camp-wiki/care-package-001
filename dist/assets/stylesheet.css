@@ -3096,10 +3096,8 @@ ALLY'S RP PACK
     font: 1.883em var(--display);
     background-image: var(--group-gradient-dark);
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -ms-background-clip: text;
+    background-clip: text;
     text-shadow: 0 0 1px rgba(var(--black), 0.25);
 }
 
@@ -3221,10 +3219,8 @@ ALLY'S RP PACK
     text-transform: lowercase;
     background: var(--group-gradient-dark);
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -ms-background-clip: text;
+    background-clip: text;
     text-shadow: 0 0 1px rgba(var(--black), 0.25);
 }
 
@@ -3240,10 +3236,8 @@ ALLY'S RP PACK
     font: 1.883em var(--display);
     background: var(--group-gradient-dark);
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -ms-background-clip: text;
+    background-clip: text;
     text-transform: uppercase;
     text-shadow: 0 0 1px rgba(var(--black), 0.25);
 }
@@ -3327,10 +3321,8 @@ ALLY'S RP PACK
     font: 1.883em var(--display);
     background: var(--group-gradient-dark);
     color: transparent;
-    background-clip: text;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -ms-background-clip: text;
+    background-clip: text;
     text-transform: uppercase;
     text-shadow: 0 0 1px rgba(var(--black), 0.25);
 }
