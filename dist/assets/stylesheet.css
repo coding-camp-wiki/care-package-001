@@ -3559,6 +3559,232 @@ jasthread .jasthreadbody {
 
 /*
 -----
+IZZY'S DEV PACK
+-----
+*/
+
+.dev-gallery {
+    --pad: 0.75vw;
+    --border-inset: calc(var(--pad) * 2);
+    --border: 2px solid var(--black-hex);
+    margin: 0 auto calc(var(--pad) * 1.25);
+    padding: calc(var(--pad) * 1);
+    background: var(--background-texture);
+    max-width: 750px;
+    position: relative;
+}
+
+.dev-gallery:after,
+.dev-gallery:before {
+    z-index: 1;
+    content: "";
+    display: block;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.dev-gallery:after {
+    top: var(--border-inset);
+    bottom: var(--border-inset);
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.dev-gallery:before {
+    left: var(--border-inset);
+    right: var(--border-inset);
+    border-left: var(--border);
+    border-right: var(--border);
+}
+
+.dev-gallery br {
+    display: none;
+}
+
+.dev-gallery .dg-col {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.dev-gallery .dg-col-2 {
+    --dg-cols: 2;
+}
+
+.dev-gallery .dg-col-3 {
+    --dg-cols: 3;
+}
+
+.dev-gallery .dg-img-wrapper {
+    --dg-basis: max(125px, calc(100% / var(--dg-cols) - var(--pad) * 2));
+    flex: 1 1 var(--dg-basis);
+    margin: calc(var(--pad) * 0.5);
+}
+
+.dev-gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    filter: contrast(100%) grayscale(0);
+    transition: filter 0.25s;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    .dev-gallery:hover img:not(:hover) {
+        filter: contrast(75%) grayscale(100%);
+    }
+}
+
+.dev-quote {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+    font-family: var(--sans);
+    font-size: 1.2em;
+    font-size: clamp(1.2em, 1.5vw, 1.6em);
+    line-height: 1.2;
+    padding: 2em;
+    background: var(--background-texture);
+}
+
+.dev-quote:before,
+.dev-quote:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+.dev-quote:before {
+    left: 1em;
+    right: 1em;
+    border-left: 2px solid var(--black-hex);
+    border-right: 2px solid var(--black-hex);
+}
+
+.dev-quote:after {
+    top: 1em;
+    bottom: 1em;
+    border-top: 2px solid var(--black-hex);
+    border-bottom: 2px solid var(--black-hex);
+}
+
+.dev-quote .dq-cite {
+    --color: var(--black-hex);
+    font-style: italic;
+    position: absolute;
+    font-size: 0.75em;
+    bottom: 0;
+    right: 2.5em;
+    text-align: right;
+    color: var(--color);
+}
+
+.dev-quote .dq-cite:before {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid var(--color);
+    width: 3ch;
+    height: 0.3em;
+    margin-right: 0.7ch;
+}
+
+.dev-tracker {
+    background: var(--background-texture), var(--white-hex);
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dev-tracker .category,
+.dev-tracker .category-title,
+.dev-tracker .threads,
+.dev-tracker .thread,
+.dev-tracker .thread-name {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dev-tracker .category {
+    flex: 1 1 30ch;
+    border: 2px solid var(--black-hex);
+    margin: 8px;
+}
+
+.dev-tracker .category-title {
+    position: relative;
+    white-space: nowrap;
+    line-height: 1;
+    font-size: 1rem;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem);
+    text-transform: uppercase;
+    padding: 10px;
+    padding: clamp(8px, 1.5vmin, 16px);
+    font-family: var(--display);
+    letter-spacing: 2px;
+    color: var(--black-hex);
+}
+
+.dev-tracker .category-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -18px;
+    right: -18px;
+    top: 0;
+    bottom: 0;
+    border-bottom: 2px solid var(--black-hex);
+    pointer-events: none;
+}
+
+.dev-tracker .threads {
+    list-style: none;
+    padding: 1px;
+}
+
+.dev-tracker .thread {
+    --color: var(--black-hex);
+    position: relative;
+    margin: 16px 16px 16px 24px;
+    border-right: 2px solid var(--color);
+}
+
+.dev-tracker .thread:after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: -8px;
+    right: -8px;
+    border-bottom: 2px solid var(--color);
+    pointer-events: none;
+}
+
+.dev-tracker .thread:hover {
+    --color: var(--group);
+}
+
+.dev-tracker .thread-name {
+    display: block;
+    padding: 4px 16px 16px 8px;
+    color: var(--color);
+    font-weight: 500;
+    letter-spacing: 0.1px;
+}
+
+/*
+-----
 UTILITIES
 -----
 */
