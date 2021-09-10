@@ -3708,7 +3708,7 @@ rosedev.black {
 rosedev devline {
     display: block;
     width: calc(100% + 60px);
-    margin: 0px 0px 0px -30px;
+    margin: 0 0 0 -30px;
     height: 1px;
     background: var(--black-hex);
 }
@@ -3765,19 +3765,19 @@ rosedev devsub {
 
 rosedev .dev {
     background: var(--clear);
-    margin: 20px 0px -10px 0px;
+    margin: 20px 0 -10px 0;
 }
 
 rosedev .dev2 {
     background: var(--white-hex);
     padding: 20px 20px 10px 20px;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 0;
 }
 
 rosedev.white .dev2 {
     background: var(--black-hex);
     padding: 20px 20px 10px 20px;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 0;
 }
 
 /*ROSE DEV IMAGES CODE*/
@@ -3833,7 +3833,9 @@ rosedev.gradient .quote x b {
     color: var(--group-gradient-lr);
     background: var(--group-gradient-lr);
     -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font: 35px var(--display);
@@ -3873,7 +3875,9 @@ rosedev.white .quote y b {
 rosedev .quote z {
     background: var(--group-gradient-lr);
     -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 14px;
     text-transform: uppercase;
@@ -3883,16 +3887,20 @@ rosedev .quote z {
 rosedev .quote z b {
     background: var(--white-hex);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     font: 35px var(--display);
 }
 
 rosedev.white .quote z b {
     background: var(--black-hex);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     font: 35px var(--display);
 }
 
@@ -3936,12 +3944,14 @@ rosedev .drabble b {
 
 rosedev.black .drabble b,
 rosedev.white .drabble b {
-    margin: 10px 0px;
+    margin: 10px 0;
     color: var(--group-gradient-lr);
     background: var(--group-gradient-lr);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
 }
 
 rosedev .drabble bb {
@@ -3985,7 +3995,7 @@ rosedev .drabble h1 {
     text-transform: uppercase;
     font: 35px var(--display);
     line-height: 100%;
-    margin: 10px 0px;
+    margin: 10px 0;
 }
 
 rosedev.white .drabble h1 {
@@ -3993,7 +4003,7 @@ rosedev.white .drabble h1 {
 }
 
 rosedev .drabble h2 {
-    margin: 10px 0px;
+    margin: 10px 0;
     font: 400 30px var(--display);
     background: var(--group-gradient-lr) no-repeat bottom left/100% 18px;
     width: fit-content;
@@ -4001,11 +4011,13 @@ rosedev .drabble h2 {
 }
 
 rosedev .drabble h3 {
-    margin: 10px 0px;
+    margin: 10px 0;
     color: var(--group-gradient-lr);
     background: var(--group-gradient-lr);
     -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font: 35px var(--display);
@@ -4013,7 +4025,7 @@ rosedev .drabble h3 {
 
 rosedev .drabble h4 {
     font: 400 30px var(--display);
-    margin: 10px 0px;
+    margin: 10px 0;
     border-bottom: 2px solid var(--group);
     width: fit-content;
     width: -moz-fit-content;
@@ -4023,7 +4035,7 @@ rosedev .drabble h5 {
     width: fit-content;
     width: -moz-fit-content;
     font: 400 25px var(--display);
-    margin: 10px 0px;
+    margin: 10px 0;
     background: var(--white-hex);
     padding: 3px;
 }
@@ -4037,7 +4049,7 @@ rosedev.black .drabble h5 {
 rosedev .drabble bubble {
     display: block;
     background: var(--white-hex);
-    margin: 10px 0px;
+    margin: 10px 0;
     padding: 10px;
 }
 
