@@ -607,7 +607,7 @@ JCINK SPECIFIC
     position: relative;
 }
 
-.category-title {
+.category-inner > .category-title {
     font-family: var(--display);
     font-size: 4vmax;
     font-weight: 800;
