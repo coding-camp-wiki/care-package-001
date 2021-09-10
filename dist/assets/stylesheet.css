@@ -3706,7 +3706,7 @@ BLOCKS
 -----
 */
 
-.block-heading-1a {
+.block-heading-a-1 {
     font: 700 2.2em/100% var(--display);
     color: var(--blue-hex);
     text-shadow: 0 0 5px rgba(var(--white), 0.55);
@@ -3714,14 +3714,7 @@ BLOCKS
     letter-spacing: 1px;
 }
 
-.block-heading-1b {
-    display: inline;
-    font: 2rem/1.8 var(--display);
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--black-hex);
-}
-
-.block-heading-2a {
+.block-heading-a-2 {
     font: 700 1.2em/100% var(--display);
     background: var(--group-gradient-mid);
     text-shadow: 0 0 5px rgba(var(--white), 0.55);
@@ -3733,13 +3726,7 @@ BLOCKS
     width: max-content;
 }
 
-.block-heading-2b {
-    font: 1.3rem/1.8 var(--display);
-    text-transform: lowercase;
-    color: var(--group);
-}
-
-.block-heading-3a {
+.block-heading-a-3 {
     font: 900 0.9em/100% var(--sans);
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -3750,7 +3737,20 @@ BLOCKS
     background-clip: text;
 }
 
-.block-heading-3b {
+.block-heading-b-1 {
+    display: inline;
+    font: 2rem/1.8 var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+}
+
+.block-heading-b-2 {
+    font: 1.3rem/1.8 var(--display);
+    text-transform: lowercase;
+    color: var(--group);
+}
+
+.block-heading-b-3 {
     font: 1rem var(--display);
     text-transform: uppercase;
     letter-spacing: 2.25px;
