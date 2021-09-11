@@ -3989,63 +3989,6 @@ rosedev .drabble uu {
     background: var(--group-gradient-lr) no-repeat bottom left/100% 8px;
 }
 
-rosedev .drabble h1 {
-    color: var(--clear);
-    -webkit-text-stroke: 1px var(--white-hex);
-    text-transform: uppercase;
-    font: 35px var(--display);
-    line-height: 100%;
-    margin: 10px 0;
-}
-
-rosedev.white .drabble h1 {
-    -webkit-text-stroke: 1px var(--black-hex);
-}
-
-rosedev .drabble h2 {
-    margin: 10px 0;
-    font: 400 30px var(--display);
-    background: var(--group-gradient-lr) no-repeat bottom left/100% 18px;
-    width: fit-content;
-    width: -moz-fit-content;
-}
-
-rosedev .drabble h3 {
-    margin: 10px 0;
-    color: var(--group-gradient-lr);
-    background: var(--group-gradient-lr);
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
-    font: 35px var(--display);
-}
-
-rosedev .drabble h4 {
-    font: 400 30px var(--display);
-    margin: 10px 0;
-    border-bottom: 2px solid var(--group);
-    width: fit-content;
-    width: -moz-fit-content;
-}
-
-rosedev .drabble h5 {
-    width: fit-content;
-    width: -moz-fit-content;
-    font: 400 25px var(--display);
-    margin: 10px 0;
-    background: var(--white-hex);
-    padding: 3px;
-}
-
-rosedev.white .drabble h5,
-rosedev.black .drabble h5 {
-    background: var(--group-gradient-lr);
-    color: var(--white-hex);
-}
-
 rosedev .drabble bubble {
     display: block;
     background: var(--white-hex);
@@ -4089,6 +4032,14 @@ rosedev.black .drabble quote {
 UTILITIES
 -----
 */
+
+.utility-bg-dark {
+    background-color: var(--black-hex);
+}
+
+.utility-bg-gradient-1 {
+    background: var(--group-gradient-lr);
+}
 
 .utility-visually-hidden:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
@@ -4161,6 +4112,63 @@ BLOCKS
     font: 1rem var(--display);
     text-transform: uppercase;
     letter-spacing: 2.25px;
+}
+
+.block-heading-c {
+    -webkit-text-fill-color: var(--clear);
+    -webkit-text-stroke: 1px var(--black-hex);
+    text-transform: uppercase;
+    font: 35px var(--display);
+    line-height: 100%;
+    margin: 10px 0;
+}
+
+.block-heading-c[data-bg="dark"] {
+    -webkit-text-stroke-color: var(--white-hex);
+}
+
+.block-heading-d {
+    margin: 10px 0;
+    font: 400 30px var(--display);
+    background: var(--group-gradient-lr) no-repeat bottom left/100% 18px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.block-heading-e {
+    margin: 10px 0;
+    color: var(--group-gradient-lr);
+    background: var(--group-gradient-lr);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font: 35px var(--display);
+}
+
+.block-heading-f {
+    font: 400 30px var(--display);
+    margin: 10px 0;
+    border-bottom: 2px solid var(--group);
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.block-heading-g {
+    width: -moz-fit-content;
+    width: fit-content;
+    font: 400 25px var(--display);
+    margin: 10px 0;
+    padding: 3px;
+    background: var(--group-gradient-lr);
+    color: var(--white-hex);
+}
+
+.block-heading-g[data-bg="gradient"] {
+    background: var(--white-hex);
+    color: var(--black-hex);
 }
 
 .block-icon {
