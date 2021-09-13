@@ -1,0 +1,4 @@
+# guidebook-end closes guidebook-start
+# they won't format correctly because they're intentionally incomplete
+dist/webpages/guidebook-end.html
+dist/webpages/guidebook-start.html
