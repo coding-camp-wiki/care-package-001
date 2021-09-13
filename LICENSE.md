@@ -24,19 +24,19 @@ Minus the above listed exceptions, all remaining content is licensed as follows:
 
 MIT License
 
--   Modified and additional original work copyright (c) 2021 Coding Camp and other contributors.
--   Original base copyright (c) 2021 Summer (https://codepen.io/summercodes/pen/poeVvrG).
--   Original board stats copyright (c) 2021 Lissita (https://codepen.io/Lissita/pen/poeqVev).
--   Original category headers and forum, redirect, and topic rows copyright (c) 2021 Ray (https://codepen.io/yorkupine/pen/YzZgWgG).
--   Original header and navigation copyright (c) 2021 Leeann (https://codepen.io/leeannflorez/pen/xxqmQNO).
--   Original member list copyright (c) 2021 Rora (https://codepen.io/aurorastralis/pen/vYxzbjx).
--   Original main profile copyright (c) 2021 Monty (https://codepen.io/MontyMouse/pen/mdWvOEg).
--   Original mini-profile copyright (c) 2021 Abi (https://codepen.io/hedgefruit/pen/poeqgBN).
--   Original post row copyright (c) 2021 Juliet (https://codepen.io/sea-witch/pen/KKWrYwP).
--   Original site templates pack copyright (c) 2021 Leeann (https://codepen.io/leeannflorez/pen/jOmymbL).
--   Original roleplay templates packs copyright (c) 2021 Ally (https://codepen.io/allycodes/pen/bGWGrzp) and Jaslene (https://codepen.io/jaslenejose/pen/mdmdGXo).
--   Original development templates packs copyright (c) 2021 Izzy (https://codepen.io/isabroch/pen/gOWOxZY) and Rose💫 (https://codepen.io/perfumeregret/pen/KKmKZdp).
--   Original webpages copyright (c) 2021 Abi (https://codepen.io/hedgefruit/pen/jOmbGrP).
+-   Modified and additional original work copyright (c) 2021 Coding Camp.
+-   Original base copyright (c) 2021 Summer (<https://codepen.io/summercodes/pen/poeVvrG>).
+-   Original board stats copyright (c) 2021 Lissita (<https://codepen.io/Lissita/pen/poeqVev>).
+-   Original category headers and forum, redirect, and topic rows copyright (c) 2021 Ray (<https://codepen.io/yorkupine/pen/YzZgWgG>).
+-   Original header and navigation copyright (c) 2021 Leeann (<https://codepen.io/leeannflorez/pen/xxqmQNO>).
+-   Original member list copyright (c) 2021 Rora (<https://codepen.io/aurorastralis/pen/vYxzbjx>).
+-   Original main profile copyright (c) 2021 Monty (<https://codepen.io/MontyMouse/pen/mdWvOEg>).
+-   Original mini-profile copyright (c) 2021 Abi (<https://codepen.io/hedgefruit/pen/poeqgBN>).
+-   Original post row copyright (c) 2021 Juliet (<https://codepen.io/sea-witch/pen/KKWrYwP>).
+-   Original site templates pack copyright (c) 2021 Leeann (<https://codepen.io/leeannflorez/pen/jOmymbL>).
+-   Original roleplay templates packs copyright (c) 2021 Ally (<https://codepen.io/allycodes/pen/bGWGrzp>) and Jaslene (<https://codepen.io/jaslenejose/pen/mdmdGXo>).
+-   Original development templates packs copyright (c) 2021 Izzy (<https://codepen.io/isabroch/pen/gOWOxZY>) and Rose💫 (<https://codepen.io/perfumeregret/pen/KKmKZdp>).
+-   Original webpages copyright (c) 2021 Abi (<https://codepen.io/hedgefruit/pen/jOmbGrP>).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
