@@ -4036,7 +4036,7 @@ ABI'S WEBPAGES
 .webpage {
     display: block;
     width: 100%;
-    margin: 75px 0px;
+    margin: 75px 0;
 }
 
 .webpage .webpagebox {
@@ -4107,13 +4107,13 @@ ABI'S WEBPAGES
 
 .webpagemaincontent h1 {
     font: 1.4rem/1.8 var(--display);
-    margin: 0px;
+    margin: 0;
     text-transform: uppercase;
 }
 
 .webpagemaincontent h2 {
     font: 1.2rem/1.8 var(--display);
-    margin: 0px;
+    margin: 0;
     color: var(--clear);
     -webkit-text-stroke: 1px var(--black-hex);
 }
