@@ -81,13 +81,13 @@ body {
         var(--green-radial-gradient3), var(--pink-base);
     background-attachment: fixed;
 
-    /*FONTS*/
+    /* FONTS */
     --sans: "Work Sans", sans-serif;
     --display: "Mont Heavy Demo", "Work Sans", sans-serif;
     --body-font: var(--body-font-size) / 180% var(--sans);
     --body-font-size: 0.8125rem;
 
-    /*COLORS*/
+    /* COLORS */
     --clear: rgba(255, 255, 255, 0);
     --white: 249, 247, 246;
     --white-hex: #f6f8f8;
@@ -104,49 +104,56 @@ body {
     --blue: 66, 135, 245;
     --blue-hex: #6c92f9;
 
-    /*BACKGROUND GRADIENTS - do not change*/
+    /* BACKGROUND GRADIENTS */
     --pink-base: linear-gradient(
         to right,
         var(--pink-hex) 0%,
         var(--pink-hex) 100%
     );
+
     --pink-radial-gradient: radial-gradient(
         circle at bottom right,
         var(--pink-hex),
         var(--clear) 50%
     );
+
     --purple-radial-gradient: radial-gradient(
         circle at bottom left,
         var(--purple-hex) 0%,
         var(--clear) 70%
     );
+
     --purple-radial-gradient2: radial-gradient(
         circle at 60% center,
         var(--purple-hex) 0%,
         var(--clear) 55%
     );
+
     --purple-radial-gradient3: radial-gradient(
         circle at 100% center,
         var(--purple-hex) 0%,
         var(--clear) 30%
     );
+
     --green-radial-gradient: radial-gradient(
         circle at top right,
         var(--green-hex),
         var(--clear) 100%
     );
+
     --green-radial-gradient2: radial-gradient(
         circle at center left,
         var(--green-hex),
         var(--clear) 25%
     );
+
     --green-radial-gradient3: radial-gradient(
         circle at 60% bottom,
         var(--green-hex),
         var(--clear) 75%
     );
 
-    /*GRADIENTS - place your gradient variables below*/
+    /* ADDITIONAL GRADIENTS */
     /* from Leeann's Site Pack */
     --group-rgb: 66, 135, 245;
     --group: var(--blue-hex);
@@ -201,12 +208,10 @@ body {
         rgba(var(--green), 0.3) 100%
     );
 
-    /*IMAGES - place your image variables below*/
-
-    /*OTHER - place your other variables below*/
+    /* OTHER */
     --spacing: 10vw; /*leave this as is*/
 
-    /* ----- for member list */
+    /* for member list */
     --transi-quick: 0.3s all ease-in-out;
     --transi-med: 0.6s all ease-in-out;
     --transi-one-del: 0.3s;
@@ -214,7 +219,6 @@ body {
     --transi-three-del: 0.9s;
 }
 
-/* do not change this */
 *,
 *::before,
 *::after {
@@ -265,8 +269,11 @@ JCINK SPECIFIC
     width: initial;
 }
 
-/*** LEEANN'S HEADER & NAVIGATION ***/
-
+/*
+-----
+LEEANN'S HEADER & NAVIGATION
+-----
+*/
 #topbar {
     position: fixed;
     width: 100%;
@@ -527,8 +534,11 @@ JCINK SPECIFIC
     align-self: end;
 }
 
-/*** RAY'S CATEGORIES, FORUMS, TOPICS ***/
-
+/*
+-----
+RAY'S CATEGORIES, FORUMS, TOPICS
+-----
+*/
 .category-wrapper {
     width: 100%;
     padding: 3vw 2vw 2vw;
@@ -629,6 +639,7 @@ JCINK SPECIFIC
     padding: 1vw;
     border: 1px solid rgba(var(--white), 0.3);
 }
+
 .forum-avatar img {
     object-fit: cover;
     width: 100px;
@@ -759,10 +770,12 @@ JCINK SPECIFIC
     grid-area: topic-desc;
     border-bottom: 2px solid rgb(var(--black));
 }
+
 .topic-last-post-av {
     grid-area: topic-last-post-av;
     position: relative;
 }
+
 .topic-last-post-av img {
     width: 50px;
     height: 50px;
@@ -784,9 +797,11 @@ JCINK SPECIFIC
     left: 10px;
     top: 0;
 }
+
 .topic-last-post {
     grid-area: topic-last-post;
 }
+
 .topic-last-post a,
 .topic-starter a,
 .views-replies {
@@ -799,6 +814,7 @@ JCINK SPECIFIC
     min-width: 50%;
     text-align: center;
 }
+
 .topic-starter {
     grid-area: topic-starter;
 }
@@ -816,8 +832,11 @@ JCINK SPECIFIC
     align-items: stretch;
 }
 
-/*** LISSITA'S BOARD STATS ***/
-
+/*
+-----
+LISSITA'S BOARD STATS
+-----
+*/
 .stats {
     margin-top: 150px;
     width: 100%;
@@ -1085,8 +1104,11 @@ JCINK SPECIFIC
     overflow: auto;
 }
 
-/*** JULIET POST ROW ***/
-
+/*
+-----
+JULIET'S POST ROW
+-----
+*/
 .pr-wrap {
     display: block;
     width: 100%;
@@ -1227,8 +1249,11 @@ JCINK SPECIFIC
     object-fit: cover;
 }
 
-/*** ABI'S MINI PROFILE ***/
-
+/*
+-----
+ABI'S MINI-PROFILE
+-----
+*/
 .mpbody {
     background-size: cover;
     width: 250px;
@@ -1340,8 +1365,11 @@ JCINK SPECIFIC
     color: var(--black-hex);
 }
 
-/*** MONTY'S MAIN PROFILE ***/
-
+/*
+-----
+MONTY'S MAIN PROFILE
+-----
+*/
 .main-profile {
     position: relative;
 }
@@ -1760,8 +1788,11 @@ JCINK SPECIFIC
     opacity: 1;
 }
 
-/*** RORA'S MEMBER LIST ***/
-
+/*
+-----
+RORA'S MEMBER LIST
+-----
+*/
 .cp-memlist {
     width: 100%;
     display: flex;
@@ -1916,6 +1947,7 @@ JCINK SPECIFIC
 .cp-memitem:hover .membord::after {
     width: 0%;
 }
+
 .cp-memitem:hover .membord span::before,
 .cp-memitem:hover .membord span::after {
     height: 0%;
@@ -1926,16 +1958,19 @@ JCINK SPECIFIC
     bottom: 0;
     transition-delay: 0s;
 }
+
 .cp-memitem .membord span::after {
     transition-delay: 0s;
     right: 0;
     bottom: 0;
 }
+
 .cp-memitem .membord::before {
     right: 0;
     top: 0;
     transition-delay: var(--transi-one-del);
 }
+
 .cp-memitem .membord span::before {
     transition-delay: 0.2s;
     left: 0;
@@ -1945,12 +1980,15 @@ JCINK SPECIFIC
 .cp-memitem .membord :hover::after {
     transition-delay: 0s;
 }
+
 .cp-memitem .membord:hover span::after {
     transition-delay: 0;
 }
+
 .cp-memitem .membord:hover::before {
     transition-delay: 0.2s;
 }
+
 .cp-memitem .membord:hover span::before {
     transition-delay: 0.2s;
 }
@@ -2617,7 +2655,6 @@ LEEANN'S SITE PACK
 ALLY'S RP PACK
 -----
 */
-
 .post-1 b,
 .post-2 b,
 .post-3 b,
