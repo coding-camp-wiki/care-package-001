@@ -70,41 +70,59 @@ Coding Camp info:
 }
 
 body {
-    padding: 0;
-    margin: 0;
-    font: var(--body-font);
-    letter-spacing: 1px;
-    color: var(--black-hex);
     background: var(--purple-radial-gradient), var(--green-radial-gradient2),
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
         var(--green-radial-gradient3), var(--pink-base);
     background-attachment: fixed;
+    color: var(--black-hex);
+    font: var(--body-font);
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
 
     /* FONTS */
-    --sans: "Work Sans", sans-serif;
     --display: "Mont Heavy Demo", "Work Sans", sans-serif;
     --body-font: var(--body-font-size) / 180% var(--sans);
     --body-font-size: 0.8125rem;
+    --sans: "Work Sans", sans-serif;
 
     /* COLORS */
-    --clear: rgba(255, 255, 255, 0);
-    --white: 249, 247, 246;
-    --white-hex: #f6f8f8;
     --black: 40, 42, 42;
     --black-hex: #282a2a;
+    --blue: 66, 135, 245;
+    --blue-hex: #6c92f9;
+    --clear: rgba(255, 255, 255, 0);
+    --green: 190, 225, 230;
+    --green-hex: #bee1e6;
     --yellow: 255, 241, 230;
     --yellow-hex: #fff1e6;
     --pink: 250, 210, 225;
     --pink-hex: #fad2e1;
-    --green: 190, 225, 230;
-    --green-hex: #bee1e6;
     --purple: 205, 218, 253;
     --purple-hex: #cddafd;
-    --blue: 66, 135, 245;
-    --blue-hex: #6c92f9;
+    --white: 249, 247, 246;
+    --white-hex: #f6f8f8;
 
     /* BACKGROUND GRADIENTS */
+    --green-radial-gradient: radial-gradient(
+        circle at top right,
+        var(--green-hex),
+        var(--clear) 100%
+    );
+
+    --green-radial-gradient2: radial-gradient(
+        circle at center left,
+        var(--green-hex),
+        var(--clear) 25%
+    );
+
+    --green-radial-gradient3: radial-gradient(
+        circle at 60% bottom,
+        var(--green-hex),
+        var(--clear) 75%
+    );
+
     --pink-base: linear-gradient(
         to right,
         var(--pink-hex) 0%,
@@ -135,28 +153,10 @@ body {
         var(--clear) 30%
     );
 
-    --green-radial-gradient: radial-gradient(
-        circle at top right,
-        var(--green-hex),
-        var(--clear) 100%
-    );
-
-    --green-radial-gradient2: radial-gradient(
-        circle at center left,
-        var(--green-hex),
-        var(--clear) 25%
-    );
-
-    --green-radial-gradient3: radial-gradient(
-        circle at 60% bottom,
-        var(--green-hex),
-        var(--clear) 75%
-    );
-
     /* ADDITIONAL GRADIENTS */
     /* from Leeann's Site Pack */
-    --group-rgb: 66, 135, 245;
     --group: var(--blue-hex);
+    --group-rgb: 66, 135, 245;
 
     --group-gradient-fade: linear-gradient(
         to right,
@@ -183,16 +183,16 @@ body {
         rgba(var(--green), 1) 100%
     );
 
-    --group-gradient-mid: linear-gradient(
-        45deg,
-        rgba(var(--blue), 0.57) 0%,
-        rgba(var(--green), 0.57) 100%
-    );
-
     --group-gradient-light: linear-gradient(
         235deg,
         rgba(var(--blue), 0.28) 0%,
         rgba(var(--green), 0.28) 100%
+    );
+
+    --group-gradient-mid: linear-gradient(
+        45deg,
+        rgba(var(--blue), 0.57) 0%,
+        rgba(var(--green), 0.57) 100%
     );
 
     /* from Jaslene's RP Pack */
@@ -212,11 +212,11 @@ body {
     --spacing: 10vw; /*leave this as is*/
 
     /* for member list */
-    --transi-quick: 0.3s all ease-in-out;
     --transi-med: 0.6s all ease-in-out;
     --transi-one-del: 0.3s;
-    --transi-two-del: 0.6s;
+    --transi-quick: 0.3s all ease-in-out;
     --transi-three-del: 0.9s;
+    --transi-two-del: 0.6s;
 }
 
 *,
@@ -275,37 +275,37 @@ LEEANN'S HEADER & NAVIGATION
 -----
 */
 #topbar {
-    position: fixed;
-    width: 100%;
-    height: var(--topbar-block-size);
     background: var(--white-hex);
-    z-index: 900;
-    top: 0;
     display: grid;
-    grid-template-columns: 100px 1fr 0.5fr;
     grid-column-gap: 1rem;
+    grid-template-columns: 100px 1fr 0.5fr;
+    height: var(--topbar-block-size);
     padding-left: 1.5rem;
     padding-top: 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 900;
 }
 
 #topbar img {
-    height: 80px;
-    width: 80px;
-    object-fit: cover;
     border-radius: 50%;
-    grid-row: 1;
     grid-column: 1;
+    grid-row: 1;
+    height: 80px;
+    object-fit: cover;
+    width: 80px;
 }
 
 #topbar .topicon {
-    height: 80px;
-    width: 80px;
     border: 1px solid var(--black-hex);
     border-radius: 50%;
-    grid-row: 1;
-    position: relative;
     grid-column: 1;
+    grid-row: 1;
+    height: 80px;
     left: 13%;
+    position: relative;
+    width: 80px;
 }
 
 #topbar .topname {
@@ -324,13 +324,13 @@ LEEANN'S HEADER & NAVIGATION
 }
 
 #topbar .toplinks #myLinks {
-    display: none;
     background: var(--black-hex);
-    width: 200px;
+    display: none;
     max-width: 80%;
-    right: 0;
     position: absolute;
+    right: 0;
     top: 51px;
+    width: 200px;
 }
 
 #topbar .toplinks:hover #myLinks,
@@ -341,11 +341,11 @@ LEEANN'S HEADER & NAVIGATION
 #topbar .toplinks a,
 #topbar .toplinks .icon {
     color: var(--white-hex);
+    display: block;
     fill: var(--white-hex);
+    font-size: 17px;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
-    display: block;
 }
 
 #topbar .toplinks .icon {
@@ -369,8 +369,8 @@ LEEANN'S HEADER & NAVIGATION
     grid-gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 40px;
-    inset-block-start: 0;
     inset-block-end: 0;
+    inset-block-start: 0;
     inset-inline-start: 0;
     position: fixed;
     width: var(--sidebar-inline-size);
@@ -402,32 +402,29 @@ LEEANN'S HEADER & NAVIGATION
 }
 
 #header {
-    width: calc(100% - 50px);
-    margin-left: 50px;
-    height: calc(100vh - 50px);
-    margin-top: 50px;
-    display: grid;
     align-items: center;
-    justify-items: center;
-    font-family: var(--display);
-    text-transform: uppercase;
-    position: relative;
     background: var(--black);
+    display: grid;
+    font-family: var(--display);
+    height: calc(100vh - 50px);
+    justify-items: center;
+    margin-left: 50px;
+    margin-top: 50px;
     outline: 2px solid var(--black-hex);
     outline-offset: -1rem;
+    position: relative;
+    text-transform: uppercase;
     text-align: center;
+    width: calc(100% - 50px);
 }
 
 #header .headerin {
-    display: grid;
     align-items: center;
+    display: grid;
     height: 11rem;
 }
 
 #header .headerin .text {
-    position: relative;
-    font-size: 4rem;
-    color: var(--clear);
     background: linear-gradient(
         to top right,
         var(--pink-hex) 58%,
@@ -435,60 +432,63 @@ LEEANN'S HEADER & NAVIGATION
     );
     -webkit-background-clip: text;
     background-clip: text;
+    color: var(--clear);
+    font-size: 4rem;
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
     -webkit-text-stroke: 2px white;
     z-index: 10 !important;
-    grid-row: 1;
-    grid-column: 1;
 }
 
 #header .headerin .text::before {
+    border-color: var(--black-hex);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    content: "";
+    height: 150px;
+    opacity: 0.2;
     position: absolute;
     right: -30px;
     top: -55px;
-    content: "";
     width: 150px;
-    height: 150px;
-    border-width: 3px;
-    border-color: var(--black-hex);
-    border-style: solid;
-    border-radius: 50%;
     z-index: -1;
-    opacity: 0.2;
 }
 
 #header .headerin .text::after {
+    border-color: var(--black-hex);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    content: "";
+    height: 150px;
+    opacity: 0.2;
     position: absolute;
     right: -40px;
     top: -45px;
-    content: "";
     width: 150px;
-    height: 150px;
-    border-width: 3px;
-    border-color: var(--black-hex);
-    border-style: solid;
-    border-radius: 50%;
     z-index: -1;
-    opacity: 0.2;
 }
 
 #header .headerin .text .text2 {
-    position: absolute;
     color: var(--black-hex);
-    top: 48%;
     left: 0.7%;
+    position: absolute;
+    top: 48%;
     width: 100%;
     z-index: 1;
 }
 
 #header .info {
     border: 2px solid var(--black-hex);
-    width: 90%;
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    grid-template-rows: 1fr 1fr;
     height: 100%;
     justify-self: center;
-    grid-row: 1;
-    grid-column: 1;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    width: 90%;
     z-index: 1;
 }
 
@@ -500,34 +500,34 @@ LEEANN'S HEADER & NAVIGATION
 }
 
 #header .info .links a {
-    text-decoration: none;
     color: var(--black-hex);
     font-size: 0.75rem;
     position: relative;
     text-align: center;
+    text-decoration: none;
     z-index: 10;
 }
 
 #header .info .links a::after {
+    background: var(--purple-radial-gradient);
+    border-bottom: 1px solid rgba(var(--black), 0.3);
     content: "";
-    position: absolute;
     height: 10px;
-    width: 100%;
+    left: 0;
+    position: absolute;
     top: 15%;
     transform: translateY(-50%);
-    left: 0;
-    border-bottom: 1px solid rgba(var(--black), 0.3);
-    background: var(--purple-radial-gradient);
+    width: 100%;
     z-index: -1;
 }
 
 #header .info .links a:hover {
-    transform: scale(1.03);
     cursor: pointer;
     text-shadow: -1px -1px 0 var(--pink-hex), 0 -1px 0 var(--pink-hex),
         1px -1px 0 var(--pink-hex), 1px 0 0 var(--pink-hex),
         1px 1px 0 var(--pink-hex), 0 1px 0 var(--pink-hex),
         -1px 1px 0 var(--pink-hex), -1px 0 0 var(--pink-hex);
+    transform: scale(1.03);
 }
 
 #header .info .site-desc {
