@@ -4058,12 +4058,14 @@ ABI'S WEBPAGES
 }
 
 .webpagesidebar {
-    padding: 25px;
+    --sidebar-padding: 25px;
+
+    padding: var(--sidebar-padding);
 }
 
 .webpagesidebar .webpagesidebarcont {
     position: sticky;
-    top: 25px;
+    inset-block-start: calc(var(--topbar-block-size) + var(--sidebar-padding));
 }
 
 .webpagesidebar .webpagesidebarcont a {
