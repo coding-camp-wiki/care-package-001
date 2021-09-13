@@ -1,4 +1,19 @@
+/*
+==========
+CARE PACKAGE #001
+CUTTING EDGE
+v0.0.0
+A Coding Camp project
+-----
+Coding Camp server:
+    - https://discord.gg/udQ5WsqpME
+Coding Camp info:
+    - https://coding-camp.tumblr.com/about
+==========
+*/
+
 /* use works sans as a fallback for mont heavy demo's missing glyphs */
+
 /* work sans, vietnamese */
 @font-face {
     font-family: "Mont Heavy Demo";
