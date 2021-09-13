@@ -1,0 +1,2 @@
+# let pre-commit's pretty-format-json handle those files
+*.json
