@@ -21,7 +21,7 @@
         <script>
             // collapsible menu
             document.addEventListener("DOMContentLoaded", function () {
-                const nav = document.querySelector("nav.element-nav-primary");
+                const nav = document.getElementById("block-nav-primary");
                 const button = nav.querySelector("button");
                 const menu = nav.querySelector("ul");
 
@@ -95,8 +95,8 @@
         <div class="utility-wrapper">
             <nav
                 aria-labelledby="title-nav-primary"
-                class="element-nav-primary"
                 data-js-enhanced="false"
+                id="block-nav-primary"
             >
                 <h2 class="utility-visually-hidden" id="title-nav-primary">
                     Controls

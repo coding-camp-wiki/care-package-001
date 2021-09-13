@@ -217,83 +217,6 @@ img {
     max-inline-size: 100%;
 }
 
-nav.element-nav-primary[data-js-enhanced="false"] {
-    background: var(--black-hex);
-    padding: 1em;
-}
-
-nav.element-nav-primary a {
-    color: var(--white-hex);
-    display: block;
-    font-size: 17px;
-    padding-block: 14px;
-    padding-inline: 16px;
-    text-decoration: none;
-}
-
-nav.element-nav-primary a:focus,
-nav.element-nav-primary a:hover {
-    background: var(--white-hex);
-    color: var(--black-hex);
-}
-
-nav.element-nav-primary[data-js-enhanced="true"] button {
-    background: var(--black-hex);
-    block-size: var(--topbar-block-size);
-    border: none;
-    display: block;
-    fill: var(--white-hex);
-    inline-size: var(--topbar-block-size);
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    margin-inline-start: auto;
-    position: fixed;
-    z-index: 999;
-}
-
-nav.element-nav-primary[data-js-enhanced="true"] button:hover {
-    background: var(--white-hex);
-    fill: var(--black-hex);
-}
-
-nav.element-nav-primary[data-js-enhanced="true"] button:focus {
-    background: var(--pink-hex);
-    fill: var(--black-hex);
-    outline: 2px solid;
-    outline-offset: -0.5em;
-}
-
-nav.element-nav-primary ul {
-    background: var(--black-hex);
-    margin: 0;
-    padding: 0;
-}
-
-nav.element-nav-primary[data-js-enhanced="false"] ul {
-    border: 2px solid var(--white-hex);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
-}
-
-nav.element-nav-primary[data-js-enhanced="true"] ul {
-    inset-block-start: var(--topbar-block-size);
-    inset-inline-end: 0;
-    max-block-size: calc(100vh - var(--topbar-block-size));
-    max-inline-size: 80%;
-    inline-size: 200px;
-    overflow: auto;
-    position: fixed;
-    z-index: 999;
-}
-
-nav.element-nav-primary button[aria-expanded="false"] + ul {
-    display: none;
-}
-
-nav.element-nav-primary [data-count-new="0"] {
-    display: none;
-}
-
 ul[role="list"] {
     /*
     role="list" is required in the html for
@@ -3756,9 +3679,367 @@ IZZY'S DEV PACK
 
 /*
 -----
+ROSE'S DEV PACK
+-----
+*/
+
+/* ----- BASE */
+rosedev {
+    box-sizing: border-box !important;
+    display: block;
+    width: 100%;
+    padding: 40px 30px;
+    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+}
+
+rosedev.gradient {
+    background: var(--group-gradient-lr);
+}
+rosedev.white {
+    background: var(--white-hex);
+    border: var(--black-hex) solid 2px;
+    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+}
+
+rosedev.black {
+    background: var(--black-hex);
+}
+
+rosedev devline {
+    display: block;
+    width: calc(100% + 60px);
+    margin: 0 0 0 -30px;
+    height: 1px;
+    background: var(--black-hex);
+}
+
+rosedev.black devline {
+    background: var(--white-hex);
+}
+
+rosedev devtop {
+    height: 30px;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 999;
+    font: 400 10px var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 90%;
+    background: var(--white-hex);
+    border: var(--black-hex) solid 2px;
+    top: -10px;
+}
+
+rosedev devtop b {
+    font: 300 8px var(--sans);
+    letter-spacing: 1.5px;
+    padding: 5px 6px 5px 6px;
+    position: relative;
+    bottom: 1px;
+    text-transform: uppercase;
+    background: var(--black-hex);
+    color: var(--white-hex);
+}
+
+rosedev.black devtop {
+    background: var(--black-hex);
+    color: var(--white-hex);
+    border: var(--white-hex) solid 2px;
+}
+
+rosedev.black devtop b {
+    background: var(--white-hex);
+    color: var(--black-hex);
+}
+
+rosedev devsub {
+    font: 300 8px var(--sans);
+    letter-spacing: 1.5px;
+    text-align: justify;
+    padding: 5px 6px 5px 6px;
+    text-transform: uppercase;
+    background: rgba(var(--black), 1);
+    color: rgba(var(--white), 1);
+}
+
+rosedev .dev {
+    background: var(--clear);
+    margin: 20px 0 -10px 0;
+}
+
+rosedev .dev2 {
+    background: var(--white-hex);
+    padding: 20px 20px 10px 20px;
+    margin: 20px 0 0 0;
+}
+
+rosedev.white .dev2 {
+    background: var(--black-hex);
+    padding: 20px 20px 10px 20px;
+    margin: 20px 0 0 0;
+}
+
+/* ----- IMAGES */
+rosedev img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+rosedev .dev img {
+    border: var(--black-hex) solid 2px;
+    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+}
+
+rosedev .two img {
+    width: calc(50% - 3px);
+}
+
+rosedev .three img {
+    width: calc(33% - 3px);
+}
+
+/* ----- QUOTE */
+rosedev .quote {
+    display: block;
+    color: var(--black-hex);
+    line-height: 130%;
+    letter-spacing: 1px;
+    padding: 4px 3px 4px 3px;
+}
+
+rosedev.black .quote {
+    color: var(--white-hex);
+}
+
+rosedev .quote x {
+    line-height: 130%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font: 400 35px var(--display);
+    padding: 4px 3px 4px 3px;
+    background: var(--group-gradient-lr);
+}
+
+rosedev .quote x b {
+    font: 35px var(--display);
+}
+
+rosedev.gradient .quote x {
+    background: var(--white-hex);
+}
+
+rosedev.gradient .quote x b {
+    color: var(--group-gradient-lr);
+    background: var(--group-gradient-lr);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font: 35px var(--display);
+}
+
+rosedev.black .quote x b {
+    font-size: 35px;
+    color: var(--black-hex);
+}
+
+rosedev.white .quote x b {
+    font-size: 35px;
+    color: var(--white-hex);
+}
+
+rosedev .quote y {
+    color: var(--clear);
+    -webkit-text-stroke: 1px var(--white-hex);
+    text-transform: uppercase;
+    font: 35px var(--display);
+}
+
+rosedev .quote y b {
+    font-size: 35px;
+    color: var(--white-hex);
+}
+
+rosedev.white .quote y {
+    -webkit-text-stroke: 1px var(--black-hex);
+}
+
+rosedev.white .quote y b {
+    font-size: 35px;
+    color: var(--black-hex);
+}
+
+rosedev .quote z {
+    background: var(--group-gradient-lr);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 14px;
+    text-transform: uppercase;
+    font: 35px var(--display);
+}
+
+rosedev .quote z b {
+    background: var(--white-hex);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    font: 35px var(--display);
+}
+
+rosedev.white .quote z b {
+    background: var(--black-hex);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    font: 35px var(--display);
+}
+
+rosedev .quote author {
+    display: block;
+    text-align: right;
+    font: 400 9px var(--sans);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* ----- DRABBLE/TRACKER */
+rosedev.black .drabble {
+    color: var(--white-hex);
+}
+
+rosedev .drabble x {
+    display: block;
+    color: var(--white-hex);
+}
+
+rosedev.white .drabble x {
+    color: var(--black-hex);
+}
+
+rosedev .drabble x a {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--white-hex);
+    text-decoration: none;
+}
+
+rosedev.white .drabble x a {
+    color: var(--black-hex);
+}
+
+rosedev .drabble b {
+    font-size: 1rem;
+}
+
+rosedev.black .drabble b,
+rosedev.white .drabble b {
+    margin: 10px 0;
+    color: var(--group-gradient-lr);
+    background: var(--group-gradient-lr);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+rosedev .drabble bb {
+    background: var(--black-hex);
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: var(--white-hex);
+    font-weight: bold;
+}
+
+rosedev.black .drabble bb {
+    background: var(--white-hex);
+    color: var(--black-hex);
+}
+
+rosedev .drabble i {
+    opacity: 0.7;
+    letter-spacing: 1px;
+}
+
+rosedev .drabble ii {
+    text-transform: uppercase;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: var(--group);
+}
+
+rosedev .drabble u {
+    text-decoration: none;
+    border-bottom: 2px solid var(--group);
+}
+
+rosedev .drabble uu {
+    background: var(--group-gradient-lr) no-repeat bottom left/100% 8px;
+}
+
+rosedev .drabble bubble {
+    display: block;
+    background: var(--white-hex);
+    margin: 10px 0;
+    padding: 10px;
+}
+
+rosedev.black .drabble bubble {
+    color: var(--black-hex);
+}
+
+rosedev.white .drabble bubble {
+    background: var(--black-hex);
+    color: var(--white-hex);
+}
+
+rosedev .drabble lines {
+    display: block;
+    padding: 10px;
+    border-left: 1px solid var(--group);
+    border-right: 1px solid var(--group);
+}
+
+rosedev .drabble quote {
+    padding: 4px 3px 4px 3px;
+    background: var(--black-hex);
+    color: var(--white-hex);
+    font: 300 9px var(--sans);
+    line-height: 250%;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+rosedev.black .drabble quote {
+    background: var(--white-hex);
+    color: var(--black-hex);
+}
+
+/*
+-----
 UTILITIES
 -----
 */
+
+.utility-bg-dark {
+    background-color: var(--black-hex);
+}
+
+.utility-bg-gradient-1 {
+    background: var(--group-gradient-lr);
+}
 
 .utility-visually-hidden:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
@@ -3783,7 +4064,7 @@ BLOCKS
 -----
 */
 
-.block-heading-1a {
+.block-heading-a-1 {
     font: 700 2.2em/100% var(--display);
     color: var(--blue-hex);
     text-shadow: 0 0 5px rgba(var(--white), 0.55);
@@ -3791,14 +4072,7 @@ BLOCKS
     letter-spacing: 1px;
 }
 
-.block-heading-1b {
-    display: inline;
-    font: 2rem/1.8 var(--display);
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--black-hex);
-}
-
-.block-heading-2a {
+.block-heading-a-2 {
     font: 700 1.2em/100% var(--display);
     background: var(--group-gradient-mid);
     text-shadow: 0 0 5px rgba(var(--white), 0.55);
@@ -3810,13 +4084,7 @@ BLOCKS
     width: max-content;
 }
 
-.block-heading-2b {
-    font: 1.3rem/1.8 var(--display);
-    text-transform: lowercase;
-    color: var(--group);
-}
-
-.block-heading-3a {
+.block-heading-a-3 {
     font: 900 0.9em/100% var(--sans);
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -3827,10 +4095,80 @@ BLOCKS
     background-clip: text;
 }
 
-.block-heading-3b {
+.block-heading-b-1 {
+    display: inline;
+    font: 2rem/1.8 var(--display);
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--black-hex);
+}
+
+.block-heading-b-2 {
+    font: 1.3rem/1.8 var(--display);
+    text-transform: lowercase;
+    color: var(--group);
+}
+
+.block-heading-b-3 {
     font: 1rem var(--display);
     text-transform: uppercase;
     letter-spacing: 2.25px;
+}
+
+.block-heading-c {
+    -webkit-text-fill-color: var(--clear);
+    -webkit-text-stroke: 1px var(--black-hex);
+    text-transform: uppercase;
+    font: 35px var(--display);
+    line-height: 100%;
+    margin: 10px 0;
+}
+
+.block-heading-c[data-bg="dark"] {
+    -webkit-text-stroke-color: var(--white-hex);
+}
+
+.block-heading-d {
+    margin: 10px 0;
+    font: 400 30px var(--display);
+    background: var(--group-gradient-lr) no-repeat bottom left/100% 18px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.block-heading-e {
+    margin: 10px 0;
+    color: var(--group-gradient-lr);
+    background: var(--group-gradient-lr);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font: 35px var(--display);
+}
+
+.block-heading-f {
+    font: 400 30px var(--display);
+    margin: 10px 0;
+    border-bottom: 2px solid var(--group);
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.block-heading-g {
+    width: -moz-fit-content;
+    width: fit-content;
+    font: 400 25px var(--display);
+    margin: 10px 0;
+    padding: 3px;
+    background: var(--group-gradient-lr);
+    color: var(--white-hex);
+}
+
+.block-heading-g[data-bg="gradient"] {
+    background: var(--white-hex);
+    color: var(--black-hex);
 }
 
 .block-icon {
@@ -3838,4 +4176,81 @@ BLOCKS
 
     block-size: var(--dimension);
     inline-size: var(--dimension);
+}
+
+nav#block-nav-primary[data-js-enhanced="false"] {
+    background: var(--black-hex);
+    padding: 1em;
+}
+
+nav#block-nav-primary a {
+    color: var(--white-hex);
+    display: block;
+    font-size: 17px;
+    padding-block: 14px;
+    padding-inline: 16px;
+    text-decoration: none;
+}
+
+nav#block-nav-primary a:focus,
+nav#block-nav-primary a:hover {
+    background: var(--white-hex);
+    color: var(--black-hex);
+}
+
+nav#block-nav-primary[data-js-enhanced="true"] button {
+    background: var(--black-hex);
+    block-size: var(--topbar-block-size);
+    border: none;
+    display: block;
+    fill: var(--white-hex);
+    inline-size: var(--topbar-block-size);
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    margin-inline-start: auto;
+    position: fixed;
+    z-index: 999;
+}
+
+nav#block-nav-primary[data-js-enhanced="true"] button:hover {
+    background: var(--white-hex);
+    fill: var(--black-hex);
+}
+
+nav#block-nav-primary[data-js-enhanced="true"] button:focus {
+    background: var(--pink-hex);
+    fill: var(--black-hex);
+    outline: 2px solid;
+    outline-offset: -0.5em;
+}
+
+nav#block-nav-primary ul {
+    background: var(--black-hex);
+    margin: 0;
+    padding: 0;
+}
+
+nav#block-nav-primary[data-js-enhanced="false"] ul {
+    border: 2px solid var(--white-hex);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+}
+
+nav#block-nav-primary[data-js-enhanced="true"] ul {
+    inset-block-start: var(--topbar-block-size);
+    inset-inline-end: 0;
+    max-block-size: calc(100vh - var(--topbar-block-size));
+    max-inline-size: 80%;
+    inline-size: 200px;
+    overflow: auto;
+    position: fixed;
+    z-index: 999;
+}
+
+nav#block-nav-primary button[aria-expanded="false"] + ul {
+    display: none;
+}
+
+nav#block-nav-primary [data-count-new="0"] {
+    display: none;
 }
