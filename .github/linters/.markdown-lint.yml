@@ -1,17 +1,8 @@
 ---
 default: true
-blank_lines: false # Error on blank lines
 
-MD004: false # Unordered list style
 MD007:
     indent: 4 # Unordered list indentation
-MD013:
-    line_length: 400 # Line length 80 is far to short
-MD026:
-    punctuation: ".,;:!。，；:" # List of not allowed
-MD029: false # Ordered list item prefix
 MD030:
-    ul_single: 3,
+    ul_single: 3
     ul_multi: 3 # Ordered list indentation
-MD033: false # Allow inline HTML
-MD036: false # Emphasis used instead of a heading
