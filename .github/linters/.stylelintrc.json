@@ -10,6 +10,7 @@
             "custom-properties",
             "declarations"
         ],
-        "order/properties-alphabetical-order": true
+        "order/properties-alphabetical-order": true,
+        "value-list-comma-newline-after": false
     }
 }
