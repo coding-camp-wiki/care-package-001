@@ -4029,6 +4029,97 @@ rosedev.black .drabble quote {
 
 /*
 -----
+ABI'S WEBPAGES
+-----
+*/
+
+.webpage {
+    display: block;
+    width: 100%;
+    margin: 75px 0px;
+}
+
+.webpage .webpagebox {
+    padding: 15px;
+    background: var(--white-hex);
+    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    font: var(--body-font);
+    width: 100%;
+}
+
+.webpage .webpagebox .webpageboxborder {
+    height: 100%;
+    border: var(--black-hex) solid 2px;
+}
+
+.webpagecont {
+    display: grid;
+    grid-template-columns: 275px 2px 1fr;
+}
+
+.webpagesidebar {
+    padding: 25px;
+}
+
+.webpagesidebar .webpagesidebarcont {
+    position: sticky;
+    top: 25px;
+}
+
+.webpagesidebar .webpagesidebarcont a {
+    text-decoration: none;
+    color: inherit;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 2.5;
+    transition: 1s ease;
+    text-transform: uppercase;
+}
+
+.webpagesidebar .webpagesidebarcont a:hover {
+    letter-spacing: 2px;
+    transition: 1s ease;
+}
+
+.webpagesidebar .webpagesidebarcont .sidebarheader {
+    font: 0.9rem/1.8 var(--display);
+    text-transform: uppercase;
+    border-bottom: solid 2px var(--black-hex);
+    width: 275px;
+    margin-left: -25px;
+    padding-left: 25px;
+    padding-right: 7px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+.webpageborder {
+    margin-top: -17px;
+    width: 2px;
+    background: var(--black-hex);
+    height: calc(100% + 34px);
+}
+
+.webpagemaincontent {
+    padding: 50px;
+    text-align: justify;
+}
+
+.webpagemaincontent h1 {
+    font: 1.4rem/1.8 var(--display);
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.webpagemaincontent h2 {
+    font: 1.2rem/1.8 var(--display);
+    margin: 0px;
+    color: var(--clear);
+    -webkit-text-stroke: 1px var(--black-hex);
+}
+
+/*
+-----
 UTILITIES
 -----
 */
