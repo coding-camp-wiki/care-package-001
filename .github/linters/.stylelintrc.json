@@ -4,6 +4,7 @@
         "stylelint-order"
     ],
     "rules": {
+        "declaration-colon-newline-after": false,
         "indentation": 4,
         "order/order": [
             "custom-properties",
