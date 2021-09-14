@@ -4,13 +4,13 @@
         "stylelint-order"
     ],
     "rules": {
-        "declaration-colon-newline-after": false,
+        "declaration-colon-newline-after": null,
         "indentation": 4,
         "order/order": [
             "custom-properties",
             "declarations"
         ],
         "order/properties-alphabetical-order": true,
-        "value-list-comma-newline-after": false
+        "value-list-comma-newline-after": null
     }
 }
