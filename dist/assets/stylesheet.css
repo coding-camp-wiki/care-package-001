@@ -70,17 +70,6 @@ Coding Camp info:
 }
 
 body {
-    background: var(--purple-radial-gradient), var(--green-radial-gradient2),
-        var(--purple-radial-gradient3), var(--pink-radial-gradient),
-        var(--purple-radial-gradient2), var(--green-radial-gradient),
-        var(--green-radial-gradient3), var(--pink-base);
-    background-attachment: fixed;
-    color: var(--black-hex);
-    font: var(--body-font);
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 0;
-
     /* FONTS */
     --display: "Mont Heavy Demo", "Work Sans", sans-serif;
     --body-font: var(--body-font-size) / 180% var(--sans);
@@ -110,43 +99,36 @@ body {
         var(--green-hex),
         var(--clear) 100%
     );
-
     --green-radial-gradient2: radial-gradient(
         circle at center left,
         var(--green-hex),
         var(--clear) 25%
     );
-
     --green-radial-gradient3: radial-gradient(
         circle at 60% bottom,
         var(--green-hex),
         var(--clear) 75%
     );
-
     --pink-base: linear-gradient(
         to right,
         var(--pink-hex) 0%,
         var(--pink-hex) 100%
     );
-
     --pink-radial-gradient: radial-gradient(
         circle at bottom right,
         var(--pink-hex),
         var(--clear) 50%
     );
-
     --purple-radial-gradient: radial-gradient(
         circle at bottom left,
         var(--purple-hex) 0%,
         var(--clear) 70%
     );
-
     --purple-radial-gradient2: radial-gradient(
         circle at 60% center,
         var(--purple-hex) 0%,
         var(--clear) 55%
     );
-
     --purple-radial-gradient3: radial-gradient(
         circle at 100% center,
         var(--purple-hex) 0%,
@@ -154,22 +136,20 @@ body {
     );
 
     /* ADDITIONAL GRADIENTS */
+
     /* from Leeann's Site Pack */
     --group: var(--blue-hex);
     --group-rgb: 66, 135, 245;
-
     --group-gradient-fade: linear-gradient(
         to right,
         rgba(var(--blue), 0.5),
         rgba(var(--green), 0.5)
     );
-
     --group-gradient-lr: linear-gradient(
         to right,
         var(--blue-hex),
         var(--green-hex)
     );
-
     --group-gradient-rl: linear-gradient(
         to left,
         var(--blue-hex),
@@ -182,13 +162,11 @@ body {
         rgba(var(--blue), 1) 0%,
         rgba(var(--green), 1) 100%
     );
-
     --group-gradient-light: linear-gradient(
         235deg,
         rgba(var(--blue), 0.28) 0%,
         rgba(var(--green), 0.28) 100%
     );
-
     --group-gradient-mid: linear-gradient(
         45deg,
         rgba(var(--blue), 0.57) 0%,
@@ -201,7 +179,6 @@ body {
         rgba(var(--blue), 1) 0%,
         rgba(var(--green), 1) 100%
     );
-
     --jasgradient-l: linear-gradient(
         150deg,
         rgba(var(--blue), 0.3) 0%,
@@ -209,7 +186,7 @@ body {
     );
 
     /* OTHER */
-    --spacing: 10vw; /*leave this as is*/
+    --spacing: 10vw; /* leave this as is */
 
     /* for member list */
     --transi-med: 0.6s all ease-in-out;
@@ -217,6 +194,17 @@ body {
     --transi-quick: 0.3s all ease-in-out;
     --transi-three-del: 0.9s;
     --transi-two-del: 0.6s;
+
+    background: var(--purple-radial-gradient), var(--green-radial-gradient2),
+        var(--purple-radial-gradient3), var(--pink-radial-gradient),
+        var(--purple-radial-gradient2), var(--green-radial-gradient),
+        var(--green-radial-gradient3), var(--pink-base);
+    background-attachment: fixed;
+    color: var(--black-hex);
+    font: var(--body-font);
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -413,8 +401,8 @@ LEEANN'S HEADER & NAVIGATION
     outline: 2px solid var(--black-hex);
     outline-offset: -1rem;
     position: relative;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
     width: calc(100% - 50px);
 }
 
@@ -540,67 +528,66 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 -----
 */
 .category-wrapper {
-    width: 100%;
-    padding: 3vw 2vw 2vw;
     background-color: rgb(var(--white));
     margin: 2vw 0;
+    padding: 3vw 2vw 2vw;
+    width: 100%;
 }
 
 .category-inner {
+    border-bottom: 2px solid rgb(var(--black));
     border-left: 2px solid rgb(var(--black));
     border-right: 2px solid rgb(var(--black));
-    border-bottom: 2px solid rgb(var(--black));
     position: relative;
 }
 
 .category-inner > .category-title {
+    background-color: rgb(var(--white));
+    display: inline-block;
     font-family: var(--display);
     font-size: 4vmax;
     font-weight: 800;
-    position: relative;
-    top: -2vmax;
-    background-color: rgb(var(--white));
-    line-height: 100%;
-    display: inline-block;
     left: 5%;
+    line-height: 100%;
     max-width: 95%;
     padding: 0 1vw;
+    position: relative;
+    top: -2vmax;
     z-index: 2;
 }
 
 .category-border {
-    position: absolute;
-    left: -1px;
-    display: block;
-    content: "";
-    border-top: 2px solid rgb(var(--black));
-    width: calc(100% + 3px);
     background: inherit;
+    border-top: 2px solid rgb(var(--black));
+    content: "";
+    display: block;
+    left: -1px;
+    position: absolute;
     top: 0;
+    width: calc(100% + 3px);
     z-index: 1;
 }
 
 .forum-row {
-    padding: 0 2vw 2vw;
-    position: relative;
     display: grid;
+    gap: 4vw 4vw;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: auto;
-    gap: 4vw 4vw;
+    padding: 0 2vw 2vw;
+    position: relative;
 }
 
 .forum-wrapper {
-    width: 100%;
     background: var(--purple-radial-gradient), var(--green-radial-gradient2),
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
         var(--green-radial-gradient3), var(--pink-base);
-    position: relative;
-
+    border-bottom: 2px solid rgb(var(--black));
     border-left: 2px solid rgb(var(--black));
     border-right: 2px solid rgb(var(--black));
-    border-bottom: 2px solid rgb(var(--black));
     box-shadow: 5px 5px 5px rgba(var(--black), 0.3);
+    position: relative;
+    width: 100%;
 }
 
 .redirect {
@@ -613,89 +600,89 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 
 .redirect-title {
     background-color: rgb(var(--white));
-    width: 100%;
     padding: 3vw;
+    width: 100%;
 }
 
 .redirect-wrapper {
     border: 2px solid rgb(var(--black));
-    padding: 1vw;
     font-family: var(--display);
+    padding: 1vw;
     text-transform: uppercase;
 }
 
 .forum-avatar {
-    border-radius: 100%;
-    display: inline-block;
     background: var(--purple-radial-gradient), var(--green-radial-gradient2),
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
         var(--green-radial-gradient3), var(--pink-base);
-    width: calc(100px + 2vw);
-    height: calc(100px + 2vw);
-    position: relative;
+    border: 1px solid rgba(var(--white), 0.3);
+    border-radius: 100%;
     bottom: 1vw;
+    display: inline-block;
+    height: calc(100px + 2vw);
     left: 1vw;
     padding: 1vw;
-    border: 1px solid rgba(var(--white), 0.3);
+    position: relative;
+    width: calc(100px + 2vw);
 }
 
 .forum-avatar img {
+    border-radius: 100%;
+    height: 100px;
     object-fit: cover;
     width: 100px;
-    height: 100px;
-    border-radius: 100%;
 }
 
 .forum-flex-row {
-    position: relative;
+    align-content: center;
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    align-items: flex-start;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
 }
 
 .forum-title {
     background-color: rgba(var(--white), 1);
-    padding: 1vw 2vw 2vw;
-    font-size: 1rem;
-    font-family: var(--display);
-    text-transform: uppercase;
     border-bottom: 2px solid rgb(var(--black));
     border-top: 2px solid rgb(var(--black));
+    font-family: var(--display);
+    font-size: 1rem;
+    padding: 1vw 2vw 2vw;
+    text-transform: uppercase;
 }
 
 .forum-desc {
+    border-left: 2px solid rgb(var(--black));
     display: inline-block;
-    width: calc(100% - 100px - 3vw);
-    position: relative;
-    text-align: justify;
-    padding: 1.5vw;
-    line-height: 120%;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
-    border-left: 2px solid rgb(var(--black));
+    line-height: 120%;
+    padding: 1.5vw;
+    position: relative;
+    text-align: justify;
+    width: calc(100% - 100px - 3vw);
 }
 
 .topics-replies-flex {
+    align-content: space-around;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-content: space-around;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .topics-replies {
-    display: inline-block;
     background-color: rgb(var(--white));
-    padding: 5px;
     border: 1px solid rgb(var(--black));
+    display: inline-block;
     margin: 20px 5px 0;
     min-width: 40%;
+    padding: 5px;
     text-align: center;
 }
 
@@ -705,12 +692,12 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 }
 
 .forum-last-post a {
+    background-color: rgba(var(--white), 0.7);
     color: rgb(var(--black));
-    text-decoration: none;
     display: inline-block;
     line-height: 80%;
     padding: 0 5px;
-    background-color: rgba(var(--white), 0.7);
+    text-decoration: none;
 }
 
 .subforums {
@@ -718,57 +705,57 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 }
 
 .subforums a.tooltip {
-    display: inline-block;
     background-color: rgb(var(--white));
-    padding: 0.2rem 0.5rem;
-    color: rgb(var(--black));
-    text-decoration: none;
     border: 1px solid rgb(var(--black));
+    color: rgb(var(--black));
+    display: inline-block;
     margin: 1vw 0;
+    padding: 0.2rem 0.5rem;
+    text-decoration: none;
 }
 
 .topic-row {
     display: grid;
+    gap: 4vw 4vw;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: auto;
-    gap: 4vw 4vw;
 }
 
 .topic-wrapper {
-    margin: 10px;
     display: grid;
-    grid-template-columns: min-content auto;
-    grid-template-rows: 1fr;
     gap: 1vw 1vw;
     grid-template-areas: "topic-name topic-info";
+    grid-template-columns: min-content auto;
+    grid-template-rows: 1fr;
+    margin: 10px;
 }
 
 .topic-title {
     font-family: var(--display);
-    transform: scale(-1);
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    text-transform: uppercase;
     font-size: 2rem;
     grid-area: topic-name;
+    text-orientation: mixed;
+    text-transform: uppercase;
+    transform: scale(-1);
+    writing-mode: vertical-rl;
 }
 
 .topic-info {
-    grid-area: topic-info;
     display: grid;
-    grid-template-columns: min-content 1fr 1fr 1fr;
-    grid-template-rows: min-content min-content min-content 1fr;
     gap: 1vw 2vw;
+    grid-area: topic-info;
     grid-template-areas:
         "topic-desc topic-desc topic-desc topic-desc"
         "topic-last-post-av topic-last-post topic-last-post topic-last-post"
         "topic-starter topic-starter topic-starter topic-starter"
         "topic-pagination topic-pagination topic-pagination topic-pagination";
+    grid-template-columns: min-content 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content 1fr;
 }
 
 .topic-desc {
-    grid-area: topic-desc;
     border-bottom: 2px solid rgb(var(--black));
+    grid-area: topic-desc;
 }
 
 .topic-last-post-av {
@@ -777,25 +764,25 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 }
 
 .topic-last-post-av img {
-    width: 50px;
+    border-radius: 100%;
     height: 50px;
     object-fit: cover;
-    border-radius: 100%;
     position: relative;
+    width: 50px;
     z-index: 2;
 }
 
 .topic-last-post-av::after {
-    display: block;
-    content: " ";
-    z-index: 2;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
     border: 2px solid rgb(var(--black));
-    position: absolute;
+    border-radius: 100%;
+    content: " ";
+    display: block;
+    height: 50px;
     left: 10px;
+    position: absolute;
     top: 0;
+    width: 50px;
+    z-index: 2;
 }
 
 .topic-last-post {
@@ -805,14 +792,14 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 .topic-last-post a,
 .topic-starter a,
 .views-replies {
-    display: block;
-    color: rgb(var(--black));
-    text-decoration: none;
-    border: 1px solid rgb(var(--black));
-    margin: 2px;
     background-color: rgb(var(--white));
+    border: 1px solid rgb(var(--black));
+    color: rgb(var(--black));
+    display: block;
+    margin: 2px;
     min-width: 50%;
     text-align: center;
+    text-decoration: none;
 }
 
 .topic-starter {
@@ -825,11 +812,11 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 }
 
 .views-replies-flex {
+    align-items: stretch;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: stretch;
 }
 
 /*
@@ -838,223 +825,223 @@ LISSITA'S BOARD STATS
 -----
 */
 .stats {
-    margin-top: 150px;
-    width: 100%;
-    display: block;
-    position: relative;
     background: var(--white-hex);
+    display: block;
+    margin-top: 150px;
+    position: relative;
+    width: 100%;
 }
 
 .stats-wrap {
-    width: 100%;
-    position: relative;
-    display: block;
     background: var(--white-hex);
+    display: block;
     height: 100%;
+    position: relative;
+    width: 100%;
 }
 
 .stats-wrap::after {
+    border: 2px solid var(--black-hex);
     content: "";
     height: calc(100% - 30px);
-    width: calc(100% - 30px);
-    top: 15px;
-    position: absolute;
     left: 15px;
-    border: 2px solid var(--black-hex);
+    position: absolute;
+    top: 15px;
+    width: calc(100% - 30px);
     z-index: 0;
 }
 
 .stats-title {
-    width: 100%;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     position: relative;
+    width: 100%;
 }
 
 .stats-title span {
-    position: absolute;
-    top: -100px;
     display: block;
     font: 50px var(--display);
     padding: 30px 0 15px 0;
+    position: absolute;
     text-align: center;
+    top: -100px;
 }
 
 .stats-title span::after {
-    content: "";
-    position: absolute;
-    top: -30px;
-    right: -50px;
-    display: block;
     border: 3px solid rgba(var(--black), 0.2);
     border-radius: 100%;
+    content: "";
+    display: block;
     filter: blur(1px);
-    width: 200px;
     height: 200px;
+    position: absolute;
+    right: -50px;
+    top: -30px;
+    width: 200px;
     z-index: -1;
 }
 
 .stats-title span::before {
-    content: "";
-    position: absolute;
-    top: -40px;
-    right: -65px;
-    display: block;
     border: 3px solid rgba(var(--black), 0.2);
     border-radius: 100%;
+    content: "";
+    display: block;
     filter: blur(1px);
-    width: 200px;
     height: 200px;
+    position: absolute;
+    right: -65px;
+    top: -40px;
+    width: 200px;
     z-index: -1;
 }
 
 .stats-wrap .stats-info {
-    display: block;
     border-bottom: 2px solid var(--black-hex);
+    display: block;
 }
 
 .stats-wrap .stats-info .links {
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
+    display: flex;
     font: 400 11px var(--display);
+    justify-content: flex-start;
     text-transform: uppercase;
 }
 
 .stats-wrap .stats-info .links a {
     background-color: var(--white-hex);
-    padding: 5px;
     border: 2px solid var(--black-hex);
     margin-right: 10px;
+    padding: 5px;
 }
 
 .stats-wrap .welcome {
-    width: 100%;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: flex-end;
     padding-right: 50px;
     padding-top: 15px;
+    width: 100%;
 }
 
 .stats-wrap .welcome span {
-    width: 100%;
-    margin-right: 10px;
     font-family: var(--display);
     font-size: 14px;
+    margin-right: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .stats-wrap .welcome span a {
-    text-transform: uppercase;
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 .stats-wrap .welcome .new-gif {
-    position: relative;
-    height: 75px;
-    width: 75px;
     border-radius: 100%;
     display: inline-block;
+    height: 75px;
+    position: relative;
+    width: 75px;
 }
 
 .stats-wrap .welcome .new-gif img {
-    height: 75px;
-    width: 75px;
     border-radius: 100%;
+    height: 75px;
     object-fit: cover;
     position: absolute;
+    width: 75px;
     z-index: 1;
 }
 
 .stats-wrap .welcome .new-gif::after {
+    border: 2px solid var(--black-hex);
+    border-radius: 100%;
     content: "";
+    height: 75px;
     position: absolute;
     right: -28px;
-    height: 75px;
     width: 75px;
-    border-radius: 100%;
-    border: 2px solid var(--black-hex);
     z-index: 0;
 }
 
 .stats-link {
-    padding: 25px;
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
-    gap: 10px;
+    margin: 0 auto;
+    padding: 25px;
+    position: relative;
+    width: 100%;
     z-index: 1;
 }
 
 .stats-link .fr {
-    width: 100%;
+    display: flex;
     height: 50px;
     margin: 0 auto;
-    display: flex;
+    width: 100%;
 }
 
 .stats-wrap .container {
-    padding: 25px;
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
     display: grid;
+    gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-template-rows: auto;
-    gap: 10px;
+    margin: 0 auto;
+    padding: 25px;
+    position: relative;
+    width: 100%;
     z-index: 1;
 }
 
 .stats-wrap .container .fr {
-    width: 100%;
+    border: solid 2px var(--black-hex);
+    display: block;
     height: 300px;
     margin: 0 auto;
-    display: block;
-    border: solid 2px var(--black-hex);
+    width: 100%;
 }
 
 .stats-wrap .online {
+    display: block;
+    height: 100%;
+    padding-top: 8%;
     position: relative;
     width: 100%;
-    height: 100%;
-    display: block;
-    padding-top: 8%;
 }
 
 .stats-wrap .online .now {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    font: 400 14px var(--display);
-    text-transform: uppercase;
     background-color: var(--white-hex);
-    padding: 5px;
-    top: 25px;
-    left: 25px;
     border: 2px solid var(--black-hex);
+    display: block;
+    font: 400 14px var(--display);
+    left: 25px;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 25px;
+    z-index: 1;
 }
 
 .stats-wrap .online .total {
-    position: absolute;
     background: var(--black-hex);
-    color: var(--white-hex);
     bottom: 25px;
-    left: 25px;
+    color: var(--white-hex);
     font-size: 8px;
-    text-transform: uppercase;
+    left: 25px;
     padding: 0 10px;
+    position: absolute;
+    text-transform: uppercase;
 }
 
 .stats-wrap .online .list {
     display: block;
-    text-transform: uppercase;
-    margin: 25px;
     font-size: 12px;
+    margin: 25px;
+    text-transform: uppercase;
 }
 
 .stats-wrap .online .list a {
@@ -1062,46 +1049,46 @@ LISSITA'S BOARD STATS
 }
 
 .stats-wrap .online .today {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    font: 400 14px var(--display);
-    text-transform: uppercase;
     background-color: var(--white-hex);
-    padding: 5px;
-    top: 25px;
-    left: 25px;
     border: 2px solid var(--black-hex);
+    display: block;
+    font: 400 14px var(--display);
+    left: 25px;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 25px;
+    z-index: 1;
 }
 
 .stats-wrap .topics {
+    display: block;
+    height: 100%;
+    padding-top: 8%;
     position: relative;
     width: 100%;
-    height: 100%;
-    display: block;
-    padding-top: 8%;
 }
 
 .stats-wrap .topics .recent {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    font: 400 14px var(--display);
-    text-transform: uppercase;
     background-color: var(--white-hex);
-    padding: 5px;
-    top: 25px;
-    left: 25px;
     border: 2px solid var(--black-hex);
+    display: block;
+    font: 400 14px var(--display);
+    left: 25px;
+    padding: 5px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 25px;
+    z-index: 1;
 }
 
 .stats-wrap .topics .list {
     display: block;
-    height: 200px;
-    text-transform: uppercase;
-    margin: 0;
     font-size: 10px;
+    height: 200px;
+    margin: 0;
     overflow: auto;
+    text-transform: uppercase;
 }
 
 /*
@@ -1111,84 +1098,84 @@ JULIET'S POST ROW
 */
 .pr-wrap {
     display: block;
-    width: 100%;
     margin: 75px 0;
+    width: 100%;
 }
 
 .pr-wrap .pr-box {
-    display: block;
-    padding: 15px;
     background: rgb(var(--white));
     box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    display: block;
+    padding: 15px;
     position: relative;
     width: 100%;
 }
 
 .pr-wrap .pr-box .box-bord {
-    display: block;
-    padding: 75px;
-    height: 100%;
     border: var(--black-hex) solid 2px;
+    display: block;
+    height: 100%;
+    padding: 75px;
 }
 
 .pr-wrap .pr-box .box-bord .box-name {
-    display: block;
     color: rgb(var(--black));
+    display: block;
     font: 400 55px var(--display);
+    letter-spacing: 1px;
     line-height: 90%;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .pr-wrap .pr-box .box-bord .box-name .span1 {
-    padding: 10px 8px 0 10px;
     background: linear-gradient(
         to right,
         rgba(var(--green), 0.45),
         rgba(var(--yellow), 0.45)
     );
+    padding: 10px 8px 0 10px;
 }
 
 .pr-wrap .pr-box .box-bord .box-name .span2 {
     display: block;
-    margin-top: 15px;
-    width: max-content;
     font: 400 8px var(--sans);
-    text-transform: uppercase;
     letter-spacing: 1.5px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    width: max-content;
 }
 
 .pr-wrap .pr-box .box-bord .box-line {
-    display: block;
-    width: calc(100% + 150px + 30px + 4px);
-    margin: 75px 0 75px -92px;
-    height: 2px;
     background: var(--black-hex);
+    display: block;
+    height: 2px;
+    margin: 75px 0 75px -92px;
+    width: calc(100% + 150px + 30px + 4px);
 }
 
 .pr-wrap .pr-box .box-bord .box-post {
     display: block;
-    width: calc(100% - 250px - 4px - 60px);
     line-height: 180%;
     text-align: justify;
+    width: calc(100% - 250px - 4px - 60px);
 }
 
 .pr-wrap .pr-box .box-bord .box-edits {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin: -90px auto 75px 0;
-    width: max-content;
-    height: 30px;
-    padding: 0 0 0 15px;
-    position: relative;
-    z-index: 999;
-    font: 400 8px var(--sans);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 90%;
     background: rgb(var(--white));
     border: var(--black-hex) solid 2px;
+    display: flex;
+    font: 400 8px var(--sans);
+    height: 30px;
+    justify-content: center;
+    letter-spacing: 2px;
+    line-height: 90%;
+    margin: -90px auto 75px 0;
+    padding: 0 0 0 15px;
+    position: relative;
+    text-transform: uppercase;
+    width: max-content;
+    z-index: 999;
 }
 
 .pr-wrap .pr-box .box-bord .box-edits span {
@@ -1202,51 +1189,51 @@ JULIET'S POST ROW
 
 .pr-wrap .pr-box .box-mini {
     display: block;
-    position: absolute;
-    top: 80px;
-    right: 80px;
-    z-index: 999;
     flex-shrink: 0;
     height: 100%;
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    z-index: 999;
 }
 
 .pr-wrap .pr-box .box-mini .mini-stick {
     display: block;
+    margin-bottom: 150px;
     position: sticky;
     position: -webkit-sticky;
     top: 40px;
-    margin-bottom: 150px;
 }
 
 .pr-wrap .pr-box .box-mini .mini-stick .mini-info {
     display: block;
-    width: calc(254px - 60px);
-    margin: 30px 30px 0 30px;
     font: 300 8.25px var(--sans);
-    line-height: 250%;
-    text-transform: uppercase;
     letter-spacing: 1.5px;
+    line-height: 250%;
+    margin: 30px 30px 0 30px;
     text-align: justify;
+    text-transform: uppercase;
+    width: calc(254px - 60px);
 }
 
 .pr-wrap .pr-box .box-mini .mini-stick .mini-info span {
-    padding: 4px 3px 4px 3px;
     background: rgb(var(--black));
     color: rgba(var(--white), 1);
+    padding: 4px 3px 4px 3px;
 }
 
 .pr-wrap .pr-box .box-mini .img-wrap {
-    width: 250px;
-    height: 400px;
     border: var(--black-hex) solid 2px;
     box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    height: 400px;
     overflow: hidden;
+    width: 250px;
 }
 
 .pr-wrap .pr-box .box-mini .img-wrap img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
 /*
@@ -1256,17 +1243,17 @@ ABI'S MINI-PROFILE
 */
 .mpbody {
     background-size: cover;
-    width: 250px;
     height: 400px;
     overflow: hidden;
     transition: 1s ease;
+    width: 250px;
 }
 
 /* background image hover */
 .miniprofile:hover .mpbody {
-    transition: 1s ease;
     filter: blur(3px);
     transform: scale(1.2);
+    transition: 1s ease;
 }
 
 /* wrap for the whole hover */
@@ -1282,63 +1269,62 @@ ABI'S MINI-PROFILE
 
 /* gradient bg for the main profile hover */
 .mphoverbg {
-    width: 250px;
-    height: 400px;
-    position: relative;
-    filter: opacity(0.8);
-    transition: 0.8s;
-    margin-top: -400px;
     background: var(--group7);
+    filter: opacity(0.8);
+    height: 400px;
+    margin-top: -400px;
+    position: relative;
+    transition: 0.8s;
+    width: 250px;
 }
 
 .mphovermain {
-    width: 250px;
-    height: 400px;
     display: grid;
-    transition: 2s ease;
+    height: 400px;
     margin-top: -400px;
+    transition: 2s ease;
+    width: 250px;
     z-index: 5;
 }
 
 .mphovermain .whitetop {
     background: var(--white-hex);
-    z-index: 10;
     height: 80px;
+    z-index: 10;
 }
 
 .mphovermain .whitetop .iconimg {
-    width: 70px;
-    height: 70px;
-    margin-top: 10px;
-    border-radius: 100%;
     background-size: cover;
-    margin-left: -10px;
-    position: relative;
-    z-index: 10;
+    border-radius: 100%;
+    height: 70px;
     margin-left: 85px;
+    margin-top: 10px;
+    position: relative;
+    width: 70px;
+    z-index: 10;
 }
 
 .mphovermain .whitetop .iconimg::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
     border: 2px solid var(--black-hex);
+    border-radius: 50%;
+    content: "";
+    height: 72px;
+    left: 10px;
+    position: absolute;
+    width: 72px;
 }
 
-/* mini profile information section: use spans to add or remove as needed*/
+/* mini profile information section: use spans to add or remove as needed */
 .mphovermain .infospan {
-    text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 270px;
-    margin-top: 5px;
     font-size: 0.8rem;
+    height: 270px;
+    justify-content: space-around;
     line-height: 1.4;
     margin-left: -250px;
+    margin-top: 5px;
+    text-transform: uppercase;
     transition: 1s ease;
 }
 
@@ -1353,12 +1339,12 @@ ABI'S MINI-PROFILE
 }
 
 .mplinks {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 8px;
     display: flex;
     font-family: var(--display);
     justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 8px;
 }
 
 .mplinks a {
@@ -1375,127 +1361,127 @@ MONTY'S MAIN PROFILE
 }
 
 .main-top {
-    position: relative;
-    display: flex;
     align-items: center;
-    justify-content: flex-end;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
     z-index: 1;
 }
 
 .main-profile::before {
-    content: "";
     border: 2px solid var(--black-hex);
-    position: absolute;
     border-radius: 100%;
+    content: "";
     height: 300px;
-    width: 300px;
+    position: absolute;
     right: 350px;
-    z-index: -2;
     top: 0;
+    width: 300px;
+    z-index: -2;
 }
 
 .main-pic {
-    position: relative;
     margin-left: 30px;
+    position: relative;
 }
 
 .main-pic img {
     height: 300px;
-    width: 450px;
     object-fit: cover;
+    width: 450px;
 }
 
 .main-pic::after {
+    border: 2px solid var(--black-hex);
     content: "";
     height: 270px;
-    width: 420px;
-    top: 15px;
-    position: absolute;
     left: 15px;
-    border: 2px solid var(--black-hex);
+    position: absolute;
+    top: 15px;
+    width: 420px;
 }
 
 .main-pic::before {
-    content: "";
-    height: 2px;
-    width: 15px;
-    position: absolute;
-    right: 435px;
-    z-index: 10;
     background: var(--black-hex);
     bottom: 83px;
+    content: "";
+    height: 2px;
+    position: absolute;
+    right: 435px;
+    width: 15px;
+    z-index: 10;
 }
 
 .main-name::before {
-    position: absolute;
-    z-index: 2;
-    content: "";
-    height: 25px;
-    width: 2px;
     background: var(--black-hex);
     bottom: 7px;
+    content: "";
+    height: 25px;
+    position: absolute;
     right: 15px;
+    width: 2px;
+    z-index: 2;
 }
 
 .main-name {
     font-family: var(--display);
-    text-transform: uppercase;
-    margin-bottom: 30px;
     font-size: clamp(30px, 4vw, 45px);
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .main-inner {
-    position: relative;
-    z-index: 0;
     background: var(--white-hex);
     margin-top: -100px;
     padding-top: 100px;
+    position: relative;
+    z-index: 0;
 }
 
 .main-inner::after {
+    border: 2px solid var(--black-hex);
     content: "";
     height: calc(100% - 30px);
-    width: calc(100% - 30px);
-    top: 15px;
-    position: absolute;
     left: 15px;
-    border: 2px solid var(--black-hex);
+    position: absolute;
+    top: 15px;
+    width: calc(100% - 30px);
     z-index: 0;
 }
 
 .main-inner-top {
-    padding: clamp(70px, 7vw, 100px);
     border-bottom: 2px solid var(--black-hex);
+    padding: clamp(70px, 7vw, 100px);
     padding-top: 30px;
 }
 
 .main-links {
-    text-transform: uppercase;
-    font-family: var(--sans);
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    font-weight: 600;
+    font-family: var(--sans);
     font-size: clamp(11px, 1.2vw, 13px);
-    position: relative;
+    font-weight: 600;
+    justify-content: space-between;
     letter-spacing: 1px;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
     z-index: 2;
 }
 
 .main-links a {
-    text-decoration: none;
-    margin: 0 5px;
-    border: 2px solid var(--black-hex);
-    color: var(--black-hex);
-    padding: 0 5px;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
     background: linear-gradient(
         to right,
         rgba(var(--green), 0.45),
         rgba(var(--yellow), 0.45)
     );
+    border: 2px solid var(--black-hex);
+    color: var(--black-hex);
+    margin: 0 5px;
+    padding: 0 5px;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .main-links a:hover {
@@ -1507,10 +1493,10 @@ MONTY'S MAIN PROFILE
 }
 
 .main-inner-account {
-    padding-top: 50px;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
+    padding-top: 50px;
     position: relative;
     z-index: 1;
 }
@@ -1520,54 +1506,54 @@ MONTY'S MAIN PROFILE
 }
 
 .main-gif img {
-    width: 60px;
+    border-radius: 100%;
     height: 60px;
     object-fit: cover;
-    border-radius: 100%;
+    width: 60px;
 }
 
 .main-gif {
-    position: relative;
     margin-right: 15px !important;
+    position: relative;
 }
 
 .main-gif::after {
     border: 2px solid var(--black-hex);
-    height: 60px;
-    width: 60px;
     border-radius: 100%;
     content: "";
+    height: 60px;
+    left: 10px;
     position: absolute;
     top: 0;
-    left: 10px;
+    width: 60px;
 }
 
 .main-inner-account span {
+    display: block;
     font-family: var(--span);
     font-size: 11px;
-    text-transform: uppercase;
-    display: block;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 100%;
+    text-transform: uppercase;
 }
 
 .main-inner-account div {
-    text-align: center;
     font-size: 12px;
-    text-transform: uppercase;
     font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .main-tabs-container {
-    margin: 0 15px;
-    position: relative;
     height: 530px;
-    padding-bottom: 15px;
-    overflow: hidden;
-    z-index: 1;
+    margin: 0 15px;
     margin-top: -20px;
+    overflow: hidden;
+    padding-bottom: 15px;
     padding-top: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .main-tabs-container input {
@@ -1576,18 +1562,18 @@ MONTY'S MAIN PROFILE
 
 .tab-forward,
 .tab-back {
-    position: absolute;
-    padding: 20px 10px;
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
-    right: 0;
-    font-size: 20px;
-    top: calc(50% - 45px);
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
     cursor: pointer;
-    z-index: 10;
+    font-size: 20px;
     line-height: 100%;
+    padding: 20px 10px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 45px);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 10;
 }
 
 .tab-back {
@@ -1605,19 +1591,17 @@ MONTY'S MAIN PROFILE
 }
 
 .dot-labels {
-    position: absolute;
-    bottom: 30px;
-    height: 12px;
-    width: 12px;
+    background: var(--white-hex);
     border: 2px solid rgba(var(--black), 1);
     border-radius: 100%;
-    left: 50%;
-    z-index: 20;
+    bottom: 30px;
     cursor: pointer;
-    background: var(--white-hex);
+    height: 12px;
+    left: 50%;
+    position: absolute;
     transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
+    width: 12px;
+    z-index: 20;
 }
 
 #tab1:checked ~ .tab1-d,
@@ -1635,101 +1619,95 @@ MONTY'S MAIN PROFILE
 }
 
 .main-tab-1 {
-    padding: clamp(60px, 10vw, 120px) clamp(90px, 10vw, 150px);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: calc(100% - 30px);
+    left: 0;
+    opacity: 0;
+    padding: clamp(60px, 10vw, 120px) clamp(90px, 10vw, 150px);
     position: absolute;
     top: 30px;
-    left: 0;
-    height: calc(100% - 30px);
-    width: 100%;
-    opacity: 0;
     transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
+    width: 100%;
 }
 
 .main-tab-1 div {
-    margin: 20px;
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: 300;
+    margin: 20px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .main-tab-1 div span,
 .main-tab-3 span {
+    display: block;
     font-family: var(--span);
     font-size: 11px;
-    text-transform: uppercase;
-    display: block;
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 120%;
+    text-transform: uppercase;
 }
 
 .main-tab-2 {
     border: clamp(90px, 10vw, 150px) solid rgba(0, 0, 0, 0);
-    border-top: clamp(70px, 10vw, 130px) solid rgba(0, 0, 0, 0);
     border-bottom: clamp(60px, 10vw, 120px) solid rgba(0, 0, 0, 0);
+    border-top: clamp(70px, 10vw, 130px) solid rgba(0, 0, 0, 0);
+    font-family: var(--body-font);
+    height: calc(100% - 30px);
+    left: 0;
+    opacity: 0;
     overflow: auto;
     padding-right: 10px;
+    position: absolute;
     text-align: justify;
-    font-family: var(--body-font);
+    top: 30px;
+    transition: 0.6s;
     width: 100%;
     z-index: 1;
-    opacity: 0;
-    top: 30px;
-    left: 0;
-    height: calc(100% - 30px);
-    transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
-    position: absolute;
 }
 
 .freeform-warnings {
-    position: relative;
-    padding: 5px;
-    line-height: 100%;
     background: var(--black-hex);
     color: rgba(var(--white), 0.9);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 300;
-    font-size: 10px;
     display: inline-block;
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 100%;
+    padding: 5px;
+    position: relative;
+    text-transform: uppercase;
 }
 
 .main-tab-3 {
-    padding: clamp(60px, 10vw, 120px) clamp(90px, 10vw, 150px);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    position: absolute;
-    top: 30px;
-    left: 0;
-    height: calc(100% - 30px);
-    width: 100%;
-    opacity: 0;
+    font-size: 13px;
+    font-weight: 300;
     grid-template-areas:
         "alias alias alias alias"
         "div1 div2 div3 div4"
         "warnings warnings warnings warnings";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: calc(100% - 30px);
+    left: 0;
+    letter-spacing: 2px;
+    opacity: 0;
+    padding: clamp(60px, 10vw, 120px) clamp(90px, 10vw, 150px);
+    position: absolute;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 2px;
-    font-size: 13px;
+    top: 30px;
     transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -moz-transition: 0.6s;
+    width: 100%;
 }
 
 .main-alias {
-    grid-area: alias;
     font-size: 50px;
-    line-height: 100%;
     font-weight: 700;
+    grid-area: alias;
+    line-height: 100%;
 }
 
 .main-warnings {
@@ -1739,9 +1717,9 @@ MONTY'S MAIN PROFILE
 #tab2:checked ~ .main-tab-2,
 #tab1:checked ~ .main-tab-1,
 #tab3:checked ~ .main-tab-3 {
-    z-index: 5;
-    opacity: 1;
     left: 0%;
+    opacity: 1;
+    z-index: 5;
 }
 
 #tab1:checked ~ .tab2-f,
@@ -1768,18 +1746,18 @@ MONTY'S MAIN PROFILE
 .main-tab-tell-1,
 .main-tab-tell-2,
 .main-tab-tell-3 {
-    position: absolute;
-    padding: 10px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 11px;
-    border: 2px solid var(--black-hex);
     background: var(--white-hex);
-    line-height: 100%;
-    top: 0;
-    left: 30px;
-    opacity: 0;
+    border: 2px solid var(--black-hex);
+    font-size: 11px;
     font-weight: 600;
+    left: 30px;
+    letter-spacing: 2px;
+    line-height: 100%;
+    opacity: 0;
+    padding: 10px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
 }
 
 #tab1:checked ~ .main-tab-tell-1,
@@ -1794,34 +1772,33 @@ RORA'S MEMBER LIST
 -----
 */
 .cp-memlist {
-    width: 100%;
     display: flex;
     flex-flow: row wrap;
     height: 80vh;
+    width: 100%;
 }
 
 .cp-memsearch {
-    width: calc(22% - 2px);
-    border-right: 2px solid var(--black-hex);
-    padding: 2rem 1rem;
-    text-align: left;
-    background: var(--white-hex);
     background: linear-gradient(
         90deg,
         rgba(var(--white), 0.5) 0%,
         rgba(var(--white), 0) 100%
     );
-    text-transform: uppercase;
+    border-right: 2px solid var(--black-hex);
     letter-spacing: 0;
+    padding: 2rem 1rem;
+    text-align: left;
+    text-transform: uppercase;
+    width: calc(22% - 2px);
 }
 
 .cp-memsearch .forminput {
-    font: 1rem/1rem var(--body-font);
     background: var(--white-hex);
     border: 1px solid var(--black-hex);
     color: var(--black-hex);
-    width: 100%;
+    font: 1rem/1rem var(--body-font);
     text-transform: uppercase;
+    width: 100%;
 }
 
 .cp-memsearch > * {
@@ -1836,12 +1813,12 @@ RORA'S MEMBER LIST
 }
 
 .cp-memsearch .forminput.submit {
-    display: block;
-    text-align: center;
-    border: 1px solid var(--black-hex);
     background: var(--purple-hex);
+    border: 1px solid var(--black-hex);
+    display: block;
     font-weight: 700;
     margin: auto 0;
+    text-align: center;
     text-transform: uppercase;
     transition: var(--transi-quick);
 }
@@ -1852,32 +1829,29 @@ RORA'S MEMBER LIST
 }
 
 .cp-memgrid {
-    width: 78%;
     border: 1rem solid transparent;
-    padding: 1rem;
     display: grid;
     grid-gap: 0.625rem;
     grid-template-columns: repeat(3, 32%);
     overflow: auto;
+    padding: 1rem;
+    width: 78%;
 }
 
 .cp-memgrid .cp-memitem {
-    width: 100%;
+    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
     height: 400px;
     overflow: hidden;
     position: relative;
-    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    width: 100%;
 }
 
 .cp-memitem img {
-    object-fit: cover;
-    width: 100%;
     height: 400px;
-    z-index: 1;
+    object-fit: cover;
     transition: var(--transi-quick);
-    -webkit-transition: var(--transi-quick);
-    -moz-transition: var(--transi-quick);
-    -o-transition: var(--transi-quick);
+    width: 100%;
+    z-index: 1;
 }
 
 .cp-memitem img[src=""],
@@ -1891,56 +1865,43 @@ RORA'S MEMBER LIST
 
 .cp-memitem:hover img.ml-main {
     filter: blur(5px);
-    -webkit-filter: blur(5px);
     transition: var(--transi-quick);
-    -webkit-transition: var(--transi-quick);
-    -moz-transition: var(--transi-quick);
-    -o-transition: var(--transi-quick);
     transition-delay: var(--transi-two-del);
-    -webkit-transition-delay: var(--transi-two-del);
-    -moz-transition-delay: var(--transi-two-del);
-    -o-transition-delay: var(--transi-two-del);
 }
 
 .cp-memitem .membord {
-    width: calc(100% - 20px);
-    height: 338px;
     display: block;
-    z-index: 3;
+    height: 338px;
+    left: 10px;
     position: absolute;
     top: 20px;
-    left: 10px;
+    width: calc(100% - 20px);
+    z-index: 3;
 }
 
 .cp-memitem .membord::before,
 .cp-memitem .membord::after {
+    background: var(--black-hex);
     content: "";
-    width: 100%;
     height: 2px;
     position: absolute;
     transition: var(--transi-quick);
-    -webkit-transition: var(--transi-quick);
-    -moz-transition: var(--transi-quick);
-    -o-transition: var(--transi-quick);
-    background: var(--black-hex);
+    width: 100%;
 }
 
 .cp-memitem .membord span {
-    width: 100%;
     height: 100%;
+    width: 100%;
 }
 
 .cp-memitem .membord span::before,
 .cp-memitem .membord span::after {
+    background: var(--black-hex);
     content: "";
-    width: 2px;
     height: 100%;
     position: absolute;
     transition: var(--transi-quick);
-    -webkit-transition: var(--transi-quick);
-    -moz-transition: var(--transi-quick);
-    -o-transition: var(--transi-quick);
-    background: var(--black-hex);
+    width: 2px;
 }
 
 .cp-memitem:hover .membord::before,
@@ -1954,15 +1915,15 @@ RORA'S MEMBER LIST
 }
 
 .cp-memitem .membord::after {
-    left: 0;
     bottom: 0;
+    left: 0;
     transition-delay: 0s;
 }
 
 .cp-memitem .membord span::after {
-    transition-delay: 0s;
-    right: 0;
     bottom: 0;
+    right: 0;
+    transition-delay: 0s;
 }
 
 .cp-memitem .membord::before {
@@ -1972,9 +1933,9 @@ RORA'S MEMBER LIST
 }
 
 .cp-memitem .membord span::before {
-    transition-delay: 0.2s;
     left: 0;
     top: 0;
+    transition-delay: 0.2s;
 }
 
 .cp-memitem .membord :hover::after {
@@ -1998,17 +1959,17 @@ RORA'S MEMBER LIST
 }
 
 .cp-memitem .cp-memname {
-    width: 100%;
+    bottom: 0;
+    display: block;
+    font: 0.9rem/0.9rem var(--body-font);
     height: 80px;
+    left: 0;
+    opacity: 1;
     padding: 1rem;
     position: absolute;
-    z-index: 2;
-    bottom: 0;
-    left: 0;
     text-transform: uppercase;
-    font: 0.9rem/0.9rem var(--body-font);
-    display: block;
-    opacity: 1;
+    width: 100%;
+    z-index: 2;
 }
 
 .cp-memitem:hover .cp-memname {
@@ -2018,10 +1979,10 @@ RORA'S MEMBER LIST
 }
 
 .cp-memitem .cp-memname .js-wrapped-word {
-    width: 100%;
     display: block;
     font: 1rem/1.2rem var(--display);
     letter-spacing: 2px;
+    width: 100%;
 }
 
 .cp-memitem .cp-memname::before {
