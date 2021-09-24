@@ -1501,10 +1501,6 @@ MONTY'S MAIN PROFILE
     z-index: 1;
 }
 
-.main-inner-account div {
-    margin: 0 5px;
-}
-
 .main-gif img {
     border-radius: 100%;
     height: 60px;
@@ -1541,6 +1537,7 @@ MONTY'S MAIN PROFILE
 .main-inner-account div {
     font-size: 12px;
     font-weight: 300;
+    margin: 0 5px;
     text-align: center;
     text-transform: uppercase;
 }
