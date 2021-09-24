@@ -2020,15 +2020,15 @@ RORA'S MEMBER LIST
     transition-delay: var(--transi-two-del);
 }
 
-.cp-mphovco dub,
-.cp-mphovco suf {
+.cp-mphovco .dub,
+.cp-mphovco .suf {
     display: block;
     font: 1rem/1.25rem var(--display);
     width: 100%;
 }
 
-.cp-mphovco dig,
-.cp-mphovco sig {
+.cp-mphovco .dig,
+.cp-mphovco .sig {
     display: block;
     font: 0.9rem/0.6rem var(--sans);
     margin-bottom: 10px;
