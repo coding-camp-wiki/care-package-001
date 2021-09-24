@@ -2004,17 +2004,17 @@ RORA'S MEMBER LIST
 
 .cp-memitem .cp-mphovco {
     box-sizing: border-box;
-    width: 100%;
     height: 100%;
-    position: absolute;
-    top: 0;
     left: 0;
-    text-align: center;
-    text-transform: uppercase;
+    opacity: 0;
     outline: 2px solid var(--black-hex);
     outline-offset: -0.875rem;
-    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
     transition: var(--transi-quick);
+    width: 100%;
 }
 
 .cp-memitem:hover .cp-mphovco {
@@ -2025,17 +2025,17 @@ RORA'S MEMBER LIST
 
 .cp-mphovco dub,
 .cp-mphovco suf {
+    display: block;
     font: 1rem/1.25rem var(--display);
     width: 100%;
-    display: block;
 }
 
 .cp-mphovco dig,
 .cp-mphovco sig {
-    margin-bottom: 10px;
-    width: 100%;
     display: block;
     font: 0.9rem/0.6rem var(--sans);
+    margin-bottom: 10px;
+    width: 100%;
 }
 
 .cp-memitem.group5 .cp-mphovco {
@@ -2051,68 +2051,68 @@ RORA'S MEMBER LIST
 }
 
 .cp-mphovco .cp-mlicon {
-    position: relative;
-    z-index: 3;
     background: transparent;
     margin-top: 30px;
+    position: relative;
+    z-index: 3;
 }
 
 .cp-mphovco .cp-mlicon img {
-    width: 80px;
-    height: 80px;
     border-radius: 100%;
+    height: 80px;
+    width: 80px;
 }
 
 .cp-mphovco .cp-mlicon::after {
-    border-radius: 100%;
+    background: transparent;
     border: 2px solid var(--black-hex);
-    width: 80px;
-    height: 80px;
+    border-radius: 100%;
     content: "";
     display: block;
+    height: 80px;
+    left: calc(50% - 30px);
     position: absolute;
     top: 0;
-    left: calc(50% - 30px);
-    background: transparent;
+    width: 80px;
 }
 
 .cp-mphovco line {
-    width: 100%;
+    background: var(--black-hex);
     display: block;
     height: 2px;
-    background: var(--black-hex);
+    width: 100%;
     z-index: 2;
 }
 
 .cp-memitem .mp-hovmg {
-    width: 100%;
+    bottom: 50px;
+    color: var(--black-hex);
     display: block;
     font: 1.3rem/1.3rem var(--display);
-    color: var(--black-hex);
-    position: absolute;
     left: 0;
+    position: absolute;
     text-align: center;
-    bottom: 50px;
+    width: 100%;
 }
 
 .cp-memitem.group5 .mp-hovmg::after {
+    color: var(--black-hex);
     content: "Chemical";
     font: 1.1rem/1.1rem var(--display);
-    color: var(--black-hex);
     text-transform: uppercase;
 }
 
 .cp-memitem.group6 .mp-hovmg::after {
+    color: var(--black-hex);
     content: "Electrical";
     font: 1.1rem/1.1rem var(--display);
-    color: var(--black-hex);
     text-transform: uppercase;
 }
 
 .cp-memitem.group7 .mp-hovmg::after {
+    color: var(--black-hex);
     content: "Mechanical";
     font: 1.1rem/1.1rem var(--display);
-    color: var(--black-hex);
     text-transform: uppercase;
 }
 
@@ -2123,24 +2123,24 @@ LEEANN'S SITE PACK
 */
 
 .box-post .cc-gen {
+    align-items: center;
+    border: var(--black-hex) solid 2px;
     display: flex;
     flex-flow: row nowrap;
-    border: var(--black-hex) solid 2px;
-    align-items: center;
-    padding: 1.5rem;
     margin-bottom: 1rem;
+    padding: 1.5rem;
 }
 
 .box-post .cc-gen .title {
-    writing-mode: vertical-lr;
-    transform: scale(-1);
-    text-align: center;
-    border: var(--black-hex) solid 2px;
     background: rgba(var(--white), 1);
-    padding: 0.5rem;
+    border: var(--black-hex) solid 2px;
     font-weight: bold;
     margin-left: -3rem;
     margin-right: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    transform: scale(-1);
+    writing-mode: vertical-lr;
 }
 
 .box-post .cc-gen.color {
@@ -2154,25 +2154,25 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-gen2 {
+    align-items: center;
+    border: var(--black-hex) solid 2px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    border: var(--black-hex) solid 2px;
-    align-items: center;
-    padding: 1.5rem;
     margin-bottom: 1rem;
+    padding: 1.5rem;
 }
 
 .box-post .cc-gen2 .title {
     border-bottom: var(--black-hex) solid 2px;
-    width: 115%;
-    text-align: center;
-    padding: 0.5rem 0 1rem;
     color: var(--black-hex);
     font: 400 1.4rem var(--display);
-    line-height: 90%;
-    text-transform: uppercase;
     letter-spacing: 1px;
+    line-height: 90%;
+    padding: 0.5rem 0 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 115%;
 }
 
 .box-post .cc-gen2 .text {
@@ -2187,10 +2187,10 @@ LEEANN'S SITE PACK
 .box-post .cc-shipper {
     height: 450px;
     margin: 0 auto;
-    width: 70%;
+    margin-bottom: 2rem;
     outline: 2px solid var(--black-hex);
     outline-offset: 7px;
-    margin-bottom: 2rem;
+    width: 70%;
 }
 
 .box-post .cc-shipper .shipper-in {
@@ -2211,29 +2211,29 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-shipper .shipper-in section {
-    padding: 1rem;
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-items: center;
+    padding: 1rem;
 }
 
 .box-post .cc-shipper .shipper-in section h2 {
     background: var(--white-hex);
-    z-index: 5;
-    margin-top: 0;
-    margin-bottom: -1.5rem;
-    padding: 0.5rem 1rem;
-    text-align: center;
     border: 1px solid var(--black-hex);
     font-weight: 300;
+    margin-bottom: -1.5rem;
+    margin-top: 0;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    z-index: 5;
 }
 
 .box-post .cc-shipper .shipper-in section .text {
     border: 1px solid var(--black-hex);
-    padding: 2rem 1rem 1rem;
     max-height: 200px;
     overflow-y: auto;
+    padding: 2rem 1rem 1rem;
 }
 
 .box-post .cc-shipper .shipper-in section .text::-webkit-scrollbar {
@@ -2249,35 +2249,35 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-shipper #pic {
-    width: 100%;
     height: 450px;
     position: relative;
+    width: 100%;
 }
 
 .box-post .cc-shipper #pic img {
-    width: 100%;
+    filter: grayscale(1);
     height: 95%;
+    left: 0;
     object-fit: cover;
     object-position: center;
     position: absolute;
     top: 0;
-    left: 0;
+    width: 100%;
     z-index: 1;
-    filter: grayscale(1);
 }
 
 .box-post .cc-shipper #pic span {
     background: var(--white-hex);
-    position: absolute;
-    z-index: 2;
-    left: 3%;
+    border: 1px solid var(--black-hex);
     bottom: 0;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
     box-sizing: border-box;
     font-size: 1.4rem;
-    border: 1px solid var(--black-hex);
+    font-weight: bold;
+    left: 3%;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 2;
 }
 
 .box-post .cc-shipper.color .shipper-in section h2 {
@@ -2293,37 +2293,37 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-ship-rep {
-    width: 75%;
-    margin: 0 auto;
     border: 2px solid var(--black-hex);
-    padding: 1.5rem;
+    margin: 0 auto;
     margin-top: 3rem;
+    padding: 1.5rem;
+    width: 75%;
 }
 
 .box-post .cc-ship-rep .ship-top {
-    margin-top: -3rem;
-    padding: 0.5rem;
-    font-size: 1.4rem;
-    text-align: center;
     display: flex;
     flex-flow: row nowrap;
+    font-size: 1.4rem;
     justify-content: space-evenly;
+    margin-top: -3rem;
+    padding: 0.5rem;
+    text-align: center;
 }
 
 .box-post .cc-ship-rep .ship-top span {
-    font: 400 1.2rem var(--display);
-    text-transform: uppercase;
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
+    font: 400 1.2rem var(--display);
     padding: 0.5rem;
+    text-transform: uppercase;
 }
 
 .box-post .cc-ship-rep .ship-top x {
-    display: block;
-    padding: 0.5rem 1rem;
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
+    display: block;
     font-weight: 700;
+    padding: 0.5rem 1rem;
 }
 
 .box-post .cc-ship-rep .text {
@@ -2347,18 +2347,18 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-fc {
-    margin: 2rem auto;
     border: 2px solid var(--black-hex);
+    margin: 2rem auto;
     width: 90%;
 }
 
 .box-post .cc-fc .title {
     background: var(--group-gradient-lr);
-    font: 400 2.5rem var(--display);
-    text-transform: uppercase;
     border-bottom: 2px solid var(--black-hex);
+    font: 400 2.5rem var(--display);
     padding: 0.5rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .box-post .cc-fc .rules {
@@ -2367,93 +2367,93 @@ LEEANN'S SITE PACK
 
 .box-post .cc-fc .text {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .box-post .cc-fc .text col-1,
 .box-post .cc-fc .text col-2 {
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-around;
     gap: 1rem;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
 .box-post .cc-fc .text col-1 a,
 .box-post .cc-fc .text col-2 a {
     border: 2px solid var(--black-hex);
     color: var(--black-hex);
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 80%;
-    text-align: center;
     font-size: 0.8rem;
-    position: relative;
     height: 1.6rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 80%;
 }
 
 .box-post .cc-fc .text col-1 a x,
 .box-post .cc-fc .text col-2 a x {
-    transition: all 0.5s ease;
+    left: 0;
     opacity: 1;
     position: absolute;
-    top: 0;
-    left: 0;
     text-align: center;
+    top: 0;
+    transition: all 0.5s ease;
     width: 100%;
 }
 
 .box-post .cc-fc .text col-1 a y,
 .box-post .cc-fc .text col-2 a y {
-    opacity: 0;
-    transition: all 0.5s ease;
-    position: absolute;
-    top: 0;
     left: 0;
+    opacity: 0;
+    position: absolute;
     text-align: center;
+    top: 0;
+    transition: all 0.5s ease;
     width: 100%;
 }
 
 .box-post .cc-fc .text col-1 a:hover x,
 .box-post .cc-fc .text col-2 a:hover x {
     opacity: 0;
-    transition: all 0.5s ease;
     text-align: center;
+    transition: all 0.5s ease;
     width: 100%;
 }
 
 .box-post .cc-fc .text col-1 a:hover y,
 .box-post .cc-fc .text col-2 a:hover y {
-    opacity: 1;
     background: var(--black-hex);
     color: var(--white-hex);
+    opacity: 1;
+    text-align: center;
     transition: all 0.5s ease;
     width: 100%;
-    text-align: center;
 }
 
 .box-post .cc-fc textarea.code {
     grid-column: 1 / span 2;
+    justify-self: center;
     margin: 1rem;
     width: 50%;
-    justify-self: center;
 }
 
 .box-post .cc-md {
-    margin: 2rem auto;
     border: 2px solid var(--black-hex);
+    margin: 2rem auto;
     width: 90%;
 }
 
 .box-post .cc-md .title {
     background: var(--group-gradient-lr);
-    font: 400 2.5rem var(--display);
-    text-transform: uppercase;
     border-bottom: 2px solid var(--black-hex);
+    font: 400 2.5rem var(--display);
     padding: 0.5rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .box-post .cc-md .rules {
@@ -2462,31 +2462,31 @@ LEEANN'S SITE PACK
 
 .box-post .cc-md .text {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .box-post .cc-md .text col-1,
 .box-post .cc-md .text col-2 {
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-around;
     gap: 1rem;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
 .box-post .cc-md .text col-1 a,
 .box-post .cc-md .text col-2 a {
     border: 2px solid var(--black-hex);
     color: var(--black-hex);
-    text-transform: uppercase;
-    text-decoration: none;
-    width: 80%;
-    text-align: center;
     font-size: 0.8rem;
-    position: relative;
     height: 1.6rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 80%;
 }
 
 .box-post .cc-md .text col-1 a:hover,
@@ -2497,34 +2497,34 @@ LEEANN'S SITE PACK
 
 .box-post .cc-md textarea.code {
     grid-column: 1 / span 2;
+    justify-self: center;
     margin: 1rem;
     width: 50%;
-    justify-self: center;
 }
 
 .box-post .cc-md-rep {
-    margin: 2rem auto;
     border: 2px solid var(--black-hex);
+    margin: 2rem auto;
     width: 90%;
 }
 
 .box-post .cc-md-rep .top {
     background: var(--group-gradient-lr);
-    font: 400 2.5rem var(--display);
-    text-transform: uppercase;
     border-bottom: 2px solid var(--black-hex);
+    font: 400 2.5rem var(--display);
     padding: 0.5rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .box-post .cc-md-rep .bar {
-    width: 100%;
+    background: rgba(var(--group-rgb), 0.2);
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
-    background: rgba(var(--group-rgb), 0.2);
-    text-transform: uppercase;
     font-size: 0.7rem;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 .box-post .cc-md-rep .blurb {
@@ -2532,17 +2532,17 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-md-rep .body {
-    padding: 1.5rem 3rem;
-    gap: 1rem;
     display: flex;
     flex-flow: column nowrap;
+    gap: 1rem;
+    padding: 1.5rem 3rem;
 }
 
 .box-post .cc-md-rep .body char {
     display: grid;
+    grid-gap: 0 2rem;
     grid-template-columns: 90px 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 0 2rem;
 }
 
 .box-post .cc-md-rep .body char:nth-of-type(even) {
@@ -2560,28 +2560,28 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-md-rep .body char char-img {
-    position: relative;
-    z-index: 1;
     grid-column: 1;
     grid-row: 1 / span 2;
+    position: relative;
+    z-index: 1;
 }
 
 .box-post .cc-md-rep .body char char-img img {
-    height: 80px;
-    width: 80px;
-    object-fit: cover;
     border-radius: 50%;
+    height: 80px;
+    object-fit: cover;
+    width: 80px;
 }
 
 .box-post .cc-md-rep .body char char-img::before {
-    position: absolute;
-    content: "";
     border: 2px solid var(--black-hex);
-    height: 80px;
-    width: 80px;
-    top: 5px;
-    left: 8px;
     border-radius: 50%;
+    content: "";
+    height: 80px;
+    left: 8px;
+    position: absolute;
+    top: 5px;
+    width: 80px;
     z-index: 5;
 }
 
@@ -2591,24 +2591,24 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-md-rep .body char char-name a {
-    font: 400 1.5rem var(--display);
     color: var(--black-hex);
+    font: 400 1.5rem var(--display);
+    letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .box-post .cc-md-rep .body char char-info {
+    align-self: start;
+    background: var(--group-gradient-fade);
+    color: var(--black-hex);
     display: flex;
     flex-flow: row nowrap;
-    width: 100%;
-    background: var(--group-gradient-fade);
-    align-self: start;
-    justify-content: space-around;
-    text-transform: uppercase;
-    padding: 0.1rem;
     font-size: 0.65rem;
-    color: var(--black-hex);
+    justify-content: space-around;
+    padding: 0.1rem;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 /*
@@ -2620,10 +2620,10 @@ ALLY'S RP PACK
 .post-2 b,
 .post-3 b,
 .post-4 b {
-    color: var(--black-hex);
     background: var(--group-gradient-mid);
-    padding: 2px 3px;
+    color: var(--black-hex);
     font-size: 1.078em;
+    padding: 2px 3px;
 }
 
 .post-1 i,
@@ -2648,24 +2648,24 @@ ALLY'S RP PACK
 }
 
 .post-1 {
+    background: var(--group-gradient-light);
+    border: var(--black-hex) solid 2px;
+    height: auto;
     margin: 10px auto;
     position: relative;
     width: calc(100% - 130px);
-    height: auto;
-    background: var(--group-gradient-light);
-    border: var(--black-hex) solid 2px;
 }
 
 .post-1-top {
-    background: var(--white-hex);
-    z-index: 9;
-    height: 50px;
-    width: 100%;
-    border-bottom: 2px solid var(--black-hex);
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
+    background: var(--white-hex);
+    border-bottom: 2px solid var(--black-hex);
     color: var(--black-hex);
+    display: flex;
+    height: 50px;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 9;
 }
 
 .post-1-top span,
@@ -2680,13 +2680,13 @@ ALLY'S RP PACK
 }
 
 .post-2 {
-    position: relative;
-    margin: 10px auto;
-    width: calc(100% - 177px);
-    height: auto;
-    padding: 80px;
     background: var(--group-gradient-light);
     border: var(--black-hex) solid 2px;
+    height: auto;
+    margin: 10px auto;
+    padding: 80px;
+    position: relative;
+    width: calc(100% - 177px);
     z-index: 3;
 }
 
@@ -2695,43 +2695,43 @@ ALLY'S RP PACK
 }
 
 .post-2-tag {
-    position: relative;
-    left: -51px;
-    display: block;
-    width: calc(100% + 163px);
-    margin: 80px 0 -10px -30px;
-    height: 2px;
     background: var(--black-hex);
+    display: block;
+    height: 2px;
+    left: -51px;
+    margin: 80px 0 -10px -30px;
+    position: relative;
+    width: calc(100% + 163px);
 }
 
 .post-2-tag tag {
-    height: 30px;
-    padding: 8px 10px;
-    position: relative;
-    z-index: 9;
-    font: 400 10px var(--sans);
-    text-transform: uppercase;
-    letter-spacing: 2px;
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
-    top: -13px;
+    font: 400 10px var(--sans);
+    height: 30px;
     left: 35px;
+    letter-spacing: 2px;
+    padding: 8px 10px;
+    position: relative;
+    text-transform: uppercase;
+    top: -13px;
+    z-index: 9;
 }
 
 .post-3 {
-    position: relative;
-    margin: 10px auto;
-    width: calc(100% - 200px);
-    height: auto;
     background: var(--group-gradient-light);
     border: var(--black-hex) solid 2px;
+    height: auto;
+    margin: 10px auto;
+    position: relative;
+    width: calc(100% - 200px);
 }
 
 .post-3-top {
     background: var(--white-hex);
-    z-index: 9;
     height: 80px;
     width: 100%;
+    z-index: 9;
 }
 
 .post-3-post {
@@ -2739,173 +2739,172 @@ ALLY'S RP PACK
 }
 
 .post-3-icon {
-    width: 70px;
     height: 70px;
-    position: relative;
     left: 50%;
+    position: relative;
     transform: translate(-50%, -50%);
+    width: 70px;
     z-index: 99;
 }
 
 .post-3-icon img {
-    width: 70px;
-    height: 70px;
     border-radius: 100%;
+    height: 70px;
+    width: 70px;
 }
 
 .post-3-icon::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
     border: 2px solid var(--black-hex);
+    border-radius: 100%;
+    content: "";
+    height: 70px;
+    left: 10px;
+    position: absolute;
+    width: 70px;
 }
 
 .post-3-tag {
-    position: relative;
-    left: -32px;
-    display: block;
-    width: calc(100% + 123px);
-    margin: 60px 0 -10px -30px;
-    height: 2px;
     background: var(--black-hex);
+    display: block;
+    height: 2px;
+    left: -32px;
+    margin: 60px 0 -10px -30px;
+    position: relative;
+    width: calc(100% + 123px);
 }
 
 .post-3-tag tag {
-    height: 30px;
-    padding: 8px 10px;
-    position: relative;
-    z-index: 9;
-    font: 400 10px var(--sans);
-    text-transform: uppercase;
-    letter-spacing: 2px;
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
-    top: -13px;
+    font: 400 10px var(--sans);
+    height: 30px;
     left: 35px;
+    letter-spacing: 2px;
+    padding: 8px 10px;
+    position: relative;
+    text-transform: uppercase;
+    top: -13px;
+    z-index: 9;
 }
 
 .post-4 {
-    position: relative;
-    margin: 10px auto;
-    width: calc(100% - 200px);
     background: var(--group-gradient-light);
     border: var(--black-hex) solid 2px;
+    margin: 10px auto;
+    position: relative;
+    width: calc(100% - 200px);
 }
 
 .post-4-title {
     font-family: var(--display);
-    transform: scale(-1);
-    writing-mode: vertical-rl;
+    font-size: 2em;
+    left: -2.3rem;
+    position: absolute;
     text-orientation: mixed;
     text-transform: uppercase;
-    font-size: 2em;
-    position: absolute;
-    left: -2.3rem;
     top: 0;
+    transform: scale(-1);
+    writing-mode: vertical-rl;
 }
 
 .post-4-post {
-    position: relative;
-    padding-right: 7px;
     padding: 70px;
+    position: relative;
 }
 
 .post-4-tag {
-    position: relative;
-    left: -41px;
-    display: block;
-    width: calc(100% + 143px);
-    margin: 60px 0 -10px -30px;
-    height: 2px;
     background: var(--black-hex);
+    display: block;
+    height: 2px;
+    left: -41px;
+    margin: 60px 0 -10px -30px;
+    position: relative;
+    width: calc(100% + 143px);
 }
 
 .post-4-tag tag {
-    height: 30px;
-    padding: 8px 10px;
-    position: relative;
-    z-index: 9;
-    font: 400 10px var(--sans);
-    text-transform: uppercase;
-    letter-spacing: 2px;
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
-    top: -13px;
+    font: 400 10px var(--sans);
+    height: 30px;
     left: 35px;
+    letter-spacing: 2px;
+    padding: 8px 10px;
+    position: relative;
+    text-transform: uppercase;
+    top: -13px;
+    z-index: 9;
 }
 
 .comms-1 {
-    width: 45%;
-    margin: 100px auto;
     background: var(--group-gradient-light);
     border: var(--black-hex) solid 2px;
+    margin: 100px auto;
+    width: 45%;
 }
 
 .comms-top {
-    background: var(--white-hex);
-    z-index: 9;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    background: var(--white-hex);
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
     padding: 15px;
+    width: 100%;
+    z-index: 9;
 }
 
 .comms-icon {
+    align-items: center;
+    display: flex;
+    grid-area: icon;
+    justify-content: center;
+    padding-right: 20px;
     position: relative;
     z-index: 99;
-    grid-area: icon;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
 }
 
 .comms-icon img {
-    width: 70px;
-    height: 70px;
     border-radius: 100%;
+    height: 70px;
+    width: 70px;
 }
 
 .comms-icon::after {
-    content: "";
-    position: absolute;
-    left: 15px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
     border: 2px solid var(--black-hex);
+    border-radius: 100%;
+    content: "";
+    height: 70px;
+    left: 15px;
+    position: absolute;
+    width: 70px;
 }
 
 .comms-info {
     font: 0.832em/1.8 var(--sans);
-    text-transform: lowercase;
     text-align: right;
+    text-transform: lowercase;
 }
 
 .comms-info span {
-    font: 900 1.701em/1 var(--display);
-    text-transform: uppercase;
-    letter-spacing: 0.078rem;
     background: var(--group-gradient-dark);
-    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     display: flex;
+    font: 900 1.701em/1 var(--display);
     justify-content: flex-end;
+    letter-spacing: 0.078rem;
     text-align: right;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 .comms-bot {
-    padding: 15px;
+    border-bottom: 15px solid transparent;
     height: 21rem;
     overflow-x: hidden;
     overflow-y: auto;
-    border-bottom: 15px solid transparent;
+    padding: 15px;
 }
 
 /* feel free to get rid of this! i just hate the look of a scrollbar on most comms templates is all */
@@ -2915,30 +2914,30 @@ ALLY'S RP PACK
 
 .comms-bot p {
     background: var(--group-gradient-dark);
-    padding: 0.75rem 0.85rem;
+    border-radius: 15px 15px 0 15px;
+    box-shadow: 1px 1px 5px rgba(var(--black), 0.47);
+    clear: both;
+    color: var(--white-hex);
     display: block;
     float: right;
-    clear: both;
-    border-radius: 15px 15px 0 15px;
-    margin-bottom: -3px;
-    color: var(--white-hex);
-    box-shadow: 1px 1px 5px rgba(var(--black), 0.47);
     font: 0.985em/1.23 var(--sans);
+    margin-bottom: -3px;
+    padding: 0.75rem 0.85rem;
 }
 
 .comms-bot action {
-    display: block;
     clear: both;
-    position: relative;
+    display: block;
     margin-top: 10px;
+    position: relative;
 }
 
 .comms-bot b,
 .ftinder-about b {
-    color: var(--black-hex);
     background: var(--white-hex);
-    padding: 1px 2px;
+    color: var(--black-hex);
     font-size: 0.978em;
+    padding: 1px 2px;
 }
 
 .comms-bot i,
@@ -2957,94 +2956,94 @@ ALLY'S RP PACK
 }
 
 .ftinder {
-    margin: 100px auto;
-    min-width: 300px;
-    max-width: 420px;
-    width: 100%;
-    height: 350px;
     background-image: var(--group-gradient-light);
-    outline: 2px solid var(--black-hex);
-    outline-offset: -15px;
     box-shadow: 0 0 10px rgba(var(--black), 0.25);
     display: flex;
     flex-flow: column nowrap;
+    height: 350px;
+    margin: 100px auto;
+    max-width: 420px;
+    min-width: 300px;
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+    width: 100%;
 }
 
 .ftinder-image {
-    width: 70px;
-    height: 70px;
     border-radius: 100%;
-    position: relative;
+    height: 70px;
     margin-right: 15px;
+    position: relative;
+    width: 70px;
 }
 
 .ftinder-image::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
     border: 2px solid var(--black-hex);
+    border-radius: 100%;
+    content: "";
+    height: 70px;
+    left: 10px;
+    position: absolute;
+    width: 70px;
 }
 
 .ftinder-image img {
-    width: 70px;
-    height: 70px;
     border-radius: 100%;
+    height: 70px;
+    width: 70px;
 }
 
 .ftinder-right {
-    width: 100%;
+    align-content: center;
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    align-content: center;
     justify-items: center;
-    align-items: center;
     position: relative;
+    width: 100%;
 }
 
 .ftinder-top {
-    width: 100%;
-    height: 120px;
-    position: relative;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 38px 10px;
     border-bottom: 2px solid var(--black-hex);
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 20px 38px 10px;
+    position: relative;
+    width: 100%;
 }
 
 .ftinder-info {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-flow: column nowrap;
+    height: 100%;
+    width: 100%;
 }
 
 .ftinder-info name {
-    width: 100%;
-    display: block;
-    text-align: right;
-    font: 1.883em var(--display);
-    background-image: var(--group-gradient-dark);
-    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    background-image: var(--group-gradient-dark);
+    color: transparent;
+    display: block;
+    font: 1.883em var(--display);
+    text-align: right;
     text-shadow: 0 0 1px rgba(var(--black), 0.25);
+    width: 100%;
 }
 
 .ftinder-info extras {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     align-content: center;
+    display: flex;
     font: 0.8em var(--sans);
-    text-transform: uppercase;
+    justify-content: space-between;
     letter-spacing: 1.5px;
     text-align: right;
+    text-transform: uppercase;
+    width: 100%;
 }
 
 .ftinder-info .block-icon {
@@ -3056,35 +3055,35 @@ ALLY'S RP PACK
 }
 
 .ftinder-about {
-    width: 100%;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    font: 1em/1.4 var(--sans);
     height: 150px;
     overflow: auto;
-    font: 1em/1.4 var(--sans);
     padding: 0 35px;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
+    width: 100%;
 }
 
 .ftinder-swipes {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
     align-items: center;
     border-top: 2px solid var(--black-hex);
+    display: flex;
+    height: 80px;
+    justify-content: space-around;
     padding: 10px 38px 25px;
+    width: 100%;
 }
 
 .ftinder-swipes .__option {
-    width: 45px;
-    height: 45px;
+    align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
+    display: flex;
     fill: var(--white-hex);
+    height: 45px;
+    justify-content: center;
+    width: 45px;
 }
 
 .ftinder-swipes .block-icon {
@@ -3097,95 +3096,95 @@ ALLY'S RP PACK
 }
 
 .ftinder-swipe {
-    margin: 100px auto;
-    min-width: 200px;
-    max-width: 350px;
-    width: 100%;
-    height: 250px;
     background-image: var(--group-gradient-light);
-    outline: 2px solid var(--black-hex);
-    outline-offset: -15px;
     box-shadow: 0 0 10px rgba(var(--black), 0.25);
     display: flex;
     flex-flow: column nowrap;
+    height: 250px;
+    margin: 100px auto;
+    max-width: 350px;
+    min-width: 200px;
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+    width: 100%;
 }
 
 .ftinder-swipe-top {
-    width: 100%;
-    height: 120px;
-    position: relative;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 30px 38px 20px;
     border-bottom: 2px solid var(--black-hex);
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 30px 38px 20px;
+    position: relative;
+    width: 100%;
 }
 
 .ftinder-swipe-image {
-    width: 70px;
-    height: 70px;
     border-radius: 100%;
-    position: relative;
+    height: 70px;
     margin-right: 15px;
+    position: relative;
+    width: 70px;
 }
 
 .ftinder-swipe-image::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
     border: 2px solid var(--black-hex);
+    border-radius: 100%;
+    content: "";
+    height: 70px;
+    left: 10px;
+    position: absolute;
+    width: 70px;
 }
 
 .ftinder-swipe-image img {
-    width: 70px;
-    height: 70px;
     border-radius: 100%;
+    height: 70px;
+    width: 70px;
 }
 
 .ftinder-swipe-top name {
-    width: 100%;
-    display: block;
-    text-align: right;
-    font: 1.883em var(--display);
-    text-transform: lowercase;
     background: var(--group-gradient-dark);
-    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    color: transparent;
+    display: block;
+    font: 1.883em var(--display);
+    text-align: right;
     text-shadow: 0 0 1px rgba(var(--black), 0.25);
+    text-transform: lowercase;
+    width: 100%;
 }
 
 .ftinder-swipe-bot {
-    width: 100%;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 35px;
+    width: 100%;
 }
 
 .ftinder-swipe-bot swipes {
-    font: 1.883em var(--display);
     background: var(--group-gradient-dark);
-    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    text-transform: uppercase;
+    color: transparent;
+    font: 1.883em var(--display);
     text-shadow: 0 0 1px rgba(var(--black), 0.25);
+    text-transform: uppercase;
 }
 
 .ftinder-swipe-bot a {
-    width: 45px;
-    height: 45px;
+    align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    width: 45px;
 }
 
 .ftinder-swipe-bot .block-icon {
@@ -3195,82 +3194,82 @@ ALLY'S RP PACK
 }
 
 .ftinder-match {
-    margin: 100px auto;
-    min-width: 200px;
-    max-width: 350px;
-    width: 100%;
-    height: 250px;
     background-image: var(--group-gradient-light);
-    outline: 2px solid var(--black-hex);
-    outline-offset: -15px;
     box-shadow: 0 0 10px rgba(var(--black), 0.25);
     display: flex;
     flex-flow: column nowrap;
+    height: 250px;
+    margin: 100px auto;
+    max-width: 350px;
+    min-width: 200px;
+    outline: 2px solid var(--black-hex);
+    outline-offset: -15px;
+    width: 100%;
 }
 
 .ftinder-match-top {
-    width: 100%;
-    height: 120px;
-    position: relative;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 30px 38px 20px;
     border-bottom: 2px solid var(--black-hex);
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 30px 38px 20px;
+    position: ßrelative;
+    width: 100%;
 }
 
 .ftinder-match-image {
-    width: 70px;
-    height: 70px;
     border-radius: 100%;
-    position: relative;
+    height: 70px;
     margin-right: 15px;
+    position: relative;
+    width: 70px;
 }
 
 .ftinder-match-image::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
     border: 2px solid var(--black-hex);
+    border-radius: 100%;
+    content: "";
+    height: 70px;
+    left: 10px;
+    position: absolute;
+    width: 70px;
 }
 
 .ftinder-match-image img {
-    width: 70px;
-    height: 70px;
     border-radius: 100%;
+    height: 70px;
+    width: 70px;
 }
 
 .ftinder-match-bot {
-    width: 100%;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 35px;
+    width: 100%;
 }
 
 .ftinder-match-bot swipes {
-    font: 1.883em var(--display);
     background: var(--group-gradient-dark);
-    color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    text-transform: uppercase;
+    color: transparent;
+    font: 1.883em var(--display);
     text-shadow: 0 0 1px rgba(var(--black), 0.25);
+    text-transform: uppercase;
 }
 
 .ftinder-match-bot a {
-    width: 45px;
-    height: 45px;
+    align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 0 5px rgba(var(--black), 0.35);
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    width: 45px;
 }
 
 .ftinder-match-bot .block-icon {
@@ -3286,20 +3285,20 @@ JASLENE'S RP PACK
 */
 
 jaspost {
-    position: relative;
+    background: var(--jasgradient-l);
     display: block;
     margin: 0 auto;
-    width: 65%;
-    padding: 30px;
-    background: var(--jasgradient-l);
     outline: 2px solid var(--black-hex);
     outline-offset: -15px;
+    padding: 30px;
+    position: relative;
+    width: 65%;
 }
 
 jaspost b,
 .jasthreadbody b {
-    color: var(--black-hex);
     background: var(--group-gradient-lr);
+    color: var(--black-hex);
 }
 
 jaspost i,
@@ -3308,49 +3307,49 @@ jaspost i,
 }
 
 jascomm {
-    position: relative;
-    display: block;
-    margin: 10px auto;
-    width: 50%;
-    height: 550px;
     background: var(--jasgradient-l);
+    display: block;
+    height: 550px;
+    margin: 10px auto;
     outline: 2px solid var(--black-hex);
     outline-offset: -15px;
+    position: relative;
+    width: 50%;
 }
 
 jascomm jascommtop {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid var(--black-hex);
-    padding: 30px;
+    display: flex;
+    flex-flow: row;
     height: 120px;
+    justify-content: space-between;
+    padding: 30px;
 }
 
 jascomm jascommtop jascommimg {
-    position: relative;
     display: block;
     margin-right: 15px !important;
+    position: relative;
 }
 
 jascomm jascommtop img {
-    width: 60px;
-    height: 60px;
     border-radius: 100%;
+    height: 60px;
     object-fit: cover;
     object-position: center center;
+    width: 60px;
 }
 
 jascomm jascommtop jascommimg::after {
     border: 2px solid var(--black-hex);
-    height: 60px;
-    width: 60px;
     border-radius: 100%;
     content: "";
+    height: 60px;
+    left: 10px;
     position: absolute;
     top: 0;
-    left: 10px;
+    width: 60px;
     z-index: 2;
 }
 
@@ -3364,24 +3363,24 @@ jascomm jascommtop connected {
 jascomm jascommtop contact {
     display: block;
     font: 800 1.5rem var(--display);
-    text-transform: lowercase;
     text-align: left;
+    text-transform: lowercase;
 }
 
 jascomm .msgs {
     display: block;
-    margin: 10px 30px;
     height: 390px;
+    margin: 10px 30px;
     overflow: auto;
 }
 
 jascomm .msgs p {
-    float: left;
-    clear: both;
     background: var(--jasgradient);
-    padding: 7px;
     border-radius: 10px 10px 10px 0;
+    clear: both;
+    float: left;
     margin-bottom: 0;
+    padding: 7px;
 }
 
 jascomm .msgs .actions {
@@ -3389,8 +3388,8 @@ jascomm .msgs .actions {
 }
 
 jascomm .msgs .actions b {
-    color: var(--black-hex);
     background: var(--group-gradient-lr);
+    color: var(--black-hex);
 }
 
 jascomm .msgs .actions i {
@@ -3398,69 +3397,69 @@ jascomm .msgs .actions i {
 }
 
 jasthread {
-    position: relative;
+    background: var(--jasgradient-l);
     display: block;
     margin: 30px auto;
-    width: 55%;
-    background: var(--jasgradient-l);
     outline: 2px solid var(--black-hex);
     outline-offset: -15px;
+    position: relative;
+    width: 55%;
 }
 
 jasthread .top {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100px;
     background: rgba(var(--blue), 0.3);
     border-bottom: 2px solid var(--black-hex);
+    display: block;
+    height: 100px;
+    position: relative;
+    width: 100%;
 }
 
 jasthread .top jasthreadimg {
-    position: absolute;
     display: block;
-    margin-top: 70px;
     margin-left: 30px;
+    margin-top: 70px;
+    position: absolute;
 }
 
 jasthread .top img {
-    width: 60px;
-    height: 60px;
     border-radius: 100%;
+    height: 60px;
     object-fit: cover;
     object-position: center center;
+    width: 60px;
 }
 
 jasthread .top jasthreadimg::after {
     border: 2px solid var(--black-hex);
-    height: 60px;
-    width: 60px;
     border-radius: 100%;
     content: "";
+    height: 60px;
+    left: 10px;
     position: absolute;
     top: 0;
-    left: 10px;
+    width: 60px;
     z-index: 2;
 }
 
 jasthread .top tag {
-    position: absolute;
-    display: block;
-    right: 30px;
-    margin-top: 85px;
     background: var(--white-hex);
-    padding: 7px;
     border: 2px solid var(--black-hex);
+    display: block;
     font: 400 8px var(--sans);
-    text-transform: uppercase;
     letter-spacing: 1.5px;
+    margin-top: 85px;
+    padding: 7px;
+    position: absolute;
+    right: 30px;
+    text-transform: uppercase;
 }
 
 jasthread .jasthreadbody {
-    position: relative;
     display: block;
     margin: 40px 40px 40px;
     padding: 10px 10px 30px;
+    position: relative;
 }
 
 /*
@@ -3473,38 +3472,39 @@ IZZY'S DEV PACK
     --pad: 0.75vw;
     --border-inset: calc(var(--pad) * 2);
     --border: 2px solid var(--black-hex);
-    margin: 0 auto calc(var(--pad) * 1.25);
-    padding: calc(var(--pad) * 1);
+
     background: var(--background-texture);
+    margin: 0 auto calc(var(--pad) * 1.25);
     max-width: 750px;
+    padding: calc(var(--pad) * 1);
     position: relative;
 }
 
 .dev-gallery::after,
 .dev-gallery::before {
-    z-index: 1;
+    bottom: 0;
     content: "";
     display: block;
-    position: absolute;
-    pointer-events: none;
     left: 0;
+    pointer-events: none;
+    position: absolute;
     right: 0;
     top: 0;
-    bottom: 0;
+    z-index: 1;
 }
 
 .dev-gallery::after {
-    top: var(--border-inset);
-    bottom: var(--border-inset);
-    border-top: var(--border);
     border-bottom: var(--border);
+    border-top: var(--border);
+    bottom: var(--border-inset);
+    top: var(--border-inset);
 }
 
 .dev-gallery::before {
-    left: var(--border-inset);
-    right: var(--border-inset);
     border-left: var(--border);
     border-right: var(--border);
+    left: var(--border-inset);
+    right: var(--border-inset);
 }
 
 .dev-gallery br {
@@ -3512,9 +3512,9 @@ IZZY'S DEV PACK
 }
 
 .dev-gallery .dg-col {
+    align-items: stretch;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
 }
 
 .dev-gallery .dg-col-2 {
@@ -3527,18 +3527,19 @@ IZZY'S DEV PACK
 
 .dev-gallery .dg-img-wrapper {
     --dg-basis: max(125px, calc(100% / var(--dg-cols) - var(--pad) * 2));
+
     flex: 1 1 var(--dg-basis);
     margin: calc(var(--pad) * 0.5);
 }
 
 .dev-gallery img {
     display: block;
-    width: 100%;
+    filter: contrast(100%) grayscale(0);
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    filter: contrast(100%) grayscale(0);
     transition: filter 0.25s;
+    width: 100%;
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -3548,68 +3549,69 @@ IZZY'S DEV PACK
 }
 
 .dev-quote {
-    max-width: 750px;
-    margin: 0 auto;
-    position: relative;
+    background: var(--background-texture);
     font-family: var(--sans);
     font-size: 1.2em;
     font-size: clamp(1.2em, 1.5vw, 1.6em);
     line-height: 1.2;
+    margin: 0 auto;
+    max-width: 750px;
     padding: 2em;
-    background: var(--background-texture);
+    position: relative;
 }
 
 .dev-quote::before,
 .dev-quote::after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
     pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .dev-quote::before {
-    left: 1em;
-    right: 1em;
     border-left: 2px solid var(--black-hex);
     border-right: 2px solid var(--black-hex);
+    left: 1em;
+    right: 1em;
 }
 
 .dev-quote::after {
-    top: 1em;
-    bottom: 1em;
-    border-top: 2px solid var(--black-hex);
     border-bottom: 2px solid var(--black-hex);
+    border-top: 2px solid var(--black-hex);
+    bottom: 1em;
+    top: 1em;
 }
 
 .dev-quote .dq-cite {
     --color: var(--black-hex);
+
+    bottom: 0;
+    color: var(--color);
+    font-size: 0.75em;
     font-style: italic;
     position: absolute;
-    font-size: 0.75em;
-    bottom: 0;
     right: 2.5em;
     text-align: right;
-    color: var(--color);
 }
 
 .dev-quote .dq-cite::before {
-    display: inline-block;
-    content: "";
     border-top: 1px solid var(--color);
-    width: 3ch;
+    content: "";
+    display: inline-block;
     height: 0.3em;
     margin-right: 0.7ch;
+    width: 3ch;
 }
 
 .dev-tracker {
     background: var(--background-texture), var(--white-hex);
-    padding: 8px;
     display: flex;
     flex-wrap: wrap;
+    padding: 8px;
 }
 
 .dev-tracker .category,
@@ -3617,41 +3619,41 @@ IZZY'S DEV PACK
 .dev-tracker .threads,
 .dev-tracker .thread,
 .dev-tracker .thread-name {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .dev-tracker .category {
-    flex: 1 1 30ch;
     border: 2px solid var(--black-hex);
+    flex: 1 1 30ch;
     margin: 8px;
 }
 
 .dev-tracker .category-title {
-    position: relative;
-    white-space: nowrap;
-    line-height: 1;
+    color: var(--black-hex);
+    font-family: var(--display);
     font-size: 1rem;
     font-size: clamp(0.9rem, 1.2vw, 1.2rem);
-    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
     padding: 10px;
     padding: clamp(8px, 1.5vmin, 16px);
-    font-family: var(--display);
-    letter-spacing: 2px;
-    color: var(--black-hex);
+    position: relative;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .dev-tracker .category-title::after {
+    border-bottom: 2px solid var(--black-hex);
+    bottom: 0;
     content: "";
     display: block;
-    position: absolute;
     left: -18px;
+    pointer-events: none;
+    position: absolute;
     right: -18px;
     top: 0;
-    bottom: 0;
-    border-bottom: 2px solid var(--black-hex);
-    pointer-events: none;
 }
 
 .dev-tracker .threads {
@@ -3661,20 +3663,21 @@ IZZY'S DEV PACK
 
 .dev-tracker .thread {
     --color: var(--black-hex);
-    position: relative;
-    margin: 16px 16px 16px 24px;
+
     border-right: 2px solid var(--color);
+    margin: 16px 16px 16px 24px;
+    position: relative;
 }
 
 .dev-tracker .thread::after {
-    display: block;
-    content: "";
-    position: absolute;
-    bottom: 8px;
-    left: -8px;
-    right: -8px;
     border-bottom: 2px solid var(--color);
+    bottom: 8px;
+    content: "";
+    display: block;
+    left: -8px;
     pointer-events: none;
+    position: absolute;
+    right: -8px;
 }
 
 .dev-tracker .thread:hover {
@@ -3682,11 +3685,11 @@ IZZY'S DEV PACK
 }
 
 .dev-tracker .thread-name {
-    display: block;
-    padding: 4px 16px 16px 8px;
     color: var(--color);
+    display: block;
     font-weight: 500;
     letter-spacing: 0.1px;
+    padding: 4px 16px 16px 8px;
 }
 
 /*
@@ -3697,16 +3700,17 @@ ROSE'S DEV PACK
 
 /* ----- BASE */
 rosedev {
+    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
     box-sizing: border-box !important;
     display: block;
-    width: 100%;
     padding: 40px 30px;
-    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    width: 100%;
 }
 
 rosedev.gradient {
     background: var(--group-gradient-lr);
 }
+
 rosedev.white {
     background: var(--white-hex);
     border: var(--black-hex) solid 2px;
@@ -3718,11 +3722,11 @@ rosedev.black {
 }
 
 rosedev devline {
-    display: block;
-    width: calc(100% + 60px);
-    margin: 0 0 0 -30px;
-    height: 1px;
     background: var(--black-hex);
+    display: block;
+    height: 1px;
+    margin: 0 0 0 -30px;
+    width: calc(100% + 60px);
 }
 
 rosedev.black devline {
@@ -3730,34 +3734,34 @@ rosedev.black devline {
 }
 
 rosedev devtop {
-    height: 30px;
-    padding: 8px 10px;
-    position: relative;
-    z-index: 999;
-    font: 400 10px var(--sans);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 90%;
     background: var(--white-hex);
     border: var(--black-hex) solid 2px;
+    font: 400 10px var(--sans);
+    height: 30px;
+    letter-spacing: 2px;
+    line-height: 90%;
+    padding: 8px 10px;
+    position: relative;
+    text-transform: uppercase;
     top: -10px;
+    z-index: 999;
 }
 
 rosedev devtop b {
+    background: var(--black-hex);
+    bottom: 1px;
+    color: var(--white-hex);
     font: 300 8px var(--sans);
     letter-spacing: 1.5px;
     padding: 5px 6px 5px 6px;
     position: relative;
-    bottom: 1px;
     text-transform: uppercase;
-    background: var(--black-hex);
-    color: var(--white-hex);
 }
 
 rosedev.black devtop {
     background: var(--black-hex);
-    color: var(--white-hex);
     border: var(--white-hex) solid 2px;
+    color: var(--white-hex);
 }
 
 rosedev.black devtop b {
@@ -3766,13 +3770,13 @@ rosedev.black devtop b {
 }
 
 rosedev devsub {
-    font: 300 8px var(--sans);
-    letter-spacing: 1.5px;
-    text-align: justify;
-    padding: 5px 6px 5px 6px;
-    text-transform: uppercase;
     background: rgba(var(--black), 1);
     color: rgba(var(--white), 1);
+    font: 300 8px var(--sans);
+    letter-spacing: 1.5px;
+    padding: 5px 6px 5px 6px;
+    text-align: justify;
+    text-transform: uppercase;
 }
 
 rosedev .dev {
@@ -3782,20 +3786,20 @@ rosedev .dev {
 
 rosedev .dev2 {
     background: var(--white-hex);
-    padding: 20px 20px 10px 20px;
     margin: 20px 0 0 0;
+    padding: 20px 20px 10px 20px;
 }
 
 rosedev.white .dev2 {
     background: var(--black-hex);
-    padding: 20px 20px 10px 20px;
     margin: 20px 0 0 0;
+    padding: 20px 20px 10px 20px;
 }
 
 /* ----- IMAGES */
 rosedev img {
-    max-width: 100%;
     height: auto !important;
+    max-width: 100%;
 }
 
 rosedev .dev img {
@@ -3813,10 +3817,10 @@ rosedev .three img {
 
 /* ----- QUOTE */
 rosedev .quote {
-    display: block;
     color: var(--black-hex);
-    line-height: 130%;
+    display: block;
     letter-spacing: 1px;
+    line-height: 130%;
     padding: 4px 3px 4px 3px;
 }
 
@@ -3825,12 +3829,12 @@ rosedev.black .quote {
 }
 
 rosedev .quote x {
-    line-height: 130%;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font: 400 35px var(--display);
-    padding: 4px 3px 4px 3px;
     background: var(--group-gradient-lr);
+    font: 400 35px var(--display);
+    letter-spacing: 1px;
+    line-height: 130%;
+    padding: 4px 3px 4px 3px;
+    text-transform: uppercase;
 }
 
 rosedev .quote x b {
@@ -3842,37 +3846,37 @@ rosedev.gradient .quote x {
 }
 
 rosedev.gradient .quote x b {
-    color: var(--group-gradient-lr);
     background: var(--group-gradient-lr);
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
     -webkit-background-clip: text;
     background-clip: text;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: var(--group-gradient-lr);
+    font: 35px var(--display);
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    font: 35px var(--display);
 }
 
 rosedev.black .quote x b {
-    font-size: 35px;
     color: var(--black-hex);
+    font-size: 35px;
 }
 
 rosedev.white .quote x b {
-    font-size: 35px;
     color: var(--white-hex);
+    font-size: 35px;
 }
 
 rosedev .quote y {
     color: var(--clear);
+    font: 35px var(--display);
     -webkit-text-stroke: 1px var(--white-hex);
     text-transform: uppercase;
-    font: 35px var(--display);
 }
 
 rosedev .quote y b {
-    font-size: 35px;
     color: var(--white-hex);
+    font-size: 35px;
 }
 
 rosedev.white .quote y {
@@ -3880,48 +3884,47 @@ rosedev.white .quote y {
 }
 
 rosedev.white .quote y b {
-    font-size: 35px;
     color: var(--black-hex);
+    font-size: 35px;
 }
 
 rosedev .quote z {
     background: var(--group-gradient-lr);
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 14px;
-    text-transform: uppercase;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
     font: 35px var(--display);
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 rosedev .quote z b {
     background: var(--white-hex);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     font: 35px var(--display);
+    -webkit-text-fill-color: transparent;
 }
 
 rosedev.white .quote z b {
     background: var(--black-hex);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     font: 35px var(--display);
+    -webkit-text-fill-color: transparent;
 }
 
 rosedev .quote author {
     display: block;
-    text-align: right;
     font: 400 9px var(--sans);
-    text-transform: uppercase;
     letter-spacing: 1.5px;
+    text-align: right;
+    text-transform: uppercase;
 }
 
 /* ----- DRABBLE/TRACKER */
@@ -3930,8 +3933,8 @@ rosedev.black .drabble {
 }
 
 rosedev .drabble x {
-    display: block;
     color: var(--white-hex);
+    display: block;
 }
 
 rosedev.white .drabble x {
@@ -3939,11 +3942,11 @@ rosedev.white .drabble x {
 }
 
 rosedev .drabble x a {
-    text-transform: uppercase;
+    color: var(--white-hex);
     font-size: 10px;
     font-weight: bold;
-    color: var(--white-hex);
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 rosedev.white .drabble x a {
@@ -3956,23 +3959,23 @@ rosedev .drabble b {
 
 rosedev.black .drabble b,
 rosedev.white .drabble b {
-    margin: 10px 0;
-    color: var(--group-gradient-lr);
     background: var(--group-gradient-lr);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    color: var(--group-gradient-lr);
+    margin: 10px 0;
+    -webkit-text-fill-color: transparent;
 }
 
 rosedev .drabble bb {
     background: var(--black-hex);
+    color: var(--white-hex);
+    font-size: 0.75rem;
+    font-weight: bold;
     padding: 5px;
     text-transform: uppercase;
-    font-size: 0.75rem;
-    color: var(--white-hex);
-    font-weight: bold;
 }
 
 rosedev.black .drabble bb {
@@ -3981,20 +3984,20 @@ rosedev.black .drabble bb {
 }
 
 rosedev .drabble i {
-    opacity: 0.7;
     letter-spacing: 1px;
+    opacity: 0.7;
 }
 
 rosedev .drabble ii {
-    text-transform: uppercase;
+    color: var(--group);
     font-style: italic;
     letter-spacing: 1.5px;
-    color: var(--group);
+    text-transform: uppercase;
 }
 
 rosedev .drabble u {
-    text-decoration: none;
     border-bottom: 2px solid var(--group);
+    text-decoration: none;
 }
 
 rosedev .drabble uu {
@@ -4002,8 +4005,8 @@ rosedev .drabble uu {
 }
 
 rosedev .drabble bubble {
-    display: block;
     background: var(--white-hex);
+    display: block;
     margin: 10px 0;
     padding: 10px;
 }
@@ -4018,20 +4021,20 @@ rosedev.white .drabble bubble {
 }
 
 rosedev .drabble lines {
-    display: block;
-    padding: 10px;
     border-left: 1px solid var(--group);
     border-right: 1px solid var(--group);
+    display: block;
+    padding: 10px;
 }
 
 rosedev .drabble quote {
-    padding: 4px 3px 4px 3px;
     background: var(--black-hex);
     color: var(--white-hex);
     font: 300 9px var(--sans);
-    line-height: 250%;
-    text-transform: uppercase;
     letter-spacing: 1.5px;
+    line-height: 250%;
+    padding: 4px 3px 4px 3px;
+    text-transform: uppercase;
 }
 
 rosedev.black .drabble quote {
@@ -4047,21 +4050,21 @@ ABI'S WEBPAGES
 
 .webpage {
     display: block;
-    width: 100%;
     margin: 75px 0;
+    width: 100%;
 }
 
 .webpage .webpagebox {
-    padding: 15px;
     background: var(--white-hex);
     box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
     font: var(--body-font);
+    padding: 15px;
     width: 100%;
 }
 
 .webpage .webpagebox .webpageboxborder {
-    height: 100%;
     border: var(--black-hex) solid 2px;
+    height: 100%;
 }
 
 .webpagecont {
@@ -4076,18 +4079,18 @@ ABI'S WEBPAGES
 }
 
 .webpagesidebar .webpagesidebarcont {
-    position: sticky;
     inset-block-start: calc(var(--topbar-block-size) + var(--sidebar-padding));
+    position: sticky;
 }
 
 .webpagesidebar .webpagesidebarcont a {
-    text-decoration: none;
     color: inherit;
+    line-height: 2.5;
     padding-left: 10px;
     padding-right: 10px;
-    line-height: 2.5;
-    transition: 1s ease;
+    text-decoration: none;
     text-transform: uppercase;
+    transition: 1s ease;
 }
 
 .webpagesidebar .webpagesidebarcont a:hover {
@@ -4096,22 +4099,22 @@ ABI'S WEBPAGES
 }
 
 .webpagesidebar .webpagesidebarcont .sidebarheader {
-    font: 0.9rem/1.8 var(--display);
-    text-transform: uppercase;
     border-bottom: solid 2px var(--black-hex);
-    width: 275px;
+    font: 0.9rem/1.8 var(--display);
+    margin-bottom: 7px;
     margin-left: -25px;
+    margin-top: 7px;
     padding-left: 25px;
     padding-right: 7px;
-    margin-bottom: 7px;
-    margin-top: 7px;
+    text-transform: uppercase;
+    width: 275px;
 }
 
 .webpageborder {
-    margin-top: -17px;
-    width: 2px;
     background: var(--black-hex);
     height: calc(100% + 34px);
+    margin-top: -17px;
+    width: 2px;
 }
 
 .webpagemaincontent {
@@ -4126,9 +4129,9 @@ ABI'S WEBPAGES
 }
 
 .webpagemaincontent h2 {
+    color: var(--clear);
     font: 1.2rem/1.8 var(--display);
     margin: 0;
-    color: var(--clear);
     -webkit-text-stroke: 1px var(--black-hex);
 }
 
@@ -4157,10 +4160,10 @@ UTILITIES
 }
 
 .utility-wrapper {
-    width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
-    margin: 50px auto;
     background-color: var(--clear);
+    margin: 50px auto;
     padding-inline-start: var(--sidebar-inline-size);
+    width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
 }
 
 /*
@@ -4170,62 +4173,62 @@ BLOCKS
 */
 
 .block-heading-a-1 {
-    font: 700 2.2em/100% var(--display);
     color: var(--blue-hex);
+    font: 700 2.2em/100% var(--display);
+    letter-spacing: 1px;
     text-shadow: 0 0 5px rgba(var(--white), 0.55);
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .block-heading-a-2 {
-    font: 700 1.2em/100% var(--display);
     background: var(--group-gradient-mid);
+    display: block;
+    font: 700 1.2em/100% var(--display);
+    letter-spacing: 1px;
+    margin: 10px 0;
+    padding: 5px;
     text-shadow: 0 0 5px rgba(var(--white), 0.55);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 5px;
-    display: block;
-    margin: 10px 0;
     width: max-content;
 }
 
 .block-heading-a-3 {
-    font: 900 0.9em/100% var(--sans);
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    text-align: center;
     background: var(--group-gradient-dark);
-    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    font: 900 0.9em/100% var(--sans);
+    letter-spacing: 4px;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
 }
 
 .block-heading-b-1 {
+    border-bottom: 2px solid var(--black-hex);
     display: inline;
     font: 2rem/1.8 var(--display);
     text-transform: uppercase;
-    border-bottom: 2px solid var(--black-hex);
 }
 
 .block-heading-b-2 {
+    color: var(--group);
     font: 1.3rem/1.8 var(--display);
     text-transform: lowercase;
-    color: var(--group);
 }
 
 .block-heading-b-3 {
     font: 1rem var(--display);
-    text-transform: uppercase;
     letter-spacing: 2.25px;
+    text-transform: uppercase;
 }
 
 .block-heading-c {
-    -webkit-text-fill-color: var(--clear);
-    -webkit-text-stroke: 1px var(--black-hex);
-    text-transform: uppercase;
     font: 35px var(--display);
     line-height: 100%;
     margin: 10px 0;
+    -webkit-text-fill-color: var(--clear);
+    -webkit-text-stroke: 1px var(--black-hex);
+    text-transform: uppercase;
 }
 
 .block-heading-c[data-bg="dark"] {
@@ -4233,42 +4236,42 @@ BLOCKS
 }
 
 .block-heading-d {
-    margin: 10px 0;
-    font: 400 30px var(--display);
     background: var(--group-gradient-lr) no-repeat bottom left/100% 18px;
+    font: 400 30px var(--display);
+    margin: 10px 0;
     width: -moz-fit-content;
     width: fit-content;
 }
 
 .block-heading-e {
-    margin: 10px 0;
-    color: var(--group-gradient-lr);
     background: var(--group-gradient-lr);
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
     -webkit-background-clip: text;
     background-clip: text;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: var(--group-gradient-lr);
+    font: 35px var(--display);
+    margin: 10px 0;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
-    font: 35px var(--display);
 }
 
 .block-heading-f {
+    border-bottom: 2px solid var(--group);
     font: 400 30px var(--display);
     margin: 10px 0;
-    border-bottom: 2px solid var(--group);
     width: -moz-fit-content;
     width: fit-content;
 }
 
 .block-heading-g {
-    width: -moz-fit-content;
-    width: fit-content;
+    background: var(--group-gradient-lr);
+    color: var(--white-hex);
     font: 400 25px var(--display);
     margin: 10px 0;
     padding: 3px;
-    background: var(--group-gradient-lr);
-    color: var(--white-hex);
+    width: -moz-fit-content;
+    width: fit-content;
 }
 
 .block-heading-g[data-bg="gradient"] {
@@ -4342,11 +4345,11 @@ nav#block-nav-primary[data-js-enhanced="false"] ul {
 }
 
 nav#block-nav-primary[data-js-enhanced="true"] ul {
+    inline-size: 200px;
     inset-block-start: var(--topbar-block-size);
     inset-inline-end: 0;
     max-block-size: calc(100vh - var(--topbar-block-size));
     max-inline-size: 80%;
-    inline-size: 200px;
     overflow: auto;
     position: fixed;
     z-index: 999;
