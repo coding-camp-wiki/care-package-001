@@ -55,10 +55,12 @@ Coding Camp info:
     font-family: "Mont Heavy Demo";
     font-style: normal;
     font-weight: 400 700;
+    /* stylelint-disable indentation */
     src: url(https://coding-camp-wiki.github.io/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff2)
             format("woff2"),
         url(https://coding-camp-wiki.github.io/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff)
             format("woff");
+    /* stylelint-enable indentation */
     unicode-range: U+0033-0034, U+0036, U+0038-0046, U+0048-0059, U+0061,
         U+0063-0064, U+0065-0091, U+0093, U+0097-0123, U+0125, U+0128, U+0153,
         U+0156, U+0162-0163, U+0165, U+0167, U+0169, U+0174, U+0182, U+0247;
