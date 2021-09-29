@@ -2315,7 +2315,7 @@ LEEANN'S SITE PACK
     text-transform: uppercase;
 }
 
-.box-post .cc-ship-rep .ship-top x {
+.box-post .cc-ship-rep .ship-top .x {
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
     display: block;
@@ -2339,7 +2339,7 @@ LEEANN'S SITE PACK
     background: var(--group-gradient-rl);
 }
 
-.box-post .cc-ship-rep.color .ship-top x {
+.box-post .cc-ship-rep.color .ship-top .x {
     background: var(--group);
 }
 
@@ -2391,8 +2391,8 @@ LEEANN'S SITE PACK
     width: 80%;
 }
 
-.box-post .cc-fc .text col-1 a x,
-.box-post .cc-fc .text col-2 a x {
+.box-post .cc-fc .text col-1 a .x,
+.box-post .cc-fc .text col-2 a .x {
     left: 0;
     opacity: 1;
     position: absolute;
@@ -2402,8 +2402,8 @@ LEEANN'S SITE PACK
     width: 100%;
 }
 
-.box-post .cc-fc .text col-1 a y,
-.box-post .cc-fc .text col-2 a y {
+.box-post .cc-fc .text col-1 a .y,
+.box-post .cc-fc .text col-2 a .y {
     left: 0;
     opacity: 0;
     position: absolute;
@@ -2413,16 +2413,16 @@ LEEANN'S SITE PACK
     width: 100%;
 }
 
-.box-post .cc-fc .text col-1 a:hover x,
-.box-post .cc-fc .text col-2 a:hover x {
+.box-post .cc-fc .text col-1 a:hover .x,
+.box-post .cc-fc .text col-2 a:hover .x {
     opacity: 0;
     text-align: center;
     transition: all 0.5s ease;
     width: 100%;
 }
 
-.box-post .cc-fc .text col-1 a:hover y,
-.box-post .cc-fc .text col-2 a:hover y {
+.box-post .cc-fc .text col-1 a:hover .y,
+.box-post .cc-fc .text col-2 a:hover .y {
     background: var(--black-hex);
     color: var(--white-hex);
     opacity: 1;
@@ -2535,42 +2535,42 @@ LEEANN'S SITE PACK
     padding: 1.5rem 3rem;
 }
 
-.box-post .cc-md-rep .body char {
+.box-post .cc-md-rep .body .char {
     display: grid;
     grid-gap: 0 2rem;
     grid-template-columns: 90px 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
-.box-post .cc-md-rep .body char:nth-of-type(even) {
+.box-post .cc-md-rep .body .char:nth-of-type(even) {
     grid-template-columns: 1fr 90px;
 }
 
-.box-post .cc-md-rep .body char:nth-of-type(even) char-img {
+.box-post .cc-md-rep .body .char:nth-of-type(even) char-img {
     grid-column: 2;
 }
 
-.box-post .cc-md-rep .body char char-img,
-.box-post .cc-md-rep .body char char-name,
-.box-post .cc-md-rep .body char char-info {
+.box-post .cc-md-rep .body .char char-img,
+.box-post .cc-md-rep .body .char char-name,
+.box-post .cc-md-rep .body .char char-info {
     display: block;
 }
 
-.box-post .cc-md-rep .body char char-img {
+.box-post .cc-md-rep .body .char char-img {
     grid-column: 1;
     grid-row: 1 / span 2;
     position: relative;
     z-index: 1;
 }
 
-.box-post .cc-md-rep .body char char-img img {
+.box-post .cc-md-rep .body .char char-img img {
     border-radius: 50%;
     height: 80px;
     object-fit: cover;
     width: 80px;
 }
 
-.box-post .cc-md-rep .body char char-img::before {
+.box-post .cc-md-rep .body .char char-img::before {
     border: 2px solid var(--black-hex);
     border-radius: 50%;
     content: "";
@@ -2582,12 +2582,12 @@ LEEANN'S SITE PACK
     z-index: 5;
 }
 
-.box-post .cc-md-rep .body char char-name {
+.box-post .cc-md-rep .body .char char-name {
     align-self: end;
     text-align: center;
 }
 
-.box-post .cc-md-rep .body char char-name a {
+.box-post .cc-md-rep .body .char char-name a {
     color: var(--black-hex);
     font: 400 1.5rem var(--display);
     letter-spacing: 1px;
@@ -2595,7 +2595,7 @@ LEEANN'S SITE PACK
     text-transform: uppercase;
 }
 
-.box-post .cc-md-rep .body char char-info {
+.box-post .cc-md-rep .body .char char-info {
     align-self: start;
     background: var(--group-gradient-fade);
     color: var(--black-hex);
@@ -2701,7 +2701,7 @@ ALLY'S RP PACK
     width: calc(100% + 163px);
 }
 
-.post-2-tag tag {
+.post-2-tag .tag {
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
     font: 400 10px var(--sans);
@@ -2770,7 +2770,7 @@ ALLY'S RP PACK
     width: calc(100% + 123px);
 }
 
-.post-3-tag tag {
+.post-3-tag .tag {
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
     font: 400 10px var(--sans);
@@ -2819,7 +2819,7 @@ ALLY'S RP PACK
     width: calc(100% + 143px);
 }
 
-.post-4-tag tag {
+.post-4-tag .tag {
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
     font: 400 10px var(--sans);
@@ -2922,7 +2922,7 @@ ALLY'S RP PACK
     padding: 0.75rem 0.85rem;
 }
 
-.comms-bot action {
+.comms-bot .action {
     clear: both;
     display: block;
     margin-top: 10px;
@@ -3020,7 +3020,7 @@ ALLY'S RP PACK
     width: 100%;
 }
 
-.ftinder-info name {
+.ftinder-info .name {
     -webkit-background-clip: text;
     background-clip: text;
     background-image: var(--group-gradient-dark);
@@ -3032,7 +3032,7 @@ ALLY'S RP PACK
     width: 100%;
 }
 
-.ftinder-info extras {
+.ftinder-info .extras {
     align-content: center;
     display: flex;
     font: 0.8em var(--sans);
@@ -3142,7 +3142,7 @@ ALLY'S RP PACK
     width: 70px;
 }
 
-.ftinder-swipe-top name {
+.ftinder-swipe-top .name {
     background: var(--group-gradient-dark);
     -webkit-background-clip: text;
     background-clip: text;
@@ -3163,7 +3163,7 @@ ALLY'S RP PACK
     width: 100%;
 }
 
-.ftinder-swipe-bot swipes {
+.ftinder-swipe-bot .swipes {
     background: var(--group-gradient-dark);
     -webkit-background-clip: text;
     background-clip: text;
@@ -3248,7 +3248,7 @@ ALLY'S RP PACK
     width: 100%;
 }
 
-.ftinder-match-bot swipes {
+.ftinder-match-bot .swipes {
     background: var(--group-gradient-dark);
     -webkit-background-clip: text;
     background-clip: text;
@@ -3281,9 +3281,8 @@ JASLENE'S RP PACK
 -----
 */
 
-jaspost {
+.jaspost {
     background: var(--jasgradient-l);
-    display: block;
     margin: 0 auto;
     outline: 2px solid var(--black-hex);
     outline-offset: -15px;
@@ -3292,20 +3291,19 @@ jaspost {
     width: 65%;
 }
 
-jaspost b,
+.jaspost b,
 .jasthreadbody b {
     background: var(--group-gradient-lr);
     color: var(--black-hex);
 }
 
-jaspost i,
+.jaspost i,
 .jasthreadbody i {
     color: var(--blue-hex);
 }
 
-jascomm {
+.jascomm {
     background: var(--jasgradient-l);
-    display: block;
     height: 550px;
     margin: 10px auto;
     outline: 2px solid var(--black-hex);
@@ -3314,7 +3312,7 @@ jascomm {
     width: 50%;
 }
 
-jascomm jascommtop {
+.jascomm .jascommtop {
     align-items: center;
     border-bottom: 2px solid var(--black-hex);
     display: flex;
@@ -3324,13 +3322,13 @@ jascomm jascommtop {
     padding: 30px;
 }
 
-jascomm jascommtop jascommimg {
+.jascomm .jascommtop .jascommimg {
     display: block;
     margin-right: 15px !important;
     position: relative;
 }
 
-jascomm jascommtop img {
+.jascomm .jascommtop img {
     border-radius: 100%;
     height: 60px;
     object-fit: cover;
@@ -3338,7 +3336,7 @@ jascomm jascommtop img {
     width: 60px;
 }
 
-jascomm jascommtop jascommimg::after {
+.jascomm .jascommtop .jascommimg::after {
     border: 2px solid var(--black-hex);
     border-radius: 100%;
     content: "";
@@ -3350,28 +3348,28 @@ jascomm jascommtop jascommimg::after {
     z-index: 2;
 }
 
-jascomm jascommtop connected {
+.jascomm .jascommtop .connected {
     display: flex;
     flex-flow: column;
     font: 300 0.6rem var(--sans);
     text-transform: uppercase;
 }
 
-jascomm jascommtop contact {
+.jascomm .jascommtop .contact {
     display: block;
     font: 800 1.5rem var(--display);
     text-align: left;
     text-transform: lowercase;
 }
 
-jascomm .msgs {
+.jascomm .msgs {
     display: block;
     height: 390px;
     margin: 10px 30px;
     overflow: auto;
 }
 
-jascomm .msgs p {
+.jascomm .msgs p {
     background: var(--jasgradient);
     border-radius: 10px 10px 10px 0;
     clear: both;
@@ -3380,20 +3378,20 @@ jascomm .msgs p {
     padding: 7px;
 }
 
-jascomm .msgs .actions {
+.jascomm .msgs .actions {
     clear: both;
 }
 
-jascomm .msgs .actions b {
+.jascomm .msgs .actions b {
     background: var(--group-gradient-lr);
     color: var(--black-hex);
 }
 
-jascomm .msgs .actions i {
+.jascomm .msgs .actions i {
     color: var(--blue-hex);
 }
 
-jasthread {
+.jasthread {
     background: var(--jasgradient-l);
     display: block;
     margin: 30px auto;
@@ -3403,7 +3401,7 @@ jasthread {
     width: 55%;
 }
 
-jasthread .top {
+.jasthread .top {
     background: rgba(var(--blue), 0.3);
     border-bottom: 2px solid var(--black-hex);
     display: block;
@@ -3412,14 +3410,14 @@ jasthread .top {
     width: 100%;
 }
 
-jasthread .top jasthreadimg {
+.jasthread .top .jasthreadimg {
     display: block;
     margin-left: 30px;
     margin-top: 70px;
     position: absolute;
 }
 
-jasthread .top img {
+.jasthread .top img {
     border-radius: 100%;
     height: 60px;
     object-fit: cover;
@@ -3427,7 +3425,7 @@ jasthread .top img {
     width: 60px;
 }
 
-jasthread .top jasthreadimg::after {
+.jasthread .top .jasthreadimg::after {
     border: 2px solid var(--black-hex);
     border-radius: 100%;
     content: "";
@@ -3439,7 +3437,7 @@ jasthread .top jasthreadimg::after {
     z-index: 2;
 }
 
-jasthread .top tag {
+.jasthread .top .tag {
     background: var(--white-hex);
     border: 2px solid var(--black-hex);
     display: block;
@@ -3452,7 +3450,7 @@ jasthread .top tag {
     text-transform: uppercase;
 }
 
-jasthread .jasthreadbody {
+.jasthread .jasthreadbody {
     display: block;
     margin: 40px 40px 40px;
     padding: 10px 10px 30px;
@@ -3696,7 +3694,7 @@ ROSE'S DEV PACK
 */
 
 /* ----- BASE */
-rosedev {
+.rosedev {
     box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
     box-sizing: border-box !important;
     display: block;
@@ -3704,21 +3702,21 @@ rosedev {
     width: 100%;
 }
 
-rosedev.gradient {
+.rosedev.gradient {
     background: var(--group-gradient-lr);
 }
 
-rosedev.white {
+.rosedev.white {
     background: var(--white-hex);
     border: var(--black-hex) solid 2px;
     box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
 }
 
-rosedev.black {
+.rosedev.black {
     background: var(--black-hex);
 }
 
-rosedev devline {
+.rosedev .devline {
     background: var(--black-hex);
     display: block;
     height: 1px;
@@ -3726,11 +3724,11 @@ rosedev devline {
     width: calc(100% + 60px);
 }
 
-rosedev.black devline {
+.rosedev.black .devline {
     background: var(--white-hex);
 }
 
-rosedev devtop {
+.rosedev .devtop {
     background: var(--white-hex);
     border: var(--black-hex) solid 2px;
     font: 400 10px var(--sans);
@@ -3744,7 +3742,7 @@ rosedev devtop {
     z-index: 999;
 }
 
-rosedev devtop b {
+.rosedev .devtop b {
     background: var(--black-hex);
     bottom: 1px;
     color: var(--white-hex);
@@ -3755,18 +3753,18 @@ rosedev devtop b {
     text-transform: uppercase;
 }
 
-rosedev.black devtop {
+.rosedev.black .devtop {
     background: var(--black-hex);
     border: var(--white-hex) solid 2px;
     color: var(--white-hex);
 }
 
-rosedev.black devtop b {
+.rosedev.black .devtop b {
     background: var(--white-hex);
     color: var(--black-hex);
 }
 
-rosedev devsub {
+.rosedev .devsub {
     background: rgba(var(--black), 1);
     color: rgba(var(--white), 1);
     font: 300 8px var(--sans);
@@ -3776,44 +3774,44 @@ rosedev devsub {
     text-transform: uppercase;
 }
 
-rosedev .dev {
+.rosedev .dev {
     background: var(--clear);
     margin: 20px 0 -10px 0;
 }
 
-rosedev .dev2 {
+.rosedev .dev2 {
     background: var(--white-hex);
     margin: 20px 0 0 0;
     padding: 20px 20px 10px 20px;
 }
 
-rosedev.white .dev2 {
+.rosedev.white .dev2 {
     background: var(--black-hex);
     margin: 20px 0 0 0;
     padding: 20px 20px 10px 20px;
 }
 
 /* ----- IMAGES */
-rosedev img {
+.rosedev img {
     height: auto !important;
     max-width: 100%;
 }
 
-rosedev .dev img {
+.rosedev .dev img {
     border: var(--black-hex) solid 2px;
     box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
 }
 
-rosedev .two img {
+.rosedev .two img {
     width: calc(50% - 3px);
 }
 
-rosedev .three img {
+.rosedev .three img {
     width: calc(33% - 3px);
 }
 
 /* ----- QUOTE */
-rosedev .quote {
+.rosedev .quote {
     color: var(--black-hex);
     display: block;
     letter-spacing: 1px;
@@ -3821,11 +3819,11 @@ rosedev .quote {
     padding: 4px 3px 4px 3px;
 }
 
-rosedev.black .quote {
+.rosedev.black .quote {
     color: var(--white-hex);
 }
 
-rosedev .quote x {
+.rosedev .quote .x {
     background: var(--group-gradient-lr);
     font: 400 35px var(--display);
     letter-spacing: 1px;
@@ -3834,15 +3832,15 @@ rosedev .quote x {
     text-transform: uppercase;
 }
 
-rosedev .quote x b {
+.rosedev .quote .x b {
     font: 35px var(--display);
 }
 
-rosedev.gradient .quote x {
+.rosedev.gradient .quote .x {
     background: var(--white-hex);
 }
 
-rosedev.gradient .quote x b {
+.rosedev.gradient .quote .x b {
     background: var(--group-gradient-lr);
     -webkit-background-clip: text;
     background-clip: text;
@@ -3854,38 +3852,38 @@ rosedev.gradient .quote x b {
     text-transform: uppercase;
 }
 
-rosedev.black .quote x b {
+.rosedev.black .quote .x b {
     color: var(--black-hex);
     font-size: 35px;
 }
 
-rosedev.white .quote x b {
+.rosedev.white .quote .x b {
     color: var(--white-hex);
     font-size: 35px;
 }
 
-rosedev .quote y {
+.rosedev .quote .y {
     color: var(--clear);
     font: 35px var(--display);
     -webkit-text-stroke: 1px var(--white-hex);
     text-transform: uppercase;
 }
 
-rosedev .quote y b {
+.rosedev .quote .y b {
     color: var(--white-hex);
     font-size: 35px;
 }
 
-rosedev.white .quote y {
+.rosedev.white .quote .y {
     -webkit-text-stroke: 1px var(--black-hex);
 }
 
-rosedev.white .quote y b {
+.rosedev.white .quote .y b {
     color: var(--black-hex);
     font-size: 35px;
 }
 
-rosedev .quote z {
+.rosedev .quote .z {
     background: var(--group-gradient-lr);
     -webkit-background-clip: text;
     background-clip: text;
@@ -3896,7 +3894,7 @@ rosedev .quote z {
     text-transform: uppercase;
 }
 
-rosedev .quote z b {
+.rosedev .quote .z b {
     background: var(--white-hex);
     -webkit-background-clip: text;
     background-clip: text;
@@ -3906,7 +3904,7 @@ rosedev .quote z b {
     -webkit-text-fill-color: transparent;
 }
 
-rosedev.white .quote z b {
+.rosedev.white .quote .z b {
     background: var(--black-hex);
     -webkit-background-clip: text;
     background-clip: text;
@@ -3916,7 +3914,7 @@ rosedev.white .quote z b {
     -webkit-text-fill-color: transparent;
 }
 
-rosedev .quote author {
+.rosedev .quote .author {
     display: block;
     font: 400 9px var(--sans);
     letter-spacing: 1.5px;
@@ -3925,20 +3923,20 @@ rosedev .quote author {
 }
 
 /* ----- DRABBLE/TRACKER */
-rosedev.black .drabble {
+.rosedev.black .drabble {
     color: var(--white-hex);
 }
 
-rosedev .drabble x {
+.rosedev .drabble .x {
     color: var(--white-hex);
     display: block;
 }
 
-rosedev.white .drabble x {
+.rosedev.white .drabble .x {
     color: var(--black-hex);
 }
 
-rosedev .drabble x a {
+.rosedev .drabble .x a {
     color: var(--white-hex);
     font-size: 10px;
     font-weight: bold;
@@ -3946,16 +3944,16 @@ rosedev .drabble x a {
     text-transform: uppercase;
 }
 
-rosedev.white .drabble x a {
+.rosedev.white .drabble .x a {
     color: var(--black-hex);
 }
 
-rosedev .drabble b {
+.rosedev .drabble b {
     font-size: 1rem;
 }
 
-rosedev.black .drabble b,
-rosedev.white .drabble b {
+.rosedev.black .drabble b,
+.rosedev.white .drabble b {
     background: var(--group-gradient-lr);
     -webkit-background-clip: text;
     background-clip: text;
@@ -3966,7 +3964,7 @@ rosedev.white .drabble b {
     -webkit-text-fill-color: transparent;
 }
 
-rosedev .drabble bb {
+.rosedev .drabble .bb {
     background: var(--black-hex);
     color: var(--white-hex);
     font-size: 0.75rem;
@@ -3975,56 +3973,56 @@ rosedev .drabble bb {
     text-transform: uppercase;
 }
 
-rosedev.black .drabble bb {
+.rosedev.black .drabble .bb {
     background: var(--white-hex);
     color: var(--black-hex);
 }
 
-rosedev .drabble i {
+.rosedev .drabble i {
     letter-spacing: 1px;
     opacity: 0.7;
 }
 
-rosedev .drabble ii {
+.rosedev .drabble .ii {
     color: var(--group);
     font-style: italic;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
-rosedev .drabble u {
+.rosedev .drabble u {
     border-bottom: 2px solid var(--group);
     text-decoration: none;
 }
 
-rosedev .drabble uu {
+.rosedev .drabble .uu {
     background: var(--group-gradient-lr) no-repeat bottom left/100% 8px;
 }
 
-rosedev .drabble bubble {
+.rosedev .drabble .bubble {
     background: var(--white-hex);
     display: block;
     margin: 10px 0;
     padding: 10px;
 }
 
-rosedev.black .drabble bubble {
+.rosedev.black .drabble .bubble {
     color: var(--black-hex);
 }
 
-rosedev.white .drabble bubble {
+.rosedev.white .drabble .bubble {
     background: var(--black-hex);
     color: var(--white-hex);
 }
 
-rosedev .drabble lines {
+.rosedev .drabble .lines {
     border-left: 1px solid var(--group);
     border-right: 1px solid var(--group);
     display: block;
     padding: 10px;
 }
 
-rosedev .drabble quote {
+.rosedev .drabble .quote {
     background: var(--black-hex);
     color: var(--white-hex);
     font: 300 9px var(--sans);
@@ -4034,7 +4032,7 @@ rosedev .drabble quote {
     text-transform: uppercase;
 }
 
-rosedev.black .drabble quote {
+.rosedev.black .drabble .quote {
     background: var(--white-hex);
     color: var(--black-hex);
 }
