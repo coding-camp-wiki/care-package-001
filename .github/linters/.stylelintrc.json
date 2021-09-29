@@ -6,6 +6,7 @@
     "rules": {
         "declaration-colon-newline-after": null,
         "indentation": 4,
+        "no-descending-specificity": null,
         "order/order": [
             "custom-properties",
             "declarations"
