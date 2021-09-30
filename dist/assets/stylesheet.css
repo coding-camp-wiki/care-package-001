@@ -2668,7 +2668,7 @@ ALLY'S RP PACK
 }
 
 .post-1-top span,
-.post-1-top .__icon {
+.post-1-top .post-1__icon {
     fill: var(--blue-hex);
     font-size: 1.6em;
     margin-right: 13px;
@@ -3049,7 +3049,7 @@ ALLY'S RP PACK
     --dimension: 1em;
 }
 
-.ftinder-info .__icon {
+.ftinder-info .ftinder-info__icon {
     margin: 0 5px;
 }
 
@@ -3073,7 +3073,7 @@ ALLY'S RP PACK
     width: 100%;
 }
 
-.ftinder-swipes .__option {
+.ftinder-swipes .ftinder-swipes__option {
     align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
