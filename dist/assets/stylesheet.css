@@ -4146,6 +4146,11 @@ UTILITIES
     background: var(--group-gradient-lr);
 }
 
+.utility-padding-block-400 {
+    padding-block-end: 1em;
+    padding-block-start: 1em;
+}
+
 .utility-visually-hidden:not(:focus):not(:active) {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
