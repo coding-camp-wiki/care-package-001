@@ -2022,6 +2022,10 @@ RORA'S MEMBER LIST
     transition-delay: var(--transi-two-del);
 }
 
+.cp-mphovco .dub:first-child {
+    margin-top: 10%;
+}
+
 .cp-mphovco .dub,
 .cp-mphovco .suf {
     display: block;
@@ -2075,10 +2079,11 @@ RORA'S MEMBER LIST
     width: 80px;
 }
 
-.cp-mphovco line {
+.cp-mphovco .line {
     background: var(--black-hex);
     display: block;
     height: 2px;
+    margin-top: -50px;
     width: 100%;
     z-index: 2;
 }
