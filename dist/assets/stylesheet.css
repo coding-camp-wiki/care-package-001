@@ -56,9 +56,9 @@ Coding Camp info:
     font-style: normal;
     font-weight: 400 700;
     /* stylelint-disable indentation */
-    src: url(https://coding-camp-wiki.github.io/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff2)
+    src: url(https://coding-camp.wiki/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff2)
             format("woff2"),
-        url(https://coding-camp-wiki.github.io/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff)
+        url(https://coding-camp.wiki/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff)
             format("woff");
     /* stylelint-enable indentation */
     unicode-range: U+0033-0034, U+0036, U+0038-0046, U+0048-0059, U+0061,
