@@ -61,9 +61,9 @@ Coding Camp info:
         url(https://coding-camp.wiki/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff)
             format("woff");
     /* stylelint-enable indentation */
-    unicode-range: U+0033-0034, U+0036, U+0038-0046, U+0048-0059, U+0061,
-        U+0063-0064, U+0065-0091, U+0093, U+0097-0123, U+0125, U+0128, U+0153,
-        U+0156, U+0162-0163, U+0165, U+0167, U+0169, U+0174, U+0182, U+0247;
+    unicode-range: U+0021-0022, U+0024, U+0026-0029, U+002A-002E, U+0030-003B,
+        U+003D, U+003F-005B, U+005D, U+0061-007B, U+007D, U+00A2-00A3, U+00A5,
+        U+00A7, U+00A9, U+00AE, U+00B6, U+00F7, U+0153, U+20AC, U+2122;
 }
 
 :root {
