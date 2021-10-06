@@ -751,8 +751,8 @@ RAY'S CATEGORIES, FORUMS, TOPICS
         "topic-last-post-av topic-last-post topic-last-post topic-last-post"
         "topic-starter topic-starter topic-starter topic-starter"
         "topic-pagination topic-pagination topic-pagination topic-pagination";
-    grid-template-columns: min-content 1fr 1fr 1fr;
-    grid-template-rows: min-content min-content min-content 1fr;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto) 1fr;
 }
 
 .topic-wrapper .topic-desc {
