@@ -3307,11 +3307,13 @@ JASLENE'S RP PACK
 }
 
 .jascomm {
+    --outline-inset: 15px;
+
     background: var(--jasgradient-l);
-    height: 550px;
     margin: 10px auto;
     outline: 2px solid var(--black-hex);
-    outline-offset: -15px;
+    outline-offset: calc(-1 * var(--outline-inset));
+    padding: calc(2 * var(--outline-inset));
     position: relative;
     width: 50%;
 }
@@ -3320,9 +3322,13 @@ JASLENE'S RP PACK
     align-items: center;
     border-bottom: 2px solid var(--black-hex);
     display: flex;
+    margin-left: calc(-2 * var(--outline-inset));
+    margin-right: calc(-2 * var(--outline-inset));
     min-height: 120px;
     justify-content: space-between;
-    padding: 30px;
+    padding-bottom: var(--outline-inset);
+    padding-left: calc(2 * var(--outline-inset));
+    padding-right: calc(2 * var(--outline-inset));
 }
 
 .jascomm .jascommtop .jascommimg {
@@ -3368,7 +3374,7 @@ JASLENE'S RP PACK
 .jascomm .msgs {
     display: block;
     height: 390px;
-    margin: 10px 30px;
+    margin-top: 10px;
     overflow: auto;
 }
 
