@@ -3322,10 +3322,10 @@ JASLENE'S RP PACK
     align-items: center;
     border-bottom: 2px solid var(--black-hex);
     display: flex;
+    justify-content: space-between;
     margin-left: calc(-2 * var(--outline-inset));
     margin-right: calc(-2 * var(--outline-inset));
     min-height: 120px;
-    justify-content: space-between;
     padding-bottom: var(--outline-inset);
     padding-left: calc(2 * var(--outline-inset));
     padding-right: calc(2 * var(--outline-inset));
