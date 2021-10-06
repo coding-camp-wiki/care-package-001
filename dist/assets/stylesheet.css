@@ -3319,8 +3319,7 @@ JASLENE'S RP PACK
     align-items: center;
     border-bottom: 2px solid var(--black-hex);
     display: flex;
-    flex-flow: row;
-    height: 120px;
+    min-height: 120px;
     justify-content: space-between;
     padding: 30px;
 }
