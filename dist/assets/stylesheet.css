@@ -943,6 +943,7 @@ LISSITA'S BOARD STATS
 .stats-wrap .welcome .new-gif {
     border-radius: 100%;
     display: inline-block;
+    flex-shrink: 0; /* aka not allowed to be squished */
     height: 75px;
     position: relative;
     width: 75px;
