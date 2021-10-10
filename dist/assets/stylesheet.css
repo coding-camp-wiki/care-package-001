@@ -1188,21 +1188,18 @@ JULIET'S POST ROW
     border: var(--black-hex) solid 2px;
     display: flex;
     font: 400 8px var(--sans);
+    gap: 15px;
     height: 30px;
     justify-content: center;
     letter-spacing: 2px;
     line-height: 90%;
     margin: -90px auto 75px 0;
-    padding: 0 0 0 15px;
+    padding-inline-end: 15px;
+    padding-inline-start: 15px;
     position: relative;
     text-transform: uppercase;
     width: max-content;
     z-index: 999;
-}
-
-.pr-wrap .pr-box .box-bord .box-edits span {
-    display: inline-block;
-    margin-right: 15px;
 }
 
 .pr-wrap .pr-box .box-bord .box-edits span:empty {
