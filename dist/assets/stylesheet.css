@@ -95,6 +95,12 @@ body {
     --white: 249, 247, 246;
     --white-hex: #f6f8f8;
 
+    /* SHADOWS */
+    --pink-text-shadow: -1px -1px 0 var(--pink-hex), -1px 0 0 var(--pink-hex),
+        -1px 1px 0 var(--pink-hex), 0 -1px 0 var(--pink-hex),
+        0 1px 0 var(--pink-hex), 1px -1px 0 var(--pink-hex),
+        1px 0 0 var(--pink-hex), 1px 1px 0 var(--pink-hex);
+
     /* BACKGROUND GRADIENTS */
     --green-radial-gradient: radial-gradient(
         circle at top right,
@@ -220,6 +226,19 @@ body {
 ELEMENTS
 -----
 */
+
+a {
+    color: inherit;
+    text-decoration-color: rgba(var(--black), 0.3);
+    text-decoration-thickness: 10%;
+    text-underline-offset: 10%;
+}
+
+a:focus,
+a:hover {
+    text-decoration-color: var(--pink-hex);
+    text-shadow: var(--pink-text-shadow);
+}
 
 img {
     max-inline-size: 100%;
