@@ -4088,13 +4088,18 @@ ABI'S WEBPAGES
     line-height: 2.5;
     padding-left: 10px;
     padding-right: 10px;
-    text-decoration: none;
     text-transform: uppercase;
     transition: 1s ease;
 }
 
+.webpagesidebar .webpagesidebarcont a:not(:focus):not(:hover) {
+    text-decoration-color: transparent;
+}
+
+.webpagesidebar .webpagesidebarcont a:focus,
 .webpagesidebar .webpagesidebarcont a:hover {
     letter-spacing: 2px;
+    text-decoration-line: underline;
     transition: 1s ease;
 }
 
