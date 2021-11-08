@@ -487,7 +487,6 @@ LEEANN'S HEADER & NAVIGATION
 }
 
 #header .info .links a:hover {
-    cursor: pointer;
     text-shadow: -1px -1px 0 var(--pink-hex), 0 -1px 0 var(--pink-hex),
         1px -1px 0 var(--pink-hex), 1px 0 0 var(--pink-hex),
         1px 1px 0 var(--pink-hex), 0 1px 0 var(--pink-hex),
