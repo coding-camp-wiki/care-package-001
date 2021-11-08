@@ -224,6 +224,7 @@ ELEMENTS
 a {
     color: inherit;
     text-decoration-color: rgba(var(--black), 0.3);
+
     /* skip-ink, thickness, and offset may not work everywhere, but fallback just fine */
     text-decoration-skip-ink: auto;
     text-decoration-thickness: 0.1em;
