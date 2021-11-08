@@ -3945,7 +3945,7 @@ ROSE'S DEV PACK
     color: var(--white-hex);
     font-size: 10px;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration-color: currentColor;
     text-transform: uppercase;
 }
 
