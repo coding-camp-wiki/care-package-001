@@ -716,6 +716,10 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     margin: 10px;
 }
 
+.topic-wrapper a:not(:hover):not(:focus) {
+    text-decoration-line: none;
+}
+
 .topic-wrapper .topic-title {
     font-family: var(--display);
     font-size: 2rem;
@@ -785,7 +789,6 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     margin: 2px;
     min-width: 50%;
     text-align: center;
-    text-decoration: none;
 }
 
 .topic-wrapper .topic-starter {
