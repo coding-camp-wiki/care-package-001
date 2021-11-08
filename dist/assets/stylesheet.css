@@ -1568,6 +1568,8 @@ MONTY'S MAIN PROFILE
     right: auto;
 }
 
+.tab-forward:focus,
+.tab-back:focus,
 .tab-forward:hover,
 .tab-back:hover {
     background: linear-gradient(
@@ -1575,6 +1577,7 @@ MONTY'S MAIN PROFILE
         rgba(var(--green), 0.45),
         rgba(var(--yellow), 0.45)
     );
+    border-color: var(--blue-hex);
 }
 
 .dot-labels {
