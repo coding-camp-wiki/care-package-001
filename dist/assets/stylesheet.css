@@ -1813,6 +1813,7 @@ RORA'S MEMBER LIST
     transition: var(--transi-quick);
 }
 
+.cp-memsearch .forminput.submit:focus,
 .cp-memsearch .forminput.submit:hover {
     background: var(--pink-hex);
     transition: var(--transi-quick);
