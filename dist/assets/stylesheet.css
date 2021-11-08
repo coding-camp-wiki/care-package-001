@@ -717,7 +717,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     margin: 10px;
 }
 
-.topic-wrapper a:not(:hover):not(:focus) {
+.topic-wrapper a:not(:focus):not(:hover) {
     text-decoration-line: none;
 }
 
