@@ -486,6 +486,7 @@ LEEANN'S HEADER & NAVIGATION
     z-index: -1;
 }
 
+#header .info .links a:focus,
 #header .info .links a:hover {
     text-shadow: -1px -1px 0 var(--pink-hex), 0 -1px 0 var(--pink-hex),
         1px -1px 0 var(--pink-hex), 1px 0 0 var(--pink-hex),
