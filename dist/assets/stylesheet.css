@@ -2408,6 +2408,8 @@ LEEANN'S SITE PACK
     width: 100%;
 }
 
+.box-post .cc-fc .text col-1 a:focus .x,
+.box-post .cc-fc .text col-2 a:focus .x,
 .box-post .cc-fc .text col-1 a:hover .x,
 .box-post .cc-fc .text col-2 a:hover .x {
     opacity: 0;
@@ -2416,6 +2418,8 @@ LEEANN'S SITE PACK
     width: 100%;
 }
 
+.box-post .cc-fc .text col-1 a:focus .y,
+.box-post .cc-fc .text col-2 a:focus .y,
 .box-post .cc-fc .text col-1 a:hover .y,
 .box-post .cc-fc .text col-2 a:hover .y {
     background: var(--black-hex);
@@ -2481,6 +2485,8 @@ LEEANN'S SITE PACK
     width: 80%;
 }
 
+.box-post .cc-md .text col-1 a:focus,
+.box-post .cc-md .text col-2 a:focus,
 .box-post .cc-md .text col-1 a:hover,
 .box-post .cc-md .text col-2 a:hover {
     background: var(--black-hex);
