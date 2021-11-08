@@ -326,46 +326,6 @@ LEEANN'S HEADER & NAVIGATION
     margin-right: 5rem;
 }
 
-#topbar .toplinks #myLinks {
-    background: var(--black-hex);
-    display: none;
-    max-width: 80%;
-    position: absolute;
-    right: 0;
-    top: 51px;
-    width: 200px;
-}
-
-#topbar .toplinks:hover #myLinks,
-#topbar .toplinks:focus-within #myLinks {
-    display: initial;
-}
-
-#topbar .toplinks a,
-#topbar .toplinks .icon {
-    color: var(--white-hex);
-    display: block;
-    fill: var(--white-hex);
-    font-size: 17px;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#topbar .toplinks .icon {
-    background: var(--black-hex);
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-#topbar .toplinks a:hover,
-#topbar .toplinks .icon:hover {
-    background-color: var(--white-hex);
-    color: var(--black-hex);
-    fill: var(--black-hex);
-}
-
 #sidebar {
     background: var(--white-hex);
     display: grid;
