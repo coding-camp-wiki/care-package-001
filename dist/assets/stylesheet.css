@@ -715,6 +715,11 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     text-decoration: none;
 }
 
+.forum-last-post a:focus,
+.forum-last-post a:hover {
+    background-color: rgba(var(--pink), 0.7);
+}
+
 .subforums {
     padding: 1vw;
 }
@@ -727,6 +732,11 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     margin: 1vw 0;
     padding: 0.2rem 0.5rem;
     text-decoration: none;
+}
+
+.subforums a.tooltip:focus,
+.subforums a.tooltip:hover {
+    background-color: var(--pink-hex);
 }
 
 .topic-row {
