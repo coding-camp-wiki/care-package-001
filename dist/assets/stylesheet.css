@@ -3668,12 +3668,25 @@ IZZY'S DEV PACK
 .dev-tracker .thread {
     --color: var(--black-hex);
 
-    border-right: 2px solid var(--color);
     margin: 16px 16px 16px 24px;
     position: relative;
 }
 
-.dev-tracker .thread::after {
+.dev-tracker .thread-name {
+    border-right: 2px solid var(--color);
+    color: var(--color);
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    padding: 4px 16px 16px 8px;
+}
+
+.dev-tracker .thread-name:focus,
+.dev-tracker .thread-name:hover {
+    --color: var(--group);
+}
+
+.dev-tracker .thread-name::after {
     border-bottom: 2px solid var(--color);
     bottom: 8px;
     content: "";
@@ -3682,18 +3695,6 @@ IZZY'S DEV PACK
     pointer-events: none;
     position: absolute;
     right: -8px;
-}
-
-.dev-tracker .thread:hover {
-    --color: var(--group);
-}
-
-.dev-tracker .thread-name {
-    color: var(--color);
-    display: block;
-    font-weight: 500;
-    letter-spacing: 0.1px;
-    padding: 4px 16px 16px 8px;
 }
 
 /*
