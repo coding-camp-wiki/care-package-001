@@ -2592,8 +2592,11 @@ LEEANN'S SITE PACK
     color: var(--black-hex);
     font: 400 1.5rem var(--display);
     letter-spacing: 1px;
-    text-decoration: none;
     text-transform: uppercase;
+}
+
+.box-post .cc-md-rep .body .char char-name a:not(:focus):not(:hover) {
+    text-decoration-line: none;
 }
 
 .box-post .cc-md-rep .body .char char-info {
