@@ -1471,12 +1471,14 @@ MONTY'S MAIN PROFILE
     transition: 0.3s;
 }
 
+.main-links a:focus,
 .main-links a:hover {
     background: linear-gradient(
         to left,
         rgba(var(--green), 0.45),
         rgba(var(--yellow), 0.45)
     );
+    border-color: var(--blue-hex);
 }
 
 .main-inner-account {
