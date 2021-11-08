@@ -731,10 +731,10 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     gap: 1vw 2vw;
     grid-area: topic-info;
     grid-template-areas:
-        "topic-desc topic-desc topic-desc topic-desc"
-        "topic-last-post-av topic-last-post topic-last-post topic-last-post"
-        "topic-starter topic-starter topic-starter topic-starter"
-        "topic-pagination topic-pagination topic-pagination topic-pagination";
+        "topic-desc         topic-desc          topic-desc          topic-desc"
+        "topic-last-post-av topic-last-post     topic-last-post     topic-last-post"
+        "topic-starter      topic-starter       topic-starter       topic-starter"
+        "topic-pagination   topic-pagination    topic-pagination    topic-pagination";
     grid-template-columns: auto 1fr 1fr 1fr;
     grid-template-rows: repeat(3, auto) 1fr;
 }
