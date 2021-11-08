@@ -221,6 +221,22 @@ ELEMENTS
 -----
 */
 
+a {
+    color: inherit;
+    text-decoration-color: rgba(var(--black), 0.3);
+
+    /* skip-ink, thickness, and offset may not work everywhere, but fallback just fine */
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.1em;
+}
+
+a:focus,
+a:hover {
+    text-decoration-color: var(--blue-hex);
+    text-decoration-line: underline overline;
+}
+
 img {
     max-inline-size: 100%;
 }
@@ -311,46 +327,6 @@ LEEANN'S HEADER & NAVIGATION
 #topbar .switch {
     justify-self: end;
     margin-right: 5rem;
-}
-
-#topbar .toplinks #myLinks {
-    background: var(--black-hex);
-    display: none;
-    max-width: 80%;
-    position: absolute;
-    right: 0;
-    top: 51px;
-    width: 200px;
-}
-
-#topbar .toplinks:hover #myLinks,
-#topbar .toplinks:focus-within #myLinks {
-    display: initial;
-}
-
-#topbar .toplinks a,
-#topbar .toplinks .icon {
-    color: var(--white-hex);
-    display: block;
-    fill: var(--white-hex);
-    font-size: 17px;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#topbar .toplinks .icon {
-    background: var(--black-hex);
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-#topbar .toplinks a:hover,
-#topbar .toplinks .icon:hover {
-    background-color: var(--white-hex);
-    color: var(--black-hex);
-    fill: var(--black-hex);
 }
 
 #sidebar {
@@ -511,8 +487,8 @@ LEEANN'S HEADER & NAVIGATION
     z-index: -1;
 }
 
+#header .info .links a:focus,
 #header .info .links a:hover {
-    cursor: pointer;
     text-shadow: -1px -1px 0 var(--pink-hex), 0 -1px 0 var(--pink-hex),
         1px -1px 0 var(--pink-hex), 1px 0 0 var(--pink-hex),
         1px 1px 0 var(--pink-hex), 0 1px 0 var(--pink-hex),
@@ -702,6 +678,11 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     text-decoration: none;
 }
 
+.forum-last-post a:focus,
+.forum-last-post a:hover {
+    background-color: rgba(var(--pink), 0.7);
+}
+
 .subforums {
     padding: 1vw;
 }
@@ -714,6 +695,11 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     margin: 1vw 0;
     padding: 0.2rem 0.5rem;
     text-decoration: none;
+}
+
+.subforums a.tooltip:focus,
+.subforums a.tooltip:hover {
+    background-color: var(--pink-hex);
 }
 
 .topic-row {
@@ -732,6 +718,10 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     margin: 10px;
 }
 
+.topic-wrapper a:not(:focus):not(:hover) {
+    text-decoration-line: none;
+}
+
 .topic-wrapper .topic-title {
     font-family: var(--display);
     font-size: 2rem;
@@ -747,10 +737,10 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     gap: 1vw 2vw;
     grid-area: topic-info;
     grid-template-areas:
-        "topic-desc topic-desc topic-desc topic-desc"
-        "topic-last-post-av topic-last-post topic-last-post topic-last-post"
-        "topic-starter topic-starter topic-starter topic-starter"
-        "topic-pagination topic-pagination topic-pagination topic-pagination";
+        "topic-desc         topic-desc          topic-desc          topic-desc"
+        "topic-last-post-av topic-last-post     topic-last-post     topic-last-post"
+        "topic-starter      topic-starter       topic-starter       topic-starter"
+        "topic-pagination   topic-pagination    topic-pagination    topic-pagination";
     grid-template-columns: auto 1fr 1fr 1fr;
     grid-template-rows: repeat(3, auto) 1fr;
 }
@@ -801,7 +791,6 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     margin: 2px;
     min-width: 50%;
     text-align: center;
-    text-decoration: none;
 }
 
 .topic-wrapper .topic-starter {
@@ -1169,21 +1158,18 @@ JULIET'S POST ROW
     border: var(--black-hex) solid 2px;
     display: flex;
     font: 400 8px var(--sans);
+    gap: 15px;
     height: 30px;
     justify-content: center;
     letter-spacing: 2px;
     line-height: 90%;
     margin: -90px auto 75px 0;
-    padding: 0 0 0 15px;
+    padding-inline-end: 15px;
+    padding-inline-start: 15px;
     position: relative;
     text-transform: uppercase;
     width: max-content;
     z-index: 999;
-}
-
-.pr-wrap .pr-box .box-bord .box-edits span {
-    display: inline-block;
-    margin-right: 15px;
 }
 
 .pr-wrap .pr-box .box-bord .box-edits span:empty {
@@ -1487,12 +1473,14 @@ MONTY'S MAIN PROFILE
     transition: 0.3s;
 }
 
+.main-links a:focus,
 .main-links a:hover {
     background: linear-gradient(
         to left,
         rgba(var(--green), 0.45),
         rgba(var(--yellow), 0.45)
     );
+    border-color: var(--blue-hex);
 }
 
 .main-inner-account {
@@ -1581,6 +1569,8 @@ MONTY'S MAIN PROFILE
     right: auto;
 }
 
+.tab-forward:focus,
+.tab-back:focus,
 .tab-forward:hover,
 .tab-back:hover {
     background: linear-gradient(
@@ -1588,6 +1578,7 @@ MONTY'S MAIN PROFILE
         rgba(var(--green), 0.45),
         rgba(var(--yellow), 0.45)
     );
+    border-color: var(--blue-hex);
 }
 
 .dot-labels {
@@ -1823,6 +1814,7 @@ RORA'S MEMBER LIST
     transition: var(--transi-quick);
 }
 
+.cp-memsearch .forminput.submit:focus,
 .cp-memsearch .forminput.submit:hover {
     background: var(--pink-hex);
     transition: var(--transi-quick);
@@ -2421,6 +2413,8 @@ LEEANN'S SITE PACK
     width: 100%;
 }
 
+.box-post .cc-fc .text col-1 a:focus .x,
+.box-post .cc-fc .text col-2 a:focus .x,
 .box-post .cc-fc .text col-1 a:hover .x,
 .box-post .cc-fc .text col-2 a:hover .x {
     opacity: 0;
@@ -2429,6 +2423,8 @@ LEEANN'S SITE PACK
     width: 100%;
 }
 
+.box-post .cc-fc .text col-1 a:focus .y,
+.box-post .cc-fc .text col-2 a:focus .y,
 .box-post .cc-fc .text col-1 a:hover .y,
 .box-post .cc-fc .text col-2 a:hover .y {
     background: var(--black-hex);
@@ -2494,6 +2490,8 @@ LEEANN'S SITE PACK
     width: 80%;
 }
 
+.box-post .cc-md .text col-1 a:focus,
+.box-post .cc-md .text col-2 a:focus,
 .box-post .cc-md .text col-1 a:hover,
 .box-post .cc-md .text col-2 a:hover {
     background: var(--black-hex);
@@ -2599,8 +2597,11 @@ LEEANN'S SITE PACK
     color: var(--black-hex);
     font: 400 1.5rem var(--display);
     letter-spacing: 1px;
-    text-decoration: none;
     text-transform: uppercase;
+}
+
+.box-post .cc-md-rep .body .char char-name a:not(:focus):not(:hover) {
+    text-decoration-line: none;
 }
 
 .box-post .cc-md-rep .body .char char-info {
@@ -3668,12 +3669,25 @@ IZZY'S DEV PACK
 .dev-tracker .thread {
     --color: var(--black-hex);
 
-    border-right: 2px solid var(--color);
     margin: 16px 16px 16px 24px;
     position: relative;
 }
 
-.dev-tracker .thread::after {
+.dev-tracker .thread-name {
+    border-right: 2px solid var(--color);
+    color: var(--color);
+    display: block;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    padding: 4px 16px 16px 8px;
+}
+
+.dev-tracker .thread-name:focus,
+.dev-tracker .thread-name:hover {
+    --color: var(--group);
+}
+
+.dev-tracker .thread-name::after {
     border-bottom: 2px solid var(--color);
     bottom: 8px;
     content: "";
@@ -3682,18 +3696,6 @@ IZZY'S DEV PACK
     pointer-events: none;
     position: absolute;
     right: -8px;
-}
-
-.dev-tracker .thread:hover {
-    --color: var(--group);
-}
-
-.dev-tracker .thread-name {
-    color: var(--color);
-    display: block;
-    font-weight: 500;
-    letter-spacing: 0.1px;
-    padding: 4px 16px 16px 8px;
 }
 
 /*
@@ -3949,7 +3951,7 @@ ROSE'S DEV PACK
     color: var(--white-hex);
     font-size: 10px;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration-color: currentColor;
     text-transform: uppercase;
 }
 
@@ -4092,13 +4094,18 @@ ABI'S WEBPAGES
     line-height: 2.5;
     padding-left: 10px;
     padding-right: 10px;
-    text-decoration: none;
     text-transform: uppercase;
     transition: 1s ease;
 }
 
+.webpagesidebar .webpagesidebarcont a:not(:focus):not(:hover) {
+    text-decoration-color: transparent;
+}
+
+.webpagesidebar .webpagesidebarcont a:focus,
 .webpagesidebar .webpagesidebarcont a:hover {
     letter-spacing: 2px;
+    text-decoration-line: underline;
     transition: 1s ease;
 }
 
