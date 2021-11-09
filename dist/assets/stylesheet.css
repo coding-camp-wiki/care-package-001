@@ -1793,6 +1793,10 @@ RORA'S MEMBER LIST
     width: calc(22% - 2px);
 }
 
+.cp-memlist .member-list__pagination:empty {
+    display: none;
+}
+
 .cp-memsearch .forminput {
     background: var(--white-hex);
     border: 1px solid var(--black-hex);
