@@ -4166,6 +4166,10 @@ UTILITIES
     background-color: var(--black-hex);
 }
 
+.utility-flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
+}
+
 .utility-bg-gradient-1 {
     background: var(--group-gradient-lr);
 }
