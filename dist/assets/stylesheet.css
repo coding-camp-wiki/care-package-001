@@ -404,6 +404,7 @@ LEEANN'S HEADER & NAVIGATION
     grid-row: 1;
     position: relative;
     -webkit-text-stroke: 2px white;
+    text-transform: uppercase;
     z-index: 10 !important;
 }
 
@@ -435,6 +436,15 @@ LEEANN'S HEADER & NAVIGATION
     top: -45px;
     width: 150px;
     z-index: -1;
+}
+
+#header .headerin a:not(:focus):not(:hover) {
+    text-decoration-line: none;
+}
+
+#header .headerin a:focus,
+#header .headerin a:hover {
+    text-decoration-line: underline;
 }
 
 #header .headerin .text .text2 {
