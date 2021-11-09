@@ -1779,7 +1779,7 @@ RORA'S MEMBER LIST
     width: 100%;
 }
 
-.cp-memsearch {
+.cp-memlist .member-list__controls {
     background: linear-gradient(
         90deg,
         rgba(var(--white), 0.5) 0%,

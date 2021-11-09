@@ -8,31 +8,33 @@
 ></script>
 
 <div class="cp-memlist">
-    <form action="index.php" class="cp-memsearch" method="post">
-        <input name="act" type="hidden" value="Members" />
+    <div class="[ member-list__controls ][ utility-flow ]">
+        <form action="index.php" class="cp-memsearch" method="post">
+            <input name="act" type="hidden" value="Members" />
 
-        <b>Search:</b>
-        <div>
-            <select class="forminput search" name="name_box">
-                <option value="begins">Name begins with</option>
-                <option value="contains" selected="selected">
-                    Name contains
-                </option>
-            </select>
-            <!-- |search_input| -->
-        </div>
-        <b>Show:</b>
-        <div>
-            <!-- |group_dropdown| -->
-            <!-- |sortby_dropdown| -->
-            <!-- |order_dropdown| -->
-            <!-- |max_dropdown| -->
-        </div>
+            <b>Search:</b>
+            <div>
+                <select class="forminput search" name="name_box">
+                    <option value="begins">Name begins with</option>
+                    <option value="contains" selected="selected">
+                        Name contains
+                    </option>
+                </select>
+                <!-- |search_input| -->
+            </div>
+            <b>Show:</b>
+            <div>
+                <!-- |group_dropdown| -->
+                <!-- |sortby_dropdown| -->
+                <!-- |order_dropdown| -->
+                <!-- |max_dropdown| -->
+            </div>
 
-        <input type="submit" value="Go!" class="forminput submit" />
-    </form>
+            <input type="submit" value="Go!" class="forminput submit" />
+        </form>
 
-    <!-- |pages| -->
+        <div class="member-list__pagination"><!-- |pages| --></div>
+    </div>
 
     <div class="cp-memgrid"><% MEMBERLIST_ROWS %></div>
 </div>
