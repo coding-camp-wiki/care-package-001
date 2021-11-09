@@ -1797,6 +1797,10 @@ RORA'S MEMBER LIST
     display: none;
 }
 
+.cp-memlist .member-list__pagination .pagination_pagetxt a {
+    font-weight: bold;
+}
+
 .cp-memsearch .forminput {
     background: var(--white-hex);
     border: 1px solid var(--black-hex);
