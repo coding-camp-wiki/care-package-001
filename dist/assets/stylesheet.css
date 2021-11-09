@@ -1779,7 +1779,7 @@ RORA'S MEMBER LIST
     width: 100%;
 }
 
-.cp-memsearch {
+.cp-memlist .member-list__controls {
     background: linear-gradient(
         90deg,
         rgba(var(--white), 0.5) 0%,
@@ -1791,6 +1791,14 @@ RORA'S MEMBER LIST
     text-align: left;
     text-transform: uppercase;
     width: calc(22% - 2px);
+}
+
+.cp-memlist .member-list__pagination:empty {
+    display: none;
+}
+
+.cp-memlist .member-list__pagination .pagination_pagetxt a {
+    font-weight: bold;
 }
 
 .cp-memsearch .forminput {
@@ -4164,6 +4172,10 @@ UTILITIES
 
 .utility-bg-dark {
     background-color: var(--black-hex);
+}
+
+.utility-flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
 }
 
 .utility-bg-gradient-1 {
