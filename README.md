@@ -16,6 +16,7 @@ Notes for later:
 -   Which also means that any place icons are `use`d, the URLs will need to be updated.
 -   `macros/AVATAR.html` and `macros/AVATAR_URL.html` should be updated with actual default avatar.
 -   Recent topics aren't enabled by default. System Settings/Topics, Posts, & Polls/Number of topics to show?
+-   Don't forget to include how to update member group numbers (to match Jcink), as well as the actual colors
 
 ## How to Report a Bug
 
