@@ -4172,7 +4172,7 @@ UTILITIES
     background-color: var(--black-hex);
 }
 
-.utility-flow > * + * {
+.flow > * + * {
     margin-block-start: var(--flow-space, 1em);
 }
 
