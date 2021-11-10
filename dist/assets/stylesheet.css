@@ -67,27 +67,6 @@ Coding Camp info:
 }
 
 :root {
-    /* ----- MEMBER GROUP COLORS */
-    --color-group-default-primary-raw: var(--blue);
-    --color-group-default-secondary-raw: var(--white);
-    --color-group-a-primary-raw: var(--pink);
-    --color-group-a-secondary-raw: var(--purple);
-    --color-group-b-primary-raw: var(--purple);
-    --color-group-b-secondary-raw: var(--yellow);
-    --color-group-c-primary-raw: var(--yellow);
-    --color-group-c-secondary-raw: var(--green);
-    --color-group-d-primary-raw: var(--green);
-    --color-group-d-secondary-raw: var(--pink);
-
-    /* ----- OPACITIES */
-    --opacity-faded: 0.8;
-
-    /* ----- SIZES */
-    --sidebar-inline-size: 50px;
-    --topbar-block-size: 50px;
-}
-
-body {
     /* FONTS */
     --display: "Mont Heavy Demo", "Work Sans", sans-serif;
     --body-font: var(--body-font-size) / 180% var(--sans);
@@ -213,6 +192,27 @@ body {
     --transi-three-del: 0.9s;
     --transi-two-del: 0.6s;
 
+    /* ----- MEMBER GROUP COLORS */
+    --color-group-default-primary-raw: var(--blue);
+    --color-group-default-secondary-raw: var(--white);
+    --color-group-a-primary-raw: var(--pink);
+    --color-group-a-secondary-raw: var(--purple);
+    --color-group-b-primary-raw: var(--purple);
+    --color-group-b-secondary-raw: var(--yellow);
+    --color-group-c-primary-raw: var(--yellow);
+    --color-group-c-secondary-raw: var(--green);
+    --color-group-d-primary-raw: var(--green);
+    --color-group-d-secondary-raw: var(--pink);
+
+    /* ----- OPACITIES */
+    --opacity-faded: 0.8;
+
+    /* ----- SIZES */
+    --sidebar-inline-size: 50px;
+    --topbar-block-size: 50px;
+}
+
+body {
     background: var(--purple-radial-gradient), var(--green-radial-gradient2),
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
