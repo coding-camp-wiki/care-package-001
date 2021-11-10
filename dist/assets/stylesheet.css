@@ -2122,32 +2122,10 @@ RORA'S MEMBER LIST
 .cp-memitem .mp-hovmg {
     bottom: 50px;
     color: var(--black-hex);
-    display: block;
-    font: 1.3rem/1.3rem var(--display);
+    font: 1.3rem / 1.3rem var(--display);
     left: 0;
     position: absolute;
     text-align: center;
-    width: 100%;
-}
-
-.cp-memitem.group5 .mp-hovmg::after {
-    color: var(--black-hex);
-    content: "Chemical";
-    font: 1.1rem/1.1rem var(--display);
-    text-transform: uppercase;
-}
-
-.cp-memitem.group6 .mp-hovmg::after {
-    color: var(--black-hex);
-    content: "Electrical";
-    font: 1.1rem/1.1rem var(--display);
-    text-transform: uppercase;
-}
-
-.cp-memitem.group7 .mp-hovmg::after {
-    color: var(--black-hex);
-    content: "Mechanical";
-    font: 1.1rem/1.1rem var(--display);
     text-transform: uppercase;
 }
 
