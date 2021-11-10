@@ -273,6 +273,10 @@ JCINK SPECIFIC
 -----
 */
 
+.newstext {
+    display: none;
+}
+
 #logostrip {
     display: none;
 }
@@ -290,6 +294,14 @@ JCINK SPECIFIC
     display: block;
     margin: 20px;
     width: initial;
+}
+
+#submenu {
+    display: none;
+}
+
+#userlinks {
+    display: none;
 }
 
 /*
