@@ -67,11 +67,6 @@ Coding Camp info:
 }
 
 :root {
-    --sidebar-inline-size: 50px;
-    --topbar-block-size: 50px;
-}
-
-body {
     /* FONTS */
     --display: "Mont Heavy Demo", "Work Sans", sans-serif;
     --body-font: var(--body-font-size) / 180% var(--sans);
@@ -188,7 +183,7 @@ body {
     );
 
     /* OTHER */
-    --spacing: 10vw; /* leave this as is */
+    --spacing: 10vw;
 
     /* for member list */
     --transi-med: 0.6s all ease-in-out;
@@ -197,6 +192,28 @@ body {
     --transi-three-del: 0.9s;
     --transi-two-del: 0.6s;
 
+    /* ----- MEMBER GROUP COLORS */
+    --color-group-default-primary-raw: var(--blue);
+    --color-group-default-secondary-raw: var(--white);
+    --color-group-a-primary-raw: var(--pink);
+    --color-group-a-secondary-raw: var(--purple);
+    --color-group-b-primary-raw: var(--purple);
+    --color-group-b-secondary-raw: var(--yellow);
+    --color-group-c-primary-raw: var(--yellow);
+    --color-group-c-secondary-raw: var(--green);
+    --color-group-d-primary-raw: var(--green);
+    --color-group-d-secondary-raw: var(--pink);
+
+    /* ----- OPACITIES */
+    --opacity-faded: 0.8;
+    --opacity-mid: 0.45;
+
+    /* ----- SIZES */
+    --sidebar-inline-size: 50px;
+    --topbar-block-size: 50px;
+}
+
+body {
     background: var(--purple-radial-gradient), var(--green-radial-gradient2),
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
@@ -1130,11 +1147,7 @@ JULIET'S POST ROW
 }
 
 .pr-wrap .pr-box .box-bord .box-name .span1 {
-    background: linear-gradient(
-        to right,
-        rgba(var(--green), 0.45),
-        rgba(var(--yellow), 0.45)
-    );
+    background: var(--color-group-linear-right-mid);
     padding: 10px 8px 0 10px;
 }
 
@@ -1268,8 +1281,7 @@ ABI'S MINI-PROFILE
 
 /* gradient bg for the main profile hover */
 .mphoverbg {
-    background: var(--group7);
-    filter: opacity(0.8);
+    background: var(--color-group-radial-faded);
     height: 400px;
     margin-top: -400px;
     position: relative;
@@ -1356,6 +1368,9 @@ MONTY'S MAIN PROFILE
 -----
 */
 .main-profile {
+    --color-local-primary-raw: var(--green);
+    --color-local-secondary-raw: var(--yellow);
+
     position: relative;
 }
 
@@ -1469,11 +1484,7 @@ MONTY'S MAIN PROFILE
 }
 
 .main-links a {
-    background: linear-gradient(
-        to right,
-        rgba(var(--green), 0.45),
-        rgba(var(--yellow), 0.45)
-    );
+    background: var(--color-group-linear-right-mid);
     border: 2px solid var(--black-hex);
     color: var(--black-hex);
     margin: 0 5px;
@@ -1485,11 +1496,7 @@ MONTY'S MAIN PROFILE
 
 .main-links a:focus,
 .main-links a:hover {
-    background: linear-gradient(
-        to left,
-        rgba(var(--green), 0.45),
-        rgba(var(--yellow), 0.45)
-    );
+    background: var(--color-group-linear-left-mid);
     border-color: var(--blue-hex);
 }
 
@@ -1583,11 +1590,7 @@ MONTY'S MAIN PROFILE
 .tab-back:focus,
 .tab-forward:hover,
 .tab-back:hover {
-    background: linear-gradient(
-        to left,
-        rgba(var(--green), 0.45),
-        rgba(var(--yellow), 0.45)
-    );
+    background: var(--color-group-linear-left-mid);
     border-color: var(--blue-hex);
 }
 
@@ -1969,6 +1972,7 @@ RORA'S MEMBER LIST
 }
 
 .cp-memitem .cp-memname {
+    background: var(--color-group-radial);
     bottom: 0;
     display: block;
     font: 0.9rem/0.9rem var(--body-font);
@@ -2000,19 +2004,8 @@ RORA'S MEMBER LIST
     font-weight: 700;
 }
 
-.cp-memitem.group5 .cp-memname {
-    background: var(--group5);
-}
-
-.cp-memitem.group6 .cp-memname {
-    background: var(--group6);
-}
-
-.cp-memitem.group7 .cp-memname {
-    background: var(--group7);
-}
-
 .cp-memitem .cp-mphovco {
+    background: var(--color-group-radial-faded);
     box-sizing: border-box;
     height: 100%;
     left: 0;
@@ -2050,18 +2043,6 @@ RORA'S MEMBER LIST
     font: 0.9rem/0.6rem var(--sans);
     margin-bottom: 10px;
     width: 100%;
-}
-
-.cp-memitem.group5 .cp-mphovco {
-    background: var(--group5o);
-}
-
-.cp-memitem.group6 .cp-mphovco {
-    background: var(--group6o);
-}
-
-.cp-memitem.group7 .cp-mphovco {
-    background: var(--group7o);
 }
 
 .cp-mphovco .cp-mlicon {
@@ -2102,33 +2083,12 @@ RORA'S MEMBER LIST
 .cp-memitem .mp-hovmg {
     bottom: 50px;
     color: var(--black-hex);
-    display: block;
-    font: 1.3rem/1.3rem var(--display);
+    font: 1.3rem / 1.3rem var(--display);
     left: 0;
     position: absolute;
     text-align: center;
+    text-transform: uppercase;
     width: 100%;
-}
-
-.cp-memitem.group5 .mp-hovmg::after {
-    color: var(--black-hex);
-    content: "Chemical";
-    font: 1.1rem/1.1rem var(--display);
-    text-transform: uppercase;
-}
-
-.cp-memitem.group6 .mp-hovmg::after {
-    color: var(--black-hex);
-    content: "Electrical";
-    font: 1.1rem/1.1rem var(--display);
-    text-transform: uppercase;
-}
-
-.cp-memitem.group7 .mp-hovmg::after {
-    color: var(--black-hex);
-    content: "Mechanical";
-    font: 1.1rem/1.1rem var(--display);
-    text-transform: uppercase;
 }
 
 /*
@@ -4174,7 +4134,7 @@ UTILITIES
     background-color: var(--black-hex);
 }
 
-.utility-flow > * + * {
+.flow > * + * {
     margin-block-start: var(--flow-space, 1em);
 }
 
@@ -4202,6 +4162,84 @@ UTILITIES
     margin: 50px auto;
     padding-inline-start: var(--sidebar-inline-size);
     width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
+}
+
+[data-group] {
+    /* set defaults */
+    --color-group-primary-raw: var(
+        --color-local-primary-raw,
+        var(--color-group-default-primary-raw)
+    );
+    --color-group-secondary-raw: var(
+        --color-local-secondary-raw,
+        var(--color-group-default-secondary-raw)
+    );
+
+    /* assign colors to variables */
+
+    /* main */
+    --color-group-primary: rgb(var(--color-group-primary-raw));
+    --color-group-secondary: rgb(var(--color-group-secondary-raw));
+
+    /* lower opacities */
+    --color-group-primary-faded: rgb(
+        var(--color-group-primary-raw),
+        var(--opacity-faded)
+    );
+    --color-group-secondary-faded: rgb(
+        var(--color-group-secondary-raw),
+        var(--opacity-faded)
+    );
+    --color-group-primary-mid: rgb(
+        var(--color-group-primary-raw),
+        var(--opacity-mid)
+    );
+    --color-group-secondary-mid: rgb(
+        var(--color-group-secondary-raw),
+        var(--opacity-mid)
+    );
+
+    /* gradients */
+    --color-group-linear-left-mid: linear-gradient(
+        to left,
+        var(--color-group-primary-mid),
+        var(--color-group-secondary-mid)
+    );
+    --color-group-linear-right-mid: linear-gradient(
+        to right,
+        var(--color-group-primary-mid),
+        var(--color-group-secondary-mid)
+    );
+    --color-group-radial: radial-gradient(
+        circle at 60% bottom,
+        var(--color-group-primary),
+        var(--color-group-secondary) 75%
+    );
+    --color-group-radial-faded: radial-gradient(
+        circle at 60% bottom,
+        var(--color-group-primary-faded),
+        var(--color-group-secondary-faded) 75%
+    );
+}
+
+[data-group="3"] {
+    --color-group-primary-raw: var(--color-group-a-primary-raw);
+    --color-group-secondary-raw: var(--color-group-a-secondary-raw);
+}
+
+[data-group="6"] {
+    --color-group-primary-raw: var(--color-group-b-primary-raw);
+    --color-group-secondary-raw: var(--color-group-b-secondary-raw);
+}
+
+[data-group="7"] {
+    --color-group-primary-raw: var(--color-group-c-primary-raw);
+    --color-group-secondary-raw: var(--color-group-c-secondary-raw);
+}
+
+[data-group="8"] {
+    --color-group-primary-raw: var(--color-group-d-primary-raw);
+    --color-group-secondary-raw: var(--color-group-d-secondary-raw);
 }
 
 /*
