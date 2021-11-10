@@ -2011,6 +2011,7 @@ RORA'S MEMBER LIST
 }
 
 .cp-memitem .cp-memname {
+    background: var(--color-group-radial);
     bottom: 0;
     display: block;
     font: 0.9rem/0.9rem var(--body-font);
@@ -2042,19 +2043,8 @@ RORA'S MEMBER LIST
     font-weight: 700;
 }
 
-.cp-memitem.group5 .cp-memname {
-    background: var(--group5);
-}
-
-.cp-memitem.group6 .cp-memname {
-    background: var(--group6);
-}
-
-.cp-memitem.group7 .cp-memname {
-    background: var(--group7);
-}
-
 .cp-memitem .cp-mphovco {
+    background: var(--color-group-radial-faded);
     box-sizing: border-box;
     height: 100%;
     left: 0;
@@ -2092,18 +2082,6 @@ RORA'S MEMBER LIST
     font: 0.9rem/0.6rem var(--sans);
     margin-bottom: 10px;
     width: 100%;
-}
-
-.cp-memitem.group5 .cp-mphovco {
-    background: var(--group5o);
-}
-
-.cp-memitem.group6 .cp-mphovco {
-    background: var(--group6o);
-}
-
-.cp-memitem.group7 .cp-mphovco {
-    background: var(--group7o);
 }
 
 .cp-mphovco .cp-mlicon {
