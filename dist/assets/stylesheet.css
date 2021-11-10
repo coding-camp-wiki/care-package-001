@@ -206,6 +206,7 @@ Coding Camp info:
 
     /* ----- OPACITIES */
     --opacity-faded: 0.8;
+    --opacity-mid: 0.45;
 
     /* ----- SIZES */
     --sidebar-inline-size: 50px;
@@ -1372,6 +1373,9 @@ MONTY'S MAIN PROFILE
 -----
 */
 .main-profile {
+    --color-local-primary-raw: var(--green);
+    --color-local-secondary-raw: var(--yellow);
+
     position: relative;
 }
 
@@ -1485,11 +1489,7 @@ MONTY'S MAIN PROFILE
 }
 
 .main-links a {
-    background: linear-gradient(
-        to right,
-        rgba(var(--green), 0.45),
-        rgba(var(--yellow), 0.45)
-    );
+    background: var(--color-group-linear-right-mid);
     border: 2px solid var(--black-hex);
     color: var(--black-hex);
     margin: 0 5px;
@@ -1501,11 +1501,7 @@ MONTY'S MAIN PROFILE
 
 .main-links a:focus,
 .main-links a:hover {
-    background: linear-gradient(
-        to left,
-        rgba(var(--green), 0.45),
-        rgba(var(--yellow), 0.45)
-    );
+    background: var(--color-group-linear-left-mid);
     border-color: var(--blue-hex);
 }
 
@@ -1599,11 +1595,7 @@ MONTY'S MAIN PROFILE
 .tab-back:focus,
 .tab-forward:hover,
 .tab-back:hover {
-    background: linear-gradient(
-        to left,
-        rgba(var(--green), 0.45),
-        rgba(var(--yellow), 0.45)
-    );
+    background: var(--color-group-linear-left-mid);
     border-color: var(--blue-hex);
 }
 
@@ -4179,12 +4171,22 @@ UTILITIES
 
 [data-group] {
     /* set defaults */
-    --color-group-primary-raw: var(--color-group-default-primary-raw);
-    --color-group-secondary-raw: var(--color-group-default-secondary-raw);
+    --color-group-primary-raw: var(
+        --color-local-primary-raw,
+        var(--color-group-default-primary-raw)
+    );
+    --color-group-secondary-raw: var(
+        --color-local-secondary-raw,
+        var(--color-group-default-secondary-raw)
+    );
 
     /* assign colors to variables */
+
+    /* main */
     --color-group-primary: rgb(var(--color-group-primary-raw));
     --color-group-secondary: rgb(var(--color-group-secondary-raw));
+
+    /* lower opacities */
     --color-group-primary-faded: rgb(
         var(--color-group-primary-raw),
         var(--opacity-faded)
@@ -4192,6 +4194,26 @@ UTILITIES
     --color-group-secondary-faded: rgb(
         var(--color-group-secondary-raw),
         var(--opacity-faded)
+    );
+    --color-group-primary-mid: rgb(
+        var(--color-group-primary-raw),
+        var(--opacity-mid)
+    );
+    --color-group-secondary-mid: rgb(
+        var(--color-group-secondary-raw),
+        var(--opacity-mid)
+    );
+
+    /* gradients */
+    --color-group-linear-left-mid: linear-gradient(
+        to left,
+        var(--color-group-primary-mid),
+        var(--color-group-secondary-mid)
+    );
+    --color-group-linear-right-mid: linear-gradient(
+        to right,
+        var(--color-group-primary-mid),
+        var(--color-group-secondary-mid)
     );
     --color-group-radial: radial-gradient(
         circle at 60% bottom,
