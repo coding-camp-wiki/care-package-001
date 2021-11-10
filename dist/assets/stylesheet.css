@@ -1147,11 +1147,7 @@ JULIET'S POST ROW
 }
 
 .pr-wrap .pr-box .box-bord .box-name .span1 {
-    background: linear-gradient(
-        to right,
-        rgba(var(--green), 0.45),
-        rgba(var(--yellow), 0.45)
-    );
+    background: var(--color-group-linear-right-mid);
     padding: 10px 8px 0 10px;
 }
 
