@@ -68,7 +68,7 @@ Coding Camp info:
 
 :root {
     /* ----- MEMBER GROUP COLORS */
-    --color-group-default-primary-raw: var(--black);
+    --color-group-default-primary-raw: var(--blue);
     --color-group-default-secondary-raw: var(--white);
     --color-group-a-primary-raw: var(--pink);
     --color-group-a-secondary-raw: var(--purple);
