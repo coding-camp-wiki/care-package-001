@@ -4242,6 +4242,23 @@ UTILITIES
     --color-group-secondary-raw: var(--color-group-d-secondary-raw);
 }
 
+[data-is-admin="0"] .show-to-admin-only {
+    display: none;
+}
+
+[data-is-mod="0"] .show-to-mod-only {
+    display: none;
+}
+
+/* group 2 = guests */
+[data-viewer-group="2"] .hide-from-guest {
+    display: none;
+}
+
+[data-viewer-group]:not([data-viewer-group="2"]) .hide-from-member {
+    display: none;
+}
+
 /*
 -----
 BLOCKS

@@ -115,8 +115,16 @@
                 </button>
 
                 <ul role="list">
-                    <li><a href="?act=UserCP&CODE=00">user settings</a></li>
-                    <li>
+                    <li class="hide-from-member">
+                        <a href="?act=Reg&CODE=00">register</a>
+                    </li>
+                    <li class="hide-from-member">
+                        <a href="?act=Login&CODE=00">log in</a>
+                    </li>
+                    <li class="hide-from-guest">
+                        <a href="?act=UserCP&CODE=00">settings</a>
+                    </li>
+                    <li class="hide-from-guest">
                         <a href="?act=Msg&CODE=01"
                             >messages<span data-count-new="<!-- |new_msg| -->">
                                 (<!-- |new_msg| -->
@@ -124,7 +132,7 @@
                             ></a
                         >
                     </li>
-                    <li>
+                    <li class="hide-from-guest">
                         <a href="?act=UserCP&CODE=alerts"
                             >alerts<span data-count-new="<!-- |new_alerts| -->">
                                 (<!-- |new_alerts| -->
@@ -132,8 +140,9 @@
                             ></a
                         >
                     </li>
-                    <li><a href="/admin.php">admin controls</a></li>
-                    <li>
+                    <li><a href="?act=Search&f=">search</a></li>
+                    <li><a href="?act=Search&CODE=getnew">new posts</a></li>
+                    <li class="show-to-mod-only">
                         <a href="?act=modcp"
                             >mod controls<span
                                 data-count-new="<!-- |modcp_issues| -->"
@@ -142,11 +151,12 @@
                             ></a
                         >
                     </li>
-                    <li><a href="?act=Login&CODE=00">log in</a></li>
-                    <li><a href="?act=Login&CODE=03">log out</a></li>
-                    <li><a href="?act=Reg&CODE=00">register</a></li>
-                    <li><a href="?act=Search&f=">search</a></li>
-                    <li><a href="?act=Search&CODE=getnew">new posts</a></li>
+                    <li class="show-to-admin-only">
+                        <a href="/admin.php">admin controls</a>
+                    </li>
+                    <li class="hide-from-guest">
+                        <a href="?act=Login&CODE=03">log out</a>
+                    </li>
                 </ul>
             </nav>
 
