@@ -67,6 +67,48 @@ Coding Camp info:
 }
 
 :root {
+    /* ----- MEMBER GROUP COLORS */
+    --color-group-default-primary-raw: var(--black);
+    --color-group-default-secondary-raw: var(--white);
+    --color-group-5-primary-raw: var(--pink);
+    --color-group-5-secondary-raw: var(--purple);
+    --color-group-6-primary-raw: var(--purple);
+    --color-group-6-secondary-raw: var(--yellow);
+    --color-group-7-primary-raw: var(--yellow);
+    --color-group-7-secondary-raw: var(--green);
+    --color-group-8-primary-raw: var(--green);
+    --color-group-8-secondary-raw: var(--pink);
+
+    /* ----- DEFAULT GROUP COLORS */
+    --color-group-primary-raw: var(--color-group-primary-raw);
+    --color-group-secondary-raw: var(--color-group-secondary-raw);
+
+    /* ----- APPLY GROUP COLORS */
+    --color-group-primary: rgb(var(--color-group-primary-raw));
+    --color-group-secondary: rgb(var(--color-group-secondary-raw));
+    --color-group-primary-faded: rgb(
+        var(--color-group-primary-raw),
+        var(--opacity-faded)
+    );
+    --color-group-secondary-faded: rgb(
+        var(--color-group-secondary-raw),
+        var(--opacity-faded)
+    );
+    --color-group-radial: radial-gradient(
+        circle at 60% bottom,
+        var(--color-group-primary),
+        var(--color-group-secondary) 75%
+    );
+    --color-group-radial-faded: radial-gradient(
+        circle at 60% bottom,
+        var(--color-group-primary-faded),
+        var(--color-group-secondary-faded) 75%
+    );
+
+    /* ----- OPACITIES */
+    --opacity-faded: 0.8;
+
+    /* ----- SIZES */
     --sidebar-inline-size: 50px;
     --topbar-block-size: 50px;
 }
@@ -188,7 +230,7 @@ body {
     );
 
     /* OTHER */
-    --spacing: 10vw; /* leave this as is */
+    --spacing: 10vw;
 
     /* for member list */
     --transi-med: 0.6s all ease-in-out;
@@ -4202,6 +4244,26 @@ UTILITIES
     margin: 50px auto;
     padding-inline-start: var(--sidebar-inline-size);
     width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
+}
+
+[data-group="5"] {
+    --color-group-primary-raw: var(--color-group-5-primary-raw);
+    --color-group-secondary-raw: var(--color-group-5-secondary-raw);
+}
+
+[data-group="6"] {
+    --color-group-primary-raw: var(--color-group-6-primary-raw);
+    --color-group-secondary-raw: var(--color-group-6-secondary-raw);
+}
+
+[data-group="7"] {
+    --color-group-primary-raw: var(--color-group-7-primary-raw);
+    --color-group-secondary-raw: var(--color-group-7-secondary-raw);
+}
+
+[data-group="8"] {
+    --color-group-primary-raw: var(--color-group-8-primary-raw);
+    --color-group-secondary-raw: var(--color-group-8-secondary-raw);
 }
 
 /*
