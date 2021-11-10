@@ -4164,7 +4164,7 @@ UTILITIES
     width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
 }
 
-[data-group] {
+.utility-group-color {
     /* set defaults */
     --color-group-primary-raw: var(
         --color-local-primary-raw,
@@ -4222,22 +4222,22 @@ UTILITIES
     );
 }
 
-[data-group="3"] {
+.utility-group-color[data-group="3"] {
     --color-group-primary-raw: var(--color-group-a-primary-raw);
     --color-group-secondary-raw: var(--color-group-a-secondary-raw);
 }
 
-[data-group="6"] {
+.utility-group-color[data-group="6"] {
     --color-group-primary-raw: var(--color-group-b-primary-raw);
     --color-group-secondary-raw: var(--color-group-b-secondary-raw);
 }
 
-[data-group="7"] {
+.utility-group-color[data-group="7"] {
     --color-group-primary-raw: var(--color-group-c-primary-raw);
     --color-group-secondary-raw: var(--color-group-c-secondary-raw);
 }
 
-[data-group="8"] {
+.utility-group-color[data-group="8"] {
     --color-group-primary-raw: var(--color-group-d-primary-raw);
     --color-group-secondary-raw: var(--color-group-d-secondary-raw);
 }
