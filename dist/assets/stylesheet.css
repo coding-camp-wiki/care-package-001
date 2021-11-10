@@ -1285,8 +1285,7 @@ ABI'S MINI-PROFILE
 
 /* gradient bg for the main profile hover */
 .mphoverbg {
-    background: var(--group7);
-    filter: opacity(0.8);
+    background: var(--color-group-radial-faded);
     height: 400px;
     margin-top: -400px;
     position: relative;
