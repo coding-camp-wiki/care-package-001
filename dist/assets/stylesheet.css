@@ -4460,7 +4460,7 @@ nav#block-nav-primary[data-js-enhanced="true"] ul {
     z-index: 999;
 }
 
-nav#block-nav-primary button[aria-expanded="false"] + ul {
+nav#block-nav-primary button:not([aria-expanded]) + ul {
     display: none;
 }
 

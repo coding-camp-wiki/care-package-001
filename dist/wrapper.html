@@ -36,14 +36,18 @@
                 nav.dataset.jsEnhanced = true;
                 button.hidden = false;
 
-                // hide menu by default
-                button.setAttribute("aria-expanded", false);
+                // menu is hidden by default by leaving off aria-expanded
 
                 // add show/hide functionality
                 button.addEventListener("click", function () {
-                    let isExpanded =
-                        this.getAttribute("aria-expanded") === "true" || false;
-                    this.setAttribute("aria-expanded", !isExpanded);
+                    let isExpanded = this.hasAttribute("aria-expanded");
+
+                    // remove on hide per https://www.w3.org/TR/wai-aria-practices-1.1/#wai-aria-roles-states-and-properties-14
+                    if (isExpanded) {
+                        this.removeAttribute("aria-expanded");
+                    } else {
+                        this.setAttribute("aria-expanded", true);
+                    }
                 });
             });
         </script>
@@ -105,9 +109,9 @@
                     Controls
                 </h2>
 
-                <button hidden>
+                <button aria-haspopup="menu" type="button" hidden>
                     <span class="utility-visually-hidden">Toggle Controls</span>
-                    <svg aria-hidden="true" class="block-icon" role="button">
+                    <svg aria-hidden="true" class="block-icon">
                         <use
                             href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
                         ></use>
