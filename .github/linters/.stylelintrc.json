@@ -12,6 +12,7 @@
             "declarations"
         ],
         "order/properties-alphabetical-order": true,
+        "property-no-vendor-prefix": null,
         "value-list-comma-newline-after": null
     }
 }
