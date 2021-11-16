@@ -599,7 +599,6 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     border-top: 2px solid rgb(var(--black));
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: flex-end;
 }
 
@@ -643,8 +642,6 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     align-content: center;
     align-items: flex-start;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     position: relative;
 }
@@ -739,9 +736,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 .topic-wrapper {
     display: grid;
     gap: 1vw 1vw;
-    grid-template-areas: "topic-name topic-info";
-    grid-template-columns: min-content auto;
-    grid-template-rows: 1fr;
+    grid-template: "topic-name topic-info" 1fr / min-content auto;
     margin: 10px;
 }
 
@@ -763,13 +758,12 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     display: grid;
     gap: 1vw 2vw;
     grid-area: topic-info;
-    grid-template-areas:
-        "topic-desc         topic-desc          topic-desc          topic-desc"
-        "topic-last-post-av topic-last-post     topic-last-post     topic-last-post"
-        "topic-starter      topic-starter       topic-starter       topic-starter"
-        "topic-pagination   topic-pagination    topic-pagination    topic-pagination";
-    grid-template-columns: auto 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, auto) 1fr;
+    grid-template:
+        "topic-desc         topic-desc          topic-desc          topic-desc" auto
+        "topic-last-post-av topic-last-post     topic-last-post     topic-last-post" auto
+        "topic-starter      topic-starter       topic-starter       topic-starter" auto
+        "topic-pagination   topic-pagination    topic-pagination    topic-pagination" 1fr
+        / auto 1fr 1fr 1fr;
 }
 
 .topic-wrapper .topic-desc {
@@ -880,7 +874,7 @@ LISSITA'S BOARD STATS
 .stats-title span {
     display: block;
     font: 50px var(--display);
-    padding: 30px 0 15px 0;
+    padding: 30px 0 15px;
     position: absolute;
     text-align: center;
     top: -100px;
@@ -1222,7 +1216,7 @@ JULIET'S POST ROW
     font: 300 8.25px var(--sans);
     letter-spacing: 1.5px;
     line-height: 250%;
-    margin: 30px 30px 0 30px;
+    margin: 30px 30px 0;
     text-align: justify;
     text-transform: uppercase;
     width: calc(254px - 60px);
@@ -1231,7 +1225,7 @@ JULIET'S POST ROW
 .pr-wrap .pr-box .box-mini .mini-stick .mini-info span {
     background: rgb(var(--black));
     color: rgb(var(--white));
-    padding: 4px 3px 4px 3px;
+    padding: 4px 3px;
 }
 
 .pr-wrap .pr-box .box-mini .img-wrap {
