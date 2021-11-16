@@ -78,7 +78,7 @@ Coding Camp info:
     --black-hex: #282a2a;
     --blue: 66 135 245;
     --blue-hex: #6c92f9;
-    --clear: rgba(255 255 255 / 0);
+    --clear: rgb(255 255 255 / 0%);
     --green: 190 225 230;
     --green-hex: #bee1e6;
     --yellow: 255 241 230;
@@ -139,8 +139,8 @@ Coding Camp info:
     --group-rgb: 66, 135, 245;
     --group-gradient-fade: linear-gradient(
         to right,
-        rgb(var(--blue) / 0.5),
-        rgb(var(--green) / 0.5)
+        rgb(var(--blue) / 50%),
+        rgb(var(--green) / 50%)
     );
     --group-gradient-lr: linear-gradient(
         to right,
@@ -161,25 +161,25 @@ Coding Camp info:
     );
     --group-gradient-light: linear-gradient(
         235deg,
-        rgb(var(--blue) / 0.28) 0%,
-        rgb(var(--green) / 0.28) 100%
+        rgb(var(--blue) / 28%) 0%,
+        rgb(var(--green) / 28%) 100%
     );
     --group-gradient-mid: linear-gradient(
         45deg,
-        rgb(var(--blue) / 0.57) 0%,
-        rgb(var(--green) / 0.57) 100%
+        rgb(var(--blue) / 57%) 0%,
+        rgb(var(--green) / 57%) 100%
     );
 
     /* from Jaslene's RP Pack */
     --jasgradient: linear-gradient(
         150deg,
-        rgb(var(--blue) / 1) 0%,
-        rgb(var(--green) / 1) 100%
+        rgb(var(--blue)) 0%,
+        rgb(var(--green)) 100%
     );
     --jasgradient-l: linear-gradient(
         150deg,
-        rgb(var(--blue) / 0.3) 0%,
-        rgb(var(--green) / 0.3) 100%
+        rgb(var(--blue) / 30%) 0%,
+        rgb(var(--green) / 30%) 100%
     );
 
     /* OTHER */
@@ -240,7 +240,7 @@ ELEMENTS
 
 a {
     color: inherit;
-    text-decoration-color: rgb(var(--black) / 0.3);
+    text-decoration-color: rgb(var(--black) / 30%);
 
     /* skip-ink, thickness, and offset may not work everywhere, but fallback just fine */
     text-decoration-skip-ink: auto;
@@ -332,7 +332,7 @@ LEEANN'S HEADER & NAVIGATION
 }
 
 #topbar .topname {
-    color: rgb(var(--black / 0.4));
+    color: rgb(var(--black / 40%));
 }
 
 #topbar .topname a {
@@ -503,7 +503,7 @@ LEEANN'S HEADER & NAVIGATION
 
 #header .info .links a::after {
     background: var(--purple-radial-gradient);
-    border-bottom: 1px solid rgb(var(--black) / 0.3);
+    border-bottom: 1px solid rgb(var(--black) / 30%);
     content: "";
     height: 10px;
     left: 0;
@@ -590,7 +590,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     border-bottom: 2px solid rgb(var(--black));
     border-left: 2px solid rgb(var(--black));
     border-right: 2px solid rgb(var(--black));
-    box-shadow: 5px 5px 5px rgb(var(--black) / 0.3);
+    box-shadow: 5px 5px 5px rgb(var(--black) / 30%);
     position: relative;
     width: 100%;
 }
@@ -621,7 +621,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
         var(--green-radial-gradient3), var(--pink-base);
-    border: 1px solid rgb(var(--white) / 0.3);
+    border: 1px solid rgb(var(--white) / 30%);
     border-radius: 100%;
     bottom: 1vw;
     display: inline-block;
@@ -697,7 +697,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 }
 
 .forum-last-post a {
-    background-color: rgb(var(--white) / 0.7);
+    background-color: rgb(var(--white) / 70%);
     color: rgb(var(--black));
     display: inline-block;
     line-height: 80%;
@@ -707,7 +707,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 
 .forum-last-post a:focus,
 .forum-last-post a:hover {
-    background-color: rgb(var(--pink) / 0.7);
+    background-color: rgb(var(--pink) / 70%);
 }
 
 .subforums {
@@ -887,7 +887,7 @@ LISSITA'S BOARD STATS
 }
 
 .stats-title span::after {
-    border: 3px solid rgb(var(--black) / 0.2);
+    border: 3px solid rgb(var(--black) / 20%);
     border-radius: 100%;
     content: "";
     display: block;
@@ -901,7 +901,7 @@ LISSITA'S BOARD STATS
 }
 
 .stats-title span::before {
-    border: 3px solid rgb(var(--black) / 0.2);
+    border: 3px solid rgb(var(--black) / 20%);
     border-radius: 100%;
     content: "";
     display: block;
@@ -1123,7 +1123,7 @@ JULIET'S POST ROW
 
 .pr-wrap .pr-box {
     background: rgb(var(--white));
-    box-shadow: 3px 3px 6px rgb(var(--black) / 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     display: block;
     padding: 15px;
     position: relative;
@@ -1236,7 +1236,7 @@ JULIET'S POST ROW
 
 .pr-wrap .pr-box .box-mini .img-wrap {
     border: var(--black-hex) solid 2px;
-    box-shadow: 3px 3px 6px rgb(var(--black) / 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     height: 400px;
     overflow: hidden;
     width: 250px;
@@ -1674,7 +1674,7 @@ MONTY'S MAIN PROFILE
 
 .freeform-warnings {
     background: var(--black-hex);
-    color: rgb(var(--white) / 0.9);
+    color: rgb(var(--white) / 90%);
     display: inline-block;
     font-size: 10px;
     font-weight: 300;
@@ -1785,8 +1785,8 @@ RORA'S MEMBER LIST
 .cp-memlist .member-list__controls {
     background: linear-gradient(
         90deg,
-        rgb(var(--white) / 0.5) 0%,
-        rgb(var(--white) / 0) 100%
+        rgb(var(--white) / 50%) 0%,
+        rgb(var(--white) / 0%) 100%
     );
     border-right: 2px solid var(--black-hex);
     letter-spacing: 0;
@@ -1852,7 +1852,7 @@ RORA'S MEMBER LIST
 }
 
 .cp-memgrid .cp-memitem {
-    box-shadow: 3px 3px 6px rgb(var(--black) / 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     height: 400px;
     overflow: hidden;
     position: relative;
@@ -2260,7 +2260,7 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-shipper.color .shipper-in section .text {
-    background: rgb(var(--group-rgb) / 0.2);
+    background: rgb(var(--group-rgb) / 20%);
 }
 
 .box-post .cc-shipper.color #pic span {
@@ -2306,7 +2306,7 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-ship-rep.color {
-    background: rgb(var(--group-rgb) / 0.2);
+    background: rgb(var(--group-rgb) / 20%);
 }
 
 .box-post .cc-ship-rep.color .ship-top span {
@@ -2499,7 +2499,7 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-md-rep .bar {
-    background: rgb(var(--group-rgb) / 0.2);
+    background: rgb(var(--group-rgb) / 20%);
     display: flex;
     flex-flow: row nowrap;
     font-size: 0.7rem;
@@ -2899,7 +2899,7 @@ ALLY'S RP PACK
 .comms-bot p {
     background: var(--group-gradient-dark);
     border-radius: 15px 15px 0 15px;
-    box-shadow: 1px 1px 5px rgb(var(--black) / 0.47);
+    box-shadow: 1px 1px 5px rgb(var(--black) / 47%);
     clear: both;
     color: var(--white-hex);
     display: block;
@@ -2941,7 +2941,7 @@ ALLY'S RP PACK
 
 .ftinder {
     background-image: var(--group-gradient-light);
-    box-shadow: 0 0 10px rgb(var(--black) / 0.25);
+    box-shadow: 0 0 10px rgb(var(--black) / 25%);
     display: flex;
     flex-flow: column nowrap;
     height: 350px;
@@ -3015,7 +3015,7 @@ ALLY'S RP PACK
     display: block;
     font: 1.883em var(--display);
     text-align: right;
-    text-shadow: 0 0 1px rgb(var(--black) / 0.25);
+    text-shadow: 0 0 1px rgb(var(--black) / 25%);
     width: 100%;
 }
 
@@ -3062,7 +3062,7 @@ ALLY'S RP PACK
     align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
-    box-shadow: 0 0 5px rgb(var(--black) / 0.35);
+    box-shadow: 0 0 5px rgb(var(--black) / 35%);
     display: flex;
     fill: var(--white-hex);
     height: 45px;
@@ -3081,7 +3081,7 @@ ALLY'S RP PACK
 
 .ftinder-swipe {
     background-image: var(--group-gradient-light);
-    box-shadow: 0 0 10px rgb(var(--black) / 0.25);
+    box-shadow: 0 0 10px rgb(var(--black) / 25%);
     display: flex;
     flex-flow: column nowrap;
     height: 250px;
@@ -3134,7 +3134,7 @@ ALLY'S RP PACK
     display: block;
     font: 1.883em var(--display);
     text-align: right;
-    text-shadow: 0 0 1px rgb(var(--black) / 0.25);
+    text-shadow: 0 0 1px rgb(var(--black) / 25%);
     text-transform: lowercase;
 }
 
@@ -3152,7 +3152,7 @@ ALLY'S RP PACK
     background-clip: text;
     color: transparent;
     font: 1.883em var(--display);
-    text-shadow: 0 0 1px rgb(var(--black) / 0.25);
+    text-shadow: 0 0 1px rgb(var(--black) / 25%);
     text-transform: uppercase;
 }
 
@@ -3160,7 +3160,7 @@ ALLY'S RP PACK
     align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
-    box-shadow: 0 0 5px rgb(var(--black) / 0.35);
+    box-shadow: 0 0 5px rgb(var(--black) / 35%);
     display: flex;
     height: 45px;
     justify-content: center;
@@ -3175,7 +3175,7 @@ ALLY'S RP PACK
 
 .ftinder-match {
     background-image: var(--group-gradient-light);
-    box-shadow: 0 0 10px rgb(var(--black) / 0.25);
+    box-shadow: 0 0 10px rgb(var(--black) / 25%);
     display: flex;
     flex-flow: column nowrap;
     height: 250px;
@@ -3237,7 +3237,7 @@ ALLY'S RP PACK
     background-clip: text;
     color: transparent;
     font: 1.883em var(--display);
-    text-shadow: 0 0 1px rgb(var(--black) / 0.25);
+    text-shadow: 0 0 1px rgb(var(--black) / 25%);
     text-transform: uppercase;
 }
 
@@ -3245,7 +3245,7 @@ ALLY'S RP PACK
     align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
-    box-shadow: 0 0 5px rgb(var(--black) / 0.35);
+    box-shadow: 0 0 5px rgb(var(--black) / 35%);
     display: flex;
     height: 45px;
     justify-content: center;
@@ -3390,7 +3390,7 @@ JASLENE'S RP PACK
 }
 
 .jasthread .top {
-    background: rgb(var(--blue) / 0.3);
+    background: rgb(var(--blue) / 30%);
     border-bottom: 2px solid var(--black-hex);
     display: block;
     height: 100px;
@@ -3684,7 +3684,7 @@ ROSE'S DEV PACK
 
 /* ----- BASE */
 .rosedev {
-    box-shadow: 3px 3px 6px rgb(var(--black) / 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     box-sizing: border-box !important;
     display: block;
     padding: 40px 30px;
@@ -3698,7 +3698,7 @@ ROSE'S DEV PACK
 .rosedev.white {
     background: var(--white-hex);
     border: var(--black-hex) solid 2px;
-    box-shadow: 3px 3px 6px rgb(var(--black) / 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
 }
 
 .rosedev.black {
@@ -3788,7 +3788,7 @@ ROSE'S DEV PACK
 
 .rosedev .dev img {
     border: var(--black-hex) solid 2px;
-    box-shadow: 3px 3px 6px rgb(var(--black) / 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
 }
 
 .rosedev .two img {
@@ -4040,7 +4040,7 @@ ABI'S WEBPAGES
 
 .webpage .webpagebox {
     background: var(--white-hex);
-    box-shadow: 3px 3px 6px rgb(var(--black) / 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     font: var(--body-font);
     padding: 15px;
     width: 100%;
@@ -4252,7 +4252,7 @@ BLOCKS
     color: var(--blue-hex);
     font: 700 2.2em/100% var(--display);
     letter-spacing: 1px;
-    text-shadow: 0 0 5px rgb(var(--white) / 0.55);
+    text-shadow: 0 0 5px rgb(var(--white) / 55%);
     text-transform: uppercase;
 }
 
@@ -4263,7 +4263,7 @@ BLOCKS
     letter-spacing: 1px;
     margin: 10px 0;
     padding: 5px;
-    text-shadow: 0 0 5px rgb(var(--white) / 0.55);
+    text-shadow: 0 0 5px rgb(var(--white) / 55%);
     text-transform: uppercase;
     width: max-content;
 }
