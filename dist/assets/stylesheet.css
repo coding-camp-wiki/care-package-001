@@ -4176,20 +4176,16 @@ UTILITIES
 
     /* lower opacities */
     --color-group-primary-faded: rgb(
-        var(--color-group-primary-raw),
-        var(--opacity-faded)
+        var(--color-group-primary-raw) / var(--opacity-faded)
     );
     --color-group-secondary-faded: rgb(
-        var(--color-group-secondary-raw),
-        var(--opacity-faded)
+        var(--color-group-secondary-raw) / var(--opacity-faded)
     );
     --color-group-primary-mid: rgb(
-        var(--color-group-primary-raw),
-        var(--opacity-mid)
+        var(--color-group-primary-raw) / var(--opacity-mid)
     );
     --color-group-secondary-mid: rgb(
-        var(--color-group-secondary-raw),
-        var(--opacity-mid)
+        var(--color-group-secondary-raw) / var(--opacity-mid)
     );
 
     /* gradients */
