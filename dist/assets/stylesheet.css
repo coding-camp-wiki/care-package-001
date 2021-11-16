@@ -1865,7 +1865,7 @@ RORA'S MEMBER LIST
     display: none;
 }
 
-.cp-memitem img:not([src=""]):not([src^="<!--"]) + img.--fallback {
+.cp-memitem img:not([src=""]):not([src^="<!--"]) + img[data-fallback] {
     display: none;
 }
 
