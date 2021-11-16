@@ -28,15 +28,14 @@
                 const button = nav.querySelector("button");
                 const menu = nav.querySelector("ul");
 
-                const topbar = document.getElementById("topbar");
+                // move nav to topbar
+                document.getElementById("topbar").appendChild(nav);
 
-                topbar.appendChild(nav);
-
-                // apply enhancement compatible styles
+                // replace fallback styles with javascript-supported styles
                 nav.dataset.jsEnhanced = true;
-                button.hidden = false;
 
-                // hide menu by default
+                // set to default show/hide states
+                button.hidden = false;
                 button.setAttribute("aria-expanded", false);
 
                 // add show/hide functionality
