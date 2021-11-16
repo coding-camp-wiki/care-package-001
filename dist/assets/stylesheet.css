@@ -19,7 +19,7 @@ Coding Camp info:
     font-family: "Mont Heavy Demo";
     font-style: normal;
     font-weight: 400 700;
-    src: url(https://fonts.gstatic.com/s/worksans/v9/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QBiAJoI3ZKyHaQfhf.woff)
+    src: url("https://fonts.gstatic.com/s/worksans/v9/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QBiAJoI3ZKyHaQfhf.woff")
         format("woff");
     unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
         U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
@@ -31,7 +31,7 @@ Coding Camp info:
     font-family: "Mont Heavy Demo";
     font-style: normal;
     font-weight: 400 700;
-    src: url(https://fonts.gstatic.com/s/worksans/v9/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QBiEJoI3ZKyHaQfhf.woff)
+    src: url("https://fonts.gstatic.com/s/worksans/v9/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QBiEJoI3ZKyHaQfhf.woff")
         format("woff");
     unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
         U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
@@ -43,7 +43,7 @@ Coding Camp info:
     font-family: "Mont Heavy Demo";
     font-style: normal;
     font-weight: 400 700;
-    src: url(https://fonts.gstatic.com/s/worksans/v9/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QBi8JoI3ZKyHaQQ.woff)
+    src: url("https://fonts.gstatic.com/s/worksans/v9/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K67QBi8JoI3ZKyHaQQ.woff")
         format("woff");
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
         U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
@@ -56,9 +56,9 @@ Coding Camp info:
     font-style: normal;
     font-weight: 400 700;
     /* stylelint-disable indentation */
-    src: url(https://coding-camp.wiki/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff2)
+    src: url("https://coding-camp.wiki/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff2")
             format("woff2"),
-        url(https://coding-camp.wiki/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff)
+        url("https://coding-camp.wiki/care-package-001/dist/assets/fonts/mont/mont-heavy-demo-webfont.woff")
             format("woff");
     /* stylelint-enable indentation */
     unicode-range: U+0021-0022, U+0024, U+0026-0029, U+002A-002E, U+0030-003B,
@@ -74,20 +74,20 @@ Coding Camp info:
     --sans: "Work Sans", sans-serif;
 
     /* COLORS */
-    --black: 40, 42, 42;
+    --black: 40 42 42;
     --black-hex: #282a2a;
-    --blue: 66, 135, 245;
+    --blue: 66 135 245;
     --blue-hex: #6c92f9;
-    --clear: rgba(255, 255, 255, 0);
-    --green: 190, 225, 230;
+    --clear: rgb(255 255 255 / 0%);
+    --green: 190 225 230;
     --green-hex: #bee1e6;
-    --yellow: 255, 241, 230;
+    --yellow: 255 241 230;
     --yellow-hex: #fff1e6;
-    --pink: 250, 210, 225;
+    --pink: 250 210 225;
     --pink-hex: #fad2e1;
-    --purple: 205, 218, 253;
+    --purple: 205 218 253;
     --purple-hex: #cddafd;
-    --white: 249, 247, 246;
+    --white: 249 247 246;
     --white-hex: #f6f8f8;
 
     /* BACKGROUND GRADIENTS */
@@ -139,8 +139,8 @@ Coding Camp info:
     --group-rgb: 66, 135, 245;
     --group-gradient-fade: linear-gradient(
         to right,
-        rgba(var(--blue), 0.5),
-        rgba(var(--green), 0.5)
+        rgb(var(--blue) / 50%),
+        rgb(var(--green) / 50%)
     );
     --group-gradient-lr: linear-gradient(
         to right,
@@ -156,30 +156,30 @@ Coding Camp info:
     /* from Ally's RP Pack */
     --group-gradient-dark: linear-gradient(
         45deg,
-        rgba(var(--blue), 1) 0%,
-        rgba(var(--green), 1) 100%
+        rgb(var(--blue)) 0%,
+        rgb(var(--green)) 100%
     );
     --group-gradient-light: linear-gradient(
         235deg,
-        rgba(var(--blue), 0.28) 0%,
-        rgba(var(--green), 0.28) 100%
+        rgb(var(--blue) / 28%) 0%,
+        rgb(var(--green) / 28%) 100%
     );
     --group-gradient-mid: linear-gradient(
         45deg,
-        rgba(var(--blue), 0.57) 0%,
-        rgba(var(--green), 0.57) 100%
+        rgb(var(--blue) / 57%) 0%,
+        rgb(var(--green) / 57%) 100%
     );
 
     /* from Jaslene's RP Pack */
     --jasgradient: linear-gradient(
         150deg,
-        rgba(var(--blue), 1) 0%,
-        rgba(var(--green), 1) 100%
+        rgb(var(--blue)) 0%,
+        rgb(var(--green)) 100%
     );
     --jasgradient-l: linear-gradient(
         150deg,
-        rgba(var(--blue), 0.3) 0%,
-        rgba(var(--green), 0.3) 100%
+        rgb(var(--blue) / 30%) 0%,
+        rgb(var(--green) / 30%) 100%
     );
 
     /* OTHER */
@@ -240,7 +240,7 @@ ELEMENTS
 
 a {
     color: inherit;
-    text-decoration-color: rgba(var(--black), 0.3);
+    text-decoration-color: rgb(var(--black) / 30%);
 
     /* skip-ink, thickness, and offset may not work everywhere, but fallback just fine */
     text-decoration-skip-ink: auto;
@@ -344,7 +344,7 @@ LEEANN'S HEADER & NAVIGATION
 }
 
 #topbar .topname {
-    color: rgba(var(--black, 0.4));
+    color: rgb(var(--black / 40%));
 }
 
 #topbar .topname a {
@@ -515,7 +515,7 @@ LEEANN'S HEADER & NAVIGATION
 
 #header .info .links a::after {
     background: var(--purple-radial-gradient);
-    border-bottom: 1px solid rgba(var(--black), 0.3);
+    border-bottom: 1px solid rgb(var(--black) / 30%);
     content: "";
     height: 10px;
     left: 0;
@@ -602,7 +602,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     border-bottom: 2px solid rgb(var(--black));
     border-left: 2px solid rgb(var(--black));
     border-right: 2px solid rgb(var(--black));
-    box-shadow: 5px 5px 5px rgba(var(--black), 0.3);
+    box-shadow: 5px 5px 5px rgb(var(--black) / 30%);
     position: relative;
     width: 100%;
 }
@@ -611,7 +611,6 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     border-top: 2px solid rgb(var(--black));
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     justify-content: flex-end;
 }
 
@@ -633,7 +632,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
         var(--green-radial-gradient3), var(--pink-base);
-    border: 1px solid rgba(var(--white), 0.3);
+    border: 1px solid rgb(var(--white) / 30%);
     border-radius: 100%;
     bottom: 1vw;
     display: inline-block;
@@ -655,14 +654,12 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     align-content: center;
     align-items: flex-start;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     position: relative;
 }
 
 .forum-title {
-    background-color: rgba(var(--white), 1);
+    background-color: rgb(var(--white));
     border-bottom: 2px solid rgb(var(--black));
     border-top: 2px solid rgb(var(--black));
     font-family: var(--display);
@@ -709,7 +706,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 }
 
 .forum-last-post a {
-    background-color: rgba(var(--white), 0.7);
+    background-color: rgb(var(--white) / 70%);
     color: rgb(var(--black));
     display: inline-block;
     line-height: 80%;
@@ -719,7 +716,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 
 .forum-last-post a:focus,
 .forum-last-post a:hover {
-    background-color: rgba(var(--pink), 0.7);
+    background-color: rgb(var(--pink) / 70%);
 }
 
 .subforums {
@@ -751,9 +748,7 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 .topic-wrapper {
     display: grid;
     gap: 1vw 1vw;
-    grid-template-areas: "topic-name topic-info";
-    grid-template-columns: min-content auto;
-    grid-template-rows: 1fr;
+    grid-template: "topic-name topic-info" 1fr / min-content auto;
     margin: 10px;
 }
 
@@ -775,13 +770,12 @@ RAY'S CATEGORIES, FORUMS, TOPICS
     display: grid;
     gap: 1vw 2vw;
     grid-area: topic-info;
-    grid-template-areas:
-        "topic-desc         topic-desc          topic-desc          topic-desc"
-        "topic-last-post-av topic-last-post     topic-last-post     topic-last-post"
-        "topic-starter      topic-starter       topic-starter       topic-starter"
-        "topic-pagination   topic-pagination    topic-pagination    topic-pagination";
-    grid-template-columns: auto 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, auto) 1fr;
+    grid-template:
+        "topic-desc         topic-desc          topic-desc          topic-desc" auto
+        "topic-last-post-av topic-last-post     topic-last-post     topic-last-post" auto
+        "topic-starter      topic-starter       topic-starter       topic-starter" auto
+        "topic-pagination   topic-pagination    topic-pagination    topic-pagination" 1fr
+        / auto 1fr 1fr 1fr;
 }
 
 .topic-wrapper .topic-desc {
@@ -844,8 +838,6 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 .topic-wrapper .views-replies-flex {
     align-items: stretch;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -892,14 +884,14 @@ LISSITA'S BOARD STATS
 .stats-title span {
     display: block;
     font: 50px var(--display);
-    padding: 30px 0 15px 0;
+    padding: 30px 0 15px;
     position: absolute;
     text-align: center;
     top: -100px;
 }
 
 .stats-title span::after {
-    border: 3px solid rgba(var(--black), 0.2);
+    border: 3px solid rgb(var(--black) / 20%);
     border-radius: 100%;
     content: "";
     display: block;
@@ -913,7 +905,7 @@ LISSITA'S BOARD STATS
 }
 
 .stats-title span::before {
-    border: 3px solid rgba(var(--black), 0.2);
+    border: 3px solid rgb(var(--black) / 20%);
     border-radius: 100%;
     content: "";
     display: block;
@@ -1135,7 +1127,7 @@ JULIET'S POST ROW
 
 .pr-wrap .pr-box {
     background: rgb(var(--white));
-    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     display: block;
     padding: 15px;
     position: relative;
@@ -1225,7 +1217,6 @@ JULIET'S POST ROW
     display: block;
     margin-bottom: 150px;
     position: sticky;
-    position: -webkit-sticky;
     top: 40px;
 }
 
@@ -1234,7 +1225,7 @@ JULIET'S POST ROW
     font: 300 8.25px var(--sans);
     letter-spacing: 1.5px;
     line-height: 250%;
-    margin: 30px 30px 0 30px;
+    margin: 30px 30px 0;
     text-align: justify;
     text-transform: uppercase;
     width: calc(254px - 60px);
@@ -1242,13 +1233,13 @@ JULIET'S POST ROW
 
 .pr-wrap .pr-box .box-mini .mini-stick .mini-info span {
     background: rgb(var(--black));
-    color: rgba(var(--white), 1);
-    padding: 4px 3px 4px 3px;
+    color: rgb(var(--white));
+    padding: 4px 3px;
 }
 
 .pr-wrap .pr-box .box-mini .img-wrap {
     border: var(--black-hex) solid 2px;
-    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     height: 400px;
     overflow: hidden;
     width: 250px;
@@ -1608,7 +1599,7 @@ MONTY'S MAIN PROFILE
 
 .dot-labels {
     background: var(--white-hex);
-    border: 2px solid rgba(var(--black), 1);
+    border: 2px solid rgb(var(--black));
     border-radius: 100%;
     bottom: 30px;
     cursor: pointer;
@@ -1667,9 +1658,9 @@ MONTY'S MAIN PROFILE
 }
 
 .main-tab-2 {
-    border: clamp(90px, 10vw, 150px) solid rgba(0, 0, 0, 0);
-    border-bottom: clamp(60px, 10vw, 120px) solid rgba(0, 0, 0, 0);
-    border-top: clamp(70px, 10vw, 130px) solid rgba(0, 0, 0, 0);
+    border: clamp(90px, 10vw, 150px) solid var(--clear);
+    border-bottom: clamp(60px, 10vw, 120px) solid var(--clear);
+    border-top: clamp(70px, 10vw, 130px) solid var(--clear);
     font-family: var(--body-font);
     height: calc(100% - 30px);
     left: 0;
@@ -1686,7 +1677,7 @@ MONTY'S MAIN PROFILE
 
 .freeform-warnings {
     background: var(--black-hex);
-    color: rgba(var(--white), 0.9);
+    color: rgb(var(--white) / 90%);
     display: inline-block;
     font-size: 10px;
     font-weight: 300;
@@ -1797,8 +1788,8 @@ RORA'S MEMBER LIST
 .cp-memlist .member-list__controls {
     background: linear-gradient(
         90deg,
-        rgba(var(--white), 0.5) 0%,
-        rgba(var(--white), 0) 100%
+        rgb(var(--white) / 50%) 0%,
+        rgb(var(--white) / 0%) 100%
     );
     border-right: 2px solid var(--black-hex);
     letter-spacing: 0;
@@ -1812,6 +1803,8 @@ RORA'S MEMBER LIST
     display: none;
 }
 
+/* .pagination_pagetxt class is generated by jcink */
+/* stylelint-disable-next-line selector-class-pattern */
 .cp-memlist .member-list__pagination .pagination_pagetxt a {
     font-weight: bold;
 }
@@ -1864,7 +1857,7 @@ RORA'S MEMBER LIST
 }
 
 .cp-memgrid .cp-memitem {
-    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     height: 400px;
     overflow: hidden;
     position: relative;
@@ -1884,7 +1877,7 @@ RORA'S MEMBER LIST
     display: none;
 }
 
-.cp-memitem img:not([src=""]):not([src^="<!--"]) + img.--fallback {
+.cp-memitem img:not([src=""]):not([src^="<!--"]) + img[data-fallback] {
     display: none;
 }
 
@@ -2119,7 +2112,7 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-gen .title {
-    background: rgba(var(--white), 1);
+    background: rgb(var(--white));
     border: var(--black-hex) solid 2px;
     font-weight: bold;
     margin-left: -3rem;
@@ -2272,7 +2265,7 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-shipper.color .shipper-in section .text {
-    background: rgba(var(--group-rgb), 0.2);
+    background: rgb(var(--group-rgb) / 20%);
 }
 
 .box-post .cc-shipper.color #pic span {
@@ -2318,7 +2311,7 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-ship-rep.color {
-    background: rgba(var(--group-rgb), 0.2);
+    background: rgb(var(--group-rgb) / 20%);
 }
 
 .box-post .cc-ship-rep.color .ship-top span {
@@ -2511,7 +2504,7 @@ LEEANN'S SITE PACK
 }
 
 .box-post .cc-md-rep .bar {
-    background: rgba(var(--group-rgb), 0.2);
+    background: rgb(var(--group-rgb) / 20%);
     display: flex;
     flex-flow: row nowrap;
     font-size: 0.7rem;
@@ -2910,8 +2903,8 @@ ALLY'S RP PACK
 
 .comms-bot p {
     background: var(--group-gradient-dark);
-    border-radius: 15px 15px 0 15px;
-    box-shadow: 1px 1px 5px rgba(var(--black), 0.47);
+    border-radius: 15px 15px 0;
+    box-shadow: 1px 1px 5px rgb(var(--black) / 47%);
     clear: both;
     color: var(--white-hex);
     display: block;
@@ -2953,7 +2946,7 @@ ALLY'S RP PACK
 
 .ftinder {
     background-image: var(--group-gradient-light);
-    box-shadow: 0 0 10px rgba(var(--black), 0.25);
+    box-shadow: 0 0 10px rgb(var(--black) / 25%);
     display: flex;
     flex-flow: column nowrap;
     height: 350px;
@@ -3027,7 +3020,7 @@ ALLY'S RP PACK
     display: block;
     font: 1.883em var(--display);
     text-align: right;
-    text-shadow: 0 0 1px rgba(var(--black), 0.25);
+    text-shadow: 0 0 1px rgb(var(--black) / 25%);
     width: 100%;
 }
 
@@ -3074,7 +3067,7 @@ ALLY'S RP PACK
     align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
-    box-shadow: 0 0 5px rgba(var(--black), 0.35);
+    box-shadow: 0 0 5px rgb(var(--black) / 35%);
     display: flex;
     fill: var(--white-hex);
     height: 45px;
@@ -3093,7 +3086,7 @@ ALLY'S RP PACK
 
 .ftinder-swipe {
     background-image: var(--group-gradient-light);
-    box-shadow: 0 0 10px rgba(var(--black), 0.25);
+    box-shadow: 0 0 10px rgb(var(--black) / 25%);
     display: flex;
     flex-flow: column nowrap;
     height: 250px;
@@ -3146,7 +3139,7 @@ ALLY'S RP PACK
     display: block;
     font: 1.883em var(--display);
     text-align: right;
-    text-shadow: 0 0 1px rgba(var(--black), 0.25);
+    text-shadow: 0 0 1px rgb(var(--black) / 25%);
     text-transform: lowercase;
 }
 
@@ -3164,7 +3157,7 @@ ALLY'S RP PACK
     background-clip: text;
     color: transparent;
     font: 1.883em var(--display);
-    text-shadow: 0 0 1px rgba(var(--black), 0.25);
+    text-shadow: 0 0 1px rgb(var(--black) / 25%);
     text-transform: uppercase;
 }
 
@@ -3172,7 +3165,7 @@ ALLY'S RP PACK
     align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
-    box-shadow: 0 0 5px rgba(var(--black), 0.35);
+    box-shadow: 0 0 5px rgb(var(--black) / 35%);
     display: flex;
     height: 45px;
     justify-content: center;
@@ -3187,7 +3180,7 @@ ALLY'S RP PACK
 
 .ftinder-match {
     background-image: var(--group-gradient-light);
-    box-shadow: 0 0 10px rgba(var(--black), 0.25);
+    box-shadow: 0 0 10px rgb(var(--black) / 25%);
     display: flex;
     flex-flow: column nowrap;
     height: 250px;
@@ -3249,7 +3242,7 @@ ALLY'S RP PACK
     background-clip: text;
     color: transparent;
     font: 1.883em var(--display);
-    text-shadow: 0 0 1px rgba(var(--black), 0.25);
+    text-shadow: 0 0 1px rgb(var(--black) / 25%);
     text-transform: uppercase;
 }
 
@@ -3257,7 +3250,7 @@ ALLY'S RP PACK
     align-items: center;
     background: var(--group-gradient-mid);
     border-radius: 100%;
-    box-shadow: 0 0 5px rgba(var(--black), 0.35);
+    box-shadow: 0 0 5px rgb(var(--black) / 35%);
     display: flex;
     height: 45px;
     justify-content: center;
@@ -3402,7 +3395,7 @@ JASLENE'S RP PACK
 }
 
 .jasthread .top {
-    background: rgba(var(--blue), 0.3);
+    background: rgb(var(--blue) / 30%);
     border-bottom: 2px solid var(--black-hex);
     display: block;
     height: 100px;
@@ -3452,7 +3445,7 @@ JASLENE'S RP PACK
 
 .jasthread .jasthreadbody {
     display: block;
-    margin: 40px 40px 40px;
+    margin: 40px;
     padding: 10px 10px 30px;
     position: relative;
 }
@@ -3696,7 +3689,7 @@ ROSE'S DEV PACK
 
 /* ----- BASE */
 .rosedev {
-    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     box-sizing: border-box !important;
     display: block;
     padding: 40px 30px;
@@ -3710,7 +3703,7 @@ ROSE'S DEV PACK
 .rosedev.white {
     background: var(--white-hex);
     border: var(--black-hex) solid 2px;
-    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
 }
 
 .rosedev.black {
@@ -3749,7 +3742,7 @@ ROSE'S DEV PACK
     color: var(--white-hex);
     font: 300 8px var(--sans);
     letter-spacing: 1.5px;
-    padding: 5px 6px 5px 6px;
+    padding: 5px 6px;
     position: relative;
     text-transform: uppercase;
 }
@@ -3766,30 +3759,30 @@ ROSE'S DEV PACK
 }
 
 .rosedev .devsub {
-    background: rgba(var(--black), 1);
-    color: rgba(var(--white), 1);
+    background: rgb(var(--black));
+    color: rgb(var(--white));
     font: 300 8px var(--sans);
     letter-spacing: 1.5px;
-    padding: 5px 6px 5px 6px;
+    padding: 5px 6px;
     text-align: justify;
     text-transform: uppercase;
 }
 
 .rosedev .dev {
     background: var(--clear);
-    margin: 20px 0 -10px 0;
+    margin: 20px 0 -10px;
 }
 
 .rosedev .dev2 {
     background: var(--white-hex);
-    margin: 20px 0 0 0;
-    padding: 20px 20px 10px 20px;
+    margin: 20px 0 0;
+    padding: 20px 20px 10px;
 }
 
 .rosedev.white .dev2 {
     background: var(--black-hex);
-    margin: 20px 0 0 0;
-    padding: 20px 20px 10px 20px;
+    margin: 20px 0 0;
+    padding: 20px 20px 10px;
 }
 
 /* ----- IMAGES */
@@ -3800,7 +3793,7 @@ ROSE'S DEV PACK
 
 .rosedev .dev img {
     border: var(--black-hex) solid 2px;
-    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
 }
 
 .rosedev .two img {
@@ -3817,7 +3810,7 @@ ROSE'S DEV PACK
     display: block;
     letter-spacing: 1px;
     line-height: 130%;
-    padding: 4px 3px 4px 3px;
+    padding: 4px 3px;
 }
 
 .rosedev.black .quote {
@@ -3829,7 +3822,7 @@ ROSE'S DEV PACK
     font: 400 35px var(--display);
     letter-spacing: 1px;
     line-height: 130%;
-    padding: 4px 3px 4px 3px;
+    padding: 4px 3px;
     text-transform: uppercase;
 }
 
@@ -4029,7 +4022,7 @@ ROSE'S DEV PACK
     font: 300 9px var(--sans);
     letter-spacing: 1.5px;
     line-height: 250%;
-    padding: 4px 3px 4px 3px;
+    padding: 4px 3px;
     text-transform: uppercase;
 }
 
@@ -4052,7 +4045,7 @@ ABI'S WEBPAGES
 
 .webpage .webpagebox {
     background: var(--white-hex);
-    box-shadow: 3px 3px 6px rgba(var(--black), 0.1);
+    box-shadow: 3px 3px 6px rgb(var(--black) / 10%);
     font: var(--body-font);
     padding: 15px;
     width: 100%;
@@ -4195,20 +4188,16 @@ UTILITIES
 
     /* lower opacities */
     --color-group-primary-faded: rgb(
-        var(--color-group-primary-raw),
-        var(--opacity-faded)
+        var(--color-group-primary-raw) / var(--opacity-faded)
     );
     --color-group-secondary-faded: rgb(
-        var(--color-group-secondary-raw),
-        var(--opacity-faded)
+        var(--color-group-secondary-raw) / var(--opacity-faded)
     );
     --color-group-primary-mid: rgb(
-        var(--color-group-primary-raw),
-        var(--opacity-mid)
+        var(--color-group-primary-raw) / var(--opacity-mid)
     );
     --color-group-secondary-mid: rgb(
-        var(--color-group-secondary-raw),
-        var(--opacity-mid)
+        var(--color-group-secondary-raw) / var(--opacity-mid)
     );
 
     /* gradients */
@@ -4281,7 +4270,7 @@ BLOCKS
     color: var(--blue-hex);
     font: 700 2.2em/100% var(--display);
     letter-spacing: 1px;
-    text-shadow: 0 0 5px rgba(var(--white), 0.55);
+    text-shadow: 0 0 5px rgb(var(--white) / 55%);
     text-transform: uppercase;
 }
 
@@ -4292,7 +4281,7 @@ BLOCKS
     letter-spacing: 1px;
     margin: 10px 0;
     padding: 5px;
-    text-shadow: 0 0 5px rgba(var(--white), 0.55);
+    text-shadow: 0 0 5px rgb(var(--white) / 55%);
     text-transform: uppercase;
     width: max-content;
 }
