@@ -26,6 +26,7 @@
                 "message": "Expected class selector to be kebab-case, kebab-case__element, or kebab-case__element-kebab"
             }
         ],
-        "value-list-comma-newline-after": null
+        "value-list-comma-newline-after": null,
+        "value-no-vendor-prefix": null
     }
 }
