@@ -826,8 +826,6 @@ RAY'S CATEGORIES, FORUMS, TOPICS
 .topic-wrapper .views-replies-flex {
     align-items: stretch;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
