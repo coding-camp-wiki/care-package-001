@@ -2891,7 +2891,7 @@ ALLY'S RP PACK
 
 .comms-bot p {
     background: var(--group-gradient-dark);
-    border-radius: 15px 15px 0 15px;
+    border-radius: 15px 15px 0;
     box-shadow: 1px 1px 5px rgb(var(--black) / 47%);
     clear: both;
     color: var(--white-hex);
@@ -3433,7 +3433,7 @@ JASLENE'S RP PACK
 
 .jasthread .jasthreadbody {
     display: block;
-    margin: 40px 40px 40px;
+    margin: 40px;
     padding: 10px 10px 30px;
     position: relative;
 }
@@ -3730,7 +3730,7 @@ ROSE'S DEV PACK
     color: var(--white-hex);
     font: 300 8px var(--sans);
     letter-spacing: 1.5px;
-    padding: 5px 6px 5px 6px;
+    padding: 5px 6px;
     position: relative;
     text-transform: uppercase;
 }
@@ -3751,26 +3751,26 @@ ROSE'S DEV PACK
     color: rgb(var(--white));
     font: 300 8px var(--sans);
     letter-spacing: 1.5px;
-    padding: 5px 6px 5px 6px;
+    padding: 5px 6px;
     text-align: justify;
     text-transform: uppercase;
 }
 
 .rosedev .dev {
     background: var(--clear);
-    margin: 20px 0 -10px 0;
+    margin: 20px 0 -10px;
 }
 
 .rosedev .dev2 {
     background: var(--white-hex);
-    margin: 20px 0 0 0;
-    padding: 20px 20px 10px 20px;
+    margin: 20px 0 0;
+    padding: 20px 20px 10px;
 }
 
 .rosedev.white .dev2 {
     background: var(--black-hex);
-    margin: 20px 0 0 0;
-    padding: 20px 20px 10px 20px;
+    margin: 20px 0 0;
+    padding: 20px 20px 10px;
 }
 
 /* ----- IMAGES */
@@ -3798,7 +3798,7 @@ ROSE'S DEV PACK
     display: block;
     letter-spacing: 1px;
     line-height: 130%;
-    padding: 4px 3px 4px 3px;
+    padding: 4px 3px;
 }
 
 .rosedev.black .quote {
@@ -3810,7 +3810,7 @@ ROSE'S DEV PACK
     font: 400 35px var(--display);
     letter-spacing: 1px;
     line-height: 130%;
-    padding: 4px 3px 4px 3px;
+    padding: 4px 3px;
     text-transform: uppercase;
 }
 
@@ -4010,7 +4010,7 @@ ROSE'S DEV PACK
     font: 300 9px var(--sans);
     letter-spacing: 1.5px;
     line-height: 250%;
-    padding: 4px 3px 4px 3px;
+    padding: 4px 3px;
     text-transform: uppercase;
 }
 
