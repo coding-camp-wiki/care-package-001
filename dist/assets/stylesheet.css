@@ -1205,7 +1205,6 @@ JULIET'S POST ROW
     display: block;
     margin-bottom: 150px;
     position: sticky;
-    position: -webkit-sticky;
     top: 40px;
 }
 
