@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html
+    data-is-mod="<!-- |is_mod| -->"
+    data-is-admin="<!-- |g_access_cp| -->"
+    data-viewer-group="<!-- |g_id| -->"
     data-param-act="<!-- |input_act| -->"
     data-param-code="<!-- |input_CODE| -->"
     lang="en"
@@ -25,15 +28,14 @@
                 const button = nav.querySelector("button");
                 const menu = nav.querySelector("ul");
 
-                const topbar = document.getElementById("topbar");
+                // move nav to topbar
+                document.getElementById("topbar").appendChild(nav);
 
-                topbar.appendChild(nav);
-
-                // apply enhancement compatible styles
+                // replace fallback styles with javascript-supported styles
                 nav.dataset.jsEnhanced = true;
-                button.hidden = false;
 
-                // hide menu by default
+                // set to default show/hide states
+                button.hidden = false;
                 button.setAttribute("aria-expanded", false);
 
                 // add show/hide functionality
@@ -102,18 +104,26 @@
                     Controls
                 </h2>
 
-                <button hidden>
+                <button aria-controls="controls__list" type="button" hidden>
                     <span class="utility-visually-hidden">Toggle Controls</span>
-                    <svg aria-hidden="true" class="block-icon" role="button">
+                    <svg aria-hidden="true" class="block-icon">
                         <use
                             href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
                         ></use>
                     </svg>
                 </button>
 
-                <ul role="list">
-                    <li><a href="?act=UserCP&CODE=00">user settings</a></li>
-                    <li>
+                <ul id="controls__list" role="list">
+                    <li class="hide-from-member">
+                        <a href="?act=Reg&CODE=00">register</a>
+                    </li>
+                    <li class="hide-from-member">
+                        <a href="?act=Login&CODE=00">log in</a>
+                    </li>
+                    <li class="hide-from-guest">
+                        <a href="?act=UserCP&CODE=00">settings</a>
+                    </li>
+                    <li class="hide-from-guest">
                         <a href="?act=Msg&CODE=01"
                             >messages<span data-count-new="<!-- |new_msg| -->">
                                 (<!-- |new_msg| -->
@@ -121,7 +131,7 @@
                             ></a
                         >
                     </li>
-                    <li>
+                    <li class="hide-from-guest">
                         <a href="?act=UserCP&CODE=alerts"
                             >alerts<span data-count-new="<!-- |new_alerts| -->">
                                 (<!-- |new_alerts| -->
@@ -129,13 +139,23 @@
                             ></a
                         >
                     </li>
-                    <li><a href="/admin.php">admin controls</a></li>
-                    <li><a href="?act=modcp">mod controls</a></li>
-                    <li><a href="?act=Login&CODE=00">log in</a></li>
-                    <li><a href="?act=Login&CODE=03">log out</a></li>
-                    <li><a href="?act=Reg&CODE=00">register</a></li>
                     <li><a href="?act=Search&f=">search</a></li>
                     <li><a href="?act=Search&CODE=getnew">new posts</a></li>
+                    <li class="show-to-mod-only">
+                        <a href="?act=modcp"
+                            >mod controls<span
+                                data-count-new="<!-- |modcp_issues| -->"
+                                >(<!-- |modcp_issues| -->
+                                new)</span
+                            ></a
+                        >
+                    </li>
+                    <li class="show-to-admin-only">
+                        <a href="/admin.php">admin controls</a>
+                    </li>
+                    <li class="hide-from-guest">
+                        <a href="?act=Login&CODE=03">log out</a>
+                    </li>
                 </ul>
             </nav>
 
