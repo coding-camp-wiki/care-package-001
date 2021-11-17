@@ -9,7 +9,7 @@ on:
 
 jobs:
     build:
-        name: Lint Codebase with Super-Linter
+        name: Run Super-Linter
         runs-on: ubuntu-latest
 
         steps:
@@ -20,7 +20,7 @@ jobs:
                   fetch-depth: 0
 
             - name: Lint Codebase
-              uses: docker://ghcr.io/github/super-linter:slim-v4
+              uses: github/super-linter@v4
               env:
                   DEFAULT_BRANCH: main
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
