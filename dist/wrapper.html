@@ -2,6 +2,7 @@
 <html
     data-is-mod="<!-- |is_mod| -->"
     data-is-admin="<!-- |g_access_cp| -->"
+    data-js-enhanced="false"
     data-viewer-group="<!-- |g_id| -->"
     data-param-act="<!-- |input_act| -->"
     data-param-code="<!-- |input_CODE| -->"
@@ -22,28 +23,37 @@
         />
 
         <script>
+            // if javascript is available, use it and apply styles that depend on it
+            document.addEventListener("DOMContentLoaded", function () {
+                document.documentElement.dataset.jsEnhanced = true;
+            });
+        </script>
+
+        <script>
             // collapsible menu
             document.addEventListener("DOMContentLoaded", function () {
-                const nav = document.getElementById("menu-controls");
-                const button = nav.querySelector("button");
-                const menu = nav.querySelector("ul");
+                if (document.documentElement.dataset.jsEnhanced === "true") {
+                    // note: css is keyed into the above to remove fallback styles and apply javascript-supported styles
 
-                // move nav to topbar
-                document.getElementById("topbar").appendChild(nav);
+                    const nav = document.getElementById("menu-controls");
+                    const button = nav.querySelector("button");
+                    const menu = nav.querySelector("ul");
 
-                // replace fallback styles with javascript-supported styles
-                nav.dataset.jsEnhanced = true;
+                    // move nav to topbar
+                    document.getElementById("topbar").appendChild(nav);
 
-                // set to default show/hide states
-                button.hidden = false;
-                button.setAttribute("aria-expanded", false);
+                    // set to default show/hide states
+                    button.hidden = false;
+                    button.setAttribute("aria-expanded", false);
 
-                // add show/hide functionality
-                button.addEventListener("click", function () {
-                    let isExpanded =
-                        this.getAttribute("aria-expanded") === "true" || false;
-                    this.setAttribute("aria-expanded", !isExpanded);
-                });
+                    // add show/hide functionality
+                    button.addEventListener("click", function () {
+                        let isExpanded =
+                            this.getAttribute("aria-expanded") === "true" ||
+                            false;
+                        this.setAttribute("aria-expanded", !isExpanded);
+                    });
+                }
             });
         </script>
 

@@ -4404,7 +4404,7 @@ BLOCKS
     inline-size: var(--dimension);
 }
 
-nav#menu-controls[data-js-enhanced="false"] {
+[data-js-enhanced="false"] nav#menu-controls {
     background: var(--black-hex);
     padding: 1em;
 }
@@ -4424,7 +4424,7 @@ nav#menu-controls a:hover {
     color: var(--black-hex);
 }
 
-nav#menu-controls[data-js-enhanced="true"] button {
+[data-js-enhanced="true"] nav#menu-controls button {
     background: var(--black-hex);
     block-size: var(--size-topbar);
     border: none;
@@ -4438,12 +4438,12 @@ nav#menu-controls[data-js-enhanced="true"] button {
     z-index: 999;
 }
 
-nav#menu-controls[data-js-enhanced="true"] button:hover {
+[data-js-enhanced="true"] nav#menu-controls button:hover {
     background: var(--white-hex);
     fill: var(--black-hex);
 }
 
-nav#menu-controls[data-js-enhanced="true"] button:focus {
+[data-js-enhanced="true"] nav#menu-controls button:focus {
     background: var(--pink-hex);
     fill: var(--black-hex);
     outline: 2px solid;
@@ -4456,13 +4456,13 @@ nav#menu-controls ul {
     padding: 0;
 }
 
-nav#menu-controls[data-js-enhanced="false"] ul {
+[data-js-enhanced="false"] nav#menu-controls ul {
     border: 2px solid var(--white-hex);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 }
 
-nav#menu-controls[data-js-enhanced="true"] ul {
+[data-js-enhanced="true"] nav#menu-controls ul {
     inline-size: 200px;
     inset-block-start: var(--size-topbar);
     inset-inline-end: 0;
