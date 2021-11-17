@@ -4499,3 +4499,9 @@ nav#menu-controls [data-count-new="0"] {
     align-self: center;
     flex-grow: 1;
 }
+
+.welcome__name {
+    color: rgb(var(--black));
+    font-family: var(--display);
+    font-size: 1.3rem;
+}
