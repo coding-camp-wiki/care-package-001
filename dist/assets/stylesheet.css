@@ -4480,3 +4480,22 @@ nav#menu-controls button[aria-expanded="false"] + ul {
 nav#menu-controls [data-count-new="0"] {
     display: none;
 }
+
+.topbar {
+    background-color: rgb(var(--white));
+    display: flex;
+    gap: 1rem;
+    inset-inline: 0;
+    min-block-size: var(--size-topbar);
+    position: fixed;
+    z-index: 999;
+}
+
+.topbar__account-switcher {
+    align-self: center;
+}
+
+.topbar__welcome {
+    align-self: center;
+    flex-grow: 1;
+}
