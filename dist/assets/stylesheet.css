@@ -211,6 +211,7 @@ Coding Camp info:
     /* ----- SIZES */
     --sidebar-inline-size: 50px;
     --topbar-block-size: 50px;
+    --size-avatar-echo: 80px;
 }
 
 body {
@@ -309,7 +310,7 @@ JCINK SPECIFIC
 LEEANN'S HEADER & NAVIGATION
 -----
 */
-#topbar {
+/* #topbar {
     background: var(--white-hex);
     display: grid;
     grid-column-gap: 1rem;
@@ -533,7 +534,7 @@ LEEANN'S HEADER & NAVIGATION
 
 #header .info .site-desc {
     align-self: end;
-}
+} */
 
 /*
 -----
@@ -4261,6 +4262,29 @@ UTILITIES
 BLOCKS
 -----
 */
+
+.avatar[data-variant="echo"] {
+    block-size: var(--size-avatar-echo);
+    inline-size: var(--size-avatar-echo);
+    position: relative;
+}
+
+.avatar[data-variant="echo"] img {
+    block-size: 100%;
+    border-radius: 50%;
+    inline-size: 100%;
+    object-fit: cover;
+}
+
+.avatar[data-variant="echo"]::after {
+    content: "";
+    block-size: 100%;
+    border: 1px solid rgb(var(--black));
+    border-radius: 50%;
+    inline-size: 100%;
+    inset-inline-start: 20%;
+    position: absolute;
+}
 
 .block-heading-a-1 {
     color: var(--blue-hex);
