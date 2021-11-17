@@ -343,10 +343,6 @@ LEEANN'S HEADER & NAVIGATION
     width: 80px;
 }
 
-#topbar .topname {
-    color: rgb(var(--black / 40%));
-}
-
 #topbar .topname a {
     color: var(--black-hex);
     font-family: var(--display);
