@@ -209,9 +209,9 @@ Coding Camp info:
     --opacity-mid: 0.45;
 
     /* ----- SIZES */
-    --sidebar-inline-size: 50px;
-    --topbar-block-size: 50px;
     --size-avatar-echo: 80px;
+    --size-sidebar: 50px;
+    --size-topbar: 50px;
 }
 
 body {
@@ -315,7 +315,7 @@ LEEANN'S HEADER & NAVIGATION
     display: grid;
     grid-column-gap: 1rem;
     grid-template-columns: 100px 1fr 0.5fr;
-    height: var(--topbar-block-size);
+    height: var(--size-topbar);
     padding-left: 1.5rem;
     padding-top: 1rem;
     position: fixed;
@@ -365,7 +365,7 @@ LEEANN'S HEADER & NAVIGATION
     inset-block-start: 0;
     inset-inline-start: 0;
     position: fixed;
-    width: var(--sidebar-inline-size);
+    width: var(--size-sidebar);
 }
 
 #sidebar > br {
@@ -4065,7 +4065,7 @@ ABI'S WEBPAGES
 }
 
 .webpagesidebar .webpagesidebarcont {
-    inset-block-start: calc(var(--topbar-block-size) + var(--sidebar-padding));
+    inset-block-start: calc(var(--size-topbar) + var(--sidebar-padding));
     position: sticky;
 }
 
@@ -4162,7 +4162,7 @@ UTILITIES
 .utility-wrapper {
     background-color: var(--clear);
     margin: 50px auto;
-    padding-inline-start: var(--sidebar-inline-size);
+    padding-inline-start: var(--size-sidebar);
     width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
 }
 
@@ -4422,11 +4422,11 @@ nav#menu-controls a:hover {
 
 nav#menu-controls[data-js-enhanced="true"] button {
     background: var(--black-hex);
-    block-size: var(--topbar-block-size);
+    block-size: var(--size-topbar);
     border: none;
     display: block;
     fill: var(--white-hex);
-    inline-size: var(--topbar-block-size);
+    inline-size: var(--size-topbar);
     inset-block-start: 0;
     inset-inline-end: 0;
     margin-inline-start: auto;
@@ -4460,9 +4460,9 @@ nav#menu-controls[data-js-enhanced="false"] ul {
 
 nav#menu-controls[data-js-enhanced="true"] ul {
     inline-size: 200px;
-    inset-block-start: var(--topbar-block-size);
+    inset-block-start: var(--size-topbar);
     inset-inline-end: 0;
-    max-block-size: calc(100vh - var(--topbar-block-size));
+    max-block-size: calc(100vh - var(--size-topbar));
     max-inline-size: 80%;
     overflow: auto;
     position: fixed;
