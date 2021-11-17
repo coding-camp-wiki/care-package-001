@@ -4380,12 +4380,12 @@ BLOCKS
     inline-size: var(--dimension);
 }
 
-nav#block-nav-primary[data-js-enhanced="false"] {
+nav#menu-controls[data-js-enhanced="false"] {
     background: var(--black-hex);
     padding: 1em;
 }
 
-nav#block-nav-primary a {
+nav#menu-controls a {
     color: var(--white-hex);
     display: block;
     font-size: 17px;
@@ -4394,13 +4394,13 @@ nav#block-nav-primary a {
     text-decoration: none;
 }
 
-nav#block-nav-primary a:focus,
-nav#block-nav-primary a:hover {
+nav#menu-controls a:focus,
+nav#menu-controls a:hover {
     background: var(--white-hex);
     color: var(--black-hex);
 }
 
-nav#block-nav-primary[data-js-enhanced="true"] button {
+nav#menu-controls[data-js-enhanced="true"] button {
     background: var(--black-hex);
     block-size: var(--topbar-block-size);
     border: none;
@@ -4414,31 +4414,31 @@ nav#block-nav-primary[data-js-enhanced="true"] button {
     z-index: 999;
 }
 
-nav#block-nav-primary[data-js-enhanced="true"] button:hover {
+nav#menu-controls[data-js-enhanced="true"] button:hover {
     background: var(--white-hex);
     fill: var(--black-hex);
 }
 
-nav#block-nav-primary[data-js-enhanced="true"] button:focus {
+nav#menu-controls[data-js-enhanced="true"] button:focus {
     background: var(--pink-hex);
     fill: var(--black-hex);
     outline: 2px solid;
     outline-offset: -0.5em;
 }
 
-nav#block-nav-primary ul {
+nav#menu-controls ul {
     background: var(--black-hex);
     margin: 0;
     padding: 0;
 }
 
-nav#block-nav-primary[data-js-enhanced="false"] ul {
+nav#menu-controls[data-js-enhanced="false"] ul {
     border: 2px solid var(--white-hex);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
 }
 
-nav#block-nav-primary[data-js-enhanced="true"] ul {
+nav#menu-controls[data-js-enhanced="true"] ul {
     inline-size: 200px;
     inset-block-start: var(--topbar-block-size);
     inset-inline-end: 0;
@@ -4449,10 +4449,10 @@ nav#block-nav-primary[data-js-enhanced="true"] ul {
     z-index: 999;
 }
 
-nav#block-nav-primary button[aria-expanded="false"] + ul {
+nav#menu-controls button[aria-expanded="false"] + ul {
     display: none;
 }
 
-nav#block-nav-primary [data-count-new="0"] {
+nav#menu-controls [data-count-new="0"] {
     display: none;
 }
