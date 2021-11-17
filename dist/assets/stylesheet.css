@@ -210,6 +210,7 @@ Coding Camp info:
 
     /* ----- SIZES */
     --size-avatar-echo: 80px;
+    --size-avatar-echo-offset: 0.2;
     --size-sidebar: 50px;
     --size-topbar: 50px;
 }
@@ -4266,6 +4267,9 @@ BLOCKS
 .avatar[data-variant="echo"] {
     block-size: var(--size-avatar-echo);
     inline-size: var(--size-avatar-echo);
+    margin-inline-end: calc(
+        var(--size-avatar-echo) * var(--size-avatar-echo-offset)
+    );
     position: relative;
 }
 
@@ -4282,7 +4286,7 @@ BLOCKS
     border: 1px solid rgb(var(--black));
     border-radius: 50%;
     inline-size: 100%;
-    inset-inline-start: 20%;
+    inset-inline-start: calc(100% * var(--size-avatar-echo-offset));
     position: absolute;
 }
 
