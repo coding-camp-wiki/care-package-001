@@ -213,6 +213,9 @@ Coding Camp info:
     --size-avatar-echo-offset: 0.2;
     --size-sidebar: 50px;
     --size-topbar: 50px;
+
+    /* ----- ROOT BEHAVIORS */
+    scroll-padding-top: calc(var(--size-topbar) + 1rem);
 }
 
 body {
