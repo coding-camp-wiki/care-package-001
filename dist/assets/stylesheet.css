@@ -269,6 +269,10 @@ ul[role="list"] {
     list-style: none;
 }
 
+main:focus {
+    outline: none;
+}
+
 /*
 -----
 JCINK SPECIFIC
@@ -4481,6 +4485,16 @@ nav#menu-controls [data-count-new="0"] {
     display: none;
 }
 
+.skip-link:focus {
+    background-color: rgb(var(--black));
+    color: rgb(var(--white));
+    position: fixed;
+    inset-inline: 0;
+    padding-block: 0.5em;
+    text-align: center;
+    z-index: 999;
+}
+
 .topbar {
     background-color: rgb(var(--white));
     display: flex;
@@ -4488,7 +4502,7 @@ nav#menu-controls [data-count-new="0"] {
     inset-inline: 0;
     min-block-size: var(--size-topbar);
     position: fixed;
-    z-index: 999;
+    z-index: 950;
 }
 
 .topbar__account-switcher {

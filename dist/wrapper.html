@@ -60,6 +60,10 @@
         <% CSS %>
     </head>
     <body>
+        <a class="[ skip-link ][ utility-visually-hidden ]" href="#main"
+            >Skip to main content</a
+        >
+
         <header>
             <div class="topbar" id="topbar">
                 <div class="[ avatar ][ topbar__avatar ]" data-variant="echo">
@@ -200,7 +204,7 @@
             <% BOARD HEADER %>
         </div>
 
-        <main class="utility-wrapper"><% BOARD %></main>
+        <main class="utility-wrapper" id="main" tabindex="-1"><% BOARD %></main>
 
         <footer class="utility-wrapper">
             <div><% COPYRIGHT %></div>
