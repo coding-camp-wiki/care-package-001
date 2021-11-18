@@ -4165,10 +4165,12 @@ UTILITIES
 }
 
 .utility-wrapper {
-    background-color: var(--clear);
+    /* background-color: var(--clear);
     margin: 50px auto;
     padding-inline-start: var(--size-sidebar);
-    width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
+    width: min(calc(100vw - (var(--spacing) * 2)), 1500px); */
+    margin-inline: auto;
+    max-width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
 }
 
 .utility-group-color {
@@ -4413,6 +4415,10 @@ BLOCKS
     padding: 1em;
 }
 
+[data-js-enhanced="true"] nav#menu-controls {
+    position: relative;
+}
+
 nav#menu-controls a {
     color: var(--white-hex);
     display: block;
@@ -4435,11 +4441,6 @@ nav#menu-controls a:hover {
     display: block;
     fill: var(--white-hex);
     inline-size: var(--size-topbar);
-    inset-block-start: 0;
-    inset-inline-end: 0;
-    margin-inline-start: auto;
-    position: fixed;
-    z-index: 999;
 }
 
 [data-js-enhanced="true"] nav#menu-controls button:hover {
@@ -4464,17 +4465,16 @@ nav#menu-controls ul {
     border: 2px solid var(--white-hex);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25ch, 1fr));
+    text-align: center;
 }
 
 [data-js-enhanced="true"] nav#menu-controls ul {
     inline-size: 200px;
-    inset-block-start: var(--size-topbar);
     inset-inline-end: 0;
     max-block-size: calc(100vh - var(--size-topbar));
-    max-inline-size: 80%;
+    max-inline-size: 80vw;
     overflow: auto;
-    position: fixed;
-    z-index: 999;
+    position: absolute;
 }
 
 nav#menu-controls button[aria-expanded="false"] + ul {
@@ -4497,16 +4497,25 @@ nav#menu-controls [data-count-new="0"] {
 
 .topbar {
     background-color: rgb(var(--white));
+    block-size: var(--size-topbar);
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     inset-inline: 0;
-    min-block-size: var(--size-topbar);
+    padding-inline: calc(0.5 * var(--size-sidebar));
     position: fixed;
     z-index: 950;
 }
 
+[data-js-enhanced="true"] .topbar {
+    padding-inline-end: 0;
+}
+
 .topbar__account-switcher {
     align-self: center;
+}
+
+.topbar__avatar {
+    transform: translateY(calc(0.25 * var(--size-topbar)));
 }
 
 .topbar__welcome {

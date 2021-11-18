@@ -65,7 +65,7 @@
         >
 
         <header>
-            <div class="topbar" id="topbar">
+            <section class="topbar" id="topbar">
                 <div class="[ avatar ][ topbar__avatar ]" data-variant="echo">
                     <!-- |avatar| -->
                 </div>
@@ -84,25 +84,9 @@
                 <div class="[ topbar__account-switcher ][ hide-from-guest ]">
                     <% SUBACCOUNTS %>
                 </div>
-            </div>
+            </section>
 
-            <div class="sidebar">
-                <div class="sidebar__breadcrumbs"><% NAVIGATION %></div>
-
-                <a class="sidebar__to-top" href="#top"
-                    ><svg
-                        aria-labelledby="to-top-title"
-                        class="block-icon"
-                        role="img"
-                    >
-                        <title id="to-top-title">To Top</title>
-                        <use
-                            href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-arrow-up-s-line"
-                        ></use></svg
-                ></a>
-            </div>
-
-            <div class="[ banner ][ header__banner ]">
+            <section class="[ banner ][ header__banner ]">
                 <div class="banner__inner">
                     <a
                         class="banner__site-title"
@@ -133,13 +117,11 @@
                         </ul>
                     </nav>
                 </div>
-            </div>
-        </header>
+            </section>
 
-        <div class="utility-wrapper">
             <nav
                 aria-labelledby="title-nav-primary"
-                data-js-enhanced="false"
+                class="utility-wrapper"
                 id="menu-controls"
             >
                 <h2 class="utility-visually-hidden" id="title-nav-primary">
@@ -200,9 +182,27 @@
                     </li>
                 </ul>
             </nav>
+        </header>
 
+        <section class="sidebar">
+            <div class="sidebar__breadcrumbs"><% NAVIGATION %></div>
+
+            <a class="sidebar__to-top" href="#top"
+                ><svg
+                    aria-labelledby="to-top-title"
+                    class="block-icon"
+                    role="img"
+                >
+                    <title id="to-top-title">To Top</title>
+                    <use
+                        href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-arrow-up-s-line"
+                    ></use></svg
+            ></a>
+        </section>
+
+        <section class="[ jcink-header ][ utility-wrapper ]">
             <% BOARD HEADER %>
-        </div>
+        </section>
 
         <main class="utility-wrapper" id="main" tabindex="-1"><% BOARD %></main>
 
