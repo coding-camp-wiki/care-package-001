@@ -214,8 +214,13 @@ Coding Camp info:
     --size-sidebar: 50px;
     --size-topbar: 50px;
 
+    /* ----- MISC */
+    --topbar-avatar-offset: calc(0.25 * var(--size-topbar));
+    --topbar-avatar-size: var(--size-avatar-echo);
+    --topbar-push-away: calc(var(--size-topbar) + 1rem);
+
     /* ----- ROOT BEHAVIORS */
-    scroll-padding-top: calc(var(--size-topbar) + 1rem);
+    scroll-padding-top: var(--topbar-push-away);
 }
 
 body {
@@ -4299,6 +4304,16 @@ BLOCKS
     position: absolute;
 }
 
+.breadcrumbs {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.breadcrumbs > br {
+    /* jcink adds these automatically, but we don't need them */
+    display: none;
+}
+
 .block-heading-a-1 {
     color: var(--blue-hex);
     font: 700 2.2em/100% var(--display);
@@ -4413,6 +4428,31 @@ BLOCKS
     inline-size: var(--dimension);
 }
 
+.layout-sidebar {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-row-gap: 4rem;
+    grid-template-columns:
+        [sidebar-start] minmax(var(--size-sidebar), auto)
+        [sidebar-end main-start] 1fr [main-end];
+}
+
+.layout-sidebar > * {
+    grid-column: main;
+}
+
+.layout-sidebar > .layout-sidebar__sidebar {
+    grid-column: sidebar;
+}
+
+.macro-f-nav {
+    /*
+        jcink automatically adds a space between this macro and the breadcrumbs.
+        using the macros for negative margin negates that space.
+    */
+    margin-inline-end: -1ch;
+}
+
 [data-js-enhanced="false"] nav#menu-controls {
     background: var(--black-hex);
     padding: 1em;
@@ -4488,6 +4528,33 @@ nav#menu-controls [data-count-new="0"] {
     display: none;
 }
 
+.sidebar {
+    background-color: rgb(var(--white));
+    block-size: calc(100vh - var(--size-topbar));
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-block-start: calc(
+        var(--topbar-avatar-size) + var(--topbar-avatar-offset) -
+            var(--size-topbar)
+    ); /* keep content from ending up beneath the current account avatar */
+    position: sticky;
+    inset-block-start: var(--size-topbar);
+}
+
+.sidebar .sidebar__breadcrumbs {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+}
+
+.sidebar .sidebar__to-top {
+    inline-size: 100%;
+    min-block-size: 40px;
+}
+
 .skip-link:focus {
     background-color: rgb(var(--black));
     color: rgb(var(--white));
@@ -4514,17 +4581,30 @@ nav#menu-controls [data-count-new="0"] {
     padding-inline-end: 0;
 }
 
-.topbar__account-switcher {
+.topbar .topbar__account-switcher {
     align-self: center;
 }
 
-.topbar__avatar {
-    transform: translateY(calc(0.25 * var(--size-topbar)));
+.topbar .topbar__avatar {
+    transform: translateY(var(--topbar-avatar-offset));
 }
 
-.topbar__welcome {
+.topbar .topbar__welcome {
     align-self: center;
     flex-grow: 1;
+}
+
+.to-top {
+    align-items: center;
+    background-color: rgb(var(--pink));
+    display: flex;
+    justify-content: center;
+}
+
+.to-top:focus,
+.to-top:hover {
+    background-color: rgb(var(--purple));
+    transform: scale(1.1);
 }
 
 .welcome__name {

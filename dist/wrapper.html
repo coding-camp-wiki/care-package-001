@@ -59,7 +59,7 @@
 
         <% CSS %>
     </head>
-    <body>
+    <body class="layout-sidebar">
         <a class="[ skip-link ][ utility-visually-hidden ]" href="#main"
             >Skip to main content</a
         >
@@ -184,10 +184,12 @@
             </nav>
         </header>
 
-        <section class="sidebar">
-            <div class="sidebar__breadcrumbs"><% NAVIGATION %></div>
+        <section class="[ sidebar ][ layout-sidebar__sidebar ]">
+            <div class="[ breadcrumbs ][ sidebar__breadcrumbs ]">
+                <% NAVIGATION %>
+            </div>
 
-            <a class="sidebar__to-top" href="#top"
+            <a class="[ to-top ][ sidebar__to-top ]" href="#top"
                 ><svg
                     aria-labelledby="to-top-title"
                     class="block-icon"
@@ -206,7 +208,7 @@
 
         <main class="utility-wrapper" id="main" tabindex="-1"><% BOARD %></main>
 
-        <footer class="utility-wrapper">
+        <footer class="flow">
             <div><% COPYRIGHT %></div>
             <div><% SKIN_SELECTOR %></div>
         </footer>
