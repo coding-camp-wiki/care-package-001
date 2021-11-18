@@ -228,7 +228,7 @@ body {
     font: var(--body-font);
     letter-spacing: 1px;
     margin: 0;
-    padding: 0;
+    padding: var(--size-topbar) 0 0;
 }
 
 *,
@@ -4503,6 +4503,7 @@ nav#menu-controls [data-count-new="0"] {
     block-size: var(--size-topbar);
     display: flex;
     gap: 1.5rem;
+    inset-block-start: 0;
     inset-inline: 0;
     padding-inline: calc(0.5 * var(--size-sidebar));
     position: fixed;
