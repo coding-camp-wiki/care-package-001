@@ -119,69 +119,73 @@
                 </div>
             </section>
 
-            <nav
-                aria-labelledby="title-nav-primary"
-                class="utility-wrapper"
-                id="menu-controls"
-            >
-                <h2 class="utility-visually-hidden" id="title-nav-primary">
-                    Controls
-                </h2>
+            <div class="utility-wrapper">
+                <nav aria-labelledby="title-nav-primary" id="menu-controls">
+                    <h2 class="utility-visually-hidden" id="title-nav-primary">
+                        Controls
+                    </h2>
 
-                <button aria-controls="controls__list" type="button" hidden>
-                    <span class="utility-visually-hidden">Toggle Controls</span>
-                    <svg aria-hidden="true" class="block-icon">
-                        <use
-                            href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
-                        ></use>
-                    </svg>
-                </button>
+                    <button aria-controls="controls__list" type="button" hidden>
+                        <span class="utility-visually-hidden"
+                            >Toggle Controls</span
+                        >
+                        <svg aria-hidden="true" class="block-icon">
+                            <use
+                                href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
+                            ></use>
+                        </svg>
+                    </button>
 
-                <ul id="controls__list" role="list">
-                    <li class="hide-from-member">
-                        <a href="?act=Reg&CODE=00">register</a>
-                    </li>
-                    <li class="hide-from-member">
-                        <a href="?act=Login&CODE=00">log in</a>
-                    </li>
-                    <li class="hide-from-guest">
-                        <a href="?act=UserCP&CODE=00">settings</a>
-                    </li>
-                    <li class="hide-from-guest">
-                        <a href="?act=Msg&CODE=01"
-                            >messages<span data-count-new="<!-- |new_msg| -->">
-                                (<!-- |new_msg| -->
-                                new)</span
-                            ></a
-                        >
-                    </li>
-                    <li class="hide-from-guest">
-                        <a href="?act=UserCP&CODE=alerts"
-                            >alerts<span data-count-new="<!-- |new_alerts| -->">
-                                (<!-- |new_alerts| -->
-                                new)</span
-                            ></a
-                        >
-                    </li>
-                    <li><a href="?act=Search&f=">search</a></li>
-                    <li><a href="?act=Search&CODE=getnew">new posts</a></li>
-                    <li class="show-to-mod-only">
-                        <a href="?act=modcp"
-                            >mod controls<span
-                                data-count-new="<!-- |modcp_issues| -->"
-                                >(<!-- |modcp_issues| -->
-                                new)</span
-                            ></a
-                        >
-                    </li>
-                    <li class="show-to-admin-only">
-                        <a href="/admin.php">admin controls</a>
-                    </li>
-                    <li class="hide-from-guest">
-                        <a href="?act=Login&CODE=03">log out</a>
-                    </li>
-                </ul>
-            </nav>
+                    <ul id="controls__list" role="list">
+                        <li class="hide-from-member">
+                            <a href="?act=Reg&CODE=00">register</a>
+                        </li>
+                        <li class="hide-from-member">
+                            <a href="?act=Login&CODE=00">log in</a>
+                        </li>
+                        <li class="hide-from-guest">
+                            <a href="?act=UserCP&CODE=00">settings</a>
+                        </li>
+                        <li class="hide-from-guest">
+                            <a href="?act=Msg&CODE=01"
+                                >messages<span
+                                    data-count-new="<!-- |new_msg| -->"
+                                >
+                                    (<!-- |new_msg| -->
+                                    new)</span
+                                ></a
+                            >
+                        </li>
+                        <li class="hide-from-guest">
+                            <a href="?act=UserCP&CODE=alerts"
+                                >alerts<span
+                                    data-count-new="<!-- |new_alerts| -->"
+                                >
+                                    (<!-- |new_alerts| -->
+                                    new)</span
+                                ></a
+                            >
+                        </li>
+                        <li><a href="?act=Search&f=">search</a></li>
+                        <li><a href="?act=Search&CODE=getnew">new posts</a></li>
+                        <li class="show-to-mod-only">
+                            <a href="?act=modcp"
+                                >mod controls<span
+                                    data-count-new="<!-- |modcp_issues| -->"
+                                    >(<!-- |modcp_issues| -->
+                                    new)</span
+                                ></a
+                            >
+                        </li>
+                        <li class="show-to-admin-only">
+                            <a href="/admin.php">admin controls</a>
+                        </li>
+                        <li class="hide-from-guest">
+                            <a href="?act=Login&CODE=03">log out</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <section class="[ sidebar ][ layout-sidebar__sidebar ]">
@@ -208,7 +212,7 @@
 
         <main class="utility-wrapper" id="main" tabindex="-1"><% BOARD %></main>
 
-        <footer class="flow">
+        <footer class="flow utility-wrapper">
             <div><% COPYRIGHT %></div>
             <div><% SKIN_SELECTOR %></div>
         </footer>

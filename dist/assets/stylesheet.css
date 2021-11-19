@@ -4175,12 +4175,9 @@ UTILITIES
 }
 
 .utility-wrapper {
-    /* background-color: var(--clear);
-    margin: 50px auto;
-    padding-inline-start: var(--size-sidebar);
-    width: min(calc(100vw - (var(--spacing) * 2)), 1500px); */
     margin-inline: auto;
     max-width: min(calc(100vw - (var(--spacing) * 2)), 1500px);
+    width: 100%;
 }
 
 .utility-group-color {
