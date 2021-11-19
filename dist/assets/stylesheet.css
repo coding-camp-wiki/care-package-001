@@ -351,6 +351,7 @@ CATEGORIES, FORUMS, TOPICS
     padding: 0 1vw;
     position: relative;
     top: -2vmax;
+    z-index: 1;
 }
 
 .category-border {
@@ -1981,7 +1982,6 @@ SITE PACK
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 1;
 }
 
 .box-post .cc-shipper #pic span {
@@ -2287,7 +2287,6 @@ SITE PACK
     grid-column: 1;
     grid-row: 1 / span 2;
     position: relative;
-    z-index: 1;
 }
 
 .box-post .cc-md-rep .body .char .char-img img {
@@ -2306,7 +2305,6 @@ SITE PACK
     position: absolute;
     top: 5px;
     width: 80px;
-    z-index: 5;
 }
 
 .box-post .cc-md-rep .body .char .char-name {
@@ -2392,7 +2390,6 @@ RP PACK
     height: 50px;
     justify-content: flex-end;
     width: 100%;
-    z-index: 9;
 }
 
 .post-1-top span,
@@ -2414,7 +2411,6 @@ RP PACK
     padding: 80px;
     position: relative;
     width: calc(100% - 177px);
-    z-index: 3;
 }
 
 .post-2-post {
@@ -2442,7 +2438,6 @@ RP PACK
     position: relative;
     text-transform: uppercase;
     top: -13px;
-    z-index: 9;
 }
 
 .post-3 {
@@ -2458,7 +2453,6 @@ RP PACK
     background: var(--white-hex);
     height: 80px;
     width: 100%;
-    z-index: 9;
 }
 
 .post-3-post {
@@ -2510,7 +2504,6 @@ RP PACK
     position: relative;
     text-transform: uppercase;
     top: -13px;
-    z-index: 9;
 }
 
 .post-4 {
@@ -2559,7 +2552,6 @@ RP PACK
     position: relative;
     text-transform: uppercase;
     top: -13px;
-    z-index: 9;
 }
 
 .comms-1 {
@@ -3073,7 +3065,6 @@ RP PACK
     position: absolute;
     top: 0;
     width: 60px;
-    z-index: 2;
 }
 
 .jascomm .jascommtop .connected {
@@ -3162,7 +3153,6 @@ RP PACK
     position: absolute;
     top: 0;
     width: 60px;
-    z-index: 2;
 }
 
 .jasthread .top .tag {
