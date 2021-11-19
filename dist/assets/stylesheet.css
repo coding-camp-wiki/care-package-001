@@ -4304,6 +4304,53 @@ BLOCKS
     position: absolute;
 }
 
+.banner {
+    --outline-offset: -1rem;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-block-size: calc(100vh - var(--size-topbar));
+    outline: 2px solid rgb(var(--black));
+    outline-offset: var(--outline-offset);
+    padding: calc(-2 * var(--outline-offset));
+}
+
+.banner .banner__site-title {
+    color: rgb(var(--black));
+    font-family: var(--display);
+    font-size: 4rem;
+    line-height: normal;
+    position: relative;
+    -webkit-text-stroke: 2px rgb(var(--white));
+    text-transform: uppercase;
+}
+
+.banner .banner__site-title:not(:focus):not(:hover) {
+    text-decoration-line: none;
+}
+
+.banner .banner__site-title:focus,
+.banner .banner__site-title:hover {
+    text-decoration-line: underline;
+}
+
+.banner .banner__site-title::before {
+    background: linear-gradient(
+        to top,
+        rgb(var(--pink)) 58%,
+        rgb(var(--purple)) 15%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: var(--clear);
+    content: attr(data-repeat);
+    inset-block-start: -15%;
+    inset-inline-start: -0.7%;
+    position: absolute;
+    z-index: -1;
+}
+
 .breadcrumbs {
     font-size: 0.7rem;
     text-transform: uppercase;
