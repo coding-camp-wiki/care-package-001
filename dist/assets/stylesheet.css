@@ -4313,6 +4313,7 @@ BLOCKS
     display: flex;
     font-family: var(--display);
     justify-content: center;
+    line-height: 1;
     min-block-size: calc(100vh - var(--size-topbar));
     outline: 2px solid rgb(var(--black));
     outline-offset: var(--outline-offset);
@@ -4321,12 +4322,43 @@ BLOCKS
     text-transform: uppercase;
 }
 
+.banner .banner__inner {
+    --outline-keep-away: calc(var(--padding) + (-1 * var(--outline-offset)));
+    --outline-offset: -2ch;
+    --padding: 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    padding-block: var(--outline-keep-away);
+    outline: 2px solid rgb(var(--black));
+    outline-offset: var(--outline-offset);
+}
+
+.banner .banner__inner > :not(.banner__site-title) {
+    margin-inline: var(--outline-keep-away);
+}
+
+.banner .banner__nav {
+    order: 1;
+}
+
+.banner .banner__site-subtitle {
+    order: 3;
+}
+
 .banner .banner__site-title {
+    --repeat-offset: -0.15em;
+
+    align-self: center;
     color: rgb(var(--black));
     font-size: 4rem;
-    line-height: normal;
+    margin-block: 0.5em;
+    order: 2;
     position: relative;
     -webkit-text-stroke: 2px rgb(var(--white));
+    transform: translateY(
+        calc(-1 * var(--repeat-offset))
+    ); /* bit of trickery to better center end result */
 }
 
 .banner .banner__site-title:not(:focus):not(:hover) {
@@ -4339,17 +4371,13 @@ BLOCKS
 }
 
 .banner .banner__site-title::before {
-    background: linear-gradient(
-        to top,
-        rgb(var(--pink)) 58%,
-        rgb(var(--purple)) 15%
-    );
+    background: linear-gradient(to top, rgb(var(--pink)) 58%, var(--clear) 15%);
     -webkit-background-clip: text;
     background-clip: text;
     color: var(--clear);
     content: attr(data-repeat);
-    inset-block-start: -15%;
-    inset-inline-start: -0.7%;
+    inset-block-start: var(--repeat-offset);
+    inset-inline-start: -0.1ch;
     position: absolute;
     z-index: -1;
 }
@@ -4498,7 +4526,7 @@ BLOCKS
 .lineup {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--lineup-gap, 3ch);
+    gap: 0.5em 3ch;
     justify-content: space-evenly;
 }
 
