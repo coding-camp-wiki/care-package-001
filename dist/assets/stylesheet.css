@@ -217,10 +217,10 @@ Coding Camp info:
     /* ----- MISC */
     --topbar-avatar-offset: calc(0.25 * var(--size-topbar));
     --topbar-avatar-size: var(--size-avatar-echo);
-    --topbar-push-away: calc(var(--size-topbar) + 1rem);
+    --topbar-keep-away: calc(var(--size-topbar) + 1rem);
 
     /* ----- ROOT BEHAVIORS */
-    scroll-padding-top: var(--topbar-push-away);
+    scroll-padding-top: var(--topbar-keep-away);
 }
 
 body {
@@ -996,9 +996,9 @@ POST ROW
 
 .pr-wrap .pr-box .box-mini .mini-stick {
     display: block;
+    inset-block-start: var(--topbar-keep-away);
     margin-bottom: 150px;
     position: sticky;
-    top: 40px;
 }
 
 .pr-wrap .pr-box .box-mini .mini-stick .mini-info {
@@ -3849,7 +3849,7 @@ WEBPAGES
 }
 
 .webpagesidebar .webpagesidebarcont {
-    inset-block-start: calc(var(--size-topbar) + var(--sidebar-padding));
+    inset-block-start: var(--topbar-keep-away);
     position: sticky;
 }
 
