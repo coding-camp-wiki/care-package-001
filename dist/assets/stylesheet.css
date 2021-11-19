@@ -227,7 +227,7 @@ body {
     background: var(--purple-radial-gradient), var(--green-radial-gradient2),
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
-        var(--green-radial-gradient3), var(--pink-base);
+        var(--green-radial-gradient3), var(--pink-base), rgb(var(--purple));
     background-attachment: fixed;
     color: var(--black-hex);
     font: var(--body-font);
