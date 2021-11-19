@@ -3998,7 +3998,7 @@ BLOCKS
 .accented[data-accent="rings"]::before,
 .accented[data-accent="rings"]::after {
     block-size: var(--size-ring);
-    border: 3px solid rgb(var(--black) / 0.15);
+    border: 3px solid rgb(var(--black) / 15%);
     border-radius: 50%;
     content: "";
     inline-size: var(--size-ring);
