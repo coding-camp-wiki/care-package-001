@@ -4339,6 +4339,13 @@ BLOCKS
     order: 1;
 }
 
+.banner .banner__nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em 3ch;
+    justify-content: space-evenly;
+}
+
 .banner .banner__site-subtitle {
     order: 3;
 }
@@ -4518,13 +4525,6 @@ BLOCKS
 
 .layout-sidebar > .layout-sidebar__sidebar {
     grid-column: sidebar;
-}
-
-.lineup {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em 3ch;
-    justify-content: space-evenly;
 }
 
 .macro-f-nav {
