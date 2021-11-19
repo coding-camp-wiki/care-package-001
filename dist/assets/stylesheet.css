@@ -4277,6 +4277,33 @@ BLOCKS
 -----
 */
 
+.accented[data-accent="rings"] {
+    --size-ring: 150px;
+
+    position: relative;
+}
+
+.accented[data-accent="rings"]::before,
+.accented[data-accent="rings"]::after {
+    block-size: var(--size-ring);
+    content: "";
+    border: 3px solid rgb(var(--black) / 0.15);
+    border-radius: 50%;
+    inline-size: var(--size-ring);
+    position: absolute;
+    z-index: -1;
+}
+
+.accented[data-accent="rings"]::before {
+    inset-block-start: 15%;
+    inset-inline-end: -7%;
+}
+
+.accented[data-accent="rings"]::after {
+    inset-block-start: 20%;
+    inset-inline-end: -9%;
+}
+
 .avatar[data-variant="echo"] {
     block-size: var(--size-avatar-echo);
     inline-size: var(--size-avatar-echo);
