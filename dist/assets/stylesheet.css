@@ -275,6 +275,8 @@ ul[role="list"] {
     see https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
     */
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 main:focus {
@@ -4309,21 +4311,22 @@ BLOCKS
 
     align-items: center;
     display: flex;
+    font-family: var(--display);
     justify-content: center;
     min-block-size: calc(100vh - var(--size-topbar));
     outline: 2px solid rgb(var(--black));
     outline-offset: var(--outline-offset);
     padding: calc(-2 * var(--outline-offset));
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .banner .banner__site-title {
     color: rgb(var(--black));
-    font-family: var(--display);
     font-size: 4rem;
     line-height: normal;
     position: relative;
     -webkit-text-stroke: 2px rgb(var(--white));
-    text-transform: uppercase;
 }
 
 .banner .banner__site-title:not(:focus):not(:hover) {
@@ -4492,6 +4495,13 @@ BLOCKS
     grid-column: sidebar;
 }
 
+.lineup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--lineup-gap, 3ch);
+    justify-content: space-evenly;
+}
+
 .macro-f-nav {
     /*
         jcink automatically adds a space between this macro and the breadcrumbs.
@@ -4547,8 +4557,6 @@ nav#menu-controls a:hover {
 
 nav#menu-controls ul {
     background: var(--black-hex);
-    margin: 0;
-    padding: 0;
 }
 
 [data-js-enhanced="false"] nav#menu-controls ul {
@@ -4573,6 +4581,31 @@ nav#menu-controls button[aria-expanded="false"] + ul {
 
 nav#menu-controls [data-count-new="0"] {
     display: none;
+}
+
+.nav-secondary {
+    font-size: 0.75rem;
+}
+
+.nav-secondary a {
+    display: inline-flex;
+    flex-direction: column;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.nav-secondary a::after {
+    border-block-end: 1px solid rgb(var(--black) / 30%);
+    content: "";
+}
+
+.nav-secondary a:focus,
+.nav-secondary a:hover {
+    text-shadow: 0 -1px rgb(var(--pink)), 0 1px rgb(var(--pink)),
+        -1px -1px rgb(var(--pink)), -1px 0 rgb(var(--pink)),
+        -1px 1px rgb(var(--pink)), 1px -1px rgb(var(--pink)),
+        1px 0 rgb(var(--pink)), 1px 1px rgb(var(--pink));
+    transform: scale(1.03);
 }
 
 .sidebar {
