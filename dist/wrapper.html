@@ -2,6 +2,7 @@
 <html
     data-is-mod="<!-- |is_mod| -->"
     data-is-admin="<!-- |g_access_cp| -->"
+    data-js-enhanced="false"
     data-viewer-group="<!-- |g_id| -->"
     data-param-act="<!-- |input_act| -->"
     data-param-code="<!-- |input_CODE| -->"
@@ -22,48 +23,177 @@
         />
 
         <script>
+            // if javascript is available, use it and apply styles that depend on it
+            document.addEventListener("DOMContentLoaded", function () {
+                document.documentElement.dataset.jsEnhanced = true;
+            });
+        </script>
+
+        <script>
             // collapsible menu
             document.addEventListener("DOMContentLoaded", function () {
-                const nav = document.getElementById("block-nav-primary");
-                const button = nav.querySelector("button");
-                const menu = nav.querySelector("ul");
+                if (document.documentElement.dataset.jsEnhanced === "true") {
+                    // note: css is keyed into the above to remove fallback styles and apply javascript-supported styles
 
-                // move nav to topbar
-                document.getElementById("topbar").appendChild(nav);
+                    const nav = document.getElementById("menu-controls");
+                    const button = nav.querySelector("button");
+                    const menu = nav.querySelector("ul");
 
-                // replace fallback styles with javascript-supported styles
-                nav.dataset.jsEnhanced = true;
+                    // move nav to topbar
+                    document.getElementById("topbar").appendChild(nav);
 
-                // set to default show/hide states
-                button.hidden = false;
-                button.setAttribute("aria-expanded", false);
+                    // set to default show/hide states
+                    button.hidden = false;
+                    button.setAttribute("aria-expanded", false);
 
-                // add show/hide functionality
-                button.addEventListener("click", function () {
-                    let isExpanded =
-                        this.getAttribute("aria-expanded") === "true" || false;
-                    this.setAttribute("aria-expanded", !isExpanded);
-                });
+                    // add show/hide functionality
+                    button.addEventListener("click", function () {
+                        let isExpanded =
+                            this.getAttribute("aria-expanded") === "true" ||
+                            false;
+                        this.setAttribute("aria-expanded", !isExpanded);
+                    });
+                }
             });
         </script>
 
         <% CSS %>
     </head>
-    <body>
-        <div id="topbar">
-            <div class="topicon"></div>
-            <!-- |avatar| -->
-            <div class="topname">
-                welcome back,
-                <a href="?showuser=<!-- |id| -->"><!-- |name| --></a>
+    <body class="layout-sidebar">
+        <a class="[ skip-link ][ utility-visually-hidden ]" href="#main"
+            >Skip to main content</a
+        >
+
+        <header>
+            <section class="topbar" id="topbar">
+                <div class="[ avatar ][ topbar__avatar ]" data-variant="echo">
+                    <!-- |avatar| -->
+                </div>
+
+                <div class="[ welcome ][ topbar__welcome ][ hide-from-guest ]">
+                    welcome back,
+                    <a class="welcome__name" href="?showuser=<!-- |id| -->"
+                        ><!-- |name| --></a
+                    >
+                </div>
+
+                <div class="[ welcome ][ topbar__welcome ][ hide-from-member ]">
+                    welcome, guest!
+                </div>
+
+                <div class="[ topbar__account-switcher ][ hide-from-guest ]">
+                    <% SUBACCOUNTS %>
+                </div>
+            </section>
+
+            <section class="[ banner ][ header__banner ]">
+                <div class="[ accented ][ banner__inner ]" data-accent="rings">
+                    <a
+                        class="banner__site-title"
+                        data-repeat="Cutting Edge"
+                        href="/"
+                        >Cutting Edge</a
+                    >
+                    <div class="banner__site-subtitle">
+                        a genretype roleplay
+                    </div>
+
+                    <nav
+                        aria-labelledby="title-nav-secondary"
+                        class="[ nav-secondary ][ banner__nav ]"
+                    >
+                        <h2
+                            class="utility-visually-hidden"
+                            id="title-nav-secondary"
+                        >
+                            Helpful Links
+                        </h2>
+
+                        <ul role="list">
+                            <li><a href="#">guidebook</a></li>
+                            <li><a href="#">directory</a></li>
+                            <li><a href="#">claims</a></li>
+                            <li><a href="#">discord</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <div class="utility-wrapper">
+                <nav aria-labelledby="title-nav-primary" id="menu-controls">
+                    <h2 class="utility-visually-hidden" id="title-nav-primary">
+                        Controls
+                    </h2>
+
+                    <button aria-controls="controls__list" type="button" hidden>
+                        <span class="utility-visually-hidden"
+                            >Toggle Controls</span
+                        >
+                        <svg aria-hidden="true" class="block-icon">
+                            <use
+                                href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
+                            ></use>
+                        </svg>
+                    </button>
+
+                    <ul id="controls__list" role="list">
+                        <li class="hide-from-member">
+                            <a href="?act=Reg&CODE=00">register</a>
+                        </li>
+                        <li class="hide-from-member">
+                            <a href="?act=Login&CODE=00">log in</a>
+                        </li>
+                        <li class="hide-from-guest">
+                            <a href="?act=UserCP&CODE=00">settings</a>
+                        </li>
+                        <li class="hide-from-guest">
+                            <a href="?act=Msg&CODE=01"
+                                >messages<span
+                                    data-count-new="<!-- |new_msg| -->"
+                                >
+                                    (<!-- |new_msg| -->
+                                    new)</span
+                                ></a
+                            >
+                        </li>
+                        <li class="hide-from-guest">
+                            <a href="?act=UserCP&CODE=alerts"
+                                >alerts<span
+                                    data-count-new="<!-- |new_alerts| -->"
+                                >
+                                    (<!-- |new_alerts| -->
+                                    new)</span
+                                ></a
+                            >
+                        </li>
+                        <li><a href="?act=Search&f=">search</a></li>
+                        <li><a href="?act=Search&CODE=getnew">new posts</a></li>
+                        <li class="show-to-mod-only">
+                            <a href="?act=modcp"
+                                >mod controls<span
+                                    data-count-new="<!-- |modcp_issues| -->"
+                                    >(<!-- |modcp_issues| -->
+                                    new)</span
+                                ></a
+                            >
+                        </li>
+                        <li class="show-to-admin-only">
+                            <a href="/admin.php">admin controls</a>
+                        </li>
+                        <li class="hide-from-guest">
+                            <a href="?act=Login&CODE=03">log out</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="switch"><% SUBACCOUNTS %></div>
-        </div>
+        </header>
 
-        <div id="sidebar">
-            <% NAVIGATION %>
+        <section class="[ sidebar ][ layout-sidebar__sidebar ]">
+            <div class="[ breadcrumbs ][ sidebar__breadcrumbs ]">
+                <% NAVIGATION %>
+            </div>
 
-            <a class="scrolltop" href="#top"
+            <a class="[ to-top ][ sidebar__to-top ]" href="#top"
                 ><svg
                     aria-labelledby="to-top-title"
                     class="block-icon"
@@ -74,97 +204,15 @@
                         href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-arrow-up-s-line"
                     ></use></svg
             ></a>
-        </div>
+        </section>
 
-        <header id="header">
-            <div class="headerin">
-                <a class="text" href="/">
-                    Cutting Edge
-                    <div aria-hidden="true" class="text2">Cutting Edge</div>
-                </a>
-                <div class="info">
-                    <div class="links">
-                        <a href="#">guidebook</a>
-                        <a href="#">directory</a>
-                        <a href="#">claims</a>
-                        <a href="#">discord</a>
-                    </div>
-                    <div class="site-desc">a genretype roleplay</div>
-                </div>
-            </div>
-        </header>
-
-        <div class="utility-wrapper">
-            <nav
-                aria-labelledby="title-nav-primary"
-                data-js-enhanced="false"
-                id="block-nav-primary"
-            >
-                <h2 class="utility-visually-hidden" id="title-nav-primary">
-                    Controls
-                </h2>
-
-                <button aria-controls="controls__list" type="button" hidden>
-                    <span class="utility-visually-hidden">Toggle Controls</span>
-                    <svg aria-hidden="true" class="block-icon">
-                        <use
-                            href="/uploads2/codingcamp/svg/remix_icon_symbol.svg#ri-menu-fill"
-                        ></use>
-                    </svg>
-                </button>
-
-                <ul id="controls__list" role="list">
-                    <li class="hide-from-member">
-                        <a href="?act=Reg&CODE=00">register</a>
-                    </li>
-                    <li class="hide-from-member">
-                        <a href="?act=Login&CODE=00">log in</a>
-                    </li>
-                    <li class="hide-from-guest">
-                        <a href="?act=UserCP&CODE=00">settings</a>
-                    </li>
-                    <li class="hide-from-guest">
-                        <a href="?act=Msg&CODE=01"
-                            >messages<span data-count-new="<!-- |new_msg| -->">
-                                (<!-- |new_msg| -->
-                                new)</span
-                            ></a
-                        >
-                    </li>
-                    <li class="hide-from-guest">
-                        <a href="?act=UserCP&CODE=alerts"
-                            >alerts<span data-count-new="<!-- |new_alerts| -->">
-                                (<!-- |new_alerts| -->
-                                new)</span
-                            ></a
-                        >
-                    </li>
-                    <li><a href="?act=Search&f=">search</a></li>
-                    <li><a href="?act=Search&CODE=getnew">new posts</a></li>
-                    <li class="show-to-mod-only">
-                        <a href="?act=modcp"
-                            >mod controls<span
-                                data-count-new="<!-- |modcp_issues| -->"
-                                >(<!-- |modcp_issues| -->
-                                new)</span
-                            ></a
-                        >
-                    </li>
-                    <li class="show-to-admin-only">
-                        <a href="/admin.php">admin controls</a>
-                    </li>
-                    <li class="hide-from-guest">
-                        <a href="?act=Login&CODE=03">log out</a>
-                    </li>
-                </ul>
-            </nav>
-
+        <section class="[ jcink-header ][ utility-wrapper ]">
             <% BOARD HEADER %>
-        </div>
+        </section>
 
-        <main class="utility-wrapper"><% BOARD %></main>
+        <main class="utility-wrapper" id="main" tabindex="-1"><% BOARD %></main>
 
-        <footer class="utility-wrapper">
+        <footer class="flow utility-wrapper">
             <div><% COPYRIGHT %></div>
             <div><% SKIN_SELECTOR %></div>
         </footer>
