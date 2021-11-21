@@ -4383,6 +4383,7 @@ nav#menu-controls [data-count-new="0"] {
         var(--topbar-avatar-size) + var(--topbar-avatar-offset) -
             var(--size-topbar)
     ); /* keep content from ending up beneath the current account avatar */
+
     position: sticky;
 }
 
