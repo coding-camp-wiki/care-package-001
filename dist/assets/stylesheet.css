@@ -4374,12 +4374,14 @@ nav#menu-controls a:hover {
 }
 
 [data-js-enhanced="true"] nav#menu-controls button {
+    align-items: center;
     background: var(--black-hex);
     block-size: var(--size-topbar);
     border: none;
-    display: block;
+    display: flex;
     fill: var(--white-hex);
     inline-size: var(--size-topbar);
+    justify-content: center;
 }
 
 [data-js-enhanced="true"] nav#menu-controls button:hover {
