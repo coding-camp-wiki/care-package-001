@@ -215,6 +215,7 @@ Coding Camp info:
     --size-topbar: 50px;
 
     /* ----- MISC */
+    --border: 2px solid rgb(var(--black));
     --topbar-avatar-offset: calc(0.25 * var(--size-topbar));
     --topbar-avatar-size: var(--size-avatar-echo);
     --topbar-keep-away: calc(var(--size-topbar) + 1rem);
@@ -292,12 +293,16 @@ main:focus {
 }
 
 :not(#recent-topics) > table {
-    --outline-offset: 1.5em;
+    --outline-inset-proportion: -0.5;
+    --outline-padding: 3em;
+    --outline-offset: calc(
+        var(--outline-inset-proportion) * var(--outline-padding)
+    );
 
     background-color: rgb(var(--white));
-    padding: calc(2 * var(--outline-offset));
-    outline: 2px solid rgb(var(--black));
-    outline-offset: calc(-1 * var(--outline-offset));
+    padding: var(--outline-padding);
+    outline: var(--border);
+    outline-offset: var(--outline-offset);
 }
 
 /*
