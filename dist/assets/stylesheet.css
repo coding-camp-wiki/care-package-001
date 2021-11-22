@@ -344,6 +344,43 @@ JCINK SPECIFIC
     display: none;
 }
 
+#ucpcontent {
+    padding-inline-start: calc(-1 * var(--outline-offset));
+}
+
+#ucpmenu {
+    padding-inline-end: calc(-1 * var(--outline-offset));
+    position: relative;
+}
+
+#ucpmenu::after {
+    border-inline-end: var(--border);
+    content: "";
+    position: absolute;
+    inset-block: calc(-1 * var(--outline-padding));
+    inset-inline: 0;
+}
+
+#ucpmenu .pformstrip {
+    font-family: var(--display);
+    font-weight: bold;
+    margin-block-start: 2em;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#ucpmenu .pformstrip::after {
+    border-block-end: var(--border);
+    content: "";
+    inset-block-end: 0;
+    inset-inline: var(--outline-offset);
+    position: absolute;
+}
+
+#ucpmenu + td:not([id]) {
+    display: none;
+}
+
 #userlinks {
     display: none;
 }
