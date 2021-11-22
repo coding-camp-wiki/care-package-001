@@ -348,6 +348,11 @@ JCINK SPECIFIC
     padding-inline-start: calc(-1 * var(--outline-offset));
 }
 
+#ucpcontent table td:first-child {
+    color: rgb(var(--black) / var(--opacity-faded));
+    font-style: italic;
+}
+
 #ucpmenu {
     padding-inline-end: calc(-1 * var(--outline-offset));
     position: relative;
@@ -365,7 +370,7 @@ JCINK SPECIFIC
     font-weight: normal;
 }
 
-#ucpmenu .pformstrip {
+:is(#ucpcontent, #ucpmenu) .pformstrip {
     font-family: var(--display);
     font-weight: bold;
     margin-block-start: 2em;
