@@ -358,7 +358,11 @@ JCINK SPECIFIC
     content: "";
     position: absolute;
     inset-block: calc(-1 * var(--outline-padding));
-    inset-inline: 0;
+    inset-inline-end: 0;
+}
+
+#ucpmenu a > strong {
+    font-weight: normal;
 }
 
 #ucpmenu .pformstrip {
@@ -377,6 +381,7 @@ JCINK SPECIFIC
     position: absolute;
 }
 
+/* hide empty column auto-added by jcink for spacing */
 #ucpmenu + td:not([id]) {
     display: none;
 }
