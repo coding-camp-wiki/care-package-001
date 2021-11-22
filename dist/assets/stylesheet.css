@@ -291,6 +291,15 @@ main:focus {
     outline: none;
 }
 
+:not(#recent-topics) > table {
+    --outline-offset: 1.5em;
+
+    background-color: rgb(var(--white));
+    padding: calc(2 * var(--outline-offset));
+    outline: 2px solid rgb(var(--black));
+    outline-offset: calc(-1 * var(--outline-offset));
+}
+
 /*
 -----
 JCINK SPECIFIC
