@@ -334,6 +334,11 @@ main:focus {
     outline: none;
 }
 
+table {
+    background-color: rgb(var(--white));
+    border-spacing: 0;
+}
+
 :not(#recent-topics) > table:not(#smilies-table) {
     --outline-inset-proportion: -0.5;
     --outline-padding: 3em;
@@ -341,10 +346,11 @@ main:focus {
         var(--outline-inset-proportion) * var(--outline-padding)
     );
 
-    background-color: rgb(var(--white));
     outline: var(--border);
     outline-offset: var(--outline-offset);
-    padding: var(--outline-padding);
+    padding: var(
+        --outline-padding
+    ) !important; /* override jcink inline styling */
 }
 
 table .maintitle {
