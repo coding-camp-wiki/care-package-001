@@ -339,6 +339,16 @@ table {
     border-spacing: 0;
 }
 
+td:first-of-type,
+th:first-of-type {
+    padding-inline-start: 0;
+}
+
+td:last-of-type,
+th:last-of-type {
+    padding-inline-end: 0;
+}
+
 :not(#recent-topics) > table:not(#smilies-table) {
     --outline-inset-proportion: -0.5;
     --outline-padding: 3em;
@@ -356,7 +366,7 @@ table {
 /* "even" children only if there are at least "3",
 note header and footer are included in count because jcink,
 which makes the numbers funky, hence "odd" and "5" instead */
-table tr:nth-last-child(n + 5) ~ tr.dlight:nth-child(odd) {
+table tr:nth-last-child(n + 5) ~ tr:is(.dlight, .hlight):nth-child(odd) {
     background-color: rgb(var(--purple) / var(--opacity-mid));
 }
 
@@ -364,6 +374,22 @@ table .maintitle {
     font-family: var(--display);
     font-size: 1.5em;
     font-weight: bold;
+}
+
+table .pformstrip {
+    font-family: var(--display);
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+}
+
+table div.pformstrip:not(:first-child) {
+    margin-block-start: 2em;
+}
+
+table tr:not(:first-of-type) > td.pformstrip,
+table tr:not(:first-of-type) > td.titlemedium {
+    padding-block-start: 2em; /* margin has no effect on table elements */
 }
 
 /*
@@ -446,18 +472,6 @@ JCINK SPECIFIC
 
 #ucpmenu a > strong {
     font-weight: normal;
-}
-
-:is(#ucpcontent, #ucpmenu) .pformstrip {
-    font-family: var(--display);
-    font-weight: bold;
-    position: relative;
-    text-transform: uppercase;
-}
-
-:is(#ucpcontent, #ucpmenu) div.pformstrip:not(:first-child),
-:is(#ucpcontent, #ucpmenu) tr:not(:first-of-type) td.pformstrip {
-    padding-block-start: 2em; /* margin has no effect on table elements */
 }
 
 #ucpmenu .pformstrip::after {
