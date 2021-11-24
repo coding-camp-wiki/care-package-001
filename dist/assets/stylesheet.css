@@ -353,6 +353,13 @@ table {
     ) !important; /* override jcink inline styling */
 }
 
+/* "even" children only if there are at least "3",
+note header and footer are included in count because jcink,
+which makes the numbers funky, hence "odd" and "5" instead */
+table tr:nth-last-child(n + 5) ~ tr.dlight:nth-child(odd) {
+    background-color: rgb(var(--purple) / var(--opacity-mid));
+}
+
 table .maintitle {
     font-family: var(--display);
     font-size: 1.5em;
