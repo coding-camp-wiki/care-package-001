@@ -69,7 +69,7 @@ Coding Camp info:
 :root {
     /* FONTS */
     --display: "Mont Heavy Demo", "Work Sans", sans-serif;
-    --body-font: var(--body-font-size) / 180% var(--sans);
+    --body-font: var(--body-font-size) / 1.8 var(--sans);
     --body-font-size: 0.8125rem;
     --sans: "Work Sans", sans-serif;
 
@@ -399,6 +399,10 @@ JCINK SPECIFIC
     position: absolute;
     inset-block: calc(-1 * var(--outline-padding));
     inset-inline-end: 0;
+}
+
+#ucpmenu a:not(:focus):not(:hover) {
+    text-decoration-line: none;
 }
 
 #ucpmenu a > strong {
