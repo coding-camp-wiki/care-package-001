@@ -225,6 +225,7 @@ Coding Camp info:
 }
 
 body {
+    accent-color: rgb(var(--purple));
     background: var(--purple-radial-gradient), var(--green-radial-gradient2),
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
@@ -270,11 +271,45 @@ img {
 }
 
 /* Inherit fonts for inputs and buttons */
-input,
 button,
-textarea,
-select {
+input,
+option,
+select,
+textarea {
     font: inherit;
+    line-height: normal;
+    padding-block: 0.25em;
+}
+
+button,
+input[type="submit"],
+textarea {
+    padding-inline: 1ch;
+}
+
+button,
+input[type="submit"] {
+    background: rgb(var(--black));
+    border: 1px solid rgb(var(--black));
+    color: rgb(var(--white));
+}
+
+button:focus,
+button:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    background: rgb(var(--pink));
+    border-color: currentColor;
+    color: rgb(var(--black));
+}
+
+input,
+select,
+textarea {
+    background: rgb(var(--white));
+    border: 1px solid currentColor;
+    border-radius: 0;
+    color: rgb(var(--black));
 }
 
 ul[role="list"] {
