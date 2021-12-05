@@ -413,6 +413,22 @@ JCINK SPECIFIC
     font-weight: normal;
 }
 
+.pformstrip {
+    font-family: var(--display);
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+}
+
+div.pformstrip:not(:first-child) {
+    margin-block-start: 2em;
+}
+
+tr:not(:first-of-type) > td.pformstrip,
+tr:not(:first-of-type) > td.titlemedium {
+    padding-block-start: 2em; /* margin has no effect on table elements */
+}
+
 #logostrip {
     display: none;
 }
