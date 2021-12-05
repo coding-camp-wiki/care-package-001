@@ -334,22 +334,17 @@ main:focus {
     outline: none;
 }
 
-table {
+table,
+.tableborder {
     background-color: rgb(var(--white));
+}
+
+table {
     border-spacing: 0;
 }
 
-td:first-of-type,
-th:first-of-type {
-    padding-inline-start: 0;
-}
-
-td:last-of-type,
-th:last-of-type {
-    padding-inline-end: 0;
-}
-
-:not(#recent-topics) > table:not(#smilies-table) {
+:not(#recent-topics):not(.tableborder) > table:not(#smilies-table),
+.tableborder:not(#recent-topics) {
     --outline-inset-proportion: -0.5;
     --outline-padding: 3em;
     --outline-offset: calc(
@@ -376,20 +371,19 @@ table .maintitle {
     font-weight: bold;
 }
 
-table .pformstrip {
-    font-family: var(--display);
-    font-weight: bold;
-    position: relative;
-    text-transform: uppercase;
+/* aka the ?showuser=2&CODE=friends page */
+body > div:not([class]) > .tableborder {
+    margin-inline: 1rem;
 }
 
-table div.pformstrip:not(:first-child) {
-    margin-block-start: 2em;
+td:first-of-type,
+th:first-of-type {
+    padding-inline-start: 0;
 }
 
-table tr:not(:first-of-type) > td.pformstrip,
-table tr:not(:first-of-type) > td.titlemedium {
-    padding-block-start: 2em; /* margin has no effect on table elements */
+td:last-of-type,
+th:last-of-type {
+    padding-inline-end: 0;
 }
 
 /*
