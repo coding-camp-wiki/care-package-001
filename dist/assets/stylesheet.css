@@ -392,17 +392,17 @@ JCINK SPECIFIC
 -----
 */
 
-#bbcode-buttons > :not(br) {
+a[href="javascript:closeall();"] {
+    float: right;
+}
+
+.codebuttons {
     padding: 0 1ch;
 }
 
-#bbcode-buttons > :not(br) + :not(br) {
+.codebuttons + .codebuttons {
     margin-block-end: 1ch;
     margin-inline-start: 1ch;
-}
-
-#bbcode-buttons a[href="javascript:closeall();"] {
-    float: right;
 }
 
 .darkrow3 {
