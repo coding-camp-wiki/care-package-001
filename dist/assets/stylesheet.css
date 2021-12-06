@@ -276,19 +276,23 @@ input,
 option,
 select,
 textarea {
+    --padding: 0.25em;
+
     font: var(
         --body-font
     ); /* can't just inherit because of .pformstrip > input instances */
     line-height: normal; /* firefox won't let you change this for select
         elements without a full wipe via appearance: none, so normalize on
         "normal" instead */
-    padding-block: 0.25em;
+    padding-block: var(--padding);
 }
 
 button,
-input[type="button"] input[type="submit"],
+input[type="button"],
+input[type="file"],
+input[type="submit"],
 textarea {
-    padding-inline: 1ch;
+    padding-inline: var(--padding);
 }
 
 button,
@@ -297,6 +301,7 @@ input[type="submit"] {
     background: rgb(var(--black));
     border: 1px solid rgb(var(--black));
     color: rgb(var(--white));
+    min-inline-size: 5ch;
 }
 
 button:focus,
