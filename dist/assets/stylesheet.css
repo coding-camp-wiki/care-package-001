@@ -405,6 +405,20 @@ JCINK SPECIFIC
     float: right;
 }
 
+.darkrow3 {
+    font-size: 1.25em;
+    padding-block-start: 2em;
+    position: relative;
+}
+
+.darkrow3::after {
+    border-block-end: var(--border);
+    content: "";
+    inset-block-end: 0;
+    inset-inline: calc(-1 * var(--outline-padding, 0));
+    position: absolute;
+}
+
 .newstext {
     display: none;
 }
