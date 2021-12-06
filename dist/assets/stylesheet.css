@@ -343,7 +343,13 @@ table {
     border-spacing: 0;
 }
 
-:not(#recent-topics):not(.tableborder) > table:not(#smilies-table),
+/*
+.tableborder > table happens in ?act=Msg&CODE=01
+.tableborder > form > table happens in ?act=UserCP&CODE=54
+*/
+:not(.tableborder)
+    > :not(#recent-topics):not(.tableborder):not(form)
+    > table:not(#smilies-table),
 .tableborder:not(#recent-topics) {
     --outline-inset-proportion: -0.5;
     --outline-padding: 3em;
