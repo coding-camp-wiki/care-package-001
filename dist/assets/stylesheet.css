@@ -405,6 +405,18 @@ a[href="javascript:closeall();"] {
     margin-inline-start: 1ch;
 }
 
+.frame {
+    block-size: 50px !important;
+    inline-size: 50px !important;
+}
+
+.frame img {
+    block-size: auto;
+    inline-size: 100%;
+    max-block-size: 100%;
+    object-fit: cover;
+}
+
 .darkrow3 {
     font-size: 1.25em;
     padding-block-start: 2em;
@@ -434,7 +446,7 @@ a[href="javascript:closeall();"] {
     text-transform: uppercase;
 }
 
-div.pformstrip {
+:not(.tableborder) > div.pformstrip {
     margin-block-start: 2em;
 }
 
