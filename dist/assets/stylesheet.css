@@ -470,6 +470,10 @@ tr:not(:first-of-type) > td.titlemedium {
     padding-inline-start: calc(-1 * var(--outline-offset));
 }
 
+#ucpcontent > br {
+    display: none;
+}
+
 /* first td, but there are at least two in the row, and no class */
 #ucpcontent table td:first-child:nth-last-child(n + 2):not([class]) {
     color: rgb(var(--black) / var(--opacity-faded));
