@@ -434,7 +434,7 @@ JCINK SPECIFIC
     text-transform: uppercase;
 }
 
-div.pformstrip:not(:first-child) {
+div.pformstrip {
     margin-block-start: 2em;
 }
 
@@ -462,7 +462,7 @@ tr:not(:first-of-type) > td.titlemedium {
     width: initial;
 }
 
-html:not([data-param-act="Msg"]):not([data-param-code="01"]) .row1 {
+html:not([data-param-act="Msg"][data-param-code="01"]) .row1 {
     border-block-end: 1px solid rgb(var(--black) / var(--opacity-mid));
     padding-block: 2em;
 }
@@ -477,6 +477,10 @@ html:not([data-param-act="Msg"]):not([data-param-code="01"]) .row1 {
 
 #ucpcontent > br {
     display: none;
+}
+
+html[data-param-act="Msg"][data-param-code="30"] #ucpcontent p {
+    margin-block: 0;
 }
 
 /* first td, but there are at least two in the row, and no class */
