@@ -462,9 +462,13 @@ tr:not(:first-of-type) > td.titlemedium {
     width: initial;
 }
 
-html:not([data-param-act="Msg"][data-param-code="01"]) .row1 {
+html:not([data-param-act="Msg"][data-param-code="01"]) .row1:not(input) {
     border-block-end: 1px solid rgb(var(--black) / var(--opacity-mid));
     padding-block: 2em;
+}
+
+br + .row1 {
+    padding-inline: 0;
 }
 
 #submenu {
