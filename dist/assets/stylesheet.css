@@ -209,7 +209,7 @@ Coding Camp info:
     --opacity-mid: 0.45;
 
     /* ----- SIZES */
-    --size-avatar-echo: 80px;
+    --size-avatar-round: 80px;
     --size-avatar-echo-offset: 0.2;
     --size-sidebar: 50px;
     --size-topbar: 50px;
@@ -217,7 +217,7 @@ Coding Camp info:
     /* ----- MISC */
     --border: 2px solid rgb(var(--black));
     --topbar-avatar-offset: calc(0.25 * var(--size-topbar));
-    --topbar-avatar-size: var(--size-avatar-echo);
+    --topbar-avatar-size: var(--size-avatar-round);
     --topbar-keep-away: calc(var(--size-topbar) + 1rem);
 
     /* ----- ROOT BEHAVIORS */
@@ -440,6 +440,20 @@ a[href="javascript:closeall();"] {
     inset-block-end: 0;
     inset-inline: calc(-1 * var(--outline-padding, 0));
     position: absolute;
+}
+
+/* .msg-normal = PMs */
+.msg-normal .miniprofile img {
+    max-inline-size: unset;
+}
+
+.msg-normal .miniprofile img:not([src$="spacer.gif"]) {
+    block-size: var(--size-avatar-round);
+    border-radius: 50%;
+    display: block;
+    inline-size: var(--size-avatar-round);
+    margin-inline: auto;
+    object-fit: cover;
 }
 
 .newstext {
@@ -4252,10 +4266,10 @@ BLOCKS
 }
 
 .avatar[data-variant="echo"] {
-    block-size: var(--size-avatar-echo);
-    inline-size: var(--size-avatar-echo);
+    block-size: var(--size-avatar-round);
+    inline-size: var(--size-avatar-round);
     margin-inline-end: calc(
-        var(--size-avatar-echo) * var(--size-avatar-echo-offset)
+        var(--size-avatar-round) * var(--size-avatar-echo-offset)
     );
     position: relative;
 }
