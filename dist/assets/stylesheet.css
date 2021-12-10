@@ -216,6 +216,7 @@ Coding Camp info:
 
     /* ----- MISC */
     --border: 2px solid rgb(var(--black));
+    --border-thin: 1px solid rgb(var(--black) / var(--opacity-mid));
     --topbar-avatar-offset: calc(0.25 * var(--size-topbar));
     --topbar-avatar-size: var(--size-avatar-round);
     --topbar-keep-away: calc(var(--size-topbar) + 1rem);
@@ -428,13 +429,13 @@ a[href="javascript:closeall();"] {
     object-fit: cover;
 }
 
-.darkrow3 {
+td.darkrow3 {
     font-size: 1.25em;
     padding-block-start: 2em;
     position: relative;
 }
 
-.darkrow3::after {
+td.darkrow3::after {
     border-block-end: var(--border);
     content: "";
     inset-block-end: 0;
@@ -443,6 +444,14 @@ a[href="javascript:closeall();"] {
 }
 
 /* .msg-normal = PMs */
+.msg-normal {
+    --padding: 2em;
+}
+
+.msg-normal td.darkrow3 {
+    border-block-start: var(--border-thin);
+}
+
 .msg-normal .miniprofile img {
     max-inline-size: unset;
 }
@@ -454,6 +463,27 @@ a[href="javascript:closeall();"] {
     inline-size: var(--size-avatar-round);
     margin-inline: auto;
     object-fit: cover;
+}
+
+.msg-normal .post1 {
+    padding-block-start: var(--padding);
+}
+
+.msg-normal div.row4 {
+    padding-block: unset !important; /* need to override jcink inline styles */
+}
+
+.msg-normal td.row4 {
+    padding-block-start: var(--padding);
+    position: relative;
+}
+
+.msg-normal td.row4::after {
+    border-block-end: var(--border);
+    content: "";
+    inset-block-end: 0;
+    inset-inline: calc(-1 * var(--outline-padding));
+    position: absolute;
 }
 
 .newstext {
@@ -500,7 +530,7 @@ tr:not(:first-of-type) > td.titlemedium {
 }
 
 html:not([data-param-act="Msg"][data-param-code="01"]) .row1:not(input) {
-    border-block-end: 1px solid rgb(var(--black) / var(--opacity-mid));
+    border-block-end: var(--border-thin);
     padding-block: 2em;
 }
 
