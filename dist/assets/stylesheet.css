@@ -388,6 +388,26 @@ body > div:not([class]) > .tableborder {
     margin-inline: 1rem;
 }
 
+/* table headings */
+html[data-param-act="UserCP"][data-param-code="50"] td.darkrow3 {
+    font-size: 1.25em;
+    padding-block-start: 2em;
+}
+
+html[data-param-act="UserCP"][data-param-code="50"] td.darkrow3,
+.msg-normal td.row4 {
+    position: relative;
+}
+
+html[data-param-act="UserCP"][data-param-code="50"] td.darkrow3::after,
+.msg-normal td.row4::after {
+    border-block-end: var(--border);
+    content: "";
+    inset-block-end: 0;
+    inset-inline: calc(-1 * var(--outline-padding, 0));
+    position: absolute;
+}
+
 td:first-of-type,
 th:first-of-type {
     padding-inline-start: 0;
@@ -429,23 +449,14 @@ a[href="javascript:closeall();"] {
     object-fit: cover;
 }
 
-td.darkrow3 {
-    font-size: 1.25em;
-    padding-block-start: 2em;
-    position: relative;
-}
-
-td.darkrow3::after {
-    border-block-end: var(--border);
-    content: "";
-    inset-block-end: 0;
-    inset-inline: calc(-1 * var(--outline-padding, 0));
-    position: absolute;
-}
-
 /* .msg-normal = PMs */
 .msg-normal {
     --padding: 2em;
+}
+
+/* get rid of the "Card" link, which just opens the main profile in a tiny window */
+.msg-normal a[href^="javascript:PopUp"][href*="showcard"] {
+    display: none;
 }
 
 .msg-normal td.darkrow3 {
@@ -475,15 +486,8 @@ td.darkrow3::after {
 
 .msg-normal td.row4 {
     padding-block-start: var(--padding);
-    position: relative;
-}
 
-.msg-normal td.row4::after {
-    border-block-end: var(--border);
-    content: "";
-    inset-block-end: 0;
-    inset-inline: calc(-1 * var(--outline-padding));
-    position: absolute;
+    /* also see elements: table headings */
 }
 
 .newstext {
