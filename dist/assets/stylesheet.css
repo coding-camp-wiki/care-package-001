@@ -282,6 +282,7 @@ textarea {
     font: var(
         --body-font
     ); /* can't just inherit because of .pformstrip > input instances */
+
     line-height: normal; /* firefox won't let you change this for select
         elements without a full wipe via appearance: none, so normalize on
         "normal" instead */
@@ -573,9 +574,9 @@ html[data-param-act="Msg"][data-param-code="30"] #ucpcontent p {
 #ucpmenu::after {
     border-inline-end: var(--border);
     content: "";
-    position: absolute;
     inset-block: calc(-1 * var(--outline-padding));
     inset-inline-end: 0;
+    position: absolute;
 }
 
 #ucpmenu a:not(:focus):not(:hover) {
