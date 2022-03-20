@@ -69,7 +69,7 @@ Coding Camp info:
 :root {
     /* FONTS */
     --display: "Mont Heavy Demo", "Work Sans", sans-serif;
-    --body-font: var(--body-font-size) / 180% var(--sans);
+    --body-font: var(--body-font-size) / 1.8 var(--sans);
     --body-font-size: 0.8125rem;
     --sans: "Work Sans", sans-serif;
 
@@ -209,14 +209,16 @@ Coding Camp info:
     --opacity-mid: 0.45;
 
     /* ----- SIZES */
-    --size-avatar-echo: 80px;
+    --size-avatar-round: 80px;
     --size-avatar-echo-offset: 0.2;
     --size-sidebar: 50px;
     --size-topbar: 50px;
 
     /* ----- MISC */
+    --border: 2px solid rgb(var(--black));
+    --border-thin: 1px solid rgb(var(--black) / var(--opacity-mid));
     --topbar-avatar-offset: calc(0.25 * var(--size-topbar));
-    --topbar-avatar-size: var(--size-avatar-echo);
+    --topbar-avatar-size: var(--size-avatar-round);
     --topbar-keep-away: calc(var(--size-topbar) + 1rem);
 
     /* ----- ROOT BEHAVIORS */
@@ -224,6 +226,7 @@ Coding Camp info:
 }
 
 body {
+    accent-color: rgb(var(--purple));
     background: var(--purple-radial-gradient), var(--green-radial-gradient2),
         var(--purple-radial-gradient3), var(--pink-radial-gradient),
         var(--purple-radial-gradient2), var(--green-radial-gradient),
@@ -268,6 +271,61 @@ img {
     max-inline-size: 100%;
 }
 
+/* Inherit fonts for inputs and buttons */
+button,
+input,
+option,
+select,
+textarea {
+    --padding: 0.25em;
+
+    font: var(
+        --body-font
+    ); /* can't just inherit because of .pformstrip > input instances */
+
+    line-height: normal; /* firefox won't let you change this for select
+        elements without a full wipe via appearance: none, so normalize on
+        "normal" instead */
+    padding-block: var(--padding);
+}
+
+button,
+input[type="button"],
+input[type="file"],
+input[type="submit"],
+textarea {
+    padding-inline: var(--padding);
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    background: rgb(var(--black));
+    border: 1px solid rgb(var(--black));
+    color: rgb(var(--white));
+    min-inline-size: 5ch;
+}
+
+button:focus,
+button:hover,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+    background: rgb(var(--pink));
+    border-color: currentColor;
+    color: rgb(var(--black));
+}
+
+input,
+select,
+textarea {
+    background: rgb(var(--white));
+    border: 1px solid currentColor;
+    border-radius: 0;
+    color: rgb(var(--black));
+}
+
 ul[role="list"] {
     /*
     role="list" is required in the html for
@@ -283,14 +341,178 @@ main:focus {
     outline: none;
 }
 
+table,
+.tableborder {
+    background-color: rgb(var(--white));
+}
+
+table {
+    border-spacing: 0;
+}
+
+/*
+.tableborder > table happens in ?act=Msg&CODE=01
+.tableborder > form > table happens in ?act=UserCP&CODE=54
+*/
+:not(.tableborder)
+    > :not(#recent-topics):not(.tableborder):not(form)
+    > table:not(#smilies-table),
+.tableborder:not(#recent-topics) {
+    --outline-inset-proportion: -0.5;
+    --outline-padding: 3em;
+    --outline-offset: calc(
+        var(--outline-inset-proportion) * var(--outline-padding)
+    );
+
+    outline: var(--border);
+    outline-offset: var(--outline-offset);
+    padding: var(
+        --outline-padding
+    ) !important; /* override jcink inline styling */
+}
+
+/* "even" children only if there are at least "3",
+note header and footer are included in count because jcink,
+which makes the numbers funky, hence "odd" and "5" instead */
+table tr:nth-last-child(n + 5) ~ tr:is(.dlight, .hlight):nth-child(odd) {
+    background-color: rgb(var(--purple) / var(--opacity-mid));
+}
+
+table .maintitle {
+    font-family: var(--display);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* aka the ?showuser=2&CODE=friends page */
+body > div:not([class]) > .tableborder {
+    margin-inline: 1rem;
+}
+
+/* table headings */
+html[data-param-act="UserCP"][data-param-code="50"] td.darkrow3 {
+    font-size: 1.25em;
+    padding-block-start: 2em;
+}
+
+html[data-param-act="UserCP"][data-param-code="50"] td.darkrow3,
+.msg-normal td.row4 {
+    position: relative;
+}
+
+html[data-param-act="UserCP"][data-param-code="50"] td.darkrow3::after,
+.msg-normal td.row4::after {
+    border-block-end: var(--border);
+    content: "";
+    inset-block-end: 0;
+    inset-inline: calc(-1 * var(--outline-padding, 0));
+    position: absolute;
+}
+
+td:first-of-type,
+th:first-of-type {
+    padding-inline-start: 0;
+}
+
+td:last-of-type,
+th:last-of-type {
+    padding-inline-end: 0;
+}
+
 /*
 -----
 JCINK SPECIFIC
 -----
 */
 
+a[href="javascript:closeall();"] {
+    float: right;
+}
+
+.codebuttons {
+    padding: 0 1ch;
+}
+
+.codebuttons + .codebuttons {
+    margin-block-end: 1ch;
+    margin-inline-start: 1ch;
+}
+
+.frame {
+    block-size: 50px !important;
+    inline-size: 50px !important;
+}
+
+.frame img {
+    block-size: auto;
+    inline-size: 100%;
+    max-block-size: 100%;
+    object-fit: cover;
+}
+
+/* .msg-normal = PMs */
+.msg-normal {
+    --padding: 2em;
+}
+
+/* get rid of the "Card" link, which just opens the main profile in a tiny window */
+.msg-normal a[href^="javascript:PopUp"][href*="showcard"] {
+    display: none;
+}
+
+.msg-normal td.darkrow3 {
+    border-block-start: var(--border-thin);
+}
+
+.msg-normal .miniprofile img {
+    max-inline-size: unset;
+}
+
+.msg-normal .miniprofile img:not([src$="spacer.gif"]) {
+    block-size: var(--size-avatar-round);
+    border-radius: 50%;
+    display: block;
+    inline-size: var(--size-avatar-round);
+    margin-inline: auto;
+    object-fit: cover;
+}
+
+.msg-normal .post1 {
+    padding-block-start: var(--padding);
+}
+
+.msg-normal div.row4 {
+    padding-block: unset !important; /* need to override jcink inline styles */
+}
+
+.msg-normal td.row4 {
+    padding-block-start: var(--padding);
+
+    /* also see elements: table headings */
+}
+
 .newstext {
     display: none;
+}
+
+.pformleft > b {
+    font-weight: normal;
+}
+
+.pformstrip {
+    font-family: var(--display);
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+}
+
+:not(.tableborder) > div.pformstrip {
+    margin-block-start: 2em;
+}
+
+tr:not(:first-of-type) > td.pformstrip,
+tr:not(:first-of-type) > td.titlemedium {
+    padding-block-start: 2em; /* margin has no effect on table elements */
 }
 
 #logostrip {
@@ -312,7 +534,69 @@ JCINK SPECIFIC
     width: initial;
 }
 
+html:not([data-param-act="Msg"][data-param-code="01"]) .row1:not(input) {
+    border-block-end: var(--border-thin);
+    padding-block: 2em;
+}
+
+br + .row1 {
+    padding-inline: 0;
+}
+
 #submenu {
+    display: none;
+}
+
+#ucpcontent {
+    padding-inline-start: calc(-1 * var(--outline-offset));
+}
+
+#ucpcontent > br {
+    display: none;
+}
+
+html[data-param-act="Msg"][data-param-code="30"] #ucpcontent p {
+    margin-block: 0;
+}
+
+/* first td, but there are at least two in the row, and no class */
+#ucpcontent table td:first-child:nth-last-child(n + 2):not([class]) {
+    color: rgb(var(--black) / var(--opacity-faded));
+    font-style: italic;
+}
+
+#ucpmenu {
+    padding-inline-end: calc(-1 * var(--outline-offset));
+    position: relative;
+    width: 20%; /* safari doesn't respect min-width */
+}
+
+#ucpmenu::after {
+    border-inline-end: var(--border);
+    content: "";
+    inset-block: calc(-1 * var(--outline-padding));
+    inset-inline-end: 0;
+    position: absolute;
+}
+
+#ucpmenu a:not(:focus):not(:hover) {
+    text-decoration-line: none;
+}
+
+#ucpmenu a > strong {
+    font-weight: normal;
+}
+
+#ucpmenu .pformstrip::after {
+    border-block-end: var(--border);
+    content: "";
+    inset-block-end: 0;
+    inset-inline: var(--outline-offset);
+    position: absolute;
+}
+
+/* hide empty column auto-added by jcink for spacing */
+#ucpmenu + td:not([id]) {
     display: none;
 }
 
@@ -4017,10 +4301,10 @@ BLOCKS
 }
 
 .avatar[data-variant="echo"] {
-    block-size: var(--size-avatar-echo);
-    inline-size: var(--size-avatar-echo);
+    block-size: var(--size-avatar-round);
+    inline-size: var(--size-avatar-round);
     margin-inline-end: calc(
-        var(--size-avatar-echo) * var(--size-avatar-echo-offset)
+        var(--size-avatar-round) * var(--size-avatar-echo-offset)
     );
     position: relative;
 }
@@ -4299,12 +4583,14 @@ nav#menu-controls a:hover {
 }
 
 [data-js-enhanced="true"] nav#menu-controls button {
+    align-items: center;
     background: var(--black-hex);
     block-size: var(--size-topbar);
     border: none;
-    display: block;
+    display: flex;
     fill: var(--white-hex);
     inline-size: var(--size-topbar);
+    justify-content: center;
 }
 
 [data-js-enhanced="true"] nav#menu-controls button:hover {

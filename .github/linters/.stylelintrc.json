@@ -5,12 +5,7 @@
     ],
     "rules": {
         "declaration-colon-newline-after": null,
-        "indentation": [
-            4,
-            {
-                "ignore": "inside-parens"
-            }
-        ],
+        "indentation": null,
         "no-descending-specificity": null,
         "order/order": [
             "custom-properties",
@@ -25,10 +20,17 @@
                 "resolveNestedSelectors": true
             }
         ],
+        "selector-combinator-space-before": null,
         "selector-id-pattern": [
             "^([a-z][a-z0-9]*)(-[a-z0-9]+)*(__[a-z0-9]+(-[a-z0-9]+)*){0,1}$",
             {
                 "message": "Expected class selector to be kebab-case, kebab-case__element, or kebab-case__element-kebab"
+            }
+        ],
+        "value-keyword-case": [
+            "lower",
+            {
+                "camelCaseSvgKeywords": true
             }
         ],
         "value-list-comma-newline-after": null,
